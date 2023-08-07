@@ -1,2 +1,2 @@
 # GraduationProject
-For Embedded System Project
+## Notations
