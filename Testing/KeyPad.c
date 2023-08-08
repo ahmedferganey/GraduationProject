@@ -10,20 +10,21 @@
 #include "util/delay.h"
 
 
-uint8 var;
+
+uint8 var = 0;
 Std_ReturnType udtReturnValue = E_PENDING;
 
 int main(void)
 {
 	udtReturnValue = LCD_udt4BitInitialize();
 	udtReturnValue = KEYPAD_udtInit(&udtKeypadTarget);
-
+	
 	while (1)
 	{
 		udtReturnValue = KEYPAD_udtGetPressedKey(&udtKeypadTarget, &var);
 		while (var == KPD_NO_PRESSED_VALUE)
 		{
-			udtReturnValue = KEYPAD_udtGetPressedKey(&udtKeypadTarget, &var);
+			var = KEYPAD_udtGetPressedKey(&udtKeypadTarget, &var);
 		}
 		LCD_udt4BitSendData(var);
 	}

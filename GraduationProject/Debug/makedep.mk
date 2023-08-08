@@ -6,5 +6,7 @@ APP.c
 
 DIO_program.c
 
+KEYPAD_program.c
+
 LCD_program.c
 

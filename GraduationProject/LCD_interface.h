@@ -23,7 +23,7 @@
 #define LCD_ENTRY_MODE_DEC_SHIFT_OFF					0x04	/* Comment!: Decrement cursor (shift cursor to left) */
 #define LCD_ENTRY_MODE_DEC_SHIFT_ON						0x05	/* Comment!: Shift display right */
 #define LCD_ENTRY_MODE_INC_SHIFT_OFF					0x06	/* Comment!: Increment cursor (shift cursor to right)*/
-#define LCD_ENTRY_MODE_INC_SHIFT_ON						0x07	/* Comment!: Shift display left */
+#define LCD_ENTRY_MODE_INC_SHIFT_ON						0x07	/* Comment!: Shift display left, when initialize LCD we find on data bus 0x07 by default */
 #define LCD_DISPLAY_OFF_CURSOR_OFF						0x08	/* Comment!: Display off, cursor off */
 #define LCD_DISPLAY_OFF_UNDERLINE_OFF_CURSOR_ON			0x0A	/* Comment!: Display off, cursor on */
 #define LCD_DISPLAY_ON_UNDERLINE_ON_CURSOR_OFF			0x0C	/* Comment!: Display on, cursor off */
