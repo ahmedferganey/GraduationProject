@@ -1,0 +1,17 @@
+20:07:43 **** Incremental Build of configuration Debug for project ARM Project ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ARM Project.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Ahmed Ferganey\Downloads\Puplic-Github\ARM Project\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ARM Project.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ARM Project.elf
+ 
+arm-none-eabi-size   ARM\ Project.elf 
+arm-none-eabi-objdump -h -S  ARM\ Project.elf  > "ARM Project.list"
+   text	   data	    bss	    dec	    hex	filename
+   5936	     20	   1572	   7528	   1d68	ARM Project.elf
+Finished building: default.size.stdout
+ 
+Finished building: ARM Project.list
+ 
+
+20:07:45 Build Finished. 0 errors, 0 warnings. (took 1s.604ms)
+

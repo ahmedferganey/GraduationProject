@@ -1,0 +1,35 @@
+!SESSION 2023-08-12 20:19:57.475 -----------------------------------------------
+eclipse.buildId=Version 1.13.0
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  C:\Users\Ahmed Ferganey\Downloads\Puplic-Github\ARM_Grad_Project\ARM _Config_CubeMX\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\Ahmed Ferganey\Downloads\Puplic-Github\ARM_Grad_Project\ARM _Config_CubeMX\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-08-12 20:20:49.804
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-08-12 20:20:49.821
+!MESSAGE Log4j2 initialized with config file C:\Users\Ahmed Ferganey\Downloads\Puplic-Github\ARM_Grad_Project\ARM_Grad_Project\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-08-12 20:21:05.914
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-08-12 20:21:16.352
+!MESSAGE Indexed 'ARM _Config_CubeMX' (20 sources, 106 headers) in 6.81 sec: 7,511 declarations; 23,829 references; 6 unresolved inclusions; 595 syntax errors; 831 unresolved names (2.6%)
+!SESSION 2023-08-12 20:43:07.407 -----------------------------------------------
+eclipse.buildId=Version 1.13.0
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  C:\Users\Ahmed Ferganey\Downloads\Puplic-Github\ARM_Grad_Project\ARM _Config_CubeMX\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\Ahmed Ferganey\Downloads\Puplic-Github\ARM_Grad_Project\ARM _Config_CubeMX\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-08-12 20:43:19.720
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-08-12 20:43:19.722
+!MESSAGE Log4j2 initialized with config file C:\Users\Ahmed Ferganey\Downloads\Puplic-Github\ARM_Grad_Project\ARM_Grad_Project\.metadata\.log4j2.xml
+
+!ENTRY org.eclipse.core.jobs 2 2 2023-08-12 20:43:34.506
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.ui.internal.Workbench$39
