@@ -223,12 +223,12 @@ pin_index_t 	udtPin
 							  break;
 			default:		  /* !Comment: Do nothing */
 							  break;
-		} 
+		}
+	}
 	else
 	{
 		udtReturnValue = E_NOT_OK;
 	}		
-	}
 	return udtReturnValue;
 }
 #endif

@@ -14,7 +14,7 @@
 #include "DIO_interface.h"
 #include "LCD_interface.h"
 #include "KEYPAD_interface.h"
-
+#include "ADC_interface.h"
 
 /* Comment!: Macro Declarations */
 
@@ -23,7 +23,7 @@
 
 
 /* Comment!: Data Type Declarations */
-extern keypad_t udtKeypadTarget;
+
 
 /* Comment!: Function Declarations */
 
