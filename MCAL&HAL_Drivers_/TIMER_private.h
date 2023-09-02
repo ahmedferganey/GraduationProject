@@ -69,8 +69,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 /*	!COMMENT:			COMMON													*/
 !/*	!COMMENT: TIMSK - Timer/Counter Interrupt Mask Register */
-#define TIMER0_TOIE0	0	/* Overflow Interrupt Enable */
-#define TIMER0_OCIE0	1	/* Output Compare Match Interrupt Enable */
+#define TIMER0_TIMSK_TOIE0	0	/* Overflow Interrupt Enable */
+#define TIMER0_TIMSK_OCIE0	1	/* Output Compare Match Interrupt Enable */
 #define TIMER_
 #define TIMER_
 #define TIMER_
