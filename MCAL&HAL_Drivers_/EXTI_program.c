@@ -11,6 +11,8 @@
 #include "EXTI_interface.h"
 #include "EXTI_config.h"
 #include "EXTI_private.h"
+#include "DIO_interface.h"
+
 
 /* -------------------------------- Global Variables --------------------------------*/
 /* !Comment: global pointers to function every pointer-> point to null to prevent wild pointer 

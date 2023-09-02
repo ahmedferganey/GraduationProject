@@ -37,6 +37,7 @@
  *						WDTCR
  */
 /*-------------------------------- Includes --------------------------------------------------------*/
+#include "STD_TYPES.h"
 
 
 
@@ -45,7 +46,7 @@
 #define TCNT0		*((volatile uint8*)0X52)
 #define TCCR0		*((volatile uint8*)0X53)
 #define OCR0		*((volatile uint8*)0X5C)
-
+///////////////////////////////////////////////////////////////
 /* !Comment: this pointer is point to TIMER1_t with address 0x46 end at 0x4F*/
 #define TIMER1  	((TIMER1_t*)0x46)
 
@@ -53,20 +54,20 @@
 #define OCR1B		*((volatile uint16*)0X48)		 /* uint16 for HIGH & LOW */
 #define OCR1A		*((volatile uint16*)0X4A)		 /* uint16 for HIGH & LOW */
 #define TCNT1		*((volatile uint16*)0X4C)   	 /* uint16 for HIGH & LOW */
-
+///////////////////////////////////////////////////////////////
 /* !Comment: this pointer is point to TIMER2_t with address 0x42 end at 0x45*/
 #define TIMER2  	((TIMER2_t*)0x42)
-
+///////////////////////////////////////////////////////////////
 /* !Comment: Common REG Timer/Counter0 and Timer/Counter1 and Timer/Counter2 */
 #define SFIOR		*((volatile uint8*)0X50)
 #define TIFR		*((volatile uint8*)0X58)
 #define TIMSK		*((volatile uint8*)0X59)
-
+///////////////////////////////////////////////////////////////
 /* !Comment: ACCESSING Watchdog Timer Control Register */
 #define WDTCR       *((volatile uint8*)0x41)
-
+///////////////////////////////////////////////////////////////
 /* !Comment: ACCESSING SREG – AVR Status Register "Bit 7 – I: Global Interrupt Enable"*/
-#define SREG        *((volatile u8 *)0x5F)
+#define SREG        *((volatile uint8 *)0x5F)
 
 /*-------------------------------- Macro Functions Declarations ------------------------------------*/
 

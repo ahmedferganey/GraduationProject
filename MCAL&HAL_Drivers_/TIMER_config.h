@@ -154,48 +154,6 @@
 */
 #define TIMER1_OCR1A_MODE					TIMER_CLR_ON_CTC_SET_ON_TOP
 #define TIMER1_OCR1B_MODE					TIMER_CLR_ON_CTC_SET_ON_TOP
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //////////////////////////////////////////////////////////////////////////////////
 /*	!COMMENT:				Timer/Counter2 Config								*/
 /* !Comment: Select one of Waveform Generation Modes: 
@@ -205,6 +163,62 @@
 							TIMER2_FAST_PWM_MODE				
 */
 #define TIMER2_WAVEFORM_GENERATION_MODE		TIMER2_NORMAL_MODE
+/* !Comment: select your configurations */
+#if TIMER2_WAVEFORM_GENERATION_MODE   == TIMER2_NORMAL_MODE
+	/* Set the Req Preload on TIMER0"0:255" Normal Mode according clock source */
+	#define TIMER2_PRELOAD_VAL			128
+	/* DO you need interrupt feature or not in this case??
+	  		DISABLE			ENABLE
+	*/
+	#define TIMER2_OVERFLOW_INTERRUPT	ENABLE	
+#elif TIMER2_WAVEFORM_GENERATION_MODE == TIMER2_PWM_MODE
+	/* Set the Required Compare Match Value on TIMER2 CTC Mode*/
+	#define TIMER2_CTC_VAL				128		
+	/*Set PWM Mode*/
+	/* select your option:
+					TIMER_OC_DISCONNECTED
+					TIMER_CLR_ON_CTC_SET_ON_TOP
+					TIMER_SET_ON_CTC_CLR_ON_TOP
+	*/
+	#define TIMER2_CTC_PWM_MODE			TIMER_CLR_ON_CTC_SET_ON_TOP		
+	/* DO you need interrupt feature or not in this case??
+	  		DISABLE			ENABLE
+	*/
+	#define TIMER2_PWM_INTERRUPT		ENABLE	 
+#elif TIMER2_WAVEFORM_GENERATION_MODE == TIMER2_CTC_MODE
+	/*Set the Required Compare Match Value on TIMER0 CTC Mode*/
+	#define TIMER2_CTC_VAL			128			
+	/* select Output Mode at PIN PD7 in ATMEGA32A:
+												TIMER_OC_DISCONNECTED
+												TIMER_OC_TOGGEL
+												TIMER_OC_LOW
+												TIMER_OC_HIGH
+	*/
+	#define TIMER2_OC2_MODE			TIMER_OC_DISCONNECTED
+	/* DO you need interrupt feature or not in this case??
+	  		DISABLE			ENABLE
+	*/
+	#define TIMER2_CTC_INTERRUPT	ENABLE
+#elif TIMER2_WAVEFORM_GENERATION_MODE == TIMER2_FAST_PWM_MODE
+	/* Set the Required Compare Match Value on TIMER0 CTC Mode*/
+	#define TIMER2_CTC_VAL				0		
+	/* select Output Mode at PIN PD7 in ATMEGA32A:
+												TIMER_OC_DISCONNECTED
+												TIMER_OC_TOGGEL
+												TIMER_OC_LOW
+												TIMER_OC_HIGH
+	*/
+	#define TIMER2_CTC_PWM_MODE			TIMER_SET_ON_CTC_CLR_ON_TOP
+	/* DO you need interrupt feature or not in this case??
+	  		DISABLE			ENABLE
+	*/
+	#define TIMER2_FAST_PWM_INTERRUPT	ENABLE
+#else
+	#error "Wrong TIMER2_WAVEFORM_GENERATION_MODE Config"
+
+#endif
+	
+	
 /* !Comment: Select Required Prescaler:
 				TIMER2_NO_CLOCK_SOURCE
 				TIMER2_NO_PRESCALER_FACTOR
@@ -216,10 +230,9 @@
 				TIMER2_T0_EXTERNAL_CLOCK_SOURCE_FALLING
 				TIMER2_T0_EXTERNAL_CLOCK_SOURCE_RISING
 */
-#define TIMER2_PRESCALER		TIMER2_DIVISION_FACTOR_32
-
-
-
+#define TIMER2_PRESCALER					TIMER2_DIVISION_FACTOR_32
+	
+	
 //////////////////////////////////////////////////////////////////////////////////
 /*	!COMMENT:						COMMON										*/
 /* !Comment: Note that Timer/Counter1 and Timer/Counter0 share 

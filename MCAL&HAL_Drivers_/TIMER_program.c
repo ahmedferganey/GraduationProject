@@ -10,9 +10,9 @@
 #include "BIT_MATH.h"
 
 #include "TIMER_interface.h"
+#include "TIMER_register.h"
 #include "TIMER_private.h"
 #include "TIMER_config.h"
-#include "TIMER_register.h"
 
 
 /* -------------------------------- Global Variables ---------------------------------------*/
@@ -161,7 +161,7 @@ void
 			TCNT1 = TIMER1_PRELOAD_VAL;
 		/* 3-Timer1 Overflow Interrupt Enable*/	
 			#if TIMER1_OVERFLOW_INTERRUPT == DISABLE
-				CLE_BIT(TIMSK, TIMER1_TIMSK_TOIE1);
+				CLR_BIT(TIMSK, TIMER1_TIMSK_TOIE1);
 			#elif TIMER1_OVERFLOW_INTERRUPT == ENABLE
 				SET_BIT(TIMSK, TIMER1_TIMSK_TOIE1);
 			#else
@@ -356,7 +356,7 @@ void
 					 through 4 sources.
 		*/
 			#if TIMER1_OVERFLOW_INTERRUPT == DISABLE
-				CLE_BIT(TIMSK, TIMER1_TIMSK_TOIE1);
+				CLR_BIT(TIMSK, TIMER1_TIMSK_TOIE1);
 			#elif TIMER1_OVERFLOW_INTERRUPT == ENABLE
 				SET_BIT(TIMSK, TIMER1_TIMSK_TOIE1);
 			#else
@@ -495,8 +495,8 @@ void
 		#error "Wrong TIMER1_WAVEFORM_GENERATION_MODE Config"
 	#endif	
 	/*Set the Required Prescaler*/	
-	(*(TIMER1->TCCR1B)) &= TIMER01_PRESCALER_MASK;
-	(*(TIMER1->TCCR1B)) |= TIMER01_PRESCALER;
+	((TIMER1->TCCR1B)) &= TIMER01_PRESCALER_MASK;
+	((TIMER1->TCCR1B)) |= TIMER01_PRESCALER;
 }
 
 /*------- Timer2 APIs Implementation -------*/
@@ -513,36 +513,74 @@ void
 		CLR_BIT(TIMER2->TCCR2, TCCR2_WGM20);
 		CLR_BIT(TIMER2->TCCR2, TCCR2_WGM21);
 		/* 2-Set the Required Preload Value*/
+		((TIMER2->TCNT2)) = TIMER2_PRELOAD_VAL;
 		/* 3-Timer2 Overflow Interrupt Enable*/
-		
+		#if   TIMER2_OVERFLOW_INTERRUPT == DISABLE
+			CLR_BIT(TIMSK, TIMER2_TIMSK_TOIE2);
+		#elif TIMER2_OVERFLOW_INTERRUPT == ENABLE
+			SET_BIT(TIMSK, TIMER2_TIMSK_TOIE2);
+		#else
+			#error "Wrong TIMER2_OVERFLOW_INTERRUPT Config"
+		#endif		
 	#elif TIMER2_WAVEFORM_GENERATION_MODE == TIMER2_PWM_MODE
 		/* 1-Setting PWM_MODE*/	
 		SET_BIT(TIMER2->TCCR2, TCCR2_WGM20);
 		CLR_BIT(TIMER2->TCCR2, TCCR2_WGM21);	
 		/* 2-Set CTC PWM MODE*/
+		#if   TIMER2_CTC_PWM_MODE == TIMER_OC_DISCONNECTED
+				CLR_BIT(TIMER2->TCCR2, TCCR2_COM20) ;
+				CLR_BIT(TIMER2->TCCR2, TCCR2_COM21) ;
+		#elif TIMER2_CTC_PWM_MODE == TIMER_CLR_ON_CTC_SET_ON_TOP
+				CLR_BIT(TIMER2->TCCR2, TCCR2_COM20) ;
+				SET_BIT(TIMER2->TCCR2, TCCR2_COM21) ;
+		#elif TIMER2_CTC_PWM_MODE == TIMER_SET_ON_CTC_CLR_ON_TOP
+				SET_BIT(TIMER2->TCCR2, TCCR2_COM20) ;
+				SET_BIT(TIMER2->TCCR2, TCCR2_COM21) ;
+		#else
+				#error "Wrong TIMER2_CTC_PWM_MODE Config"
+		#endif
 		/* 3-Set the Required CTC Value*/
-
+		(*(TIMER2->OCR2)) = TIMER2_CTC_VAL;
 	#elif TIMER2_WAVEFORM_GENERATION_MODE == TIMER2_CTC_MODE
 		/* 1-Setting CTC_MODE*/	
 		CLR_BIT(TIMER2->TCCR2, TCCR2_WGM20);
 		SET_BIT(TIMER2->TCCR2, TCCR2_WGM21);
 		/* 2-Set the Required CTC Value*/
+		(*(TIMER2->OCR2)) = TIMER2_CTC_VAL;
 		/* 3-Timer2 Compare Match Interrupt Enable*/
-		
+		#if   TIMER2_CTC_INTERRUPT == DISABLE
+			CLR_BIT(TIMSK, TIMER2_TIMSK_OCIE2);
+		#elif TIMER2_CTC_INTERRUPT == ENABLE
+			SET_BIT(TIMSK, TIMER2_TIMSK_OCIE2);
+		#else
+			#error "Wrong TIMER2_CTC_INTERRUPT Config"
+		#endif	
 	#elif TIMER2_WAVEFORM_GENERATION_MODE == TIMER2_FAST_PWM_MODE
 		/* 1-Setting FAST_PWM_MODE*/	
 		SET_BIT(TIMER2->TCCR2, TCCR2_WGM20);
 		SET_BIT(TIMER2->TCCR2, TCCR2_WGM21);	
-		/* 2-Set CTC Fast PWM MODE*/
+		/* 2-Set CTC Fast PWM MODE*/		
+		#if   TIMER2_CTC_PWM_MODE == TIMER_OC_DISCONNECTED
+				CLR_BIT(TIMER2->TCCR2, TCCR2_COM20);
+				CLR_BIT(TIMER2->TCCR2, TCCR2_COM21);
+		#elif TIMER2_CTC_PWM_MODE == TIMER_CLR_ON_CTC_SET_ON_TOP
+				CLR_BIT(TIMER2->TCCR2, TCCR2_COM20);
+				SET_BIT(TIMER2->TCCR2, TCCR2_COM21);
+		#elif TIMER2_CTC_PWM_MODE == TIMER_SET_ON_CTC_CLR_ON_TOP
+				SET_BIT(TIMER2->TCCR2, TCCR2_COM20);
+				SET_BIT(TIMER2->TCCR2, TCCR2_COM21);
+		#else
+				#error "Wrong TIMER2_CTC_PWM_FAST_MODE Config"
+		#endif	
 		/* 3-Set the Required CTC Value*/
-
+		(*(TIMER2->OCR2)) = TIMER2_CTC_VAL;
 	#else
 		#error "Wrong TIMER2_WAVEFORM_GENERATION_MODE Config"
 	#endif	
 	
 	/*Set the Required Prescaler*/	
-	(*(TIMER2->TCCR2)) &= TIMER2_PRESCALER_MASK;
-	(*(TIMER2->TCCR2)) |= TIMER2_PRESCALER;	
+	((TIMER2->TCCR2)) &= TIMER2_PRESCALER_MASK;
+	((TIMER2->TCCR2)) |= TIMER2_PRESCALER;	
 }
 
 /*------- WDT APIs Implementation ----------*/

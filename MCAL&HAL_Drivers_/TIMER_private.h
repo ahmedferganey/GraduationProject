@@ -27,7 +27,7 @@
 
 //////////////////////////////////////////////////////////////////////////////////
 /*	!COMMENT:						Timer/Counter1								*/
-!/*	!COMMENT: TCCR1A – Timer/Counter1 Control Register A */
+/*	!COMMENT: TCCR1A – Timer/Counter1 Control Register A */
 #define TCCR1A_WGM10		0	/* Waveform Generation Mode*/
 #define TCCR1A_WGM11		1	/* Waveform Generation Mode*/
 #define TCCR1A_COM1B0		4	/* Compare Output Mode for Compare unit B*/
@@ -36,7 +36,7 @@
 #define TCCR1A_COM1A1		7	/* Compare Output Mode for Compare unit A*/
 #define TCCR1A_FOC1B		2	/* Force Output Compare for Compare unit B*/
 #define TCCR1A_FOC1A		3	/* Force Output Compare for Compare unit A*/
-!/*	!COMMENT: TCCR1B – Timer/Counter1 Control Register B */
+/*	!COMMENT: TCCR1B – Timer/Counter1 Control Register B */
 #define TCCR1B_CS10			0	
 #define TCCR1B_CS11			1
 #define TCCR1B_CS12			2
@@ -68,15 +68,15 @@
 #define TIMER2_DIVISION_FACTOR_1024		7
 //////////////////////////////////////////////////////////////////////////////////
 /*	!COMMENT:			COMMON													*/
-!/*	!COMMENT: TIMSK - Timer/Counter Interrupt Mask Register */
+/*	!COMMENT: TIMSK - Timer/Counter Interrupt Mask Register */
 #define TIMER0_TIMSK_TOIE0	0	/*TIMER0 Overflow Interrupt Enable*/
 #define TIMER0_TIMSK_OCIE0	1	/*TIMER0 Output Compare Match Interrupt Enable*/
 #define TIMER1_TIMSK_TOIE1	2	/*TIMER1 Overflow Interrupt Enable*/
 #define TIMER1_TIMSK_OCIE1B 3   /*TIMER1 Output Compare B Match Interrupt Enable*/
 #define TIMER1_TIMSK_OCIE1A 4   /*TIMER1 Output Compare A Match Interrupt Enable*/
 #define TIMER1_TIMSK_TICIE1 5   /*TIMER1 Input Capture Interrupt Enable */
-#define TIMER_
-#define TIMER_
+#define TIMER2_TIMSK_TOIE2	6	/*TIMER2 Overflow Interrupt Enable */
+#define TIMER2_TIMSK_OCIE2	7	/*TIMER2 Output Compare Match Interrupt Enable */
 /*	!COMMENT: Setting Prescaler "TIMER<0,1>_TCCR0_CS0<0,1,2>" */
 #define TIMER01_PRESCALER_MASK					          0b11111000 	
 #define TIMER01_NO_CLOCK_SOURCE                           0
@@ -94,7 +94,7 @@
 
 //////////////////////////////////////////////////////////////////////////////////
 /*	!COMMENT:			WATCH DOG Timer											*/
-!/*	!COMMENT: */
+/*	!COMMENT: */
 
 //////////////////////////////////////////////////////////////////////////////////
 
