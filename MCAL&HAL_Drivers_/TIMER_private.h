@@ -37,14 +37,14 @@
 #define TCCR1A_FOC1B		2	/* Force Output Compare for Compare unit B*/
 #define TCCR1A_FOC1A		3	/* Force Output Compare for Compare unit A*/
 !/*	!COMMENT: TCCR1B – Timer/Counter1 Control Register B */
-#define TCCR1B_CS10			0
+#define TCCR1B_CS10			0	
 #define TCCR1B_CS11			1
 #define TCCR1B_CS12			2
 #define TCCR1B_WGM12		3	/* Waveform Generation Mode*/
 #define TCCR1B_WGM13		4	/* Waveform Generation Mode*/
 #define TCCR1B_COM1A1		5	/*this bit read only bit*/
-#define TCCR1B_ICES1		6
-#define TCCR1B_ICNC1		7
+#define TCCR1B_ICES1		6	/*Input Capture Edge Select*/
+#define TCCR1B_ICNC1		7	/*Input Capture Noise Canceler*/
 //////////////////////////////////////////////////////////////////////////////////
 /*	!COMMENT:						Timer/Counter2								*/
 /*	!COMMENT: TCCR2 – Timer/Counter Control Register"BITS#" */
@@ -69,11 +69,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 /*	!COMMENT:			COMMON													*/
 !/*	!COMMENT: TIMSK - Timer/Counter Interrupt Mask Register */
-#define TIMER0_TIMSK_TOIE0	0	/* Overflow Interrupt Enable */
-#define TIMER0_TIMSK_OCIE0	1	/* Output Compare Match Interrupt Enable */
-#define TIMER_
-#define TIMER_
-#define TIMER_
+#define TIMER0_TIMSK_TOIE0	0	/*TIMER0 Overflow Interrupt Enable*/
+#define TIMER0_TIMSK_OCIE0	1	/*TIMER0 Output Compare Match Interrupt Enable*/
+#define TIMER1_TIMSK_TOIE1	2	/*TIMER1 Overflow Interrupt Enable*/
+#define TIMER1_TIMSK_OCIE1B 3   /*TIMER1 Output Compare B Match Interrupt Enable*/
+#define TIMER1_TIMSK_OCIE1A 4   /*TIMER1 Output Compare A Match Interrupt Enable*/
+#define TIMER1_TIMSK_TICIE1 5   /*TIMER1 Input Capture Interrupt Enable */
 #define TIMER_
 #define TIMER_
 /*	!COMMENT: Setting Prescaler "TIMER<0,1>_TCCR0_CS0<0,1,2>" */

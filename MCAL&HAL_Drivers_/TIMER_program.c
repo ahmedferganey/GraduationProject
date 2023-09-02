@@ -158,30 +158,116 @@ void
 			CLR_BIT(TIMER1->TCCR1B, TCCR1B_WGM12);
 			CLR_BIT(TIMER1->TCCR1B, TCCR1B_WGM13);
 		/* 2-Setting Preload value*/	
-		/* 3-Timer1 Overflow Interrupt Enable*/
+			TCNT1 = TIMER1_PRELOAD_VAL;
+		/* 3-Timer1 Overflow Interrupt Enable*/	
+			#if TIMER1_OVERFLOW_INTERRUPT == DISABLE
+				CLE_BIT(TIMSK, TIMER1_TIMSK_TOIE1);
+			#elif TIMER1_OVERFLOW_INTERRUPT == ENABLE
+				SET_BIT(TIMSK, TIMER1_TIMSK_TOIE1);
+			#else
+				#error "Wrong TIMER1_OVERFLOW_INTERRUPT Config"
+			#endif	
 			
 	#elif (TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_CTC_OCR1A_MODE) || (TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_CTC_ICR1_MODE)
 		/* 1-Setting as CTC modes*/	
+		/* TWO states have the same values of the first 3 bits WGM1<0,1,2>*/
+			CLR_BIT(TCCR1A,TCCR1A_WGM10);
+			CLR_BIT(TCCR1A,TCCR1A_WGM11);
+			SET_BIT(TCCR1B,TCCR1B_WGM12);
 			#if TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_CTC_OCR1A_MODE
-				CLR_BIT(TIMER1->TCCR1A, TCCR1A_WGM10);
-				CLR_BIT(TIMER1->TCCR1A, TCCR1A_WGM11);
-				SET_BIT(TIMER1->TCCR1B, TCCR1B_WGM12);
 				CLR_BIT(TIMER1->TCCR1B, TCCR1B_WGM13);				
 			#elif TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_CTC_ICR1_MODE
-				CLR_BIT(TIMER1->TCCR1A, TCCR1A_WGM10);
-				CLR_BIT(TIMER1->TCCR1A, TCCR1A_WGM11);
-				SET_BIT(TIMER1->TCCR1B, TCCR1B_WGM12);
 				SET_BIT(TIMER1->TCCR1B, TCCR1B_WGM13);
 			#else
 				#error "Wrong TIMER1_WAVEFORM_GENERATION_MODE Config"
 			#endif
 		/* 2-Set the require CTC Values*/
-		/* 3-Set ICR1 if TIMER1_CTC_OCR1A_MODE = TIMER1_CTC_ICR1_MODE*/
+		/* !Comment: note every macro accsess 16bit Regsiter
+					 The double buffered Output Compare Registers (OCR1A/B) are compared 
+					 with the Timer/Counter value at all time.The result of the compare 
+					 can be used by the Waveform Generator to generate a PWM or variable
+					 frequency output on the Output Compare pin (OC1A/B). Refer to 
+					 “Output Compare Units” on page 101. The compare match event will 
+					 also set the Compare Match Flag (OCF1A/B)which can be used to 
+					 generate an output compare interrupt request.*/
+		/* !Comment: you can use these two registers to interrupt on OCnA & OCnB*/
+			OCR1A = TIMER1_CTCA_VAL;
+			OCR1B = TIMER1_CTCB_VAL;
+		/* 3-Set ICR1 if TIMER1_WAVEFORM_GENERATION_MODE = TIMER1_CTC_ICR1_MODE*/
+		/* !Comment: Bit 6 – ICES1: Input Capture Edge Select    
+					 This bit selects which edge on the Input Capture 
+					 Pin (ICP1) that is used to trigger a capture event.
+					 When the ICES1 bit is written to zero, a falling 
+					 (negative) edge is used as trigger, and when the 
+					 ICES1 bit is written to one, arising (positive) edge 
+					 will trigger the capture*/
+		/* !Comment: When a capture is triggered according to the ICES1 
+					 setting, the counter value is copied into the Input Capture 
+					 Register (ICR1). The event will also set the Input Capture
+					 Flag (ICF1), and this can be used to cause an Input 
+					 CaptureInterrupt, if this interrupt is enabled.*/
+			#if TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_CTC_ICR1_MODE
+				(uint16(*(TIMER1->ICR1L))) = TIMER1_ICR1_VAL;
+				#if TIMER1_ICR_EDGE == RISING_EDGE
+					SET_BIT(TIMER1->TCCR1B , TCCR1B_ICES1);
+				#elif TIMER1_ICR_EDGE == FALLING_EDGE
+					CLR_BIT(TIMER1->TCCR1B , TCCR1B_ICES1);
+				#else
+				#error "Wrong TIMER1_ICR_EDGE Config"
+				#endif
+	
+			#else
+				/*Do nothing*/
+			#endif					 			
 		/* 4-Set OCR1A mode*/
-		/* 5-Set OCR1B mode*/  
+			#if   TIMER1_OCR1A_MODE == TIMER_OC_DISCONNECTED
+			CLR_BIT(TIMER1->TCCR1A, TCCR1A_COM1A0);
+			CLR_BIT(TIMER1->TCCR1A, TCCR1A_COM1A1);
+			#elif TIMER1_OCR1A_MODE == TIMER_OC_TOGGEL
+			SET_BIT(TIMER1->TCCR1A, TCCR1A_COM1A0);
+			CLR_BIT(TIMER1->TCCR1A, TCCR1A_COM1A1);		
+			#elif TIMER1_OCR1A_MODE == TIMER_OC_LOW
+			CLR_BIT(TIMER1->TCCR1A, TCCR1A_COM1A0);
+			SET_BIT(TIMER1->TCCR1A, TCCR1A_COM1A1);			
+			#elif TIMER1_OCR1A_MODE == TIMER_OC_HIGH
+			SET_BIT(TIMER1->TCCR1A, TCCR1A_COM1A0);
+			SET_BIT(TIMER1->TCCR1A, TCCR1A_COM1A1);			
+			#else
+				#error "Wrong TIMER1_OCR1A_MODE Config"
+			#endif			
+		/* 5-Set OCR1B mode*/
+			#if   TIMER1_OCR1B_MODE == TIMER_OC_DISCONNECTED	
+			CLR_BIT(TIMER1->TCCR1A, TCCR1A_COM1B0);
+			CLR_BIT(TIMER1->TCCR1A, TCCR1A_COM1B1);			
+			#elif TIMER1_OCR1B_MODE == TIMER_OC_TOGGEL
+			SET_BIT(TIMER1->TCCR1A, TCCR1A_COM1B0);
+			CLR_BIT(TIMER1->TCCR1A, TCCR1A_COM1B1);			
+			#elif TIMER1_OCR1B_MODE == TIMER_OC_LOW
+			CLR_BIT(TIMER1->TCCR1A, TCCR1A_COM1B0);
+			SET_BIT(TIMER1->TCCR1A, TCCR1A_COM1B1);			
+			#elif TIMER1_OCR1B_MODE == TIMER_OC_HIGH
+			SET_BIT(TIMER1->TCCR1A, TCCR1A_COM1B0);
+			SET_BIT(TIMER1->TCCR1A, TCCR1A_COM1B1);			
+			#else
+				#error "Wrong TIMER1_OCR1B_MODE Config"
+			#endif				
 		/* 6-Timer1 CTC Interrupt Enable*/	
+			#if TIMER1_CTCA_INTERRUPT == DISABLE			
+				CLR_BIT(TIMSK, TIMER1_TIMSK_OCIE1A);
+			#elif TIMER1_CTCA_INTERRUPT == ENABLE
+				SET_BIT(TIMSK, TIMER1_TIMSK_OCIE1A);			
+			#else
+				#error "Wrong TIMER1_CTCA_INTERRUPT Config"
+			#endif		
+			#if TIMER1_CTCA_INTERRUPT == DISABLE
+				CLR_BIT(TIMSK, TIMER1_TIMSK_OCIE1B);			
+			#elif TIMER1_CTCA_INTERRUPT == ENABLE
+				SET_BIT(TIMSK, TIMER1_TIMSK_OCIE1B);						
+			#else
+				#error "Wrong TIMER1_CTCA_INTERRUPT Config"
+			#endif			
 		
-	#elif (TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_PWM_PHASE_CORRECT_OCR1A_MODE) || (TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_PWM_PHASE_CORRECT_ICR1_MODE) || (TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_PWM_PHASE_AND_FREQ_CORRECT_OCR1A_MODE) ||(TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_PWM_PHASE_AND_FREQ_CORRECT_ICR1_MODE) || (TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_PWM_10_BIT_MODE) || (TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_PWM_9_BIT_MODE) || (TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_PWM_8_BIT_MODE)
+	#elif ((TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_PWM_PHASE_CORRECT_OCR1A_MODE) || (TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_PWM_PHASE_CORRECT_ICR1_MODE) || (TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_PWM_PHASE_AND_FREQ_CORRECT_OCR1A_MODE) ||(TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_PWM_PHASE_AND_FREQ_CORRECT_ICR1_MODE) || (TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_PWM_10_BIT_MODE) || (TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_PWM_9_BIT_MODE) || (TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_PWM_8_BIT_MODE))
 		/* 1-Setting as PWM modes*/	
 			#if TIMER1_WAVEFORM_GENERATION_MODE	  == TIMER1_PWM_8_BIT_MODE
 				CLR_BIT(TIMER1->TCCR1A, TCCR1A_WGM10);
@@ -220,14 +306,86 @@ void
 				SET_BIT(TIMER1->TCCR1B, TCCR1B_WGM13);			
 			#else
 				#error "Wrong TIMER1_WAVEFORM_GENERATION_MODE Config"
-			#endif
-		/* 2-Set the require CTC Values*/
+			#endif			
+		/* 2-Set the required CTC Values*/
+			OCR1A = TIMER1_CTCA_VAL;
+			OCR1B = TIMER1_CTCB_VAL;		
 		/* 3-Set ICR1*/
+			#if ((TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_PWM_PHASE_CORRECT_ICR1_MODE) || (TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_PWM_PHASE_AND_FREQ_CORRECT_ICR1_MODE))
+				(uint16(*(TIMER1->ICR1L))) = TIMER1_ICR1_VAL;
+				#if TIMER1_ICR_EDGE == RISING_EDGE
+					SET_BIT(TIMER1->TCCR1B , TCCR1B_ICES1);
+				#elif TIMER1_ICR_EDGE == FALLING_EDGE
+					CLR_BIT(TIMER1->TCCR1B , TCCR1B_ICES1);
+				#else
+				#error "Wrong TIMER1_ICR_EDGE Config"
+				#endif
+			#else
+				/*Do nothing*/
+			#endif		
 		/* 4-Set OCR1A mode*/
+			#if   TIMER1_OCR1A_MODE == TIMER_OC_DISCONNECTED
+			CLR_BIT(TIMER1->TCCR1A, TCCR1A_COM1A0);
+			CLR_BIT(TIMER1->TCCR1A, TCCR1A_COM1A1);	
+			#elif TIMER1_OCR1A_MODE == TIMER_CLR_ON_CTC_SET_ON_TOP
+			CLR_BIT(TIMER1->TCCR1A, TCCR1A_COM1A0);
+			SET_BIT(TIMER1->TCCR1A, TCCR1A_COM1A1);			
+			#elif TIMER1_OCR1A_MODE == TIMER_SET_ON_CTC_CLR_ON_TOP
+			SET_BIT(TIMER1->TCCR1A, TCCR1A_COM1A0);
+			SET_BIT(TIMER1->TCCR1A, TCCR1A_COM1A1);			
+			#else
+				#error "Wrong TIMER1_OCR1A_MODE Config"
+			#endif			
 		/* 5-Set OCR1B mode*/
+			#if   TIMER1_OCR1B_MODE == TIMER_OC_DISCONNECTED	
+			CLR_BIT(TIMER1->TCCR1A, TCCR1A_COM1B0);
+			CLR_BIT(TIMER1->TCCR1A, TCCR1A_COM1B1);					
+			#elif TIMER1_OCR1B_MODE == TIMER_CLR_ON_CTC_SET_ON_TOP
+			CLR_BIT(TIMER1->TCCR1A, TCCR1A_COM1B0);
+			SET_BIT(TIMER1->TCCR1A, TCCR1A_COM1B1);			
+			#elif TIMER1_OCR1B_MODE == TIMER_CLR_ON_CTC_SET_ON_TOP
+			SET_BIT(TIMER1->TCCR1A, TCCR1A_COM1B0);
+			SET_BIT(TIMER1->TCCR1A, TCCR1A_COM1B1);			
+			#else
+				#error "Wrong TIMER1_OCR1B_MODE Config"
+			#endif			
 		/* 6-Timer1 PWM Interrupt Enable*/
-		
-		
+		/* !Comment: we can get interrupt for PWM modes (7) whether 
+					 - Phase Correct
+					 - Phase and Frequency Correct
+					 through 4 sources.
+		*/
+			#if TIMER1_OVERFLOW_INTERRUPT == DISABLE
+				CLE_BIT(TIMSK, TIMER1_TIMSK_TOIE1);
+			#elif TIMER1_OVERFLOW_INTERRUPT == ENABLE
+				SET_BIT(TIMSK, TIMER1_TIMSK_TOIE1);
+			#else
+				#error "Wrong TIMER1_OVERFLOW_INTERRUPT Config"
+			#endif
+
+			#if TIMER1_CTCA_INTERRUPT == DISABLE			
+				CLR_BIT(TIMSK, TIMER1_TIMSK_OCIE1A);
+			#elif TIMER1_CTCA_INTERRUPT == ENABLE
+				SET_BIT(TIMSK, TIMER1_TIMSK_OCIE1A);			
+			#else
+				#error "Wrong TIMER1_CTCA_INTERRUPT Config"
+			#endif	
+			
+			#if TIMER1_CTCA_INTERRUPT == DISABLE
+				CLR_BIT(TIMSK, TIMER1_TIMSK_OCIE1B);			
+			#elif TIMER1_CTCA_INTERRUPT == ENABLE
+				SET_BIT(TIMSK, TIMER1_TIMSK_OCIE1B);						
+			#else
+				#error "Wrong TIMER1_CTCA_INTERRUPT Config"
+			#endif
+			
+			#if TIMER1_ICR_INTERRUPT == DISABLE
+				CLR_BIT(TIMSK, TIMER1_TIMSK_TICIE1);
+			#elif TIMER1_ICR_INTERRUPT == ENABLE
+				SET_BIT(TIMSK, TIMER1_TIMSK_TICIE1);
+			#else
+				#error "Wrong TIMER1_ICR1_INTERRUPT Config"
+			#endif		
 	#elif (TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_FAST_PWM_OCR1A_MODE) || (TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_FAST_PWM_ICR1_MODE) || (TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_FAST_PWM_10_BIT_MODE) || (TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_FAST_PWM_9_BIT_MODE) || (TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_FAST_PWM_8_BIT_MODE)
 		/* 1-Setting Fast PWM modes*/	
 			#if   TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_FAST_PWM_8_BIT_MODE
@@ -258,19 +416,87 @@ void
 			#else
 				#error "Wrong TIMER1_WAVEFORM_GENERATION_MODE Config"
 			#endif	
-			/*Set the require CTC Values*/
-			/*Set ICR1*/
-			/*Set OCR1A mode*/
-			/*Set OCR1B mode*/
-			/*Timer1 PWM Interrupt Enable*/
-		
-	
+		/* 2-Set the required CTC Values*/
+			OCR1A = TIMER1_CTCA_VAL;
+			OCR1B = TIMER1_CTCB_VAL;		
+		/* 3-Set ICR1*/
+			#if ((TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_PWM_PHASE_CORRECT_ICR1_MODE) || (TIMER1_WAVEFORM_GENERATION_MODE == TIMER1_PWM_PHASE_AND_FREQ_CORRECT_ICR1_MODE))
+				(uint16(*(TIMER1->ICR1L))) = TIMER1_ICR1_VAL;
+				#if TIMER1_ICR_EDGE == RISING_EDGE
+					SET_BIT(TIMER1->TCCR1B , TCCR1B_ICES1);
+				#elif TIMER1_ICR_EDGE == FALLING_EDGE
+					CLR_BIT(TIMER1->TCCR1B , TCCR1B_ICES1);
+				#else
+				#error "Wrong TIMER1_ICR_EDGE Config"
+				#endif
+			#else
+				/*Do nothing*/
+			#endif		
+		/* 4-Set OCR1A mode*/
+			#if   TIMER1_OCR1A_MODE == TIMER_OC_DISCONNECTED
+			CLR_BIT(TIMER1->TCCR1A, TCCR1A_COM1A0);
+			CLR_BIT(TIMER1->TCCR1A, TCCR1A_COM1A1);	
+			#elif TIMER1_OCR1A_MODE == TIMER_CLR_ON_CTC_SET_ON_TOP
+			CLR_BIT(TIMER1->TCCR1A, TCCR1A_COM1A0);
+			SET_BIT(TIMER1->TCCR1A, TCCR1A_COM1A1);			
+			#elif TIMER1_OCR1A_MODE == TIMER_SET_ON_CTC_CLR_ON_TOP
+			SET_BIT(TIMER1->TCCR1A, TCCR1A_COM1A0);
+			SET_BIT(TIMER1->TCCR1A, TCCR1A_COM1A1);			
+			#else
+				#error "Wrong TIMER1_OCR1A_MODE Config"
+			#endif			
+		/* 5-Set OCR1B mode*/
+			#if   TIMER1_OCR1B_MODE == TIMER_OC_DISCONNECTED	
+			CLR_BIT(TIMER1->TCCR1A, TCCR1A_COM1B0);
+			CLR_BIT(TIMER1->TCCR1A, TCCR1A_COM1B1);					
+			#elif TIMER1_OCR1B_MODE == TIMER_CLR_ON_CTC_SET_ON_TOP
+			CLR_BIT(TIMER1->TCCR1A, TCCR1A_COM1B0);
+			SET_BIT(TIMER1->TCCR1A, TCCR1A_COM1B1);			
+			#elif TIMER1_OCR1B_MODE == TIMER_CLR_ON_CTC_SET_ON_TOP
+			SET_BIT(TIMER1->TCCR1A, TCCR1A_COM1B0);
+			SET_BIT(TIMER1->TCCR1A, TCCR1A_COM1B1);			
+			#else
+				#error "Wrong TIMER1_OCR1B_MODE Config"
+			#endif			
+		/* 6-Timer1 fast PWM Interrupt Enable*/
+		/* !Comment: we can get interrupt for fast PWM modes through 4 sources.*/
+			#if TIMER1_OVERFLOW_INTERRUPT == DISABLE
+				CLE_BIT(TIMSK, TIMER1_TIMSK_TOIE1);
+			#elif TIMER1_OVERFLOW_INTERRUPT == ENABLE
+				SET_BIT(TIMSK, TIMER1_TIMSK_TOIE1);
+			#else
+				#error "Wrong TIMER1_OVERFLOW_INTERRUPT Config"
+			#endif
+
+			#if TIMER1_CTCA_INTERRUPT == DISABLE			
+				CLR_BIT(TIMSK, TIMER1_TIMSK_OCIE1A);
+			#elif TIMER1_CTCA_INTERRUPT == ENABLE
+				SET_BIT(TIMSK, TIMER1_TIMSK_OCIE1A);			
+			#else
+				#error "Wrong TIMER1_CTCA_INTERRUPT Config"
+			#endif	
+			
+			#if TIMER1_CTCA_INTERRUPT == DISABLE
+				CLR_BIT(TIMSK, TIMER1_TIMSK_OCIE1B);			
+			#elif TIMER1_CTCA_INTERRUPT == ENABLE
+				SET_BIT(TIMSK, TIMER1_TIMSK_OCIE1B);						
+			#else
+				#error "Wrong TIMER1_CTCA_INTERRUPT Config"
+			#endif
+			
+			#if TIMER1_ICR_INTERRUPT == DISABLE
+				CLR_BIT(TIMSK, TIMER1_TIMSK_TICIE1);
+			#elif TIMER1_ICR_INTERRUPT == ENABLE
+				SET_BIT(TIMSK, TIMER1_TIMSK_TICIE1);
+			#else
+				#error "Wrong TIMER1_ICR1_INTERRUPT Config"
+			#endif	
 	#else
 		#error "Wrong TIMER1_WAVEFORM_GENERATION_MODE Config"
 	#endif	
 	/*Set the Required Prescaler*/	
-	
-	
+	(*(TIMER1->TCCR1B)) &= TIMER01_PRESCALER_MASK;
+	(*(TIMER1->TCCR1B)) |= TIMER01_PRESCALER;
 }
 
 /*------- Timer2 APIs Implementation -------*/

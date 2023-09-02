@@ -108,6 +108,92 @@
 #define TIMER1_WAVEFORM_GENERATION_MODE		TIMER1_NORMAL_MODE
 
 
+/* !Comment: select whether you will enable or disable the interrupt for TIMER1
+			 Overflow Interrupt Enable
+			 Output Compare B Match Interrupt Enable:
+			 Output Compare A Match Interrupt Enable:
+			 Input Capture Interrupt Enable:
+								DISABLE		OR		ENABLE
+*/
+#define TIMER1_OVERFLOW_INTERRUPT			ENABLE
+#define TIMER1_CTCB_INTERRUPT				DISABLE
+#define TIMER1_CTCA_INTERRUPT				DISABLE
+#define TIMER1_ICR_INTERRUPT				DISABLE
+
+
+/* !Comment: Set Preload Value for Normal Mode*/
+#define TIMER1_PRELOAD_VAL					0
+
+
+/* !Comment: Set CTCA & CTCB Values*/
+#define TIMER1_CTCA_VAL						500
+#define TIMER1_CTCB_VAL						0
+
+
+/* !Comment: Input Capture Edge Select*/
+#define TIMER1_ICR1_VAL						20000
+/* !Comment: Set Timer1 Input Capture Noise Canceler:
+							DISABLE					 ENABLE
+*/
+#define TIMER1_ICR_NOISE_CANCELER			DISABLE
+/* !Comment: Set Timer1 Input Capture Edge:
+						FALLING_EDGE				 RISING_EDGE
+*/
+#define TIMER1_ICR_EDGE						RISING_EDGE
+
+
+/* !Comment: Compare Output Mode for Compare unit A & B ,controlling 
+			 the Output Compare pins (OC1A and OC1B).wheteher you are
+			 in CTC Mode OR PWM OR FAST PWM mode. so select one option
+			 according to your mode selection. 
+				    CTC mode				||			PWM & FAST PWM mode
+				-TIMER_OC_DISCONNECTED			    -OC1A/OC1B disconnected
+                -TIMER_OC_TOGGEL					-  
+                -TIMER_OC_LOW					    -TIMER_CLR_ON_CTC_SET_ON_TOP
+				-TIMER_OC_HIGH					    -TIMER_SET_ON_CTC_CLR_ON_TOP
+*/
+#define TIMER1_OCR1A_MODE					TIMER_CLR_ON_CTC_SET_ON_TOP
+#define TIMER1_OCR1B_MODE					TIMER_CLR_ON_CTC_SET_ON_TOP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //////////////////////////////////////////////////////////////////////////////////
@@ -148,6 +234,8 @@
 				TIMER01_T0_EXTERNAL_CLOCK_SOURCE_FALLING
 				TIMER01_T0_EXTERNAL_CLOCK_SOURCE_RISING 
 */
+/* !Comment: i know this tehnique will force the user to work on the same prescaler
+			 for timer 0,1 but i like to ensure the concept of configuarability */
 #define TIMER01_PRESCALER		TIMER01_DIVISION_FACTOR_8
 
 
