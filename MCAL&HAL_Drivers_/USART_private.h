@@ -16,6 +16,7 @@
 #define USART  	((USART_t*)0x29)			/* point to "UBRRL UCSRB UCSRA UDR"	*/
 #define UCSRC  	(*(volatile uint8*)0x40)	/* Access UCSRC	*/
 #define UBRRH  	(*(volatile uint8*)0x40)	/* Access UBRRH	*/
+#define UBRRL  	(*(volatile uint8*)0x29)	/* Access UBRRL	*/
 
 
 #define UCSRA_RXC		7
@@ -46,6 +47,7 @@
 #define UCSRC_UCSZ1		2
 #define UCSRC_UCSZ0		1
 #define UCSRC_UCPOL		0
+
 
 #define UBRRH_URSEL		7
 
