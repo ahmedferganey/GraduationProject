@@ -16,6 +16,10 @@
 
 
 /* -------------------------------- Global Variables ---------------------------------------*/
+/* !Comment: Global Pointer to array of Function to Hold the Call Back Function 
+			 Address for Timer, there are 8 sources of interrupt */
+static void (*TIMERS_pvCallBackFunc[7])(void) = {NULL};  
+
 
 
 
@@ -140,6 +144,31 @@ void
 	/*Set the Required Prescaler*/	
 	TCCR0 &= TIMER01_PRESCALER_MASK;
 	TCCR0 |= TIMER01_PRESCALER;	
+}
+/*--- Timer0 SetPreload ---*/
+void TIMER0_vdSetPreload 
+(
+uint8 Copy_u8Preload
+)
+{
+	TCNT0 = Copy_u8Preload;	
+}
+/*--- Timer0 SetCTC ---*/
+void TIMER0_vdSetCTC 
+(
+uint8 Copy_u8CTC
+)
+{
+	OCR0 = Copy_u8CTC;	
+}
+/*--- Timer0 GetTimerCounterValue ---*/
+uint8 TIMER0_u8GetTimerCounterValue 
+(
+void
+)
+{
+	return TCNT0 ;
+	
 }
 
 /*------- Timer1 APIs Implementation -------*/
@@ -498,6 +527,114 @@ void
 	((TIMER1->TCCR1B)) &= TIMER01_PRESCALER_MASK;
 	((TIMER1->TCCR1B)) |= TIMER01_PRESCALER;
 }
+/*--- Timer1 SetPreload ---*/
+void TIMER1_vdSetPreload 
+(
+uint16 Copy_u16Preload
+)
+{
+	TCNT1 = Copy_u16Preload ;	
+}
+/*--- Timer1 SetCTCA ---*/
+void TIMER1_vdSetCTCA 
+(
+uint16 Copy_u16CTCA
+)
+{
+	OCR1A = Copy_u16CTCA ;
+}
+/*--- Timer1 SetCTCB ---*/
+void TIMER1_vdSetCTCB 
+(
+uint16 Copy_u16CTCB
+)
+{
+	OCR1B = Copy_u16CTCB ;	
+}
+/*--- Timer1 SetICR1 ---*/
+void TIMER1_vdSetICR1 
+(
+uint16 Copy_u16ICR1
+)
+{
+	ICR1 = Copy_u16ICR1 ;
+}
+/*--- Timer1 GetTimerCounterValue  ---*/
+uint16  TIMER1_u16GetTimerCounterValue 
+(
+void
+)
+{
+	return TCNT1 ;
+}
+/*---------- ICU APIs ----------*/
+/*------ ICUInitEnable ------*/
+/* --- (prebuild) ---*/
+void TIMER_vdICUInitEnable
+(
+void
+)
+{
+	/* Set trigger source as rising edge Initially  */
+	#if  (TIMER_ICP_INIT_STATE == TIMER_ICP_RAISING_EDGE)
+		SET_BIT(TIMER1->TCCR1B, TCCR1B_ICES1);
+	#elif(TIMER_ICP_INIT_STATE == TIMER_ICP_RAISING_EDGE)
+		CLR_BIT(TIMER1->TCCR1B, TCCR1B_ICES1);
+	#endif
+	
+	/* Enable Interrupt of ICU */
+	SET_BIT(TIMSK, TIMER1_TIMSK_TICIE1);	
+}
+/*------ ICU_ChangeTriggerEdge ------*/
+/*  (postbuild) Func arguments :-
+	 1- TIMER_u8_ICP_RAISING_EDGE
+	 2- TIMER_u8_ICP_FALLING_EDGE
+*/
+Std_ReturnType TIMER_udtICUSetTriggerEdge
+(
+uint8 Copy_u8Edge
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	
+	switch(Copy_u8Edge)
+	{
+		case TIMER_u8_ICP_RAISING_EDGE: SET_BIT(TIMER1->TCCR1B, TCCR1B_ICES1);
+										udtReturnValue = E_OK;
+										break;
+		case TIMER_u8_ICP_FALLING_EDGE: CLR_BIT(TIMER1->TCCR1B, TCCR1B_ICES1);
+										udtReturnValue = E_OK;
+										break;
+		default:		  				/* !Comment: Do nothing */
+										break;		
+	}
+	return udtReturnValue;	
+}	
+/*--- ICUEnableInterrupt ---*/
+void TIMER_vdICUEnableInterrupt
+(
+void
+)
+{
+	SET_BIT(TIMSK, TIMER1_TIMSK_TICIE1);	
+}
+/*--- CUDisableInterrupt ---*/
+void TIMER_vdICUDisableInterrupt
+(
+void
+)
+{
+	CLR_BIT(TIMSK, TIMER1_TIMSK_TICIE1);	
+}
+/*--- GetICR ---*/
+uint16  TIMER_u16GetICR
+(
+void
+)
+{
+	/* this register is 16 bit register */
+	return ICR1;	
+}
 
 /*------- Timer2 APIs Implementation -------*/
 void TIMER2_vdInit
@@ -582,7 +719,168 @@ void
 	((TIMER2->TCCR2)) &= TIMER2_PRESCALER_MASK;
 	((TIMER2->TCCR2)) |= TIMER2_PRESCALER;	
 }
+/*--- Timer2 SetPreload  ---*/
+void TIMER2_vdSetPreload 
+(
+uint8 Copy_u8Preload
+)
+{
+	(TIMER2->TCNT2) = Copy_u8Preload;	
+}
+/*--- Timer2 SetCTC  ---*/
+void TIMER2_vdSetCTC 
+(
+uint8 Copy_u8CTC
+)
+{
+	(TIMER2->OCR2) = Copy_u8CTC;	
+}
+/*--- Timer2 GetTimerCounterValue  ---*/
+uint8 TIMER2_u8GetTimerCounterValue 
+(
+void
+)
+{
+	return (TIMER2->TCNT2);	
+}
 
 /*------- WDT APIs Implementation ----------*/
+/*--- WDTSleep"PreBuildFunc" ---*/
+void TIMER_vdWDTSleep
+(
+void
+)
+{
+	/* CLear The Prescaler bits  */
+	WDTCR &= WDT_PS_MASKING;
+	/* Set The required prescaller */
+	WDTCR |= WDT_PRESCALER;
+}
+/*--- WDTEnable  ---*/
+void TIMER_vdWDTEnable 
+(
+void
+)
+{
+	SET_BIT(WDTCR, WDTCR_WDE); 
+}
+/*--- WDTDisable  ---*/
+void TIMER_vdWDTDisable
+(
+void
+)
+{
+	/* the following procedure must be followed:
+		1. In the same operation, write a logic one to WDTOE and WDE. 
+		   A logic one must be written to WDE even though it is set 
+		   to one before the disable operation starts.
+		2. Within the next four clock cycles, write a logic 0 to WDE. 
+		   This disables the Watchdog
+	*/
+		/* Set Bit 3&4 at the same CLK cycle  */
+	WDTCR |= WDT_DISABLE_MASKING;
+	/*WDTCR = CLR_BIT(WDTCR, WDTCR_WDE);*/ 
+	/* !Comment: cause i donot know number of req clock to implemet this line of code
+				 and it required to implemet it through next 4 cycles,
+				 I don't care for any value in this Reg Cuz I want to 
+				 Disable WDTCR_WDE = 0
+	*/
+	WDTCR = 0;
+	
+}
 
 /*------- Common APIs Implementation -------*/
+
+
+/*------- TIMER ISR Implementation -------*/
+/* call back function where app layer can use it to interrupt */
+Std_ReturnType TIMER_u8SetCallBack
+(
+void (*Copy_pvCallBackFunc)(void), 
+uint8 Copy_u8VectorID
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	if (Copy_pvCallBackFunc != NULL)
+	{
+		TIMERS_pvCallBackFunc[Copy_u8VectorID]= Copy_pvCallBackFunc;
+		udtReturnValue = E_OK;		
+	}
+	else
+	{
+		udtReturnValue = E_NOT_OK;
+	}
+	return udtReturnValue;
+}
+/* TIMER2 COMP ISR*/
+void __vector_4 (void)		__attribute__((signal)) ;
+void __vector_4 (void)
+{
+	if ( TIMERS_pvCallBackFunc[TIMER2_CTC_VECTOR_ID] != NULL)
+	{
+		TIMERS_pvCallBackFunc[TIMER2_CTC_VECTOR_ID]();
+	}	
+}
+/* TIMER2 OVF ISR*/
+void __vector_5 (void)		__attribute__((signal)) ;
+void __vector_5 (void)
+{
+	if ( TIMERS_pvCallBackFunc[TIMER2_OVF_VECTOR_ID] != NULL)
+	{
+		TIMERS_pvCallBackFunc[TIMER2_OVF_VECTOR_ID]();
+	}	
+}
+/* TIMER1 CAPT ISR*/
+void __vector_6 (void)		__attribute__((signal)) ;
+void __vector_6 (void)
+{
+	if ( TIMERS_pvCallBackFunc[TIMER1_ICU_VECTOR_ID] != NULL)
+	{
+		TIMERS_pvCallBackFunc[TIMER1_ICU_VECTOR_ID]();
+	}	
+}
+/* TIMER1 COMPA ISR*/
+void __vector_7 (void)		__attribute__((signal)) ;
+void __vector_7 (void)
+{
+	if ( TIMERS_pvCallBackFunc[TIMER1_CTCA_VECTOR_ID] != NULL)
+	{
+		TIMERS_pvCallBackFunc[TIMER1_CTCA_VECTOR_ID]();
+	}	
+}
+/* TIMER1 COMPB ISR*/
+void __vector_8 (void)		__attribute__((signal)) ;
+void __vector_8 (void)
+{
+	if ( TIMERS_pvCallBackFunc[TIMER1_CTCB_VECTOR_ID] != NULL)
+	{
+		TIMERS_pvCallBackFunc[TIMER1_CTCB_VECTOR_ID]();
+	}	
+}
+/* TIMER1 OVF ISR*/
+void __vector_9 (void)		__attribute__((signal)) ;
+void __vector_9 (void)
+{
+	if ( TIMERS_pvCallBackFunc[TIMER1_OVF_VECTOR_ID] != NULL)
+	{
+		TIMERS_pvCallBackFunc[TIMER1_OVF_VECTOR_ID]();
+	}	
+}
+/* TIMER0 COMP ISR*/
+void __vector_10 (void)		__attribute__((signal)) ;
+void __vector_10 (void)
+{
+	if ( TIMERS_pvCallBackFunc[TIMER0_CTC_VECTOR_ID] != NULL)
+	{
+		TIMERS_pvCallBackFunc[TIMER0_CTC_VECTOR_ID]();
+	}	
+}
+/* TIMER0 OVF ISR*/
+void __vector_11 (void)		__attribute__((signal)) ;
+void __vector_11 (void)
+{
+	if ( TIMERS_pvCallBackFunc[TIMER0_OVF_VECTOR_ID] != NULL)
+	{
+		TIMERS_pvCallBackFunc[TIMER0_OVF_VECTOR_ID]();
+	}
+}

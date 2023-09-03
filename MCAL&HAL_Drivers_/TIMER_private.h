@@ -94,7 +94,34 @@
 
 //////////////////////////////////////////////////////////////////////////////////
 /*	!COMMENT:			WATCH DOG Timer											*/
-/*	!COMMENT: */
+/*	!COMMENT: WDTCR Bits */
+#define		WDTCR_WDP0 			0
+#define		WDTCR_WDP1 			1
+#define		WDTCR_WDP2			2
+#define		WDTCR_WDE 			3
+#define		WDTCR_WDTOE 		4
+
+/*	!COMMENT: WDT Prescaler select  */
+#define		WDT_PS_MASKING			0b11111000
+#define		WDT_PS_16k				0
+#define		WDT_PS_32k      		1
+#define		WDT_PS_64k      		2
+#define		WDT_PS_128k 			3
+#define		WDT_PS_256k 			4
+#define		WDT_PS_512k 			5
+#define		WDT_PS_1024k			6
+#define		WDT_PS_2048k			7
+
+#define 	WDT_DISABLE_MASKING		0b00011000
+
+
+
+
+
+
+
+
+
 
 //////////////////////////////////////////////////////////////////////////////////
 

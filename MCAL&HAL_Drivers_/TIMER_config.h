@@ -247,18 +247,30 @@
 				TIMER01_T0_EXTERNAL_CLOCK_SOURCE_FALLING
 				TIMER01_T0_EXTERNAL_CLOCK_SOURCE_RISING 
 */
-/* !Comment: i know this tehnique will force the user to work on the same prescaler
+/* !Comment: this tehnique will force the user to work on the same prescaler
 			 for timer 0,1 but i like to ensure the concept of configuarability */
 #define TIMER01_PRESCALER		TIMER01_DIVISION_FACTOR_8
 
 
 
 //////////////////////////////////////////////////////////////////////////////////
-/*	!COMMENT:						WDT											*/
+/*	!COMMENT:						WDT	& ICU									*/
+/* !Comment: Set Timer Input Capture Edge:
+			 TIMER_ICP_RAISING_EDGE	 	||		TIMER_ICP_FALLING_EDGE
+*/
+#define TIMER_ICP_INIT_STATE      TIMER_ICP_RAISING_EDGE
 
-
-
-
+/* !Comment: WDT Prescaler select:		
+			WDT_PS_16k	   (@VCC 5 for 16.3 ms ) || (@VCC 3 for 17.1 ms )
+			WDT_PS_32k     (@VCC 5 for 32.5 ms ) || (@VCC 3 for 34.3 ms )
+			WDT_PS_64k     (@VCC 5 for 65   ms ) || (@VCC 3 for 68.5 ms )
+			WDT_PS_128k    (@VCC 5 for 0.13  s ) || (@VCC 3 for 0.14  s )
+			WDT_PS_256k    (@VCC 5 for 0.26  s ) || (@VCC 3 for 0.27  s )
+			WDT_PS_512k    (@VCC 5 for 0.52  s ) || (@VCC 3 for 0.55  s )
+			WDT_PS_1024k   (@VCC 5 for 1.0   s ) || (@VCC 3 for 1.1   s )
+			WDT_PS_2048k   (@VCC 5 for 2.1   s ) || (@VCC 3 for 2.2   s )
+*/
+#define WDT_PRESCALER      WDT_PS_1024k
 
 
 
