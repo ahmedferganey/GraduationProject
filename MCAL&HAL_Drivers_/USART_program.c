@@ -18,6 +18,8 @@
 
 
 /* -------------------------------- Global Variables ---------------------------------------*/
+/*Global flag for the USART Busy State*/
+static uint8 USART_u8State= STD_IDLE;
 
 
 
@@ -242,12 +244,43 @@ void
 /*           (E_OK)		  : The function done successfully									*/
 /*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
 /********************************************************************************************/
-uint8 USART_u8SendData 
+Std_ReturnType USART_udtSendData 
 (
 uint8 Copy_u8Data
 )
 {
-	
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	uint32 Local_u32TimeoutCounter = 0;
+	if (USART_u8State = STD_IDLE)
+	{
+		USART_u8State = STD_ACTIVE;
+		/*
+			 - TIMEOUT to avoid infinity loop.
+			 - Wait until a Transmiting complete or Timing out.
+		*/		
+		/* If UDRE is one, the buffer is empty */
+		while (((GETBIT(USART->UCSRA, UCSRA_UDRE) == 0) 
+			   && (Local_u32TimeoutCounter != USART_u32TIMEOUT)))
+		{
+			Local_u32TimeoutCounter++;
+		}
+		if (Local_u32TimeoutCounter == USART_u32TIMEOUT)
+		{
+			udtReturnValue = E_TIMEOUT;
+		}
+		else
+		{
+			/* store data in buffer */
+			(USART->UDR) = Copy_u8Data;
+			udtReturnValue = E_OK;		
+		}
+		USART_u8State = STD_IDLE;
+	}
+	else
+	{
+		udtReturnValue = E_PENDING;
+	}
+	return udtReturnValue;	
 }
 /********************************************************************************************/
 /*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
@@ -257,12 +290,54 @@ uint8 Copy_u8Data
 /*           (E_OK)		  : The function done successfully									*/
 /*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
 /********************************************************************************************/
-uint8 USART_u8RecevieData 
+Std_ReturnType USART_udtRecevieData 
 (
 uint8 * Copy_u8ReceviedData
 )
 {
-	
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	uint32 Local_u32TimeoutCounter = 0;
+	if (Copy_u8ReceviedData != NULL)
+	{
+		if (USART_u8State = STD_IDLE)
+		{
+			USART_u8State = STD_ACTIVE;
+			/*
+				- TIMEOUT to avoid infinity loop.
+				- Wait until a Receiving complete or Timing out.
+			*/		
+			/* 
+			This flag bit "UCSRA_RXC" is set when there are unread data 
+			in the receive buffer and cleared when the receive buffer 
+			is empty
+			*/
+			while (((GETBIT(USART->UCSRA, UCSRA_RXC) == 0) 
+				&& (Local_u32TimeoutCounter != USART_u32TIMEOUT)))
+			{
+				Local_u32TimeoutCounter++;
+			}
+			if (Local_u32TimeoutCounter == USART_u32TIMEOUT)
+			{
+				udtReturnValue = E_TIMEOUT;
+			}
+			else
+			{
+				/* store data in buffer */
+				* Copy_u8ReceviedData = (USART->UDR);
+				udtReturnValue = E_OK;		
+			}
+			USART_u8State = STD_IDLE;
+		}
+		else
+		{
+			udtReturnValue = E_PENDING;
+		}		
+	}
+	else
+	{
+		udtReturnValue = E_NOT_OK;
+	}
+	return udtReturnValue;	
 }
 
 /********************************************************************************************/

@@ -13,11 +13,6 @@
 
 
 /*-------------------------------- Macro Declarations ----------------------------------------------*/
-/* Enable / Disable EUSART Module */
-
-/* Selecting EUSART Working Mode */
-
-/* Baud Rate Generator Asynchronous Speed Mode */
 
 /*-------------------------------- Macro Functions Declarations ------------------------------------*/
 
@@ -31,12 +26,12 @@ void USART_voidInit
 void
 );
 
-uint8 USART_u8SendData 
+Std_ReturnType USART_udtSendData 
 (
 uint8 Copy_u8Data
 );  
 
-uint8 USART_u8RecevieData 
+Std_ReturnType USART_udtRecevieData 
 (
 uint8 * Copy_u8ReceviedData
 );  

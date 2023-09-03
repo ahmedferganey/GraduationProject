@@ -38,7 +38,8 @@ typedef	enum
 {
 	E_OK,
 	E_NOT_OK,
-	E_PENDING
+	E_PENDING,
+	E_TIMEOUT
 }Std_ReturnType;
 
 /* Comment!: Function Declarations */

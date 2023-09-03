@@ -70,6 +70,8 @@
 		DISABLE				ENABLE
 */
 #define USART_MPCM						DISABLE
+/*Set Timeout for Your functions*/
+#define USART_u32TIMEOUT	         	10000UL
 
 
 
