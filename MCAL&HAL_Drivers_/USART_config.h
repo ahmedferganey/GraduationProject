@@ -10,6 +10,10 @@
 
 
 /*-------------------------------- Macro Declarations ----------------------------------------------*/
+/*Set System Frequency*/
+#define SYSTEM_FREQUENCY				16000000UL
+
+
 
 /*-------------------------------- Macro Functions Declarations ------------------------------------*/
 
