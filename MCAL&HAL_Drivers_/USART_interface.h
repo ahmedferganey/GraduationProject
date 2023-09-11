@@ -14,10 +14,12 @@
 
 /*-------------------------------- Macro Declarations ----------------------------------------------*/
 
+
 /*-------------------------------- Macro Functions Declarations ------------------------------------*/
 
 
 /*-------------------------------- Data Type Declarations ------------------------------------------*/
+
 
 /*-------------------------------- Software Interfaces Declarations --------------------------------*/
 
@@ -25,6 +27,9 @@ void USART_voidInit
 (
 void
 );
+
+
+
 
 Std_ReturnType USART_udtSendData 
 (
@@ -55,8 +60,8 @@ uint32 Copy_uint32BufferSize
 
 uint8 USART_u8ReceiveBufferAsynch 
 (
-uint8 * Copy_pchString, 
-uint32 Copy_uint32BufferSize, 
+uint8 * Copy_pu8AppBuffer, 
+uint16 Copy_u16BufferSize, 
 void (* NotificationFunc)(void)
 );
 

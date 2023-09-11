@@ -3,7 +3,8 @@
  * Created		: 9/3/2023 8:27:11 AM
  * Author		: Ahmed Ferganey
  */ 
- 
+
+//////////////////////////////////////////////////////////////////////////////////////////////
 /* -------------------------------- Includes -----------------------------------------------*/
 #include "STD_TYPES.h"
 #include "BIT_MATH.h"
@@ -16,10 +17,23 @@
 
 
 
-
+//////////////////////////////////////////////////////////////////////////////////////////////
 /* -------------------------------- Global Variables ---------------------------------------*/
-/*Global flag for the USART Busy State*/
-static uint8 USART_u8State= STD_IDLE;
+/*static Global flag for the USART Busy State*/
+static uint8 USART_u8State = STD_IDLE;
+/*static Global pointer to function to carry the notification function called by RX ISR*/
+static void (*USART_vdRXC_Callback)(void)=NULL;
+/*static Global pointer to function to carry the notification function called by TX ISR*/
+static void (*USART_vdTXC_Callback)(void)=NULL;
+
+
+/*Global variable to carry the buffer size This variable is static to have file scope*/
+/*global not initilized is equal to zero init*/
+static uint16 USART_u16BufferSize;
+/* Global variable to carry the Received Data*/
+static uint8* USART_pu8ReceivedData = NULL;
+/*Global variable to indicate for the current Data index of the buffer*/
+static uint8 USART_u8Index;
 
 
 
@@ -28,6 +42,10 @@ static uint8 USART_u8State= STD_IDLE;
 
 
 
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
 /* -------------------------------- APIs Implementation ------------------------------------*/
 /********************************************************************************************/
 /*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
@@ -398,10 +416,124 @@ uint32 Copy_uint32BufferSize
 /********************************************************************************************/
 uint8 USART_u8ReceiveBufferAsynch 
 (
-uint8 * Copy_pchString, 
-uint32 Copy_uint32BufferSize, 
+uint8 * Copy_pu8AppBuffer, 
+uint16 Copy_u16BufferSize, 
 void (* NotificationFunc)(void)
 )
 {
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	if (USART_u8State == STD_IDLE)
+	{
+		if ((Copy_pu8AppBuffer != NULL) && (NotificationFunc != NULL))
+		{
+			/*1-USART is now Busy*/
+			USART_u8State = STD_ACTIVE;	
+
+			/*2-Assign the USART data globally*/
+				/*initilize Call Back Func by app*/
+			USART_vdRXC_Callback = NotificationFunc;
+				/*initilize pointer with the required address in app*/
+			USART_pu8ReceivedData = Copy_pu8AppBuffer;
+				/*Assigning Buffer size */	
+				/*Copy_u16BufferSize is equal to number of bytes required */				
+			USART_u16BufferSize = Copy_u16BufferSize;
+
+			/*3-Set Index to first element*/
+			USART_u8Index = 0;
+
+			/*4-USART Recieve Interrupt Enable */
+			SET_BIT(USART->UCSRB, UCSRB_RXCIE);
+
+			udtReturnValue = E_OK;		
+		}
+		else
+		{
+			/*this code is reachable in case of pointing to NULL Pointer*/
+			udtReturnValue = E_NOT_OK;
+		}
+	}
+	else
+	{
+			/*this code is reachable in case of USART is BUSY*/
+			udtReturnValue = E_PENDING;	
+	}
+	return udtReturnValue;
 	
 }
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+/* -------------------------------- ISRs Implementation ------------------------------------*/
+/* ISR for RX complete */
+void __vector_13 (void)		__attribute__ ((signal));
+void __vector_13 (void)
+{
+	/*1- Receive next Data*/
+		/*static global make variable in data segment & the life time until progrem end */
+	USART_pu8ReceivedData[USART_u8Index] = (USART->UDR);
+	/*2-Increment Data index of the buffer"pointer as array Ptr[i]"*/
+		/* this is similar to full & empty Ascending or deascending stack */
+	USART_u8Index++;
+
+
+	/*3-Send Data Complete*/
+		/*if inex not equal buffer size this means that usart still recieve data*/
+	if (USART_u8Index == USART_u16BufferSize)
+	{
+		/*
+		When the Receive Complete Interrupt Enable 
+		(RXCIE) in UCSRB is set, the USART Receive 
+		Complete Interrupt will be executed as long 
+		as the RXC Flag is set (provided that global 
+		interrupts are enabled). When interrupt-driven
+		data reception is used, the receive complete 
+		routine must read the received data from UDR 
+		in order to clear the RXC Flag, otherwise a new 
+		interrupt will occur once the interrupt routine 
+		terminates.
+		*/
+		/*re-intilize with 0 to can recieve another new data*/
+		USART_u8Index=0;	
+		/*USART is now IDLE*/
+		USART_u8State = STD_IDLE;
+		
+
+		/*Call Notification Function*/
+		USART_vdRXC_Callback();
+		
+		/*USART Recieve Interrupt Disable*/
+		CLR_BIT(USART->UCSRB , UCSRB_RXCIE);			
+
+	}
+	else
+	{
+		/*Do Noting*/		
+	}
+}
+
+
+
+/* ISR for TX complete */
+void __vector_15 (void)		__attribute__ ((signal)) ;
+void __vector_15 (void)
+{
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+	
+	
