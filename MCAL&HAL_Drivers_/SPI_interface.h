@@ -21,5 +21,14 @@
 
 
 /*-------------------------------- Software Interfaces Declarations --------------------------------*/
+void SPI_VdInit
+(
+void
+);
+
+uint8 SPI_u8InitConfig 
+(
+SPI_CONFIG* spi
+);
 
 #endif  /* _SPI_INTERFACE_H_ */
