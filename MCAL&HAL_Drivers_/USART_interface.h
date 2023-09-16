@@ -29,8 +29,6 @@ void
 );
 
 
-
-
 Std_ReturnType USART_udtSendData 
 (
 uint8 Copy_u8Data
@@ -41,16 +39,12 @@ Std_ReturnType USART_udtRecevieData
 uint8 * Copy_u8ReceviedData
 );  
 
+
+/********** synch Mode **********/
 uint8 USART_u8SendStringSynch 
 (
 const uint8 * Copy_pchString
 );
-
-uint8 USART_u8SendStringAsynch 
-(
-const uint8 * Copy_pchString, 
-void (* NotificationFunc)(void)
-); 
 
 uint8 USART_u8ReceiveBufferSynch 
 (
@@ -58,7 +52,15 @@ uint8 * Copy_pchString,
 uint32 Copy_uint32BufferSize
 );
 
-uint8 USART_u8ReceiveBufferAsynch 
+
+/********** Asynch Mode **********/
+Std_ReturnType USART_u8SendBufferAsynch 
+(
+const uint8 * Copy_pu8TransferdData, 
+void (* NotificationFunc)(void)
+); 
+
+Std_ReturnType USART_u8ReceiveBufferAsynch 
 (
 uint8 * Copy_pu8AppBuffer, 
 uint16 Copy_u16BufferSize, 

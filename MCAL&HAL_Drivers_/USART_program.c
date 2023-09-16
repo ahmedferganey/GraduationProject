@@ -26,22 +26,17 @@ static void (*USART_vdRXC_Callback)(void)=NULL;
 /*static Global pointer to function to carry the notification function called by TX ISR*/
 static void (*USART_vdTXC_Callback)(void)=NULL;
 
-
+/*Global variable to indicate for the current Data index of the buffer*/
+static uint8 USART_u8Index;
 /*Global variable to carry the buffer size This variable is static to have file scope*/
-/*global not initilized is equal to zero init*/
+	/*global not initilized is equal to zero init*/
 static uint16 USART_u16BufferSize;
 /* Global variable to carry the Received Data*/
 static uint8* USART_pu8ReceivedData = NULL;
-/*Global variable to indicate for the current Data index of the buffer*/
-static uint8 USART_u8Index;
-
-
-
-
-
-
-
-
+/*Global variable to carry the Transfered Data*/
+	/*this data should be constant data to prevent any change on data so
+	  this  pointer is point to static & const data*/
+static const uint8* USART_pu8TransferData = NULL;
 
 
 
@@ -80,7 +75,7 @@ void
 	#endif	
 				/* Set Baud Rate in UBRRH & UBRRL REG */				
 	UBRRH = (uint8)(Local_u16UBRR>>8);
-	UBRRL = (uint8)Local_u16UBRR;	
+	USART->UBRRL = (uint8)Local_u16UBRR;	
 	/****************************************************************************************/
 	/* 2- UCSRC – USART Control and Status Register Config */
 		/* The UCSRC Register shares the same I/O location as the UBRRH Register.
@@ -277,6 +272,8 @@ uint8 Copy_u8Data
 			 - Wait until a Transmiting complete or Timing out.
 		*/		
 		/* If UDRE is one, the buffer is empty */
+			/* there is implicit declaration here 
+				GETBIT(USART->UCSRA, UCSRA_UDRE) == 0 */
 		while (((GETBIT(USART->UCSRA, UCSRA_UDRE) == 0) 
 			   && (Local_u32TimeoutCounter != USART_u32TIMEOUT)))
 		{
@@ -371,23 +368,21 @@ uint8 USART_u8SendStringSynch
 const uint8 * Copy_pchString
 )
 {
-	
-}
-/********************************************************************************************/
-/*  @brief				  : this function uses pooling technique "Sync". @ref port_index_t	*/
-/*							to get the result, TimeoutCounter is used						*/
-/*  @param	 udtPortIndex : to determine the required port				 @ref port_index_t	*/
-/*  @param	 u8Direction  : to Set the required Direction				 @ref uint8			*/
-/*  @return	 Std_ReturnType																	*/
-/*           (E_OK)		  : The function done successfully									*/
-/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
-/********************************************************************************************/
-uint8 USART_u8SendStringAsynch 
-(
-const uint8 * Copy_pchString, 
-void (* NotificationFunc)(void)
-)
-{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 }
 /********************************************************************************************/
@@ -404,8 +399,78 @@ uint8 * Copy_pchString,
 uint32 Copy_uint32BufferSize
 )
 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 }
+/********************************************************************************************/
+/*  @brief				  : this function uses pooling technique "Sync". @ref port_index_t	*/
+/*							to get the result, TimeoutCounter is used						*/
+/*  @param	 udtPortIndex : to determine the required port				 @ref port_index_t	*/
+/*  @param	 u8Direction  : to Set the required Direction				 @ref uint8			*/
+/*  @return	 Std_ReturnType																	*/
+/*           (E_OK)		  : The function done successfully									*/
+/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
+/********************************************************************************************/
+Std_ReturnType USART_u8SendBufferAsynch 
+(
+const uint8 * Copy_pu8TransferdData, 
+void (* NotificationFunc)(void)
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	
+	if (USART_u8State = STD_IDLE)
+	{
+		if ((NotificationFunc != NULL) && (Copy_pu8TransferdData != NULL))
+		{
+			/*1-USART is now Busy*/
+			USART_u8State = STD_ACTIVE;
+			
+			
+			/*2-Assign the USART data globally*/
+			USART_vdTXC_Callback = NotificationFunc;
+			USART_pu8TransferData = Copy_pu8TransferdData;
+			
+			/*3-Set Index to first element*/
+			USART_u8Index = 0;
+			
+
+			/*4-Send first Data */
+			(USART->UDR) = USART_pu8TransferData[USART_u8Index];
+			
+			/*5-USART Transmit Interrupt Enable to switch interrupt & inside 
+				it calling Notification function*/
+			SET_BIT(USART->UCSRB, UCSRB_RXCIE);
+			udtReturnValue = E_OK;			
+			
+		}
+		else
+		{
+				udtReturnValue = E_NOT_OK;
+		}
+	}
+	else
+	{
+		udtReturnValue = E_PENDING;
+	}
+	return udtReturnValue;	
+}
+
 /********************************************************************************************/
 /*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
 /*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
@@ -414,7 +479,7 @@ uint32 Copy_uint32BufferSize
 /*           (E_OK)		  : The function done successfully									*/
 /*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
 /********************************************************************************************/
-uint8 USART_u8ReceiveBufferAsynch 
+Std_ReturnType USART_u8ReceiveBufferAsynch 
 (
 uint8 * Copy_pu8AppBuffer, 
 uint16 Copy_u16BufferSize, 
@@ -495,11 +560,11 @@ void __vector_13 (void)
 		terminates.
 		*/
 		/*re-intilize with 0 to can recieve another new data*/
-		USART_u8Index=0;	
+		USART_u8Index=0;
+		
 		/*USART is now IDLE*/
 		USART_u8State = STD_IDLE;
 		
-
 		/*Call Notification Function*/
 		USART_vdRXC_Callback();
 		
@@ -519,18 +584,40 @@ void __vector_13 (void)
 void __vector_15 (void)		__attribute__ ((signal)) ;
 void __vector_15 (void)
 {
-
-
-
-
-
-
-
-
+	/*Increment Data index of the buffer*/
+	USART_u8Index++;
+	
+	if (USART_pu8TransferData[USART_u8Index] == '\0')
+	{
+		/*Receive Data Complete*/
+		USART_u8Index=0;
+		
+		/*USART is now IDLE*/
+		USART_u8State = STD_IDLE;
+		
+		/*Call Notification Function*/
+		USART_vdTXC_Callback();
+		
+		/*USART Transmit Interrupt Disable*/
+		CLR_BIT(USART->UCSRB , UCSRB_TXCIE);			
+		
+	}
+	else
+	{
+		/*Send Data not Complete*/
+			/*Send next Data*/	
+			/*this aree is reachable if my data do not contain null termination*/
+			/* note that interrupt still enable to can transmit new data according to
+			   next index*/
+			/*you can consider, we are in infinite loop, and this loop will terminate 
+			  if and only if find null termination and then enter if condition 
+			  and finally will disable interrupt and start execution main program.
+			  also, this thing is bad to make main is isolated end execute interrupt for 
+			  long time*/
+		(USART->UDR) = USART_pu8TransferData[USART_u8Index];
+	
+	}
 }
-
-
-
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////

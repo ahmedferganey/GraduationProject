@@ -15,6 +15,11 @@
 #include "LCD_interface.h"
 #include "KEYPAD_interface.h"
 #include "ADC_interface.h"
+#include "TIMER_interface.h"
+#include "USART_interface.h"
+#include "SPI_interface.h"
+#include "GIE_interface.h"
+#include "EXTI_interface.h"
 
 /* Comment!: Macro Declarations */
 
