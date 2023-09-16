@@ -63,10 +63,14 @@ void SPI_VdInit
 void
 );
 
+
+
 Std_ReturnType SPI_udtInitConfig 
 (
 SPI_CONFIG_t* pudtSPINewConfig
 );
+
+
 
 Std_ReturnType SPI_udtTranceive 
 (
@@ -76,6 +80,19 @@ uint8* Copy_u8RData
 
 
 
+Std_ReturnType SPI_udtBufferTranceiverSynch 
+(
+uint8 * Copy_u8TData, 
+uint8 * Copy_u8RData, 
+uint8 Copy_u8BufferSize
+);
+
+
+
+u8 SPI_u8BufferTranceiverAsynch 
+(
+SPI_BUFFER * spi_buffer
+);
 
 
 

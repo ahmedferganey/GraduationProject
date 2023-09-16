@@ -389,7 +389,7 @@ uint8* Copy_u8RData
 	}
 	return udtReturnValue;	
 }
-  /********************************************************************************************/
+/********************************************************************************************/
 /*  @brief				  : Set config in run time "post build" 		@ref port_index_t	*/
 /*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
 /*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
@@ -397,3 +397,53 @@ uint8* Copy_u8RData
 /*           (E_OK)		  : The function done successfully									*/
 /*           (E_NOT_OK)   : The function has issue to perform this action					*/   
 /********************************************************************************************/
+Std_ReturnType SPI_udtBufferTranceiverSynch 
+(
+uint8 * Copy_u8TData, 
+uint8 * Copy_u8RData, 
+uint8 Copy_u8BufferSize
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	uint8 Local_u8Counter = 0;
+	
+	if (((Copy_u8TData == NULL) && (Copy_u8RData == NULL)))
+	{
+		udtReturnValue = E_NOT_OK;
+	}
+	else
+	{
+		while (Copy_u8BufferSize > Local_u8Counter)
+		{
+			udtReturnValue = SPI_udtTranceive(Copy_u8TData[Local_u8Counter], 
+											  &Copy_u8RData[Local_u8Counter]);
+			Local_u8Counter++;
+		}		
+	}	
+	return udtReturnValue;		
+}
+
+
+/********************************************************************************************/
+/*  @brief				  : Set config in run time "post build" 		@ref port_index_t	*/
+/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
+/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
+/*  @return	 Std_ReturnType																	*/
+/*           (E_OK)		  : The function done successfully									*/
+/*           (E_NOT_OK)   : The function has issue to perform this action					*/   
+/********************************************************************************************/
+Std_ReturnType SPI_udtBufferTranceiverAsynch 
+(
+SPI_BUFFER * spi_buffer
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	
+	
+	
+	
+	
+	
+	
+	return udtReturnValue;		
+}
