@@ -67,7 +67,8 @@
  */
 #define SPI_ENABLE_MODE						SPI_ENABLE
 
-
+/*Set TImeout for your functions*/
+#define SPI_uint32TIMEOUT					10000UL
 
 
 

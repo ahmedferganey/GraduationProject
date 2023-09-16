@@ -14,6 +14,15 @@
 
 
 /* -------------------------------- Global Variables -----------------------------------*/
+/*Global flag for the SPI Busy State*/
+static uint8 SPI_u8State= STD_IDLE;
+
+
+
+
+
+
+
 
 
 /* -------------------------------- APIs Implementation --------------------------------*/
@@ -165,7 +174,7 @@ void
 			6-SPI_FREQ_DIVIDED_BY_64
 			7-SPI_FREQ_DIVIDED_BY_128		
 */
-Std_ReturnType SPI_u8InitConfig 
+Std_ReturnType SPI_udtInitConfig 
 (
 SPI_CONFIG_t* pudtSPINewConfig
 )
@@ -326,4 +335,65 @@ SPI_CONFIG_t* pudtSPINewConfig
 /*           (E_OK)		  : The function done successfully									*/
 /*           (E_NOT_OK)   : The function has issue to perform this action					*/   
 /********************************************************************************************/
-      
+Std_ReturnType SPI_udtTranceive 
+(
+const uint8 Copy_u8TData, 
+uint8* Copy_u8RData
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	
+	if (STD_IDLE == SPI_u8State)
+	{
+		uint32 Local_uint32TimeoutCounter = 0;
+		/* 1- set state of SPI ---> Busy */
+		SPI_u8State = STD_ACTIVE;
+		
+		/* 2- The SPI Data Register is a read/write register used for 
+			  data transfer between the Register File and the SPI Shift 
+			  Register
+			  case in SPI is Transmitter.
+		*/
+		SPDR = Copy_u8TData;
+		
+		/* 3- check if flag = 0, refering to completion of transmitting */		
+		while(((LOGIC_ZERO == (GET_BIT(SPSR , SPSR_SPIF))) && 
+			   (SPI_uint32TIMEOUT > Local_uint32TimeoutCounter)))
+		{
+			Local_uint32TimeoutCounter++ ;
+		}
+		if (SPI_uint32TIMEOUT == Local_uint32TimeoutCounter)
+		{
+			udtReturnValue = E_TIMEOUT ;
+		}
+		else
+		{
+		/* 4- Recieveing Data*/
+			if (Copy_u8RData != NULL)
+			{
+				*Copy_u8RData  = SPDR ;
+				udtReturnValue = E_OK ;				
+			}
+			else
+			{
+				udtReturnValue = E_NOT_OK ;
+			}
+
+		}	
+		/* 5- To enable the new operation to transmit data by if condition*/
+		SPI_u8State = STD_IDLE;
+	}
+	else
+	{
+		udtReturnValue = E_PENDING;
+	}
+	return udtReturnValue;	
+}
+  /********************************************************************************************/
+/*  @brief				  : Set config in run time "post build" 		@ref port_index_t	*/
+/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
+/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
+/*  @return	 Std_ReturnType																	*/
+/*           (E_OK)		  : The function done successfully									*/
+/*           (E_NOT_OK)   : The function has issue to perform this action					*/   
+/********************************************************************************************/

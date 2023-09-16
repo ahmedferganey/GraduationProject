@@ -22,6 +22,8 @@
 #define	STD_IDLE		0X00
 #define NULL			0
 #define	ZERO_INIT		0
+#define	LOGIC_ZERO		0
+
 
 /* Comment!: Macro Functions Declarations */
 
