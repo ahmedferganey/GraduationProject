@@ -4,7 +4,7 @@
  * Author		: Ahmed Ferganey
  */ 
  
-/* -------------------------------- Includes -------------------------------------------*/
+/* -------------------------------- Includes -----------------------------------------------*/
 #include "STD_TYPES.h"
 #include "BIT_MATH.h"
 
@@ -13,19 +13,25 @@
 #include "SPI_private.h"
 
 
-/* -------------------------------- Global Variables -----------------------------------*/
+/* -------------------------------- Global Variables ---------------------------------------*/
 /*Global flag for the SPI Busy State*/
 static uint8 SPI_u8State= STD_IDLE;
 
+/* !Comment:  Global Static Variables for Asycnh Function*/
+/*Global variable to carry the Transmit Data*/
+static uint8* SPI_pu8TData = NULL ;
+/*Global variable to carry the Receive Data*/
+static uint8* SPI_pu8RData = NULL ;
+/*Global variable to carry the buffer size*/
+static uint8 SPI_u8BufferSize;
+/*Global variable to indicate for the current Data index of the buffer*/
+static uint8 SPI_u8Index;
+/*Global pointer to function to carry the notification function called by ISR*/
+static void (* SPI_PvdNotificationFunc)(void) = NULL ;
 
 
 
-
-
-
-
-
-/* -------------------------------- APIs Implementation --------------------------------*/
+/* -------------------------------- APIs Implementation ------------------------------------*/
 /********************************************************************************************/
 /*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
 /*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
@@ -415,6 +421,7 @@ uint8 Copy_u8BufferSize
 	{
 		while (Copy_u8BufferSize > Local_u8Counter)
 		{
+			/* note, inside this func, we have check on SPI IDLE OR BUSY */
 			udtReturnValue = SPI_udtTranceive(Copy_u8TData[Local_u8Counter], 
 											  &Copy_u8RData[Local_u8Counter]);
 			Local_u8Counter++;
@@ -434,16 +441,83 @@ uint8 Copy_u8BufferSize
 /********************************************************************************************/
 Std_ReturnType SPI_udtBufferTranceiverAsynch 
 (
-SPI_BUFFER * spi_buffer
+SPI_Buffer_t* pudtSPIBuffer
 )
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 	
+	if (STD_IDLE == SPI_u8State)
+	{
+		if (((((pudtSPIBuffer 				 != NULL) && 
+			(pudtSPIBuffer->Copy_u8TData 	 != NULL)) &&
+			(pudtSPIBuffer->Copy_u8RData 	 != NULL)) &&
+			(pudtSPIBuffer->NotificationFunc != NULL)))
+		{
+			/* 1- Set SPI is Busy*/
+			SPI_u8State = STD_ACTIVE;
+			
+			/* 2- Assign the SPI data globally*/
+			SPI_pu8TData 			= pudtSPIBuffer->Copy_u8TData;	
+			SPI_pu8RData 			= pudtSPIBuffer->Copy_u8RData;	
+			SPI_u8BufferSize 		= pudtSPIBuffer->Copy_u8BufferSize;
+			SPI_PvdNotificationFunc = pudtSPIBuffer->NotificationFunc;
+			
+			/* 3- Set Index to first element*/
+			SPI_u8Index = 0;
 	
+			/* 4- Transmit first Data */
+			SPDR = SPI_pu8TData[SPI_u8Index];
 	
+			/* 5- SPI Interrupt Enable*/
+			SET_BIT(SPCR , SPCR_SPIE);
+			
+			/* !Important Comment :
+				note after step 5 will context switch to ISR Implementation 
+			*/
 	
-	
-	
-	
+		}
+		else
+		{
+			udtReturnValue = E_NOT_OK;			
+		}
+	}
+	else
+	{				
+		udtReturnValue = E_PENDING;	
+	}	
 	return udtReturnValue;		
+}
+
+
+/* -------------------------------- ISR Implementation -------------------------------------*/
+void __vector_12 (void)		__attribute__ ((signal)) ;
+void __vector_12 (void)
+{
+	/* this area of code is reachable cause the calling from 
+	enabling entrrupt from BufferTranceiverAsynch  API 
+	where as start to transmit and recieve.
+	*/
+	
+	/* SPDR Register : 
+	Writing to the register initiates data transmission. 
+	Reading the register causes the Shift Register Receive buffer 
+	to be read.
+	*/
+	
+	/* note we wroten beffore setting interrupt so the transmitting process
+	   it supposed, it will be completed so we start ISR With Recieving */
+	   
+	/*Receive Data*/
+	SPI_pu8RData[SPI_u8Index] = SPDR;	
+	
+	/*Increment Data index of the buffer*/
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

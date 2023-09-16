@@ -45,7 +45,7 @@
 /*-------------------------------- Data Type Declarations ------------------------------------------*/
 /* !Comment: for init another config in run time*/
 	/* note control registers have 7 principles so 
-	   we create struct with 7 prnciples */
+	   we create struct with 7 features */
 typedef struct
 {
 	uint8 SPI_u8InterruptEnable;
@@ -56,6 +56,17 @@ typedef struct
 	uint8 SPI_u8ClockPhase;
 	uint8 SPI_u8ClockRate;	
 }SPI_CONFIG_t;
+
+/* !Comment: for Ayscnh Transiev API */
+typedef struct
+{
+	uint8* Copy_u8TData;
+	uint8* Copy_u8RData;
+	uint8  Copy_u8BufferSize;
+	void (* NotificationFunc)(void);
+}SPI_Buffer_t;
+
+
 
 /*-------------------------------- Software Interfaces Declarations --------------------------------*/
 void SPI_VdInit
@@ -82,16 +93,16 @@ uint8* Copy_u8RData
 
 Std_ReturnType SPI_udtBufferTranceiverSynch 
 (
-uint8 * Copy_u8TData, 
-uint8 * Copy_u8RData, 
+uint8* Copy_u8TData, 
+uint8* Copy_u8RData, 
 uint8 Copy_u8BufferSize
 );
 
 
 
-u8 SPI_u8BufferTranceiverAsynch 
+Std_ReturnType SPI_udtBufferTranceiverAsynch 
 (
-SPI_BUFFER * spi_buffer
+SPI_Buffer_t* pudSPIBuffer
 );
 
 
