@@ -469,12 +469,14 @@ SPI_Buffer_t* pudtSPIBuffer
 			SPDR = SPI_pu8TData[SPI_u8Index];
 	
 			/* 5- SPI Interrupt Enable*/
+			/* !Important Comment-1 :
+				note after step 5 will context switch to ISR Implementation 
+			*/		
 			SET_BIT(SPCR , SPCR_SPIE);
 			
-			/* !Important Comment :
-				note after step 5 will context switch to ISR Implementation 
-			*/
-	
+			/* !Important Comment-6 :	E_OK */	
+			udtReturnValue = E_OK;			
+
 		}
 		else
 		{
@@ -493,31 +495,57 @@ SPI_Buffer_t* pudtSPIBuffer
 void __vector_12 (void)		__attribute__ ((signal)) ;
 void __vector_12 (void)
 {
-	/* this area of code is reachable cause the calling from 
-	enabling entrrupt from BufferTranceiverAsynch  API 
-	where as start to transmit and recieve.
+	/* !Important Comment-2 :
+		this area of code is reachable cause the calling from 
+		enabling entrrupt from BufferTranceiverAsynch  API 
+		where as start to transmit and recieve.
 	*/
 	
-	/* SPDR Register : 
-	Writing to the register initiates data transmission. 
-	Reading the register causes the Shift Register Receive buffer 
-	to be read.
+	/* !Important Comment-3 :
+		SPDR Register : 
+		Writing to the register initiates data transmission. 
+		Reading the register causes the Shift Register Receive buffer 
+		to be read.
 	*/
 	
-	/* note we wroten beffore setting interrupt so the transmitting process
-	   it supposed, it will be completed so we start ISR With Recieving */
+	/* !Important Comment-4 :
+		note we wrote before setting interrupt so the transmitting process
+		it supposed, it will be completed so we start ISR With Recieving */
 	   
 	/*Receive Data*/
 	SPI_pu8RData[SPI_u8Index] = SPDR;	
 	
 	/*Increment Data index of the buffer*/
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	SPI_u8Index++;
+	if (SPI_u8Index == SPI_u8BufferSize)
+	{
+		/*Buffer Complete*/
+		/*SPI is now IDLE*/
+		SPI_u8State = IDLE ;
+		
+		/*SPI Interrupt Disable*/
+		CLR_BIT(SPCR , SPCR_SPIE) ;
+		/*Call Notification Function*/
+		SPI_PvdNotificationFunc() ;
+		/* after calling this function and execute it will context
+		   to SPI_udtBufferTranceiverAsynch and return E_OK */
+	}
+	else
+	{
+		/*Buffer not Complete*/
+		
+		/*Transmit next Data*/
+		SPDR = SPI_pu8TData[SPI_u8Index] ;
+		/* !Important Comment-5 :
+			note at the end of ISR will transmit next data, if and nly if 
+			the bufffer still not completed. where is if SPI_u8Index == SPI_u8BufferSize
+			will exexute if and will not execute else.
+			also, when transmit next data. now interrupt still enable so will execute
+			another ISR and start with recieving the new data and increment index
+			then if index == buffer will execute if and at the end will disable interrupt
+			and make SPI is IDLE.
+			and then call back the APP function.
+		*/
+
+	}			
 }

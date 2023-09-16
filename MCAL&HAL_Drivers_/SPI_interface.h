@@ -102,7 +102,7 @@ uint8 Copy_u8BufferSize
 
 Std_ReturnType SPI_udtBufferTranceiverAsynch 
 (
-SPI_Buffer_t* pudSPIBuffer
+SPI_Buffer_t* pudtSPIBuffer
 );
 
 
