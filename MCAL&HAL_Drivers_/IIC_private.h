@@ -31,7 +31,11 @@
 #define TWAR_TWGCE	0								/*General Call recognition Enable*/
 
 
-
+/* Prescalers */
+#define PRESCALLER_BY_1   		   1
+#define PRESCALLER_BY_4   		   4
+#define PRESCALLER_BY_16  		   16
+#define PRESCALLER_BY_64  		   64
 
 
 /* -------------------------------- Macro Declarations ------------------------------------------*/

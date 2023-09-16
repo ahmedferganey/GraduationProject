@@ -38,7 +38,4 @@ uint8 Copy_u8Address
 
 
 
-
-
-
 #endif  /* _IIC_INTERFACE_H_ */
