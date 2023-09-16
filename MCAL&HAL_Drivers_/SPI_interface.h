@@ -18,7 +18,19 @@
 
 
 /*-------------------------------- Data Type Declarations ------------------------------------------*/
-
+/* !Comment: for init another config in run time*/
+	/* note control registers have 7 principles so 
+	   we create struct with 7 prnciples */
+typedef struct
+{
+	uint8 SPI_u8InterruptEnable;
+	uint8 SPI_u8SPIEnable;
+	uint8 SPI_u8DataOrder;
+	uint8 SPI_u8MasterSlaveSelect;
+	uint8 SPI_u8ClockPolarity;
+	uint8 SPI_u8ClockPhase;
+	uint8 SPI_u8ClockRate;	
+}SPI_CONFIG_t;
 
 /*-------------------------------- Software Interfaces Declarations --------------------------------*/
 void SPI_VdInit
@@ -26,9 +38,9 @@ void SPI_VdInit
 void
 );
 
-uint8 SPI_u8InitConfig 
+Std_ReturnType SPI_u8InitConfig 
 (
-SPI_CONFIG* spi
+SPI_CONFIG_t* pudtSPINewConfig
 );
 
 #endif  /* _SPI_INTERFACE_H_ */
