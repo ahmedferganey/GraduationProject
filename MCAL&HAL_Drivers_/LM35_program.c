@@ -25,12 +25,15 @@
 /* -------------------------------- Global Variables ---------------------------------------*/
 
 
+
+
 /* -------------------------------- APIs Implementation ------------------------------------*/
 /********************************************************************************************/
-/*  @brief				  : this function uses pooling technique "Sync". @ref port_index_t	*/
-/*							to get the result, TimeoutCounter is used						*/
-/*  @param	 udtPortIndex : to determine the required port				 @ref port_index_t	*/
-/*  @param	 u8Direction  : to Set the required Direction				 @ref uint8			*/
+/*  @brief				        : 											 				*/
+/*  @param	 LM35_pudtConfig    : struct has the LM35 Channel, ADC VoltageReference , 		*/
+/* 								  ADCResolution						 @ref *LM35_config_t	*/
+/*  @param	 LM35_pu8TempValue  : Pointer to TEMP Variable which 							*/
+/* 								  will return in it		 			 @ref *uint8			*/
 /*  @return	 Std_ReturnType																	*/
 /*           (E_OK)		  : The function done successfully									*/
 /*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
@@ -43,7 +46,10 @@ uint8* LM35_pu8TempValue
 )
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
-	uint16 Local_u16ADCResult;
+	uint16 Local_u16ADCDigitalResult;
+	uint16 Local_u16AnalogValue;
+	/*  To Convert Local_u8ADCReference from ( V --> mV )*/
+	uint16 Local_u8ADCReference = (LM35_pudtConfig->Copy_u8ADCVoltageRef)*1000;
 
 
 	if (((LM35_pudtConfig == NULL) || (pu8TempValue == NULL)))
@@ -54,17 +60,33 @@ uint8* LM35_pu8TempValue
 	{
 		
 	/* ADC Digital Reading  */
-	udtReturnValue = ADC_udtGetResultSync(LM35_pudtConfig->Copy_u8LM35Channel, &Local_u16ADCResult);
+	udtReturnValue = ADC_udtGetResultSync(LM35_pudtConfig->Copy_u8LM35Channel, 
+										  &Local_u16ADCDigitalResult);
 		
 	/* Check for ADC Resolution  */
-
-
-		
+	if (LM35_pudtConfig->Copy_u8ADCResolution == ADC_RESOLUTION_10_BIT)
+	{
+		Local_u16AnalogValue = (((uint32)Local_u16ADCDigitalResult * 
+								 (uint32)Local_u8ADCReference) 
+								  / LM35_ADC_10_BIT_RESOLUTION);
+	}
+	else if (LM35_pudtConfig->Copy_u8ADCResolution == ADC_RESOLUTION_8_BIT)
+	{
+		Local_u16AnalogValue = (((uint32)Local_u16ADCDigitalResult * 
+								 (uint32)Local_u8ADCReference) 
+								  / LM35_ADC_8_BIT_RESOLUTION);
+	}
+	else
+	{
+		udtReturnValue = E_NOT_OK;
+	}		
 		
 	/* Get value, Convert ( mv --> Temp ) */
-	*LM35_pu8TempValue = ;
+	*LM35_pu8TempValue = (Local_u16AnalogValue / Sensitivity);
 		
 	}
 	
 	return udtReturnValue;	
 }
+
+//////////////////////////////////////////////////////////////////////////////////////////////

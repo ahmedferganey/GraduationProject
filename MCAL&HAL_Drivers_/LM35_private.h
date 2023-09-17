@@ -12,8 +12,8 @@
 
 
 /* -------------------------------- Macro Declarations ------------------------------------------*/
-
-
+#define LM35_ADC_10_BIT_RESOLUTION		1024UL
+#define LM35_ADC_8_BIT_RESOLUTION		256UL
 /* -------------------------------- Macro Functions Declarations --------------------------------*/
 
 

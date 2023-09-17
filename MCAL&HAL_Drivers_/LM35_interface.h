@@ -12,7 +12,8 @@
 
 
 /* -------------------------------- Macro Declarations ------------------------------------------*/
-
+#define ADC_RESOLUTION_10_BIT	 	0
+#define ADC_RESOLUTION_8_BIT  		1
 
 /* -------------------------------- Macro Functions Declarations --------------------------------*/
 
@@ -21,7 +22,8 @@
 typedef struct
 {
 	uint8 Copy_u8LM35Channel;		/* For ADC_GetResult API */
-
+	uint8 Copy_u8ADCVoltageRef;		/* Vref = 5 , 2.56 , External  */
+	uint8 Copy_u8ADCResolution;		/* ADC_RESOLUTION_10_BIT or ADC_RESOLUTION_8_BIT  */
 }LM35_Config_t;
 
 /* -------------------------------- Function Declarations ---------------------------------------*/
@@ -48,7 +50,7 @@ typedef struct
 Std_ReturnType LM35_udtGetTemp 
 (
 LM35_config_t* LM35_pudtConfig, 
-uint8* pu8TempValue
+uint8* LM35_pu8TempValue
 );
 
 

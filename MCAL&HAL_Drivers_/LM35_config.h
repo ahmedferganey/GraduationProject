@@ -12,7 +12,8 @@
 
 
 /* -------------------------------- Macro Declarations ------------------------------------------*/
-
+/* Set the Sensitivity */
+#define 	Sensitivity			10		/*Convert ( 10mv --> 1Temp )*/
 
 /* -------------------------------- Macro Functions Declarations --------------------------------*/
 
