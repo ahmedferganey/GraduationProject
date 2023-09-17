@@ -444,7 +444,7 @@ uint8 Copy_u8DataByte
 /********************************************************************************************/
 Std_ReturnType IIC_MasterReadDataByte
 (
-uint8* Copy_pu8DataByte
+uint8* pu8DataByte
 )
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
@@ -463,7 +463,7 @@ uint8* Copy_pu8DataByte
 	else
 	{
 		/* Read the recieved data */
-		*Copy_pu8DataByte = TWDR;		
+		*pu8DataByte = TWDR;		
 		udtReturnValue = E_OK;
 	}	
 	
@@ -519,7 +519,7 @@ uint8 Copy_u8DataByte
 /********************************************************************************************/
 Std_ReturnType IIC_SlaveReadDataByte
 (
-uint8* Copy_pu8DataByte
+uint8* pu8DataByte
 )
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
@@ -548,7 +548,7 @@ uint8* Copy_pu8DataByte
 	else
 	{
 		/*Read the received data*/
-		*Copy_pu8DataByte = TWDR;
+		*pu8DataByte = TWDR;
 		udtReturnValue = E_OK;
 	}
 	

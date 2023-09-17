@@ -65,7 +65,7 @@ uint8 Copy_u8SlaveAddress
 );
 
 
-/******************************* Slave Address (R/W) *******************************/
+/******************************* Master Address (R/W) *******************************/
 Std_ReturnType IIC_MasterWriteDataByte
 (
 uint8 Copy_u8DataByte
@@ -77,7 +77,7 @@ uint8* Copy_pu8DataByte
 );
 
 
-/******************************* Slave Address (R/W) *******************************/
+/******************************* Slave Data (R/W) *******************************/
 Std_ReturnType IIC_SlaveWriteDataByte
 (
 uint8 Copy_u8DataByte
