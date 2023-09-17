@@ -8,8 +8,9 @@
 #include "STD_TYPES.h"
 #include "BIT_MATH.h"
 
+#define F_CPU 16000000UL
+#include "util/delay.h"
 #include "IIC_interface.h"
-#include <util/delay.h>
 
 #include "EEPROM_interface.h"
 #include "EEPROM_config.h"
@@ -85,8 +86,8 @@ uint8 Copy_u8DataByte
 /********************************************************************************************/
 Std_ReturnType EEPROM_udtReadDataByte
 (
-uint16 Copy_u16LocationAddress
-uint8* Local_u8StoreData;
+uint16 Copy_u16LocationAddress,
+uint8* Local_u8StoreData
 )
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;

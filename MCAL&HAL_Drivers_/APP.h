@@ -21,8 +21,8 @@
 #include "GIE_interface.h"
 #include "EXTI_interface.h"
 #include "IIC_interface.h"
-
-
+#include "EEPROM_interface.h"
+#include "DCMOTOR_interface.h"
 
 
 /* Comment!: Macro Declarations */
