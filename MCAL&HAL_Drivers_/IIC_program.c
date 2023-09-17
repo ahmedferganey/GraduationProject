@@ -323,14 +323,33 @@ uint8 Copy_u8SlaveAddress
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 
+	/*send the 7bit slave address to the bus*/
+	TWDR = (Copy_u8SlaveAddress<<1);
 
+	/*set the write request in the LSB in the data register*/
+	CLR_BIT(TWDR, TWDR_SLARW);
 
+	/*Clear the start condition bit*/
+	CLR_BIT(TWCR,TWCR_TWSTA);
 
+	/*Clear the interrupt flag to start the previous operation*/
+	SET_BIT(TWCR,TWCR_TWINT);
 
-	return udtReturnValue;	
-	
+	/*wait until the operation finishes and the flag is raised*/
+	while((GET_BIT(TWCR,TWCR_TWINT))==0);
+
+	/*Check the operation status*/
+	if((TWSR & MASTER_TRANS_MASK) != SLAVE_ADD_AND_WR_ACK)
+	{
+		udtReturnValue = E_NOT_OK;
+	}
+	else
+	{
+		udtReturnValue = E_OK;
+	}
+
+	return udtReturnValue;		
 }
-
 
 /********************************************************************************************/
 /*  @brief				  : this function uses pooling technique "Sync". @ref port_index_t	*/
@@ -348,15 +367,71 @@ uint8 Copy_u8SlaveAddress
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 
+	/*send the 7bit slave address to the bus*/
+	TWDR = (Copy_u8SlaveAddress<<1);
 
+	/*set the read request in the LSB in the data register*/
+	SET_BIT(TWDR, TWDR_SLARW);
 
+	/*Clear the start condition bit*/
+	CLR_BIT(TWCR,TWCR_TWSTA);
 
+	/*Clear the interrupt flag to start the previous operation*/
+	SET_BIT(TWCR,TWCR_TWINT);
 
-	return udtReturnValue;	
+	/*wait until the operation finishes and the flag is raised*/
+	while((GET_BIT(TWCR,TWCR_TWINT))==0);
+
+	/*Check the operation status*/
+	if((TWSR & MASTER_TRANS_MASK) != SLAVE_ADD_AND_RD_ACK)
+	{
+		udtReturnValue = E_NOT_OK;
+	}
+	else
+	{
+		udtReturnValue = E_OK;
+	}
+
+	return udtReturnValue;				
 }
 
-
-
+/********************************************************************************************/
+/*  @brief				  : this function uses pooling technique "Sync". @ref port_index_t	*/
+/*							to get the result, TimeoutCounter is used						*/
+/*  @param	 udtPortIndex : to determine the required port				 @ref port_index_t	*/
+/*  @param	 u8Direction  : to Set the required Direction				 @ref uint8			*/
+/*  @return	 Std_ReturnType																	*/
+/*           (E_OK)		  : The function done successfully									*/
+/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
+/********************************************************************************************/
+Std_ReturnType IIC_MasterWriteDataByte
+(
+uint8 Copy_u8DataByte
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	
+	/*Write the data byte on the bus*/
+	TWDR = Copy_u8DataByte;	
+	
+	/*Clear the interrupt flag to start the previous operation*/
+	SET_BIT(TWCR,TWCR_TWINT);	
+	
+	/*wait until the operation finishes and the flag is raised*/
+	while((GET_BIT(TWCR,TWCR_TWINT))==0);	
+	
+	/*Check the operation status*/
+	if((TWSR & MASTER_TRANS_MASK) != MSTR_WR_BYTE_ACK)
+	{
+		udtReturnValue = E_NOT_OK;
+	}
+	else
+	{
+		udtReturnValue = E_OK;
+	}
+	
+	return udtReturnValue;					
+}
 
 /********************************************************************************************/
 /*  @brief				  : this function uses pooling technique "Sync". @ref port_index_t	*/
@@ -367,15 +442,33 @@ uint8 Copy_u8SlaveAddress
 /*           (E_OK)		  : The function done successfully									*/
 /*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
 /********************************************************************************************/
-
-
-
-
-
-
-
-
-
+Std_ReturnType IIC_MasterReadDataByte
+(
+uint8* Copy_pu8DataByte
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	
+	/*Clear the interrupt flag to start the previous operation*/
+	SET_BIT(TWCR,TWCR_TWINT);	
+	
+	/*wait until the operation finishes and the flag is raised*/
+	while((GET_BIT(TWCR,TWCR_TWINT))==0);	
+	
+	/*Check the operation status*/	
+	if((TWSR & MASTER_TRANS_MASK) != MSTR_RD_BYTE_WITH_ACK)
+	{
+		udtReturnValue = E_NOT_OK;
+	}
+	else
+	{
+		/* Read the recieved data */
+		*Copy_pu8DataByte = TWDR;		
+		udtReturnValue = E_OK;
+	}	
+	
+	return udtReturnValue;					
+}
 
 /********************************************************************************************/
 /*  @brief				  : this function uses pooling technique "Sync". @ref port_index_t	*/
@@ -386,3 +479,79 @@ uint8 Copy_u8SlaveAddress
 /*           (E_OK)		  : The function done successfully									*/
 /*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
 /********************************************************************************************/
+Std_ReturnType IIC_SlaveWriteDataByte
+(
+uint8 Copy_u8DataByte
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	
+	/*Write the data byte on the bus*/
+	TWDR = Copy_u8DataByte;	
+	
+	/*Clear the interrupt flag to start the previous operation*/
+	SET_BIT(TWCR,TWCR_TWINT);	
+	
+	/*wait until the operation finishes and the flag is raised*/
+	while((GET_BIT(TWCR,TWCR_TWINT))==0);
+
+	/*Check the operation status*/
+	if((TWSR & MASTER_TRANS_MASK) != SLAVE_BYTE_TRANSMITTED)
+	{
+		udtReturnValue = E_NOT_OK;
+	}
+	else
+	{
+		udtReturnValue = E_OK;
+	}	
+	
+	return udtReturnValue;					
+}
+
+/********************************************************************************************/
+/*  @brief				  : this function uses pooling technique "Sync". @ref port_index_t	*/
+/*							to get the result, TimeoutCounter is used						*/
+/*  @param	 udtPortIndex : to determine the required port				 @ref port_index_t	*/
+/*  @param	 u8Direction  : to Set the required Direction				 @ref uint8			*/
+/*  @return	 Std_ReturnType																	*/
+/*           (E_OK)		  : The function done successfully									*/
+/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
+/********************************************************************************************/
+Std_ReturnType IIC_SlaveReadDataByte
+(
+uint8* Copy_pu8DataByte
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	
+	/*Clear the interrupt flag to start the previous operation*/
+	SET_BIT(TWCR,TWCR_TWINT);
+	
+	/*wait until the operation finishes and the flag is raised*/
+	while((GET_BIT(TWCR,TWCR_TWINT))==0);	
+		
+	/*Check the operation status*/
+	if((TWSR & MASTER_TRANS_MASK) !=  SLAVE_ADD_RCVD_WR_REQ)
+	{
+		udtReturnValue = E_NOT_OK;
+	}
+	SET_BIT(TWCR,TWCR_TWINT);	
+		
+	/*wait until the operation finishes and the flag is raised*/
+	while((GET_BIT(TWCR,TWCR_TWINT))==0);
+	
+	/*Check the operation status*/
+	if((TWSR & MASTER_TRANS_MASK) !=  SLAVE_DATA_RECEIVED)
+	{
+		udtReturnValue = E_NOT_OK;
+	}
+	else
+	{
+		/*Read the received data*/
+		*Copy_pu8DataByte = TWDR;
+		udtReturnValue = E_OK;
+	}
+	
+	return udtReturnValue;					
+}
+/*------------------------------------------------------------------------------------------*/

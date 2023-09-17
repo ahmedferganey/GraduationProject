@@ -20,6 +20,9 @@
 /* -------------------------------- Data Type Declarations --------------------------------------*/
 
 
+
+
+
 /* -------------------------------- Function Declarations ---------------------------------------*/
 /******************************* Init Master & Slave *******************************/
 void IIC_vdInitMaster
@@ -62,6 +65,28 @@ uint8 Copy_u8SlaveAddress
 );
 
 
+/******************************* Slave Address (R/W) *******************************/
+Std_ReturnType IIC_MasterWriteDataByte
+(
+uint8 Copy_u8DataByte
+);
+
+Std_ReturnType IIC_MasterReadDataByte
+(
+uint8* Copy_pu8DataByte
+);
+
+
+/******************************* Slave Address (R/W) *******************************/
+Std_ReturnType IIC_SlaveWriteDataByte
+(
+uint8 Copy_u8DataByte
+);
+
+Std_ReturnType IIC_SlaveReadDataByte
+(
+uint8* Copy_pu8DataByte
+);
 
 
 #endif  /* _IIC_INTERFACE_H_ */
