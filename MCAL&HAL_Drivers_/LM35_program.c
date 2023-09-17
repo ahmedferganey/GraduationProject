@@ -35,3 +35,36 @@
 /*           (E_OK)		  : The function done successfully									*/
 /*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
 /********************************************************************************************/
+/*********************		 getter API		 *********************/
+Std_ReturnType LM35_udtGetTemp 
+(
+LM35_config_t* LM35_pudtConfig, 
+uint8* LM35_pu8TempValue
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	uint16 Local_u16ADCResult;
+
+
+	if (((LM35_pudtConfig == NULL) || (pu8TempValue == NULL)))
+	{
+		udtReturnValue = E_NOT_OK;
+	}
+	else
+	{
+		
+	/* ADC Digital Reading  */
+	udtReturnValue = ADC_udtGetResultSync(LM35_pudtConfig->Copy_u8LM35Channel, &Local_u16ADCResult);
+		
+	/* Check for ADC Resolution  */
+
+
+		
+		
+	/* Get value, Convert ( mv --> Temp ) */
+	*LM35_pu8TempValue = ;
+		
+	}
+	
+	return udtReturnValue;	
+}
