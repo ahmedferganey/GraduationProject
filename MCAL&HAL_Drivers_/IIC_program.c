@@ -22,6 +22,8 @@
 
 
 /* -------------------------------- APIs Implementation ------------------------------------*/
+/******************************* Init Master & Slave *******************************/
+
 /********************************************************************************************/
 /*  @brief				  : this function uses pooling technique "Sync". @ref port_index_t	*/
 /*							to get the result, TimeoutCounter is used						*/
@@ -150,4 +152,237 @@ uint8 Copy_u8Address
 	/*Enable TWI*/
 	SET_BIT(TWCR,TWCR_TWEN);		
 }	
+
+/******************************* Start & Stop **************************************/
+
+/********************************************************************************************/
+/*  @brief				  : this function uses pooling technique "Sync". @ref port_index_t	*/
+/*							to get the result, TimeoutCounter is used						*/
+/*  @param	 udtPortIndex : to determine the required port				 @ref port_index_t	*/
+/*  @param	 u8Direction  : to Set the required Direction				 @ref uint8			*/
+/*  @return	 Std_ReturnType																	*/
+/*           (E_OK)		  : The function done successfully									*/
+/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
+/********************************************************************************************/	
+Std_ReturnType IIC_udtSendStartCondition
+(
+void
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
 	
+	/*
+		The TWINT Flag is set in the following situations:
+			• After the TWI has transmitted a START/REPEATED START condition
+			• After the TWI has transmitted SLA+R/W
+			• After the TWI has transmitted an address byte
+			• After the TWI has lost arbitration
+			• After the TWI has been addressed by own slave address or general call
+			• After the TWI has received a data byte
+			• After a STOP or REPEATED START has been received while still 
+			  addressed as a slave
+			• When a bus error has occurred due to an illegal START or STOP condition
+	*/
+	
+					/******		Page(180) for more details 	  ******/
+	
+	/* 1- Send start condition*/
+		/*
+			TWCR = (1<<TWCR_TWINT)|(1<<TWCR_TWSTA)|(1<<TWEN);
+		*/
+	SET_BIT(TWCR, TWCR_TWSTA);
+	SET_BIT(TWCR,TWCR_TWINT);
+	
+	/* 2- wait until the operation finishes and the flag is raised*/
+		/*
+			while (!(TWCR & (1<<TWINT)));
+		*/
+	while((GET_BIT(TWCR,TWCR_TWINT))==0);
+
+	/* 3- Check the operation status (Bit Masking) */
+		/* bit mask 0x1111 1000 */
+		/*
+			 Bits 7:3 – TWS: TWI Status		
+		
+		*/
+		/*
+			These five bits reflect the status of the TWI logic 
+			and the Two-wire Serial Bus. The different status codes 
+			are described later in this section. Note that the value 
+			read from TWSR contains both the 5-bit status value and 
+			the 2-bit prescaler value. The application designer should
+			mask the prescaler bits to zero when checking the Status
+			bits. This makes status checking independent of prescaler 
+			setting. This approach is used in this datasheet, unless 
+			otherwise noted.
+								Page 183
+		*/
+	if ((TWSR & MASTER_TRANS_MASK) != START_ACK)
+	{
+		udtReturnValue = E_NOT_OK;
+	}
+	else
+	{
+		udtReturnValue = E_OK;
+	}
+	/*
+		TWSTA must be cleared by software when the START condition has been
+		transmitted.
+		but this process will be executed after sending slave address.
+		so, will be cleared in SendSlaveAddress API
+					page 195
+	*/
+	return udtReturnValue;	
+}
+
+/********************************************************************************************/
+/*  @brief				  : this function uses pooling technique "Sync". @ref port_index_t	*/
+/*							to get the result, TimeoutCounter is used						*/
+/*  @param	 udtPortIndex : to determine the required port				 @ref port_index_t	*/
+/*  @param	 u8Direction  : to Set the required Direction				 @ref uint8			*/
+/*  @return	 Std_ReturnType																	*/
+/*           (E_OK)		  : The function done successfully									*/
+/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
+/********************************************************************************************/
+Std_ReturnType IIC_udtSendRepeatedStart
+(
+void
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+
+	/* 1- Send start condition*/
+	SET_BIT(TWCR, TWCR_TWSTA);
+	SET_BIT(TWCR,TWCR_TWINT);
+
+	/* 2- wait until the operation finishes and the flag is raised*/
+	while((GET_BIT(TWCR,TWCR_TWINT))==0);
+
+	/* 3- Check the operation status (Bit Masking) */
+	if ((TWSR & MASTER_TRANS_MASK) != REP_START_ACK)
+	{
+		udtReturnValue = E_NOT_OK;
+	}
+	else
+	{
+		udtReturnValue = E_OK;
+	}
+	
+	return udtReturnValue;
+}
+
+/********************************************************************************************/
+/*  @brief				  : this function uses pooling technique "Sync". @ref port_index_t	*/
+/*							to get the result, TimeoutCounter is used						*/
+/*  @param	 udtPortIndex : to determine the required port				 @ref port_index_t	*/
+/*  @param	 u8Direction  : to Set the required Direction				 @ref uint8			*/
+/*  @return	 Std_ReturnType																	*/
+/*           (E_OK)		  : The function done successfully									*/
+/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
+/********************************************************************************************/
+void IIC_vdSendStopCondition
+(
+void
+)
+{
+	/*Sent a stop condition on the bus*/
+	SET_BIT(TWCR,TWCR_TWSTO);		
+	
+	/*Clear the interrupt flag to start the previous operation*/
+		/*
+			The TWINT Flag must be cleared by software by 
+			writing a logic one to it. 
+			
+			Note that this flag is not automatically cleared 
+			by hardware when executing the interrupt routine.
+			
+			Also note that clearing this flag starts the 
+			operation of the TWI, so all accesses to the 
+				TWI Address Register (TWAR),
+				TWI Status Register (TWSR), 
+				and TWI Data Register (TWDR) 
+			must be complete before clearing this flag	
+		*/
+	SET_BIT(TWCR,TWCR_TWINT);	
+	
+}
+
+/********************************************************************************************/
+/*  @brief				  : this function uses pooling technique "Sync". @ref port_index_t	*/
+/*							to get the result, TimeoutCounter is used						*/
+/*  @param	 udtPortIndex : to determine the required port				 @ref port_index_t	*/
+/*  @param	 u8Direction  : to Set the required Direction				 @ref uint8			*/
+/*  @return	 Std_ReturnType																	*/
+/*           (E_OK)		  : The function done successfully									*/
+/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
+/********************************************************************************************/
+Std_ReturnType IIC_udtSendSlaveAddressWrite
+(
+uint8 Copy_u8SlaveAddress
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+
+
+
+
+
+	return udtReturnValue;	
+	
+}
+
+
+/********************************************************************************************/
+/*  @brief				  : this function uses pooling technique "Sync". @ref port_index_t	*/
+/*							to get the result, TimeoutCounter is used						*/
+/*  @param	 udtPortIndex : to determine the required port				 @ref port_index_t	*/
+/*  @param	 u8Direction  : to Set the required Direction				 @ref uint8			*/
+/*  @return	 Std_ReturnType																	*/
+/*           (E_OK)		  : The function done successfully									*/
+/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
+/********************************************************************************************/
+Std_ReturnType IIC_udtSendSlaveAddressRead
+(
+uint8 Copy_u8SlaveAddress
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+
+
+
+
+
+	return udtReturnValue;	
+}
+
+
+
+
+/********************************************************************************************/
+/*  @brief				  : this function uses pooling technique "Sync". @ref port_index_t	*/
+/*							to get the result, TimeoutCounter is used						*/
+/*  @param	 udtPortIndex : to determine the required port				 @ref port_index_t	*/
+/*  @param	 u8Direction  : to Set the required Direction				 @ref uint8			*/
+/*  @return	 Std_ReturnType																	*/
+/*           (E_OK)		  : The function done successfully									*/
+/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
+/********************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+/********************************************************************************************/
+/*  @brief				  : this function uses pooling technique "Sync". @ref port_index_t	*/
+/*							to get the result, TimeoutCounter is used						*/
+/*  @param	 udtPortIndex : to determine the required port				 @ref port_index_t	*/
+/*  @param	 u8Direction  : to Set the required Direction				 @ref uint8			*/
+/*  @return	 Std_ReturnType																	*/
+/*           (E_OK)		  : The function done successfully									*/
+/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
+/********************************************************************************************/

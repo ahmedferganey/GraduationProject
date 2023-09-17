@@ -21,6 +21,7 @@
 
 
 /* -------------------------------- Function Declarations ---------------------------------------*/
+/******************************* Init Master & Slave *******************************/
 void IIC_vdInitMaster
 (
 uint8 Copy_u8Address
@@ -32,8 +33,33 @@ uint8 Copy_u8Address
 );
 
 
+/******************************* Start & Stop **************************************/
+Std_ReturnType IIC_udtSendStartCondition
+(
+void
+);
+
+Std_ReturnType IIC_udtSendRepeatedStart
+(
+void
+);
+
+void IIC_vdSendStopCondition
+(
+void
+);
 
 
+/******************************* Slave Address (R/W) *******************************/
+Std_ReturnType IIC_udtSendSlaveAddressWrite
+(
+uint8 Copy_u8SlaveAddress
+);
+
+Std_ReturnType IIC_udtSendSlaveAddressRead
+(
+uint8 Copy_u8SlaveAddress
+);
 
 
 
