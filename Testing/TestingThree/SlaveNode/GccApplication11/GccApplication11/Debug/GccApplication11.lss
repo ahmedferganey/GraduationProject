@@ -1,0 +1,365 @@
+
+GccApplication11.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         0000018a  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000004  00800060  0000018a  000001fe  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .comment      00000030  00000000  00000000  00000202  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000234  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000108  00000000  00000000  00000270  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000e8e  00000000  00000000  00000378  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000007cd  00000000  00000000  00001206  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000920  00000000  00000000  000019d3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  000001b0  00000000  00000000  000022f4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000789  00000000  00000000  000024a4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000bc6  00000000  00000000  00002c2d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 000000c8  00000000  00000000  000037f3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+   8:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+   c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  10:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  14:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  18:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  1c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  20:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  24:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  28:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  2c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  30:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  34:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  38:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  3c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  40:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  44:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  48:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  4c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  50:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+
+00000060 <__do_copy_data>:
+  60:	10 e0       	ldi	r17, 0x00	; 0
+  62:	a0 e6       	ldi	r26, 0x60	; 96
+  64:	b0 e0       	ldi	r27, 0x00	; 0
+  66:	ea e8       	ldi	r30, 0x8A	; 138
+  68:	f1 e0       	ldi	r31, 0x01	; 1
+  6a:	02 c0       	rjmp	.+4      	; 0x70 <__do_copy_data+0x10>
+  6c:	05 90       	lpm	r0, Z+
+  6e:	0d 92       	st	X+, r0
+  70:	a4 36       	cpi	r26, 0x64	; 100
+  72:	b1 07       	cpc	r27, r17
+  74:	d9 f7       	brne	.-10     	; 0x6c <__do_copy_data+0xc>
+
+00000076 <__do_clear_bss>:
+  76:	20 e0       	ldi	r18, 0x00	; 0
+  78:	a4 e6       	ldi	r26, 0x64	; 100
+  7a:	b0 e0       	ldi	r27, 0x00	; 0
+  7c:	01 c0       	rjmp	.+2      	; 0x80 <.do_clear_bss_start>
+
+0000007e <.do_clear_bss_loop>:
+  7e:	1d 92       	st	X+, r1
+
+00000080 <.do_clear_bss_start>:
+  80:	a4 36       	cpi	r26, 0x64	; 100
+  82:	b2 07       	cpc	r27, r18
+  84:	e1 f7       	brne	.-8      	; 0x7e <.do_clear_bss_loop>
+  86:	0e 94 a5 00 	call	0x14a	; 0x14a <main>
+  8a:	0c 94 c3 00 	jmp	0x186	; 0x186 <_exit>
+
+0000008e <__bad_interrupt>:
+  8e:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000092 <DIO_udtSetPortDirection>:
+	const uint8	 u8Direction
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+
+	if(PORTA_INDEX == udtPortIndex)
+  92:	81 11       	cpse	r24, r1
+  94:	02 c0       	rjmp	.+4      	; 0x9a <DIO_udtSetPortDirection+0x8>
+	{
+		(DIO->DDRA)	   = u8Direction;
+  96:	6a bb       	out	0x1a, r22	; 26
+  98:	08 95       	ret
+		udtReturnValue = E_OK;
+	}
+	else if (PORTB_INDEX == udtPortIndex)
+  9a:	81 30       	cpi	r24, 0x01	; 1
+  9c:	19 f4       	brne	.+6      	; 0xa4 <DIO_udtSetPortDirection+0x12>
+	{
+		(DIO->DDRB)	   = u8Direction;
+  9e:	67 bb       	out	0x17, r22	; 23
+		udtReturnValue = E_OK;
+  a0:	80 e0       	ldi	r24, 0x00	; 0
+  a2:	08 95       	ret
+	}
+	else if (PORTC_INDEX == udtPortIndex)
+  a4:	82 30       	cpi	r24, 0x02	; 2
+  a6:	19 f4       	brne	.+6      	; 0xae <DIO_udtSetPortDirection+0x1c>
+	{
+		(DIO->DDRC)    = u8Direction;
+  a8:	64 bb       	out	0x14, r22	; 20
+		udtReturnValue = E_OK;
+  aa:	80 e0       	ldi	r24, 0x00	; 0
+  ac:	08 95       	ret
+	}
+	else if (PORTD_INDEX == udtPortIndex)
+  ae:	83 30       	cpi	r24, 0x03	; 3
+  b0:	19 f4       	brne	.+6      	; 0xb8 <DIO_udtSetPortDirection+0x26>
+	{
+		(DIO->DDRD)    = u8Direction;
+  b2:	61 bb       	out	0x11, r22	; 17
+		udtReturnValue = E_OK;
+  b4:	80 e0       	ldi	r24, 0x00	; 0
+  b6:	08 95       	ret
+	}
+	else
+	{
+		udtReturnValue = E_NOT_OK;
+  b8:	81 e0       	ldi	r24, 0x01	; 1
+	}		
+	return udtReturnValue; 
+}
+  ba:	08 95       	ret
+
+000000bc <DIO_udtSetPortValue>:
+	port_index_t udtPortIndex,
+	const uint8  u8Value
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	switch (udtPortIndex)
+  bc:	81 30       	cpi	r24, 0x01	; 1
+  be:	49 f0       	breq	.+18     	; 0xd2 <DIO_udtSetPortValue+0x16>
+  c0:	28 f0       	brcs	.+10     	; 0xcc <DIO_udtSetPortValue+0x10>
+  c2:	82 30       	cpi	r24, 0x02	; 2
+  c4:	49 f0       	breq	.+18     	; 0xd8 <DIO_udtSetPortValue+0x1c>
+  c6:	83 30       	cpi	r24, 0x03	; 3
+  c8:	51 f0       	breq	.+20     	; 0xde <DIO_udtSetPortValue+0x22>
+  ca:	0c c0       	rjmp	.+24     	; 0xe4 <DIO_udtSetPortValue+0x28>
+	{
+		case PORTA_INDEX: (DIO->PORTA)	 = u8Value;
+  cc:	6b bb       	out	0x1b, r22	; 27
+						  udtReturnValue = E_OK;
+  ce:	80 e0       	ldi	r24, 0x00	; 0
+						  break;
+  d0:	08 95       	ret
+		case PORTB_INDEX: (DIO->PORTB)	 = u8Value;
+  d2:	68 bb       	out	0x18, r22	; 24
+						  udtReturnValue = E_OK;
+  d4:	80 e0       	ldi	r24, 0x00	; 0
+						  break;
+  d6:	08 95       	ret
+		case PORTC_INDEX: (DIO->PORTC)	 = u8Value;
+  d8:	65 bb       	out	0x15, r22	; 21
+						  udtReturnValue = E_OK;
+  da:	80 e0       	ldi	r24, 0x00	; 0
+						  break;
+  dc:	08 95       	ret
+		case PORTD_INDEX: (DIO->PORTD)	 = u8Value;
+  de:	62 bb       	out	0x12, r22	; 18
+						  udtReturnValue = E_OK;
+  e0:	80 e0       	ldi	r24, 0x00	; 0
+						  break;
+  e2:	08 95       	ret
+(
+	port_index_t udtPortIndex,
+	const uint8  u8Value
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+  e4:	81 e0       	ldi	r24, 0x01	; 1
+		default:		  /* !Comment: Do nothing */
+						  break;			
+		
+	}
+	return udtReturnValue;
+}
+  e6:	08 95       	ret
+
+000000e8 <GIE_VoidEnable>:
+void GIE_VoidEnable  
+(
+void
+)
+{
+	SET_BIT (SREG, SREG_I_BIT);
+  e8:	8f b7       	in	r24, 0x3f	; 63
+  ea:	80 68       	ori	r24, 0x80	; 128
+  ec:	8f bf       	out	0x3f, r24	; 63
+  ee:	08 95       	ret
+
+000000f0 <IIC_vdInitSlave>:
+	{
+		udtReturnValue = E_OK;
+	}	
+	
+	return udtReturnValue;					
+}
+  f0:	88 0f       	add	r24, r24
+  f2:	82 b9       	out	0x02, r24	; 2
+  f4:	86 b7       	in	r24, 0x36	; 54
+  f6:	80 64       	ori	r24, 0x40	; 64
+  f8:	86 bf       	out	0x36, r24	; 54
+  fa:	86 b7       	in	r24, 0x36	; 54
+  fc:	84 60       	ori	r24, 0x04	; 4
+  fe:	86 bf       	out	0x36, r24	; 54
+ 100:	08 95       	ret
+
+00000102 <IIC_SlaveReadDataByte>:
+/********************************************************************************************/
+Std_ReturnType IIC_SlaveReadDataByte
+(
+uint8* pu8DataByte
+)
+{
+ 102:	fc 01       	movw	r30, r24
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	
+	/*Clear the interrupt flag to start the previous operation*/
+	SET_BIT(TWCR,TWCR_TWINT);
+ 104:	96 b7       	in	r25, 0x36	; 54
+ 106:	90 68       	ori	r25, 0x80	; 128
+ 108:	96 bf       	out	0x36, r25	; 54
+	SET_BIT(TWCR,TWCR_TWEN);
+ 10a:	96 b7       	in	r25, 0x36	; 54
+ 10c:	94 60       	ori	r25, 0x04	; 4
+ 10e:	96 bf       	out	0x36, r25	; 54
+	SET_BIT(TWCR,TWCR_TWEA);
+ 110:	96 b7       	in	r25, 0x36	; 54
+ 112:	90 64       	ori	r25, 0x40	; 64
+ 114:	96 bf       	out	0x36, r25	; 54
+	
+	/*wait until the operation finishes and the flag is raised*/
+	while((GET_BIT(TWCR,TWCR_TWINT))==0);	
+ 116:	06 b6       	in	r0, 0x36	; 54
+ 118:	07 fe       	sbrs	r0, 7
+ 11a:	fd cf       	rjmp	.-6      	; 0x116 <IIC_SlaveReadDataByte+0x14>
+		
+	/*Check the operation status*/
+	if((TWSR & MASTER_TRANS_MASK) !=  SLAVE_ADD_RCVD_WR_REQ)
+ 11c:	81 b1       	in	r24, 0x01	; 1
+	{
+		udtReturnValue = E_NOT_OK;
+	}
+	SET_BIT(TWCR,TWCR_TWINT);	
+ 11e:	96 b7       	in	r25, 0x36	; 54
+ 120:	90 68       	ori	r25, 0x80	; 128
+ 122:	96 bf       	out	0x36, r25	; 54
+	SET_BIT(TWCR,TWCR_TWEN);
+ 124:	96 b7       	in	r25, 0x36	; 54
+ 126:	94 60       	ori	r25, 0x04	; 4
+ 128:	96 bf       	out	0x36, r25	; 54
+	SET_BIT(TWCR,TWCR_TWEA);
+ 12a:	96 b7       	in	r25, 0x36	; 54
+ 12c:	90 64       	ori	r25, 0x40	; 64
+ 12e:	96 bf       	out	0x36, r25	; 54
+	
+	/*wait until the operation finishes and the flag is raised*/
+	while((GET_BIT(TWCR,TWCR_TWINT))==0);
+ 130:	06 b6       	in	r0, 0x36	; 54
+ 132:	07 fe       	sbrs	r0, 7
+ 134:	fd cf       	rjmp	.-6      	; 0x130 <IIC_SlaveReadDataByte+0x2e>
+	
+	/*Check the operation status*/
+	if((TWSR & MASTER_TRANS_MASK) !=  SLAVE_DATA_RECEIVED)
+ 136:	91 b1       	in	r25, 0x01	; 1
+ 138:	98 7f       	andi	r25, 0xF8	; 248
+ 13a:	90 38       	cpi	r25, 0x80	; 128
+ 13c:	21 f4       	brne	.+8      	; 0x146 <IIC_SlaveReadDataByte+0x44>
+		udtReturnValue = E_NOT_OK;
+	}
+	else
+	{
+		/*Read the received data*/
+		*pu8DataByte = TWDR;
+ 13e:	83 b1       	in	r24, 0x03	; 3
+ 140:	80 83       	st	Z, r24
+		udtReturnValue = E_OK;
+ 142:	80 e0       	ldi	r24, 0x00	; 0
+ 144:	08 95       	ret
+	while((GET_BIT(TWCR,TWCR_TWINT))==0);
+	
+	/*Check the operation status*/
+	if((TWSR & MASTER_TRANS_MASK) !=  SLAVE_DATA_RECEIVED)
+	{
+		udtReturnValue = E_NOT_OK;
+ 146:	81 e0       	ldi	r24, 0x01	; 1
+		*pu8DataByte = TWDR;
+		udtReturnValue = E_OK;
+	}
+	
+	return udtReturnValue;					
+}
+ 148:	08 95       	ret
+
+0000014a <main>:
+
+
+
+
+int main(void)
+{
+ 14a:	cf 93       	push	r28
+ 14c:	df 93       	push	r29
+ 14e:	1f 92       	push	r1
+ 150:	cd b7       	in	r28, 0x3d	; 61
+ 152:	de b7       	in	r29, 0x3e	; 62
+	
+	uint8 Data_Rx;
+	
+	DIO_State	   = DIO_udtSetPortDirection(PORTA_INDEX, DirectionOutput);
+ 154:	60 91 60 00 	lds	r22, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 158:	80 e0       	ldi	r24, 0x00	; 0
+ 15a:	0e 94 49 00 	call	0x92	; 0x92 <DIO_udtSetPortDirection>
+ 15e:	80 93 62 00 	sts	0x0062, r24	; 0x800062 <DIO_State>
+	IIC_vdInitSlave(0b10101010);
+ 162:	8a ea       	ldi	r24, 0xAA	; 170
+ 164:	0e 94 78 00 	call	0xf0	; 0xf0 <IIC_vdInitSlave>
+	GIE_VoidEnable();
+ 168:	0e 94 74 00 	call	0xe8	; 0xe8 <GIE_VoidEnable>
+
+	while (1)
+	{
+		IIC_SlaveState = IIC_SlaveReadDataByte(&Data_Rx);
+ 16c:	ce 01       	movw	r24, r28
+ 16e:	01 96       	adiw	r24, 0x01	; 1
+ 170:	0e 94 81 00 	call	0x102	; 0x102 <IIC_SlaveReadDataByte>
+ 174:	80 93 61 00 	sts	0x0061, r24	; 0x800061 <IIC_SlaveState>
+		DIO_State  	   = DIO_udtSetPortValue(PORTA_INDEX, Data_Rx);
+ 178:	69 81       	ldd	r22, Y+1	; 0x01
+ 17a:	80 e0       	ldi	r24, 0x00	; 0
+ 17c:	0e 94 5e 00 	call	0xbc	; 0xbc <DIO_udtSetPortValue>
+ 180:	80 93 62 00 	sts	0x0062, r24	; 0x800062 <DIO_State>
+ 184:	f3 cf       	rjmp	.-26     	; 0x16c <main+0x22>
+
+00000186 <_exit>:
+ 186:	f8 94       	cli
+
+00000188 <__stop_program>:
+ 188:	ff cf       	rjmp	.-2      	; 0x188 <__stop_program>

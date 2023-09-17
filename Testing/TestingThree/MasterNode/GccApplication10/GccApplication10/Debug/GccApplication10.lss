@@ -1,0 +1,276 @@
+
+GccApplication10.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         0000016a  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000002  00800060  0000016a  000001de  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .comment      00000030  00000000  00000000  000001e0  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000210  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 000000b8  00000000  00000000  0000024c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000a5e  00000000  00000000  00000304  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000726  00000000  00000000  00000d62  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000601  00000000  00000000  00001488  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  0000011c  00000000  00000000  00001a8c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000556  00000000  00000000  00001ba8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000002e8  00000000  00000000  000020fe  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000088  00000000  00000000  000023e6  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+   8:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+   c:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  10:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  14:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  18:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  1c:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  20:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  24:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  28:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  2c:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  30:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  34:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  38:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  3c:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  40:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  44:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  48:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  4c:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+  50:	0c 94 3f 00 	jmp	0x7e	; 0x7e <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+
+00000060 <__do_copy_data>:
+  60:	10 e0       	ldi	r17, 0x00	; 0
+  62:	a0 e6       	ldi	r26, 0x60	; 96
+  64:	b0 e0       	ldi	r27, 0x00	; 0
+  66:	ea e6       	ldi	r30, 0x6A	; 106
+  68:	f1 e0       	ldi	r31, 0x01	; 1
+  6a:	02 c0       	rjmp	.+4      	; 0x70 <__do_copy_data+0x10>
+  6c:	05 90       	lpm	r0, Z+
+  6e:	0d 92       	st	X+, r0
+  70:	a2 36       	cpi	r26, 0x62	; 98
+  72:	b1 07       	cpc	r27, r17
+  74:	d9 f7       	brne	.-10     	; 0x6c <__do_copy_data+0xc>
+  76:	0e 94 90 00 	call	0x120	; 0x120 <main>
+  7a:	0c 94 b3 00 	jmp	0x166	; 0x166 <_exit>
+
+0000007e <__bad_interrupt>:
+  7e:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000082 <GIE_VoidEnable>:
+void GIE_VoidEnable  
+(
+void
+)
+{
+	SET_BIT (SREG, SREG_I_BIT);
+  82:	8f b7       	in	r24, 0x3f	; 63
+  84:	80 68       	ori	r24, 0x80	; 128
+  86:	8f bf       	out	0x3f, r24	; 63
+  88:	08 95       	ret
+
+0000008a <IIC_vdInitMaster>:
+	{
+		udtReturnValue = E_OK;
+	}
+
+	return udtReturnValue;				
+}
+  8a:	92 e0       	ldi	r25, 0x02	; 2
+  8c:	90 b9       	out	0x00, r25	; 0
+  8e:	11 b8       	out	0x01, r1	; 1
+  90:	88 23       	and	r24, r24
+  92:	11 f0       	breq	.+4      	; 0x98 <IIC_vdInitMaster+0xe>
+  94:	88 0f       	add	r24, r24
+  96:	82 b9       	out	0x02, r24	; 2
+  98:	86 b7       	in	r24, 0x36	; 54
+  9a:	80 64       	ori	r24, 0x40	; 64
+  9c:	86 bf       	out	0x36, r24	; 54
+  9e:	86 b7       	in	r24, 0x36	; 54
+  a0:	84 60       	ori	r24, 0x04	; 4
+  a2:	86 bf       	out	0x36, r24	; 54
+  a4:	08 95       	ret
+
+000000a6 <IIC_udtSendStartCondition>:
+  a6:	86 b7       	in	r24, 0x36	; 54
+  a8:	80 62       	ori	r24, 0x20	; 32
+  aa:	86 bf       	out	0x36, r24	; 54
+  ac:	86 b7       	in	r24, 0x36	; 54
+  ae:	80 68       	ori	r24, 0x80	; 128
+  b0:	86 bf       	out	0x36, r24	; 54
+  b2:	06 b6       	in	r0, 0x36	; 54
+  b4:	07 fe       	sbrs	r0, 7
+  b6:	fd cf       	rjmp	.-6      	; 0xb2 <IIC_udtSendStartCondition+0xc>
+  b8:	81 b1       	in	r24, 0x01	; 1
+  ba:	88 7f       	andi	r24, 0xF8	; 248
+  bc:	88 30       	cpi	r24, 0x08	; 8
+  be:	11 f0       	breq	.+4      	; 0xc4 <IIC_udtSendStartCondition+0x1e>
+  c0:	81 e0       	ldi	r24, 0x01	; 1
+  c2:	08 95       	ret
+  c4:	80 e0       	ldi	r24, 0x00	; 0
+  c6:	08 95       	ret
+
+000000c8 <IIC_vdSendStopCondition>:
+  c8:	86 b7       	in	r24, 0x36	; 54
+  ca:	80 61       	ori	r24, 0x10	; 16
+  cc:	86 bf       	out	0x36, r24	; 54
+  ce:	86 b7       	in	r24, 0x36	; 54
+  d0:	80 68       	ori	r24, 0x80	; 128
+  d2:	86 bf       	out	0x36, r24	; 54
+  d4:	08 95       	ret
+
+000000d6 <IIC_udtSendSlaveAddressWrite>:
+  d6:	88 0f       	add	r24, r24
+  d8:	83 b9       	out	0x03, r24	; 3
+  da:	83 b1       	in	r24, 0x03	; 3
+  dc:	8e 7f       	andi	r24, 0xFE	; 254
+  de:	83 b9       	out	0x03, r24	; 3
+  e0:	86 b7       	in	r24, 0x36	; 54
+  e2:	8f 7d       	andi	r24, 0xDF	; 223
+  e4:	86 bf       	out	0x36, r24	; 54
+  e6:	86 b7       	in	r24, 0x36	; 54
+  e8:	80 68       	ori	r24, 0x80	; 128
+  ea:	86 bf       	out	0x36, r24	; 54
+  ec:	06 b6       	in	r0, 0x36	; 54
+  ee:	07 fe       	sbrs	r0, 7
+  f0:	fd cf       	rjmp	.-6      	; 0xec <IIC_udtSendSlaveAddressWrite+0x16>
+  f2:	81 b1       	in	r24, 0x01	; 1
+  f4:	88 7f       	andi	r24, 0xF8	; 248
+  f6:	88 31       	cpi	r24, 0x18	; 24
+  f8:	11 f0       	breq	.+4      	; 0xfe <IIC_udtSendSlaveAddressWrite+0x28>
+  fa:	81 e0       	ldi	r24, 0x01	; 1
+  fc:	08 95       	ret
+  fe:	80 e0       	ldi	r24, 0x00	; 0
+ 100:	08 95       	ret
+
+00000102 <IIC_MasterWriteDataByte>:
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	
+	/*Write the data byte on the bus*/
+	TWDR = Copy_u8DataByte;	
+ 102:	83 b9       	out	0x03, r24	; 3
+	
+	/*Clear the interrupt flag to start the previous operation*/
+	SET_BIT(TWCR,TWCR_TWINT);	
+ 104:	86 b7       	in	r24, 0x36	; 54
+ 106:	80 68       	ori	r24, 0x80	; 128
+ 108:	86 bf       	out	0x36, r24	; 54
+	
+	/*wait until the operation finishes and the flag is raised*/
+	while((GET_BIT(TWCR,TWCR_TWINT))==0);	
+ 10a:	06 b6       	in	r0, 0x36	; 54
+ 10c:	07 fe       	sbrs	r0, 7
+ 10e:	fd cf       	rjmp	.-6      	; 0x10a <IIC_MasterWriteDataByte+0x8>
+	
+	/*Check the operation status*/
+	if((TWSR & MASTER_TRANS_MASK) != MSTR_WR_BYTE_ACK)
+ 110:	81 b1       	in	r24, 0x01	; 1
+ 112:	88 7f       	andi	r24, 0xF8	; 248
+ 114:	88 32       	cpi	r24, 0x28	; 40
+ 116:	11 f0       	breq	.+4      	; 0x11c <IIC_MasterWriteDataByte+0x1a>
+	{
+		udtReturnValue = E_NOT_OK;
+ 118:	81 e0       	ldi	r24, 0x01	; 1
+ 11a:	08 95       	ret
+	}
+	else
+	{
+		udtReturnValue = E_OK;
+ 11c:	80 e0       	ldi	r24, 0x00	; 0
+	}
+	
+	return udtReturnValue;					
+}
+ 11e:	08 95       	ret
+
+00000120 <main>:
+int main(void)
+{
+	
+	uint8 num = 0;
+
+	IIC_vdInitMaster(0b01010101);
+ 120:	85 e5       	ldi	r24, 0x55	; 85
+ 122:	0e 94 45 00 	call	0x8a	; 0x8a <IIC_vdInitMaster>
+	GIE_VoidEnable();
+ 126:	0e 94 41 00 	call	0x82	; 0x82 <GIE_VoidEnable>
+Std_ReturnType IICMasterState =  E_NOT_OK;
+
+int main(void)
+{
+	
+	uint8 num = 0;
+ 12a:	c0 e0       	ldi	r28, 0x00	; 0
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 12c:	2f ef       	ldi	r18, 0xFF	; 255
+ 12e:	89 e6       	ldi	r24, 0x69	; 105
+ 130:	98 e1       	ldi	r25, 0x18	; 24
+ 132:	21 50       	subi	r18, 0x01	; 1
+ 134:	80 40       	sbci	r24, 0x00	; 0
+ 136:	90 40       	sbci	r25, 0x00	; 0
+ 138:	e1 f7       	brne	.-8      	; 0x132 <main+0x12>
+ 13a:	00 c0       	rjmp	.+0      	; 0x13c <main+0x1c>
+ 13c:	00 00       	nop
+	GIE_VoidEnable();
+	
+	while (1)
+	{
+		_delay_ms(500);
+		IICMasterState = IIC_udtSendStartCondition();
+ 13e:	0e 94 53 00 	call	0xa6	; 0xa6 <IIC_udtSendStartCondition>
+ 142:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <IICMasterState>
+		IICMasterState = IIC_udtSendSlaveAddressWrite(0b10101010);
+ 146:	8a ea       	ldi	r24, 0xAA	; 170
+ 148:	0e 94 6b 00 	call	0xd6	; 0xd6 <IIC_udtSendSlaveAddressWrite>
+ 14c:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <IICMasterState>
+		IICMasterState = IIC_MasterWriteDataByte(num++);	
+ 150:	d1 e0       	ldi	r29, 0x01	; 1
+ 152:	dc 0f       	add	r29, r28
+ 154:	8c 2f       	mov	r24, r28
+ 156:	0e 94 81 00 	call	0x102	; 0x102 <IIC_MasterWriteDataByte>
+ 15a:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <IICMasterState>
+		IIC_vdSendStopCondition();
+ 15e:	0e 94 64 00 	call	0xc8	; 0xc8 <IIC_vdSendStopCondition>
+	while (1)
+	{
+		_delay_ms(500);
+		IICMasterState = IIC_udtSendStartCondition();
+		IICMasterState = IIC_udtSendSlaveAddressWrite(0b10101010);
+		IICMasterState = IIC_MasterWriteDataByte(num++);	
+ 162:	cd 2f       	mov	r28, r29
+ 164:	e3 cf       	rjmp	.-58     	; 0x12c <main+0xc>
+
+00000166 <_exit>:
+ 166:	f8 94       	cli
+
+00000168 <__stop_program>:
+ 168:	ff cf       	rjmp	.-2      	; 0x168 <__stop_program>

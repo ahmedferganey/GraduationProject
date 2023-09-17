@@ -526,6 +526,8 @@ uint8* pu8DataByte
 	
 	/*Clear the interrupt flag to start the previous operation*/
 	SET_BIT(TWCR,TWCR_TWINT);
+	SET_BIT(TWCR,TWCR_TWEN);
+	SET_BIT(TWCR,TWCR_TWEA);
 	
 	/*wait until the operation finishes and the flag is raised*/
 	while((GET_BIT(TWCR,TWCR_TWINT))==0);	
@@ -536,7 +538,9 @@ uint8* pu8DataByte
 		udtReturnValue = E_NOT_OK;
 	}
 	SET_BIT(TWCR,TWCR_TWINT);	
-		
+	SET_BIT(TWCR,TWCR_TWEN);
+	SET_BIT(TWCR,TWCR_TWEA);
+	
 	/*wait until the operation finishes and the flag is raised*/
 	while((GET_BIT(TWCR,TWCR_TWINT))==0);
 	
