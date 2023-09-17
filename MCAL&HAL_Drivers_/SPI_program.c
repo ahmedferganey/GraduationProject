@@ -521,7 +521,7 @@ void __vector_12 (void)
 	{
 		/*Buffer Complete*/
 		/*SPI is now IDLE*/
-		SPI_u8State = IDLE ;
+		SPI_u8State = STD_IDLE ;
 		
 		/*SPI Interrupt Disable*/
 		CLR_BIT(SPCR , SPCR_SPIE) ;
