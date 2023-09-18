@@ -363,27 +363,33 @@ uint8 * Copy_u8ReceviedData
 /*           (E_OK)		  : The function done successfully									*/
 /*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
 /********************************************************************************************/
-uint8 USART_u8SendStringSynch 
+uint8 USART_udtSendStringSynch 
 (
 const uint8 * Copy_pchString
 )
 {
+	Std_ReturnType udtReturnValue = E_NOT_OK;
 
+	uint32 Local_u32Index = 0 ;
 
+	if (Copy_pchString != NULL)
+	{
+		while (Copy_pchString[Local_u32Index] != '\0')
+		{
+			udtReturnValue = USART_udtSendData(Copy_pchString[Local_u32Index]);
+			Local_u32Index++ ;
+			if (udtReturnValue != E_OK)
+			{
+				return udtReturnValue ;
+			}
+		}
+	}
+	else
+	{
+		udtReturnValue = E_NOT_OK ;
+	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-	
+	return udtReturnValue ;	
 }
 /********************************************************************************************/
 /*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
@@ -393,29 +399,35 @@ const uint8 * Copy_pchString
 /*           (E_OK)		  : The function done successfully									*/
 /*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
 /********************************************************************************************/
-uint8 USART_u8ReceiveBufferSynch 
+uint8 USART_udtReceiveBufferSynch 
 (
 uint8 * Copy_pchString, 
 uint32 Copy_uint32BufferSize
 )
 {
+	Std_ReturnType udtReturnValue = E_NOT_OK;
 
+	u32 Local_u32Index = 0 ;
 
+	if (Copy_pchString != NULL)
+	{
+		while (Local_u32Index < Copy_uint32BufferSize)
+		{
+			udtReturnValue = USART_udtRecevieData(&Copy_pchString[Local_u32Index]) ;
+			Local_u32Index++ ;
 
+			if (udtReturnValue != E_OK)
+			{
+				return udtReturnValue ;
+			}
+		}
+	}
+	else
+	{
+		udtReturnValue = E_NOT_OK ;
+	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-	
+	return udtReturnValue ;	
 }
 /********************************************************************************************/
 /*  @brief				  : this function uses pooling technique "Sync". @ref port_index_t	*/
