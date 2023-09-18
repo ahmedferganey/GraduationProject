@@ -49,7 +49,7 @@ typedef struct
 */
 Std_ReturnType LM35_udtGetTemp 
 (
-LM35_config_t* LM35_pudtConfig, 
+LM35_Config_t* LM35_pudtConfig, 			
 uint8* LM35_pu8TempValue
 );
 

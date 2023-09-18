@@ -41,7 +41,7 @@
 /*********************		 getter API		 *********************/
 Std_ReturnType LM35_udtGetTemp 
 (
-LM35_config_t* LM35_pudtConfig, 
+LM35_Config_t* LM35_pudtConfig, 			
 uint8* LM35_pu8TempValue
 )
 {
@@ -52,7 +52,7 @@ uint8* LM35_pu8TempValue
 	uint16 Local_u8ADCReference = (LM35_pudtConfig->Copy_u8ADCVoltageRef)*1000;
 
 
-	if (((LM35_pudtConfig == NULL) || (pu8TempValue == NULL)))
+	if (((LM35_pudtConfig == NULL) || (LM35_pu8TempValue == NULL)))
 	{
 		udtReturnValue = E_NOT_OK;
 	}

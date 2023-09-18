@@ -425,6 +425,33 @@ ADC_chain_t * Copy_ADC_Chain
 	return udtReturnValue;
 }
 
+/********************************************************************************************/
+/*  @brief				  : this function uses pooling technique "Sync". @ref port_index_t	*/
+/*							to get the result, TimeoutCounter is used						*/
+/*  @param	 udtPortIndex : to determine the required port				 @ref port_index_t	*/
+/*  @param	 u8Direction  : to Set the required Direction				 @ref uint8			*/
+/*  @return	 Std_ReturnType																	*/
+/*           (E_OK)		  : The function done successfully									*/
+/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
+/********************************************************************************************/
+Std_ReturnType ADC_udtSetCallBack
+(
+void (*Copy_pvCallBackFunc)(void)
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	if (Copy_pvCallBackFunc != NULL)
+	{
+		ADC_pvNotificationFunc= Copy_pvCallBackFunc;
+		udtReturnValue = E_OK;		
+	}
+	else
+	{
+		udtReturnValue = E_NOT_OK;
+	}
+	return udtReturnValue;	
+	
+}
 
 /********************************************************************************************/
 /*  @brief				  : this function uses pooling technique "Sync". @ref port_index_t	*/

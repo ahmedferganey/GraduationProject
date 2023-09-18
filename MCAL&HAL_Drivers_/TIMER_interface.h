@@ -148,7 +148,7 @@ void
 /*------- Common APIs Declerations -------*/
 
 /*------- TIMER ISR Declerations -------*/
-Std_ReturnType TIMER_u8SetCallBack
+Std_ReturnType TIMER_udtSetCallBack
 (
 void (*Copy_pvCallBackFunc)(void), 
 uint8 Copy_u8VectorID

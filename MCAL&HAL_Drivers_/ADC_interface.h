@@ -119,5 +119,10 @@ Std_ReturnType ADC_udtStartChainAsynch
 ADC_chain_t * Copy_ADC_Chain
 );
 
+Std_ReturnType ADC_udtSetCallBack
+(
+void (*Copy_pvCallBackFunc)(void)
+);
+
 
 #endif  /* _ADC_INTERFACE_H_ */

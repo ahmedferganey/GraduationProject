@@ -32,7 +32,7 @@ typedef struct
 	uint8 Copy_u8DcMotorPort ;
 	uint8 Copy_u8DcMotorPinA ;
 	uint8 Copy_u8DcMotorPinB ;
-}DCMOTOR_Config_t ;
+}DCMOTOR_Config_t;
 
 
 

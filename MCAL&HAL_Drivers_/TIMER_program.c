@@ -794,7 +794,7 @@ void
 
 /*------- TIMER ISR Implementation -------*/
 /* call back function where app layer can use it to interrupt */
-Std_ReturnType TIMER_u8SetCallBack
+Std_ReturnType TIMER_udtSetCallBack
 (
 void (*Copy_pvCallBackFunc)(void), 
 uint8 Copy_u8VectorID
