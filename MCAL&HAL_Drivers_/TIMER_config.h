@@ -105,7 +105,7 @@
 							TIMER1_FAST_PWM_ICR1_MODE
 							TIMER1_FAST_PWM_OCR1A_MODE
 */
-#define TIMER1_WAVEFORM_GENERATION_MODE		TIMER1_NORMAL_MODE
+#define TIMER1_WAVEFORM_GENERATION_MODE		TIMER1_FAST_PWM_ICR1_MODE
 
 
 /* !Comment: select whether you will enable or disable the interrupt for TIMER1
@@ -115,7 +115,7 @@
 			 Input Capture Interrupt Enable:
 								DISABLE		OR		ENABLE
 */
-#define TIMER1_OVERFLOW_INTERRUPT			ENABLE
+#define TIMER1_OVERFLOW_INTERRUPT			DISABLE
 #define TIMER1_CTCB_INTERRUPT				DISABLE
 #define TIMER1_CTCA_INTERRUPT				DISABLE
 #define TIMER1_ICR_INTERRUPT				DISABLE
@@ -249,7 +249,7 @@
 */
 /* !Comment: this tehnique will force the user to work on the same prescaler
 			 for timer 0,1 but i like to ensure the concept of configuarability */
-#define TIMER01_PRESCALER		TIMER01_DIVISION_FACTOR_8
+#define TIMER01_PRESCALER		TIMER01_DIVISION_FACTOR_64
 
 
 
