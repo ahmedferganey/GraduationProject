@@ -24,7 +24,8 @@
 #include "EEPROM_interface.h"
 #include "DCMOTOR_interface.h"
 #include "LDR_interface.h"
-
+#include "HC05_interface.h"
+#include "SERVOMOTOR_interface.h"
 
 /* Comment!: Macro Declarations */
 

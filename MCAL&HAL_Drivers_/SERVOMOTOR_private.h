@@ -14,7 +14,7 @@
 /* -------------------------------- Macro Declarations ------------------------------------------*/
 #define  SERVOMOTOR_DIR_PIN_OUT		1
 
-#define  SERVO_MAX				    19999
+#define  SERVO_MAX				    2499
 
 /*
 	Generate PWM using AVR ATmega16
@@ -49,6 +49,15 @@
 		Now suppose we want a PWM duty cycle period of 1ms as shown in the above figure, 
 		then we need to load the OCR1A register with 1ms/8us i.e. OCR1A = 125.
 		So load OCR1A register as per duty cycle period requirement.
+		
+		Now let’s program AVR ATmega16 to generate 50Hz PWM to control Servo Motor in 
+		an angle between -90° to +90° rotation.
+		For SG90 Micro servo motor, here we get practically -90° at 0.52ms duty cycle 
+		Period of 50Hz PWM, so we are going to load OCR1A = 65.
+		After 0° at 1.4ms duty cycle Period of 50Hz PWM, so we are going 
+		to load OCR1A = 175.
+		And +90° at 2.4ms duty cycle Period of 50Hz PWM, so we are going 
+		to load OCR1A = 300.
 
 */
 

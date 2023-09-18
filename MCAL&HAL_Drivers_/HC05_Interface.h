@@ -33,14 +33,14 @@ uint8* HC05_pu8RXChar
 );
 
 /******	   String RX/TX API		******/
-Std_ReturnType HC05_voidTx_String
+Std_ReturnType HC05_udtTx_String
 (
-uint8* Copy_pu8String
+uint8* HC05_pu8TXString
 );
 
 Std_ReturnType HC05_pu8Rx_String
 (
-uint8*  HC05_pu8RXString, 
+uint8* HC05_pu8RXString, 
 uint32  HC05_u32BufferSize
 );
 

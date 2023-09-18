@@ -75,14 +75,14 @@ uint8* HC05_pu8RXChar
 /*           (E_OK)		  : The function done successfully									*/
 /*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
 /********************************************************************************************/
-Std_ReturnType HC05_voidTx_String
+Std_ReturnType HC05_udtTx_String
 (
 uint8* HC05_pu8TXString
 )
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 
-	udtReturnValue = USART_udtSendStringSynch(HC05_pu8String);
+	udtReturnValue = USART_udtSendStringSynch(HC05_pu8TXString);
 
 	return udtReturnValue;		
 }
@@ -109,7 +109,7 @@ uint32  HC05_u32BufferSize
 			data will continue until receieve all indexes 
 	*/
 	udtReturnValue = USART_udtReceiveBufferSynch(HC05_pu8RXString, 
-												 Copy_uint32BufferSize);
+												 HC05_u32BufferSize);
 
 	return udtReturnValue;		
 }

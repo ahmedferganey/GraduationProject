@@ -75,9 +75,33 @@ void
 /********************************************************************************************/
 void ServoMotor_vdRotate
 (
-f32 Copy_f32Angle
+uint8 SERVOMOTOR_u8Angle,
+SERVOMOTOR_t SERVOMOTOR_udtTarget
 )
 {
+    uint16 SERVOMOTOR_u16Time = 0;
+    	
+	/*
+		note: 
+				90  deg ----->	300 in OCR at f = 8MHZ, Prescaler = 64  
+			    -90 deg ----->	65  in OCR at f = 8MHZ, Prescaler = 64  
+		so by interpolation you can calculate any value in between.
+	*/
+	/* SERVOMOTOR_u16Time is u16 cause value will be in between 300 : 65 */
+	SERVOMOTOR_u16Time = ((300 - ((1.305555*(90-(d64)SERVOMOTOR_u8Angle)))));  
+		
 	
+	switch (SERVOMOTOR_udtTarget)
+	{
+		case OCR1A:    TIMER1_vdSetCTCA(SERVOMOTOR_u16Time);
+					   break;
+		
+		case OCR1B:	   TIMER1_vdSetCTCB(SERVOMOTOR_u16Time);	
+					   break;	
+					
+		default   :    /* Nothing */
+					   break;
+	}
+
 }
 

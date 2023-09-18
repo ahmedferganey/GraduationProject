@@ -14,14 +14,18 @@
 /* -------------------------------- Macro Declarations ------------------------------------------*/
 
 
+
 /* -------------------------------- Macro Functions Declarations --------------------------------*/
 
 
 /* -------------------------------- Data Type Declarations --------------------------------------*/
-
+typedef enum
+{
+	OCR1B = 4,
+	OCR1A = 5	
+}SERVOMOTOR_t;
 
 /* -------------------------------- Function Declarations ---------------------------------------*/
-
 Std_ReturnType ServoMotor_udtInit
 (
 void
@@ -29,7 +33,8 @@ void
 
 void ServoMotor_vdRotate
 (
-f32 Copy_f32Angle
+uint8 SERVOMOTOR_u8Angle,
+SERVOMOTOR_t SERVOMOTOR_udtTarget
 );
 
 

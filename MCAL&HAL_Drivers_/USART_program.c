@@ -407,7 +407,7 @@ uint32 Copy_uint32BufferSize
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 
-	u32 Local_u32Index = 0 ;
+	uint32 Local_u32Index = 0 ;
 
 	if (Copy_pchString != NULL)
 	{
