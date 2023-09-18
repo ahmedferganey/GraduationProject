@@ -41,12 +41,12 @@ uint8 * Copy_u8ReceviedData
 
 
 /********** synch Mode **********/
-uint8 USART_u8SendStringSynch 
+Std_ReturnType USART_udtSendStringSynch 
 (
 const uint8 * Copy_pchString
 );
 
-uint8 USART_u8ReceiveBufferSynch 
+Std_ReturnType USART_udtReceiveBufferSynch 
 (
 uint8 * Copy_pchString, 
 uint32 Copy_uint32BufferSize
