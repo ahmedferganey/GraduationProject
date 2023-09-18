@@ -15,7 +15,7 @@
 /**			HAL Includes				**/
 #include "BUZZER_interface.h"
 #include "BUZZER_config.h"
-#include "DCMOTOR_private.h"
+#include "BUZZER_private.h"
 
 
 
@@ -25,10 +25,10 @@
 
 /* -------------------------------- APIs Implementation ------------------------------------*/
 /********************************************************************************************/
-/*  @brief				  : this function uses pooling technique "Sync". @ref port_index_t	*/
-/*							to get the result, TimeoutCounter is used						*/
-/*  @param	 udtPortIndex : to determine the required port				 @ref port_index_t	*/
-/*  @param	 u8Direction  : to Set the required Direction				 @ref uint8			*/
+/*  @brief				  :  This Function initialize the pin which 						*/
+/*							 connected to BUZ as output pin.			 					*/
+/*  @param	 udtPortIndex : to determine the required port				 					*/
+/*  @param	 u8Direction  : to Set the required Direction				 					*/
 /*  @return	 Std_ReturnType																	*/
 /*           (E_OK)		  : The function done successfully									*/
 /*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
@@ -41,14 +41,16 @@ BUZZER_t* BUZZER_pudtBuzzerConfig
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 	if (BUZZER_pudtBuzzerConfig == NULL)
 	{
-		udtReturnValue = E_NOT_OK		
+		udtReturnValue = E_NOT_OK;		
 	}
 	else
 	{
-		
-		
-		
-		
+		udtReturnValue = DIO_udtSetPinDirection
+						(
+						 BUZZER_pudtBuzzerConfig->pin_config_t.port,
+						 BUZZER_pudtBuzzerConfig->pin_config_t.pin,
+						 BUZZER_pudtBuzzerConfig->pin_config_t.direction
+						);
 	}
 	return udtReturnValue;	
 }
@@ -64,19 +66,37 @@ BUZZER_t* BUZZER_pudtBuzzerConfig
 /********************************************************************************************/
 Std_ReturnType BUZ_udtTurnON
 (
-BUZZER_t* BUZZER_pudtBuzzerConfig
+BUZZER_t* BUZZ_pudtBuzzCfg
 )
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
-	if (BUZZER_pudtBuzzerConfig == NULL)
+	if (BUZZ_pudtBuzzCfg == NULL)
 	{
-		udtReturnValue = E_NOT_OK		
+		udtReturnValue = E_NOT_OK;		
 	}
 	else
 	{
-		
-		
-		
+		switch (BUZZ_pudtBuzzCfg->BUZZER_State_t)
+		{
+			case ACTIVE_LOW : udtReturnValue = DIO_udtSetPinValue
+											   (
+											    BUZZ_pudtBuzzCfg->pin_config_t.port,
+											    BUZZ_pudtBuzzCfg->pin_config_t.pin,
+											    BUZZ_pudtBuzzCfg->BUZZER_State_t.ACTIVE_LOW											   
+											   );
+							  break;
+			
+			case ACTIVE_HIGH: udtReturnValue = DIO_udtSetPinValue
+											   (
+											    BUZZ_pudtBuzzCfg->pin_config_t.port,
+											    BUZZ_pudtBuzzCfg->pin_config_t.pin,
+											    BUZZ_pudtBuzzCfg->BUZZER_State_t.ACTIVE_HIGH										   
+											   );
+							  break;
+				
+			default			: udtReturnValue = E_NOT_OK;	
+							  break;			
+		}		
 		
 	}
 	return udtReturnValue;	
@@ -93,19 +113,37 @@ BUZZER_t* BUZZER_pudtBuzzerConfig
 /********************************************************************************************/
 Std_ReturnType BUZ_udtTurnOFF
 (
-BUZZER_t* BUZZER_pudtBuzzerConfig
+BUZZER_t* BUZZ_pudtBuzzCfg
 )
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
-	if (BUZZER_pudtBuzzerConfig == NULL)
+	if (BUZZ_pudtBuzzCfg == NULL)
 	{
-		udtReturnValue = E_NOT_OK		
+		udtReturnValue = E_NOT_OK;		
 	}
 	else
 	{
-		
-		
-		
+		switch (BUZZ_pudtBuzzCfg->BUZZER_State_t)
+		{
+			case ACTIVE_LOW : udtReturnValue = DIO_udtSetPinValue
+											   (
+											    BUZZ_pudtBuzzCfg->pin_config_t.port,
+											    BUZZ_pudtBuzzCfg->pin_config_t.pin,
+											    BUZZ_pudtBuzzCfg->BUZZER_State_t.ACTIVE_HIGH											   
+											   );
+							  break;
+			
+			case ACTIVE_HIGH: udtReturnValue = DIO_udtSetPinValue
+											   (
+											    BUZZ_pudtBuzzCfg->pin_config_t.port,
+											    BUZZ_pudtBuzzCfg->pin_config_t.pin,
+											    BUZZ_pudtBuzzCfg->BUZZER_State_t.ACTIVE_LOW										   
+											   );
+							  break;
+				
+			default			: udtReturnValue = E_NOT_OK;	
+							  break;			
+		}		
 		
 	}
 	return udtReturnValue;	
@@ -128,14 +166,17 @@ BUZZER_t* BUZZER_pudtBuzzerConfig
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 	if (BUZZER_pudtBuzzerConfig == NULL)
 	{
-		udtReturnValue = E_NOT_OK		
+		udtReturnValue = E_NOT_OK;		
 	}
 	else
 	{
-		
-		
-		
-		
+
+		udtReturnValue = DIO_udtTogglePinValue
+						 (
+						  BUZZ_pudtBuzzCfg->pin_config_t.port,
+						  BUZZ_pudtBuzzCfg->pin_config_t.pin,
+						 );		
 	}
 	return udtReturnValue;	
 }
+//////////////////////////////////////////////////////////////////////////////////////////////

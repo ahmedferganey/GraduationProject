@@ -12,8 +12,8 @@
 
 
 /* -------------------------------- Macro Declarations ------------------------------------------*/
-
-
+#define ACTIVE_LOW		0
+#define ACTIVE_HIGH		1
 /* -------------------------------- Macro Functions Declarations --------------------------------*/
 
 
