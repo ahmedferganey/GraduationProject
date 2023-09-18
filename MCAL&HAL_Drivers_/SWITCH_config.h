@@ -1,20 +1,17 @@
 /*
- * FileName		: BUZZER_private.h
- * Created		: 9/18/2023 8:48:41 PM
+ * FileName		: SWITCH_config.h
+ * Created		: 9/19/2023 12:04:37 PM
  * Author		: Ahmed Ferganey
  */ 
  
-#ifndef _BUZZER_PRIVATE_H_
-#define _BUZZER_PRIVATE_H_
+#ifndef _SWITCH_CONFIG_H_
+#define _SWITCH_CONFIG_H_
 
 
 /* -------------------------------- Includes ----------------------------------------------------*/
 
 
 /* -------------------------------- Macro Declarations ------------------------------------------*/
-#define BUZZER_ACTIVE_LOW		0
-#define BUZZER_ACTIVE_HIGH		1
-
 
 /* -------------------------------- Macro Functions Declarations --------------------------------*/
 
@@ -22,8 +19,6 @@
 /* -------------------------------- Data Type Declarations --------------------------------------*/
 
 
-
 /* -------------------------------- Function Declarations ---------------------------------------*/
 
-
-#endif  /* _BUZZER_PRIVATE_H_ */
+#endif  /* _SWITCH_CONFIG_H_ */

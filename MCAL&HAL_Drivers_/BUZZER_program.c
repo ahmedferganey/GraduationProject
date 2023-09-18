@@ -47,9 +47,9 @@ BUZZER_t* BUZZER_pudtBuzzerConfig
 	{
 		udtReturnValue = DIO_udtSetPinDirection
 						(
-						 BUZZER_pudtBuzzerConfig->pin_config_t.port,
-						 BUZZER_pudtBuzzerConfig->pin_config_t.pin,
-						 BUZZER_pudtBuzzerConfig->pin_config_t.direction
+						 BUZZER_pudtBuzzerConfig->BUZZER_info.port,
+						 BUZZER_pudtBuzzerConfig->BUZZER_info.pin,
+						 BUZZER_pudtBuzzerConfig->BUZZER_info.direction
 						);
 	}
 	return udtReturnValue;	
@@ -76,22 +76,22 @@ BUZZER_t* BUZZ_pudtBuzzCfg
 	}
 	else
 	{
-		switch (BUZZ_pudtBuzzCfg->BUZZER_State_t)
+		switch (BUZZ_pudtBuzzCfg->BUZZER_state)
 		{
-			case ACTIVE_LOW : udtReturnValue = DIO_udtSetPinValue
-											   (
-											    BUZZ_pudtBuzzCfg->pin_config_t.port,
-											    BUZZ_pudtBuzzCfg->pin_config_t.pin,
-											    BUZZ_pudtBuzzCfg->BUZZER_State_t.ACTIVE_LOW											   
-											   );
+			case BUZZER_ACTIVE_LOW : udtReturnValue = DIO_udtSetPinValue
+													  (
+													   BUZZ_pudtBuzzCfg->BUZZER_info.port,
+													   BUZZ_pudtBuzzCfg->BUZZER_info.pin,
+													   BUZZ_pudtBuzzCfg->BUZZER_state											   
+													  );
 							  break;
 			
-			case ACTIVE_HIGH: udtReturnValue = DIO_udtSetPinValue
-											   (
-											    BUZZ_pudtBuzzCfg->pin_config_t.port,
-											    BUZZ_pudtBuzzCfg->pin_config_t.pin,
-											    BUZZ_pudtBuzzCfg->BUZZER_State_t.ACTIVE_HIGH										   
-											   );
+			case BUZZER_ACTIVE_HIGH: udtReturnValue = DIO_udtSetPinValue
+													   (
+													   	BUZZ_pudtBuzzCfg->BUZZER_info.port,
+													   	BUZZ_pudtBuzzCfg->BUZZER_info.pin,
+													   	BUZZ_pudtBuzzCfg->BUZZER_state									   
+													   );
 							  break;
 				
 			default			: udtReturnValue = E_NOT_OK;	
@@ -123,21 +123,21 @@ BUZZER_t* BUZZ_pudtBuzzCfg
 	}
 	else
 	{
-		switch (BUZZ_pudtBuzzCfg->BUZZER_State_t)
+		switch (BUZZ_pudtBuzzCfg->BUZZER_state)
 		{
 			case ACTIVE_LOW : udtReturnValue = DIO_udtSetPinValue
 											   (
-											    BUZZ_pudtBuzzCfg->pin_config_t.port,
-											    BUZZ_pudtBuzzCfg->pin_config_t.pin,
-											    BUZZ_pudtBuzzCfg->BUZZER_State_t.ACTIVE_HIGH											   
+											    BUZZ_pudtBuzzCfg->BUZZER_info.port,
+											    BUZZ_pudtBuzzCfg->BUZZER_info.pin,
+											    BUZZ_pudtBuzzCfg->BUZZER_state											   
 											   );
 							  break;
 			
 			case ACTIVE_HIGH: udtReturnValue = DIO_udtSetPinValue
 											   (
-											    BUZZ_pudtBuzzCfg->pin_config_t.port,
-											    BUZZ_pudtBuzzCfg->pin_config_t.pin,
-											    BUZZ_pudtBuzzCfg->BUZZER_State_t.ACTIVE_LOW										   
+											    BUZZ_pudtBuzzCfg->BUZZER_info.port,
+											    BUZZ_pudtBuzzCfg->BUZZER_info.pin,
+											    BUZZ_pudtBuzzCfg->BUZZER_state										   
 											   );
 							  break;
 				
@@ -160,11 +160,11 @@ BUZZER_t* BUZZ_pudtBuzzCfg
 /********************************************************************************************/
 Std_ReturnType BUZ_udtToggle 
 ( 
-BUZZER_t* BUZZER_pudtBuzzerConfig
+BUZZER_t* BUZZ_pudtBuzzCfg
 )
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
-	if (BUZZER_pudtBuzzerConfig == NULL)
+	if (BUZZ_pudtBuzzCfg == NULL)
 	{
 		udtReturnValue = E_NOT_OK;		
 	}
@@ -173,8 +173,8 @@ BUZZER_t* BUZZER_pudtBuzzerConfig
 
 		udtReturnValue = DIO_udtTogglePinValue
 						 (
-						  BUZZ_pudtBuzzCfg->pin_config_t.port,
-						  BUZZ_pudtBuzzCfg->pin_config_t.pin,
+						  BUZZ_pudtBuzzCfg->BUZZER_info.port,
+						  BUZZ_pudtBuzzCfg->BUZZER_info.pin
 						 );		
 	}
 	return udtReturnValue;	

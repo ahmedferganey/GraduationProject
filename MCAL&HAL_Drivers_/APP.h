@@ -23,9 +23,14 @@
 #include "IIC_interface.h"
 #include "EEPROM_interface.h"
 #include "DCMOTOR_interface.h"
+#include "LM35_interface.h"
 #include "LDR_interface.h"
 #include "HC05_interface.h"
 #include "SERVOMOTOR_interface.h"
+#include "SWITCH_interface.h"
+#include "BUZZER_interface.h"
+
+
 
 /* Comment!: Macro Declarations */
 

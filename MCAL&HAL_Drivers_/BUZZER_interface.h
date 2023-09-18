@@ -18,17 +18,19 @@
 
 
 /* -------------------------------- Data Type Declarations --------------------------------------*/
+typedef enum
+{
+	ACTIVE_LOW = 0,
+	ACTIVE_HIGH
+}BUZZER_State_t;
+
 typedef struct
 {	
 	pin_config_t 	BUZZER_info;
 	BUZZER_State_t	BUZZER_state;
 }BUZZER_t;
 
-typedef enum
-{
-	ACTIVE_LOW = 0,
-	ACTIVE_HIGH
-}BUZZER_State_t;
+
 
 
 /* -------------------------------- Function Declarations ---------------------------------------*/
@@ -49,7 +51,7 @@ BUZZER_t* BUZZ_pudtBuzzCfg
 
 Std_ReturnType BUZ_udtToggle 
 ( 
-BUZZER_t* BUZZER_pudtBuzzerConfig
+BUZZER_t* BUZZ_pudtBuzzCfg
 );
 
 
