@@ -19,6 +19,19 @@
 
 
 /* -------------------------------- Data Type Declarations --------------------------------------*/
+
+typedef enum 
+{
+	STEPMOTOR_HALF_STEP=0,
+	STEPMOTOR_FULL_STEP	
+}STEPMOTOR_steptype_t;
+
+typedef enum 
+{
+	STEPMOTOR_ANTI_CLOCK_WISE=0,
+	STEPMOTOR_CLOCK_WISE	
+}STEPMOTOR_direction_t;
+
 /*
 	this struct has some rules:
 								index 0,1 for the same coil
@@ -26,7 +39,9 @@
 */
 typedef struct
 {
-	pin_config_t udtStepmotorInit[4]
+	pin_config_t udtStepmotorInit[4];
+	STEPMOTOR_steptype_t udtStepType;
+	STEPMOTOR_direction_t udtDirection;
 }STEPMOTOR_t;
 
 /* -------------------------------- Function Declarations ---------------------------------------*/

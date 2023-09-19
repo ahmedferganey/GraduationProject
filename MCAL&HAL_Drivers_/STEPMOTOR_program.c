@@ -42,35 +42,43 @@ STEPMOTOR_t* udtStepmotorObj
 	/* Set 4 PIN DIRECTION, DIR MUST BE OUTPUT = 1 */
 	udtReturnValue = DIO_udtSetPinDirection(udtStepmotorObj->udtStepmotorInit[0].port,
 											udtStepmotorObj->udtStepmotorInit[0].pin,
-											STEPMOTOR_DIRECTION_INIT);
+											STEPMOTOR_DIRECTION_INIT
+											);
 											
 	udtReturnValue = DIO_udtSetPinDirection(udtStepmotorObj->udtStepmotorInit[1].port,
 											udtStepmotorObj->udtStepmotorInit[1].pin,
-											STEPMOTOR_DIRECTION_INIT);
+											STEPMOTOR_DIRECTION_INIT
+											);
 											
 	udtReturnValue = DIO_udtSetPinDirection(udtStepmotorObj->udtStepmotorInit[2].port,
 											udtStepmotorObj->udtStepmotorInit[2].pin,
-											STEPMOTOR_DIRECTION_INIT);
+											STEPMOTOR_DIRECTION_INIT
+											);
 											
 	udtReturnValue = DIO_udtSetPinDirection(udtStepmotorObj->udtStepmotorInit[3].port,
 											udtStepmotorObj->udtStepmotorInit[3].pin,
-											STEPMOTOR_DIRECTION_INIT);	
+											STEPMOTOR_DIRECTION_INIT
+											);	
 
 
 
 	/* Set 4 PIN logic, at init logic should be low */	
 	udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[0].port,
 										udtStepmotorObj->udtStepmotorInit[0].pin,
-										STEPMOTOR_LOGIC_INIT);	
+										STEPMOTOR_LOGIC_INIT
+										);	
 	udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[1].port,
 										udtStepmotorObj->udtStepmotorInit[1].pin,
-										STEPMOTOR_LOGIC_INIT);	
+										STEPMOTOR_LOGIC_INIT
+										);	
 	udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[2].port,
 										udtStepmotorObj->udtStepmotorInit[2].pin,
-										STEPMOTOR_LOGIC_INIT);	
+										STEPMOTOR_LOGIC_INIT
+										);	
 	udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[3].port,
 										udtStepmotorObj->udtStepmotorInit[3].pin,
-										STEPMOTOR_LOGIC_INIT);	
+										STEPMOTOR_LOGIC_INIT
+										);	
 	
 	return udtReturnValue;	
 }
@@ -93,16 +101,20 @@ STEPMOTOR_t* udtStepmotorObj
 	/* Set 4 PIN logic, at off state must be low */	
 	udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[0].port,
 										udtStepmotorObj->udtStepmotorInit[0].pin,
-										STEPMOTOR_LOGIC_INIT);	
+										STEPMOTOR_LOGIC_INIT
+										);	
 	udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[1].port,
 										udtStepmotorObj->udtStepmotorInit[1].pin,
-										STEPMOTOR_LOGIC_INIT);	
+										STEPMOTOR_LOGIC_INIT
+										);	
 	udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[2].port,
 										udtStepmotorObj->udtStepmotorInit[2].pin,
-										STEPMOTOR_LOGIC_INIT);	
+										STEPMOTOR_LOGIC_INIT
+										);	
 	udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[3].port,
 										udtStepmotorObj->udtStepmotorInit[3].pin,
-										STEPMOTOR_LOGIC_INIT);
+										STEPMOTOR_LOGIC_INIT
+										);
 	return udtReturnValue;	
 }
 
@@ -116,18 +128,53 @@ STEPMOTOR_t* udtStepmotorObj
 /********************************************************************************************/
 Std_ReturnType STEPMOTOR_udtOn  
 ( 
-u8 Copy_u8StepType, 
-u8 Copy_u8Direction, 
-u8 Copy_u8Speed, 
-u16 Copy_u16Degree 
+STEPMOTOR_t* udtStepmotorObj   
+uint8 Copy_u8Speed, 
+uint16 Copy_u16Degree 
 )
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
-	
+	if (NULL == udtStepmotorObj)
+	{
+		udtReturnValue = E_NOT_OK;		
+	}
+	else
+	{
+		if (STEPPER_FULL_STEP == udtStepmotorObj->udtStepType)
+		{
+			if (STEPPER_CLOCK_WISE == udtStepmotorObj->udtDirection)
+			{
+				
+			}
+			else if (STEPPER_ANTI_CLOCK_WISE == udtStepmotorObj->udtDirection)
+			{
+				
+			}
+			else
+			{
+				udtReturnValue = E_NOT_OK;
+			}
+		}
+		else if (STEPPER_HALF_STEP == udtStepmotorObj->udtStepType)
+		{
+			if (STEPPER_CLOCK_WISE == udtStepmotorObj->udtDirection)
+			{
+				
+			}
+			else if (STEPPER_ANTI_CLOCK_WISE == udtStepmotorObj->udtDirection)
+			{
+				
+			}
+			else
+			{
+				udtReturnValue = E_NOT_OK;
+			}
 
-
-
-
-	
+		}
+		else
+		{
+			udtReturnValue = E_NOT_OK;
+		}
+	}
 	return udtReturnValue;	
 }
