@@ -24,6 +24,58 @@
 
 /* -------------------------------- APIs Implementation ------------------------------------*/
 /********************************************************************************************/
+/*  @brief				  : This Function initialize the pins which connected 				*/
+/*							to stepper motor as output pins									*/
+/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
+/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
+/*  @return	 Std_ReturnType																	*/
+/*           (E_OK)		  : The function done successfully									*/
+/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
+/********************************************************************************************/
+Std_ReturnType STEPMOTOR_udtInit
+( 
+STEPMOTOR_t* udtStepmotorObj 
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	
+	/* Set 4 PIN DIRECTION, DIR MUST BE OUTPUT = 1 */
+	udtReturnValue = DIO_udtSetPinDirection(udtStepmotorObj->udtStepmotorInit[0].port,
+											udtStepmotorObj->udtStepmotorInit[0].pin,
+											STEPMOTOR_DIRECTION_INIT);
+											
+	udtReturnValue = DIO_udtSetPinDirection(udtStepmotorObj->udtStepmotorInit[1].port,
+											udtStepmotorObj->udtStepmotorInit[1].pin,
+											STEPMOTOR_DIRECTION_INIT);
+											
+	udtReturnValue = DIO_udtSetPinDirection(udtStepmotorObj->udtStepmotorInit[2].port,
+											udtStepmotorObj->udtStepmotorInit[2].pin,
+											STEPMOTOR_DIRECTION_INIT);
+											
+	udtReturnValue = DIO_udtSetPinDirection(udtStepmotorObj->udtStepmotorInit[3].port,
+											udtStepmotorObj->udtStepmotorInit[3].pin,
+											STEPMOTOR_DIRECTION_INIT);	
+
+
+
+	/* Set 4 PIN logic, at init logic should be low */	
+	udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[0].port,
+										udtStepmotorObj->udtStepmotorInit[0].pin,
+										STEPMOTOR_LOGIC_INIT);	
+	udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[1].port,
+										udtStepmotorObj->udtStepmotorInit[1].pin,
+										STEPMOTOR_LOGIC_INIT);	
+	udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[2].port,
+										udtStepmotorObj->udtStepmotorInit[2].pin,
+										STEPMOTOR_LOGIC_INIT);	
+	udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[3].port,
+										udtStepmotorObj->udtStepmotorInit[3].pin,
+										STEPMOTOR_LOGIC_INIT);	
+	
+	return udtReturnValue;	
+}
+
+/********************************************************************************************/
 /*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
 /*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
 /*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
@@ -31,3 +83,51 @@
 /*           (E_OK)		  : The function done successfully									*/
 /*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
 /********************************************************************************************/
+Std_ReturnType STEPMOTOR_udtOff 
+( 
+STEPMOTOR_t* udtStepmotorObj  
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	
+	/* Set 4 PIN logic, at off state must be low */	
+	udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[0].port,
+										udtStepmotorObj->udtStepmotorInit[0].pin,
+										STEPMOTOR_LOGIC_INIT);	
+	udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[1].port,
+										udtStepmotorObj->udtStepmotorInit[1].pin,
+										STEPMOTOR_LOGIC_INIT);	
+	udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[2].port,
+										udtStepmotorObj->udtStepmotorInit[2].pin,
+										STEPMOTOR_LOGIC_INIT);	
+	udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[3].port,
+										udtStepmotorObj->udtStepmotorInit[3].pin,
+										STEPMOTOR_LOGIC_INIT);
+	return udtReturnValue;	
+}
+
+/********************************************************************************************/
+/*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
+/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
+/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
+/*  @return	 Std_ReturnType																	*/
+/*           (E_OK)		  : The function done successfully									*/
+/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
+/********************************************************************************************/
+Std_ReturnType STEPMOTOR_udtOn  
+( 
+u8 Copy_u8StepType, 
+u8 Copy_u8Direction, 
+u8 Copy_u8Speed, 
+u16 Copy_u16Degree 
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	
+
+
+
+
+	
+	return udtReturnValue;	
+}

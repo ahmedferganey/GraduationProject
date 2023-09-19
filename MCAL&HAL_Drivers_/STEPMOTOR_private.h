@@ -12,6 +12,8 @@
 
 
 /* -------------------------------- Macro Declarations ------------------------------------------*/
+#define 	STEPMOTOR_DIRECTION_INIT		1		// for DIO_DIRECTION_OUTPUT
+#define 	STEPMOTOR_LOGIC_INIT			0		// for DIO_LOW
 
 	
 	
