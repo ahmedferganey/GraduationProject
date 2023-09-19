@@ -12,8 +12,8 @@
 
 
 /* -------------------------------- Macro Declarations ------------------------------------------*/
-
-	
+#define LED_LOGIC_HIGH		1
+#define LED_LOGIC_LOW		0	
 	
 /* -------------------------------- Macro Functions Declarations --------------------------------*/
 

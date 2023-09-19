@@ -19,9 +19,50 @@
 
 
 /* -------------------------------- Data Type Declarations --------------------------------------*/
+typedef enum
+{
+    LED_ACTIVE_LOW,
+    LED_ACTIVE_HIGH
+}LED_active_t;
+
+/* for future to get logic */
+typedef enum
+{
+    LED_OFF,
+    LED_ON
+}LED_status_t;
+
+typedef struct
+{
+    pin_config_t LED_pin;
+    LED_active_t LED_connection;
+	LED_status_t LED_status;
+}LED_t;
 
 
 /* -------------------------------- Function Declarations ---------------------------------------*/
+Std_ReturnType LED_udtInit        
+( 
+const LED_t* LED_pudtCfg
+);
+
+
+Std_ReturnType LED_udtOn          
+( 
+const LED_t* LED_pudtCfg
+);
+
+
+Std_ReturnType LED_udtOff         
+( 
+const LED_t* LED_pudtCfg
+);
+ 
+ 
+Std_ReturnType LED_udtToggle      
+( 
+const LED_t* LED_pudtCfg
+);
 
 
 
