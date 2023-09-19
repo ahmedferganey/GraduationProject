@@ -15,6 +15,8 @@
 /*
 	select : 
 				SSD_4PIN_MODE			SSD_8PIN_MODE
+	
+	until now only that can be selected 		-----> 		SSD_4PIN_MODE	
 */
 #define SSD_PIN_MODE	SSD_4PIN_MODE
 	

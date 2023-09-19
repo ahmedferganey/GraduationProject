@@ -43,19 +43,19 @@ typedef enum{
 }SSD_type_t;
 
 typedef struct{
-    pin_config_t SSD_pins[SSD_4PIN_MODE];
+    pin_config_t SSD_pins[SSD_PIN_MODE];
     SSD_type_t SSD_type;
 }SSD_t;
 
 
 
 /* -------------------------------- Function Declarations ---------------------------------------*/
-Std_ReturnType SSD_udtInitialDataPort  
+Std_ReturnType SSD_udtInitialize  
 ( 
 const SSD_t* SSD_pudtstructCfg 
 );
 
-
+/*
 Std_ReturnType SSD_udtEnable           
 ( 
 const SSD_t* SSD_pudtstructCfg 
@@ -66,9 +66,9 @@ Std_ReturnType SSD_udtDisable
 ( 
 const SSD_t* SSD_pudtstructCfg 
 );
+*/
 
-
-Std_ReturnType SSD_udtSendNumber       
+Std_ReturnType SSD_udtSendData       
 ( 
 const SSD_t* SSD_pudtstructCfg 
 uint8 Copy_u8Number 
