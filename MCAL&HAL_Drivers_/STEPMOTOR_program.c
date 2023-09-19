@@ -7,6 +7,12 @@
 /* -------------------------------- Includes --------------------------------------------------------------*/
 /**			LIBRARY Includes			**/
 #define F_CPU 8000000UL
+#define __DELAY_BACKWARD_COMPATIBLE__			
+/* 
+	If you use the following define before the #include statement 
+   the delay functions can also be called with variables 
+   instead of numerical constants												
+*/																								
 #include "util/delay.h"
 
 #include "STD_TYPES.h"
