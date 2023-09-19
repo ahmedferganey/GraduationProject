@@ -99,7 +99,8 @@ uint16* ULTRASONIC_pu8Distance
 )
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
-	
+    logic_t EchoPinLogic = DIO_LOW;
+	uint16 Timer_Value = 0;
 	
 	if (NULL == ULTRASONIC_pudtconfig)
 	{
@@ -108,23 +109,58 @@ uint16* ULTRASONIC_pu8Distance
 	else
 	{
         /* Send Trigger Signal to the Ultrasonic Trigger Pin */
-
-
+		udtReturnValue = DIO_udtSetPinValue(ULTRASONIC_pudtobj->udtTriggerPin.port,
+											ULTRASONIC_pudtobj->udtTriggerPin.pin,
+											ULTRASONIC_pudtobj->udtTriggerPin.logic
+											= ULTRASONIC_TRIG_HIGH
+											);
+        __delay_us(10);
+		udtReturnValue = DIO_udtSetPinValue(ULTRASONIC_pudtobj->udtTriggerPin.port,
+											ULTRASONIC_pudtobj->udtTriggerPin.pin,
+											ULTRASONIC_pudtobj->udtTriggerPin.logic
+											= ULTRASONIC_TRIG_LOW
+											);		
+	
         /* Wait the Echo pin to be High */
-
+		while (DIO_LOW == EchoPinLogic)
+		{
+			udtReturnValue = DIO_udtGetPinValue(ULTRASONIC_pudtobj->udtEchoPin.port,
+												ULTRASONIC_pudtobj->udtEchoPin.pin,
+												&EchoPinLogic);
+		}
 
 
         /* Clear Timer0 Ticks -> Already Enabled */
         //ret = Timer0_Write_Value(&timer0_timer_obj, 0);
 		
         /* Wait the Echo pin to be Low */
-
+		while (DIO_LOW == EchoPinLogic)
+		{
+			udtReturnValue = DIO_udtGetPinValue(ULTRASONIC_pudtobj->udtEchoPin.port,
+												ULTRASONIC_pudtobj->udtEchoPin.pin,
+												&EchoPinLogic);
+		}
 
         /* Read the time */
-        //ret = Timer0_Read_Value(&timer0_timer_obj, &Timer0_Value);
+        //ret = Timer0_Read_Value(&timer0_timer_obj, &Timer_Value);
         
+		
+		/*
+			Now, here we have selected an internal 8 MHz oscillator frequency 
+			for ATmega16, 
+			with No-presale for timer frequency. Then time to execute 1 instruction 
+			is 0.125 us.
+	
+			So, the timer gets incremented after 0.125 us time elapse.
+	
+						= 17150 x (TIMER value) x 0.125 x 10^-6 cm
+			
+						= 0.125 x (TIMER value)/58.30 cm
+			
+						= (TIMER value) / 466.47 cm
+		*/
         /* Calculate the distance */
-
+		*ULTRASONIC_pu8Distance = (uint16)(Timer_Value/58.8f);
 		
 	}
 	

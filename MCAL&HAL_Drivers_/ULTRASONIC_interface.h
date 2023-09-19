@@ -55,12 +55,15 @@ uint16* ULTRASONIC_pu8Distance
 	
 	Steps of Programming
 	
-	ATmega16 microcontroller needs to transmit at least 10 us trigger pulse to the HC-SR04 
+	1- ATmega16 microcontroller needs to transmit at least 10 us trigger pulse to the HC-SR04 
 	Trig Pin.
-	After getting a trigger pulse, HC-SR04 automatically sends eight 40 kHz sound waves 
+	
+	2- After getting a trigger pulse, HC-SR04 automatically sends eight 40 kHz sound waves 
 	and the microcontroller waits for rising edge output at the Echo pin.
-	When the rising edge capture occurs at the Echo pin which is connected to an input of 
+	
+	3- When the rising edge capture occurs at the Echo pin which is connected to an input of 
 	ATmega16, start Timer of ATmega16 and again wait for a falling edge on the Echo pin.
+	
 	As soon as the falling edge is captured at the Echo pin, the microcontroller reads the 
 	count of the Timer. This time count is used to calculate the distance to an object.
 	Here we are using the input capture mode of ATmega16 on PD6(ICP1) pin as shown in 
