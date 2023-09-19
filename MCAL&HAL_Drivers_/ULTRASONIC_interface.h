@@ -1,11 +1,17 @@
 /*
- * FileName		: SSD_private.h
- * Created		: 9/19/2023 5:47:14 PM
+ * FileName		: ULTRASONIC_interface.h
+ * Created		: 9/19/2023 7:18:14 PM
  * Author		: Ahmed Ferganey
  */ 
  
-#ifndef _SSD_PRIVATE_H_
-#define _SSD_PRIVATE_H_
+#ifndef _ULTRASONIC_INTERFACE_H_
+#define _ULTRASONIC_INTERFACE_H_
+
+/*
+	https://www.electronicwings.com/sensors-modules/ultrasonic-module-hc-sr04
+	https://maxbotix.com/blogs/blog/how-ultrasonic-sensors-work#:~:text=An%20ultrasonic%20sensor%20is%20an,information%20about%20an%20object's%20proximity.
+	https://www.electronicwings.com/avr-atmega/ultrasonic-module-hc-sr04-interfacing-with-atmega1632
+*/
 
 
 /* -------------------------------- Includes ----------------------------------------------------*/
@@ -13,7 +19,7 @@
 
 /* -------------------------------- Macro Declarations ------------------------------------------*/
 
-	
+
 	
 /* -------------------------------- Macro Functions Declarations --------------------------------*/
 
@@ -23,4 +29,4 @@
 
 /* -------------------------------- Function Declarations ---------------------------------------*/
 
-#endif  /* _SSD_PRIVATE_H_ */
+#endif  /* _ULTRASONIC_INTERFACE_H_ */

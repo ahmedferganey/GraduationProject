@@ -1,11 +1,11 @@
 /*
- * FileName		: SSD_private.h
- * Created		: 9/19/2023 5:47:14 PM
+ * FileName		: ULTRASONIC_private.h
+ * Created		: 9/19/2023 7:16:14 PM
  * Author		: Ahmed Ferganey
  */ 
  
-#ifndef _SSD_PRIVATE_H_
-#define _SSD_PRIVATE_H_
+#ifndef _ULTRASONIC_PRIVATE_H_
+#define _ULTRASONIC_PRIVATE_H_
 
 
 /* -------------------------------- Includes ----------------------------------------------------*/
@@ -13,7 +13,7 @@
 
 /* -------------------------------- Macro Declarations ------------------------------------------*/
 
-	
+
 	
 /* -------------------------------- Macro Functions Declarations --------------------------------*/
 
@@ -23,4 +23,4 @@
 
 /* -------------------------------- Function Declarations ---------------------------------------*/
 
-#endif  /* _SSD_PRIVATE_H_ */
+#endif  /* _ULTRASONIC_PRIVATE_H_ */
