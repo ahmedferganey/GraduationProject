@@ -12,7 +12,11 @@
 
 
 /* -------------------------------- Macro Declarations ------------------------------------------*/
-
+/*
+	select : 
+				SSD_4PIN_MODE			SSD_8PIN_MODE
+*/
+#define SSD_PIN_MODE	SSD_4PIN_MODE
 	
 	
 /* -------------------------------- Macro Functions Declarations --------------------------------*/
