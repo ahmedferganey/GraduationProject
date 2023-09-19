@@ -35,7 +35,7 @@
 /*           (E_OK)		  : The function done successfully									*/
 /*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
 /********************************************************************************************/
-void EEPROM_vdSendDataByte
+Std_ReturnType EEPROM_udtSendDataByte
 (
 uint16 Copy_u16LocationAddress,
 uint8 Copy_u8DataByte
@@ -72,6 +72,8 @@ uint8 Copy_u8DataByte
 
 	/* 6- Delay until the write cycle is finished*/
 	_delay_ms(10);
+	
+	return udtReturnValue;
 	
 }
 

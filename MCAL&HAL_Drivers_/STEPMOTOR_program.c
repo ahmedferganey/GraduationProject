@@ -4,8 +4,11 @@
  * Author		: Ahmed Ferganey
  */ 
  
-/* -------------------------------- Includes -----------------------------------------------*/
+/* -------------------------------- Includes --------------------------------------------------------------*/
 /**			LIBRARY Includes			**/
+#define F_CPU 8000000UL
+#include "util/delay.h"
+
 #include "STD_TYPES.h"
 #include "BIT_MATH.h"
 
@@ -19,19 +22,19 @@
 
 
 
-/* -------------------------------- Global Variables ---------------------------------------*/
+/* -------------------------------- Global Variables ------------------------------------------------------*/
 
 
-/* -------------------------------- APIs Implementation ------------------------------------*/
-/********************************************************************************************/
-/*  @brief				  : This Function initialize the pins which connected 				*/
-/*							to stepper motor as output pins									*/
-/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
-/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
-/*  @return	 Std_ReturnType																	*/
-/*           (E_OK)		  : The function done successfully									*/
-/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
-/********************************************************************************************/
+/* -------------------------------- APIs Implementation ---------------------------------------------------*/
+/***********************************************************************************************************/
+/*  @brief				  : This Function initialize the pins which connected 							   */
+/*							to stepper motor as output pins												   */
+/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t				   */
+/*  @param	 u8Direction  : to Set the required Direction				@ref uint8						   */
+/*  @return	 Std_ReturnType																				   */
+/*           (E_OK)		  : The function done successfully												   */
+/*           (E_NOT_OK)   : The function has issue to perform this action								   */                                                                   
+/***********************************************************************************************************/
 Std_ReturnType STEPMOTOR_udtInit
 ( 
 STEPMOTOR_t* udtStepmotorObj 
@@ -83,14 +86,14 @@ STEPMOTOR_t* udtStepmotorObj
 	return udtReturnValue;	
 }
 
-/********************************************************************************************/
-/*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
-/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
-/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
-/*  @return	 Std_ReturnType																	*/
-/*           (E_OK)		  : The function done successfully									*/
-/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
-/********************************************************************************************/
+/***********************************************************************************************************/
+/*  @brief				  : Set Complete Port Direction 				@ref port_index_t				   */
+/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t				   */
+/*  @param	 u8Direction  : to Set the required Direction				@ref uint8						   */
+/*  @return	 Std_ReturnType																				   */
+/*           (E_OK)		  : The function done successfully												   */
+/*           (E_NOT_OK)   : The function has issue to perform this action								   */                                                                   
+/***********************************************************************************************************/
 Std_ReturnType STEPMOTOR_udtOff 
 ( 
 STEPMOTOR_t* udtStepmotorObj  
@@ -118,22 +121,26 @@ STEPMOTOR_t* udtStepmotorObj
 	return udtReturnValue;	
 }
 
-/********************************************************************************************/
-/*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
-/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
-/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
-/*  @return	 Std_ReturnType																	*/
-/*           (E_OK)		  : The function done successfully									*/
-/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
-/********************************************************************************************/
+/***********************************************************************************************************/
+/*  @brief				  : Set Complete Port Direction 				@ref port_index_t				   */
+/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t				   */
+/*  @param	 u8Direction  : to Set the required Direction				@ref uint8						   */
+/*  @return	 Std_ReturnType																				   */
+/*           (E_OK)		  : The function done successfully												   */
+/*           (E_NOT_OK)   : The function has issue to perform this action								   */                                                                   
+/***********************************************************************************************************/
 Std_ReturnType STEPMOTOR_udtOn  
 ( 
-STEPMOTOR_t* udtStepmotorObj   
+STEPMOTOR_t* udtStepmotorObj,   
 uint8 Copy_u8Speed, 
-uint16 Copy_u16Degree 
+uint32 Copy_u32Degree 
 )
 {
+			/* delay will control between the speed of step and the next */
+	
 	Std_ReturnType udtReturnValue = E_NOT_OK;
+	uint32 STEPMOTOR_Lu32Iterator = 0;
+		
 	if (NULL == udtStepmotorObj)
 	{
 		udtReturnValue = E_NOT_OK;		
@@ -144,11 +151,177 @@ uint16 Copy_u16Degree
 		{
 			if (STEPPER_CLOCK_WISE == udtStepmotorObj->udtDirection)
 			{
-				
+				for (STEPMOTOR_Lu32Iterator = 0 ; 
+					 STEPMOTOR_Lu32Iterator < ((uint32)(((d64)Copy_u32Degree/STEPMOTOR_FULL_STEP_ANGLE)/4)); 
+					 STEPMOTOR_Lu32Iterator++)
+				{
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[0].port,
+														udtStepmotorObj->udtStepmotorInit[0].pin,
+														STEPMOTOR_LOGIC_HIGH
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[1].port,
+														udtStepmotorObj->udtStepmotorInit[1].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[2].port,
+														udtStepmotorObj->udtStepmotorInit[2].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[3].port,
+														udtStepmotorObj->udtStepmotorInit[3].pin,
+														STEPMOTOR_LOGIC_LOW
+														);
+					_delay_ms( Copy_u8Speed );
+	
+	
+	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[0].port,
+														udtStepmotorObj->udtStepmotorInit[0].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[1].port,
+														udtStepmotorObj->udtStepmotorInit[1].pin,
+														STEPMOTOR_LOGIC_HIGH
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[2].port,
+														udtStepmotorObj->udtStepmotorInit[2].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[3].port,
+														udtStepmotorObj->udtStepmotorInit[3].pin,
+														STEPMOTOR_LOGIC_LOW
+														);
+					_delay_ms( Copy_u8Speed );
+														
+		
+		
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[0].port,
+														udtStepmotorObj->udtStepmotorInit[0].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[1].port,
+														udtStepmotorObj->udtStepmotorInit[1].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[2].port,
+														udtStepmotorObj->udtStepmotorInit[2].pin,
+														STEPMOTOR_LOGIC_HIGH
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[3].port,
+														udtStepmotorObj->udtStepmotorInit[3].pin,
+														STEPMOTOR_LOGIC_LOW
+														);													
+					_delay_ms( Copy_u8Speed );
+														
+		
+		
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[0].port,
+														udtStepmotorObj->udtStepmotorInit[0].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[1].port,
+														udtStepmotorObj->udtStepmotorInit[1].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[2].port,
+														udtStepmotorObj->udtStepmotorInit[2].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[3].port,
+														udtStepmotorObj->udtStepmotorInit[3].pin,
+														STEPMOTOR_LOGIC_HIGH
+														);
+					_delay_ms( Copy_u8Speed );
+														
+				}									
+													
 			}
 			else if (STEPPER_ANTI_CLOCK_WISE == udtStepmotorObj->udtDirection)
 			{
-				
+				for (STEPMOTOR_Lu32Iterator = 0 ; 
+					 STEPMOTOR_Lu32Iterator < ((uint32)(((d64)Copy_u32Degree/STEPMOTOR_FULL_STEP_ANGLE)/4)); 
+					 STEPMOTOR_Lu32Iterator++)
+				{
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[0].port,
+														udtStepmotorObj->udtStepmotorInit[0].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[1].port,
+														udtStepmotorObj->udtStepmotorInit[1].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[2].port,
+														udtStepmotorObj->udtStepmotorInit[2].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[3].port,
+														udtStepmotorObj->udtStepmotorInit[3].pin,
+														STEPMOTOR_LOGIC_HIGH
+														);
+					_delay_ms( Copy_u8Speed );
+	
+	
+	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[0].port,
+														udtStepmotorObj->udtStepmotorInit[0].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[1].port,
+														udtStepmotorObj->udtStepmotorInit[1].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[2].port,
+														udtStepmotorObj->udtStepmotorInit[2].pin,
+														STEPMOTOR_LOGIC_HIGH
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[3].port,
+														udtStepmotorObj->udtStepmotorInit[3].pin,
+														STEPMOTOR_LOGIC_LOW
+														);
+					_delay_ms( Copy_u8Speed );
+														
+		
+		
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[0].port,
+														udtStepmotorObj->udtStepmotorInit[0].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[1].port,
+														udtStepmotorObj->udtStepmotorInit[1].pin,
+														STEPMOTOR_LOGIC_HIGH
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[2].port,
+														udtStepmotorObj->udtStepmotorInit[2].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[3].port,
+														udtStepmotorObj->udtStepmotorInit[3].pin,
+														STEPMOTOR_LOGIC_LOW
+														);													
+					_delay_ms( Copy_u8Speed );
+														
+		
+		
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[0].port,
+														udtStepmotorObj->udtStepmotorInit[0].pin,
+														STEPMOTOR_LOGIC_HIGH
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[1].port,
+														udtStepmotorObj->udtStepmotorInit[1].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[2].port,
+														udtStepmotorObj->udtStepmotorInit[2].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[3].port,
+														udtStepmotorObj->udtStepmotorInit[3].pin,
+														STEPMOTOR_LOGIC_LOW
+														);
+					_delay_ms( Copy_u8Speed );
+														
+				}									
+													
 			}
 			else
 			{
@@ -159,11 +332,175 @@ uint16 Copy_u16Degree
 		{
 			if (STEPPER_CLOCK_WISE == udtStepmotorObj->udtDirection)
 			{
-				
+				for (STEPMOTOR_Lu32Iterator = 0 ; 
+					 STEPMOTOR_Lu32Iterator < ((uint32)(((d64)Copy_u32Degree/STEPMOTOR_HALF_STEP_ANGLE)/4)); 
+					 STEPMOTOR_Lu32Iterator++)
+				{
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[0].port,
+														udtStepmotorObj->udtStepmotorInit[0].pin,
+														STEPMOTOR_LOGIC_HIGH
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[1].port,
+														udtStepmotorObj->udtStepmotorInit[1].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[2].port,
+														udtStepmotorObj->udtStepmotorInit[2].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[3].port,
+														udtStepmotorObj->udtStepmotorInit[3].pin,
+														STEPMOTOR_LOGIC_LOW
+														);
+					_delay_ms( Copy_u8Speed );
+	
+	
+	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[0].port,
+														udtStepmotorObj->udtStepmotorInit[0].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[1].port,
+														udtStepmotorObj->udtStepmotorInit[1].pin,
+														STEPMOTOR_LOGIC_HIGH
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[2].port,
+														udtStepmotorObj->udtStepmotorInit[2].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[3].port,
+														udtStepmotorObj->udtStepmotorInit[3].pin,
+														STEPMOTOR_LOGIC_LOW
+														);
+					_delay_ms( Copy_u8Speed );
+														
+		
+		
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[0].port,
+														udtStepmotorObj->udtStepmotorInit[0].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[1].port,
+														udtStepmotorObj->udtStepmotorInit[1].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[2].port,
+														udtStepmotorObj->udtStepmotorInit[2].pin,
+														STEPMOTOR_LOGIC_HIGH
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[3].port,
+														udtStepmotorObj->udtStepmotorInit[3].pin,
+														STEPMOTOR_LOGIC_LOW
+														);													
+					_delay_ms( Copy_u8Speed );
+														
+		
+		
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[0].port,
+														udtStepmotorObj->udtStepmotorInit[0].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[1].port,
+														udtStepmotorObj->udtStepmotorInit[1].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[2].port,
+														udtStepmotorObj->udtStepmotorInit[2].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[3].port,
+														udtStepmotorObj->udtStepmotorInit[3].pin,
+														STEPMOTOR_LOGIC_HIGH
+														);
+					_delay_ms( Copy_u8Speed );
+														
+				}					
 			}
 			else if (STEPPER_ANTI_CLOCK_WISE == udtStepmotorObj->udtDirection)
 			{
-				
+				for (STEPMOTOR_Lu32Iterator = 0 ; 
+					 STEPMOTOR_Lu32Iterator < ((uint32)(((d64)Copy_u32Degree/STEPMOTOR_HALF_STEP_ANGLE)/4)); 
+					 STEPMOTOR_Lu32Iterator++)
+				{
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[0].port,
+														udtStepmotorObj->udtStepmotorInit[0].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[1].port,
+														udtStepmotorObj->udtStepmotorInit[1].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[2].port,
+														udtStepmotorObj->udtStepmotorInit[2].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[3].port,
+														udtStepmotorObj->udtStepmotorInit[3].pin,
+														STEPMOTOR_LOGIC_HIGH
+														);
+					_delay_ms( Copy_u8Speed );
+	
+	
+	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[0].port,
+														udtStepmotorObj->udtStepmotorInit[0].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[1].port,
+														udtStepmotorObj->udtStepmotorInit[1].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[2].port,
+														udtStepmotorObj->udtStepmotorInit[2].pin,
+														STEPMOTOR_LOGIC_HIGH
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[3].port,
+														udtStepmotorObj->udtStepmotorInit[3].pin,
+														STEPMOTOR_LOGIC_LOW
+														);
+					_delay_ms( Copy_u8Speed );
+														
+		
+		
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[0].port,
+														udtStepmotorObj->udtStepmotorInit[0].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[1].port,
+														udtStepmotorObj->udtStepmotorInit[1].pin,
+														STEPMOTOR_LOGIC_HIGH
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[2].port,
+														udtStepmotorObj->udtStepmotorInit[2].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[3].port,
+														udtStepmotorObj->udtStepmotorInit[3].pin,
+														STEPMOTOR_LOGIC_LOW
+														);													
+					_delay_ms( Copy_u8Speed );
+														
+		
+		
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[0].port,
+														udtStepmotorObj->udtStepmotorInit[0].pin,
+														STEPMOTOR_LOGIC_HIGH
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[1].port,
+														udtStepmotorObj->udtStepmotorInit[1].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[2].port,
+														udtStepmotorObj->udtStepmotorInit[2].pin,
+														STEPMOTOR_LOGIC_LOW
+														);	
+					udtReturnValue = DIO_udtSetPinValue(udtStepmotorObj->udtStepmotorInit[3].port,
+														udtStepmotorObj->udtStepmotorInit[3].pin,
+														STEPMOTOR_LOGIC_LOW
+														);
+					_delay_ms( Copy_u8Speed );
+														
+				}				
 			}
 			else
 			{

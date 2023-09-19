@@ -61,10 +61,9 @@ STEPMOTOR_t* udtStepmotorObj
 
 Std_ReturnType STEPMOTOR_udtOn  
 ( 
-u8 Copy_u8StepType, 
-u8 Copy_u8Direction, 
-u8 Copy_u8Speed, 
-u16 Copy_u16Degree 
+STEPMOTOR_t* udtStepmotorObj   
+uint8 Copy_u8Speed, 
+uint32 Copy_u32Degree 
 );
 
 

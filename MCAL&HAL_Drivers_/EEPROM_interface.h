@@ -21,16 +21,17 @@
 
 
 /* -------------------------------- Function Declarations ---------------------------------------*/
-void EEPROM_voidSendDataByte
+Std_ReturnType EEPROM_udtSendDataByte
 (
-uint16 Copy_u16LocationAddress, 
+uint16 Copy_u16LocationAddress,
 uint8 Copy_u8DataByte
 );
 
 
-uint8 EEPROM_u8ReadDataByte
+Std_ReturnType EEPROM_udtReadDataByte
 (
-uint16 Copy_u16LocationAddress
+uint16 Copy_u16LocationAddress,
+uint8* Local_u8StoreData
 );
 
 #endif  /* _EEPROM_INTERFACE_H_ */

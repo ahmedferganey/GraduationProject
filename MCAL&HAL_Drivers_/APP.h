@@ -29,7 +29,9 @@
 #include "SERVOMOTOR_interface.h"
 #include "SWITCH_interface.h"
 #include "BUZZER_interface.h"
-
+#include "SSD_interface.h"
+#include "STEPMOTOR_interface.h"
+#include "LED_interface.h"
 
 
 /* Comment!: Macro Declarations */
