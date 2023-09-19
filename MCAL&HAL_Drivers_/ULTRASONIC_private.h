@@ -9,12 +9,17 @@
 
 
 /* -------------------------------- Includes ----------------------------------------------------*/
-
+#include "ULTRASONIC_config.h"
 
 /* -------------------------------- Macro Declarations ------------------------------------------*/
-
-
+#define 	ULTRASONIC_TRIG_OUTPUT			DIO_OUTPUT
+#define 	ULTRASONIC_ECHO_INPUT			DIO_INPUT
 	
+#define 	ULTRASONIC_TRIG_LOW				DIO_LOW
+#define 	ULTRASONIC_TRIG_HIGH			DIO_HIGH
+
+
+
 /* -------------------------------- Macro Functions Declarations --------------------------------*/
 
 

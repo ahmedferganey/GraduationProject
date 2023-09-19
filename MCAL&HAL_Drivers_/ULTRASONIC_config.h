@@ -12,7 +12,17 @@
 
 
 /* -------------------------------- Macro Declarations ------------------------------------------*/
-
+/*
+	select:
+			if OP PIN in your DIO module have logic 0 or 1, and also IP PIN
+			if HIGH in your DIO module have logic 0 or 1, and also LOW
+			
+*/
+#define 	DIO_OUTPUT			1
+#define 	DIO_INPUT			0
+	
+#define 	DIO_LOW				0
+#define 	DIO_HIGH			1
 
 	
 /* -------------------------------- Macro Functions Declarations --------------------------------*/

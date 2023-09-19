@@ -32,3 +32,101 @@
 /*           (E_OK)		  : The function done successfully												   */
 /*           (E_NOT_OK)   : The function has issue to perform this action								   */                                                                   
 /***********************************************************************************************************/
+Std_ReturnType Ultrasonic_udtInit
+(
+const ULTRASONIC_obj_t* ULTRASONIC_pudtobj
+)
+{
+
+	/*
+			The HC­SR04 has 4 pins: VCC, GND, TRIG and ECHO.
+				1. VCC is a 5v power supply. This should come from the microcontroller
+				2. GND is a ground pin. Attach to ground on the microcontroller.
+				3. TRIG should be attached to a GPIO pin that can be set to HIGH
+				4. ECHO is a little more difficult. The HC­SR04 outputs 5v, which could destroy
+				many microcontroller GPIO pins (the maximum allowed voltage varies). In order
+				to step down the voltage use a single resistor or a voltage divider circuit. Once
+				again this depends on the specific microcontroller you are using, you will need to
+				find out its GPIO maximum voltage and make sure you are below that.
+	
+	*/
+
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	
+	
+	if (NULL == ULTRASONIC_pudtconfig)
+	{
+		udtReturnValue = E_NOT_OK;
+	}
+	else
+	{
+	udtReturnValue = DIO_udtSetPinDirection(ULTRASONIC_pudtobj->udtTriggerPin.port,
+											ULTRASONIC_pudtobj->udtTriggerPin.pin,
+											ULTRASONIC_pudtobj->udtTriggerPin.direction
+											= ULTRASONIC_TRIG_OUTPUT
+											);
+	udtReturnValue = DIO_udtSetPinDirection(ULTRASONIC_pudtobj->udtEchoPin.port,
+											ULTRASONIC_pudtobj->udtEchoPin.pin,
+											ULTRASONIC_pudtobj->udtEchoPin.direction
+											= ULTRASONIC_ECHO_INPUT											
+											);
+
+
+
+	udtReturnValue = DIO_udtSetPinValue(ULTRASONIC_pudtobj->udtTriggerPin.port,
+										ULTRASONIC_pudtobj->udtTriggerPin.pin,
+										ULTRASONIC_pudtobj->udtTriggerPin.logic
+										= ULTRASONIC_TRIG_LOW
+										);										
+	}
+	
+	return udtReturnValue;	
+}
+
+/***********************************************************************************************************/
+/*  @brief				  : This Function initialize the pins which connected 							   */
+/*							to stepper motor as output pins												   */
+/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t				   */
+/*  @param	 u8Direction  : to Set the required Direction				@ref uint8						   */
+/*  @return	 Std_ReturnType																				   */
+/*           (E_OK)		  : The function done successfully												   */
+/*           (E_NOT_OK)   : The function has issue to perform this action								   */                                                                   
+/***********************************************************************************************************/
+Std_ReturnType Ultrasonic_udtCalculateDistance
+(
+const ULTRASONIC_obj_t* ULTRASONIC_pudtconfig, 
+uint16* ULTRASONIC_pu8Distance
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	
+	
+	if (NULL == ULTRASONIC_pudtconfig)
+	{
+		udtReturnValue = E_NOT_OK;
+	}
+	else
+	{
+        /* Send Trigger Signal to the Ultrasonic Trigger Pin */
+
+
+        /* Wait the Echo pin to be High */
+
+
+
+        /* Clear Timer0 Ticks -> Already Enabled */
+        //ret = Timer0_Write_Value(&timer0_timer_obj, 0);
+		
+        /* Wait the Echo pin to be Low */
+
+
+        /* Read the time */
+        //ret = Timer0_Read_Value(&timer0_timer_obj, &Timer0_Value);
+        
+        /* Calculate the distance */
+
+		
+	}
+	
+	return udtReturnValue;	
+}
