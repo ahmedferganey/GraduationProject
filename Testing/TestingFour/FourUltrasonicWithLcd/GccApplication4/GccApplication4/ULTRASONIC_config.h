@@ -18,12 +18,20 @@
 			if HIGH in your DIO module have logic 0 or 1, and also LOW
 			
 */
-#define 	DIO_OUTPUT			1
-#define 	DIO_INPUT			0
-	
-#define 	DIO_LOW				0
-#define 	DIO_HIGH			1
+#define 	DIO_OUTPUT						1
+#define 	DIO_INPUT						0
+				
+#define 	DIO_LOW							0
+#define 	DIO_HIGH						1
 
+
+/*
+	select:
+			from your calculation of timer modeule set value of every time tick (us) 
+			
+			
+*/
+#define 	ULTRASONIC_TIME_TICK			0.125
 	
 /* -------------------------------- Macro Functions Declarations --------------------------------*/
 

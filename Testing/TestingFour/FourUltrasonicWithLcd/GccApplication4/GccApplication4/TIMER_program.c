@@ -22,7 +22,6 @@ static void (*TIMERS_pvCallBackFunc[7])(void) = {NULL};
 
 
 
-
 /* -------------------------------- APIs Implementation ------------------------------------*/
 /*------- Timer0 APIs Implementation -------*/
 void TIMER0_vdInit

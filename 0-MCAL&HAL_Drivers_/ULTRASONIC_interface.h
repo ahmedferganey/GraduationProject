@@ -49,14 +49,14 @@ typedef struct{
 /* -------------------------------- Function Declarations ---------------------------------------*/
 Std_ReturnType Ultrasonic_udtInit
 (
-const ULTRASONIC_obj_t* ULTRASONIC_pudtconfig
+const ULTRASONIC_obj_t* ULTRASONIC_pudtobj
 );
 
 
 Std_ReturnType Ultrasonic_udtCalculateDistance
 (
-const ULTRASONIC_obj_t* ULTRASONIC_pudtconfig, 
-uint16* ULTRASONIC_pu8Distance
+const ULTRASONIC_obj_t* ULTRASONIC_pudtobj, 
+uint16* ULTRASONIC_pu16Distance
 );
 
 

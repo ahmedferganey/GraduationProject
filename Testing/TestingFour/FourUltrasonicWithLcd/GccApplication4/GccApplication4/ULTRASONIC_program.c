@@ -90,7 +90,7 @@ const ULTRASONIC_obj_t* ULTRASONIC_pudtobj
 Std_ReturnType Ultrasonic_udtCalculateDistance
 (
 const ULTRASONIC_obj_t* ULTRASONIC_pudtobj, 
-uint16* ULTRASONIC_pu8Distance
+uint16* ULTRASONIC_pu16Distance
 )
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
@@ -181,8 +181,14 @@ uint16* ULTRASONIC_pu8Distance
 									= Timers_u16IcuValue * (0.125 * 10^-6 * 34000)
 									= Timers_u16IcuValue * (4.25 * 10^-3)
 		*/
+		/*
 		
-		*ULTRASONIC_pu8Distance = (uint16)((f32)Timers_u16IcuValue*(4.25f/1000));
+			from data sheet 
+							distance = time / 58 where where us & 58us/cm
+		*/
+		
+		//*ULTRASONIC_pu8Distance = (uint16)((f32)Timers_u16IcuValue*(4.25f/1000));
+		*ULTRASONIC_pu16Distance = (uint16)(((d64)Timers_u16IcuValue*ULTRASONIC_TIME_TICK)/58);
 		
 	}
 	
