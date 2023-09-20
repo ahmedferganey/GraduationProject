@@ -63,9 +63,9 @@ int main(void)
 {
 
 		
-	/*
+	
 	udtReturnValue = DISPLAY_udtUltrasonicLcdInit(ptr, NumOfUltrasonic);
-	*/
+	
 			/*
 					const ULTRASONIC_obj_t* ULTRASONIC_pudtconfig,
 					uint8 u8NumOfUltrasonic			
@@ -88,16 +88,14 @@ int main(void)
 							_delay_ms(100);
 			*/
 
-	udtReturnValue = LCD_udt4BitInitialize();
+
 	
 	while (1)
 	{
 		
-		udtReturnValue = LCD_udt4BitSendData(80);
-		_delay_ms(2000);
-		/*
+		
 		udtReturnValue = DISPLAY_udtUltrasonicDispLcd(ptr);
-		*/
+		
 				/*
 					const ULTRASONIC_obj_t* ULTRASONIC_pudtconfig				
 				*/

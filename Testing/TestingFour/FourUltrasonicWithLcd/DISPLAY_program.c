@@ -5,6 +5,18 @@
  */ 
  
 /* -------------------------------- Includes --------------------------------------------------------------*/
+/**			LIBRARY Includes			**/																								
+#include "STD_TYPES.h"
+#include "BIT_MATH.h"
+
+/**			MCAL Includes				**/
+#include "DIO_Interface.h"
+#include "TIMER_Interface.h"
+
+/**			HAL Includes				**/
+#include "LCD_interface.h"
+#include "ULTRASONIC_interface.h"
+
 /**			SERVICE Includes				**/
 #include "DISPLAY_interface.h"
 
@@ -104,9 +116,9 @@ const ULTRASONIC_obj_t* ULTRASONIC_pudtconfig
 			udtReturnValue = LCD_udt4BitSendData((uint8)ULTRASONIC_LocalDistance[i]);
 		}
 	*/
-		udtReturnValue = LCD_udtGoTo(u8Row, u8Column); // u8Row will be optimezed by optimizer
+		udtReturnValue = LCD_udtGoTo(u8Row, u8Column);
 		
-		udtReturnValue = LCD_udt4BitSendData((uint8)ULTRASONIC_LocalDistance[i]);
+		udtReturnValue = LCD_udtSendNumber(ULTRASONIC_LocalDistance[i]);
 			
 		u8Column += COLUMN4;		
 		++ULTRASONIC_pudtconfig;

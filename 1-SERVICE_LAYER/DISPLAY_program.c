@@ -118,7 +118,7 @@ const ULTRASONIC_obj_t* ULTRASONIC_pudtconfig
 	*/
 		udtReturnValue = LCD_udtGoTo(u8Row, u8Column);
 		
-		udtReturnValue = LCD_udt4BitSendData((uint8)ULTRASONIC_LocalDistance[i]);
+		udtReturnValue = LCD_udtSendNumber(ULTRASONIC_LocalDistance[i]);
 			
 		u8Column += COLUMN4;		
 		++ULTRASONIC_pudtconfig;

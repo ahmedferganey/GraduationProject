@@ -35,7 +35,7 @@ void
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 	/* !Comment: initialization of data pins control pins */
 	//LCD_DATA_DIRECTION = 0xFF;
-	_delay_ms(10);	
+	_delay_ms(40);	
 	udtReturnValue = DIO_udtSetPinDirection(CLCD_DATA_PORT, CLCD_D4, DIO_DIR_OUTPUT);
 	udtReturnValue = DIO_udtSetPinDirection(CLCD_DATA_PORT, CLCD_D5, DIO_DIR_OUTPUT);
 	udtReturnValue = DIO_udtSetPinDirection(CLCD_DATA_PORT, CLCD_D6, DIO_DIR_OUTPUT);
@@ -44,24 +44,23 @@ void
 	udtReturnValue = DIO_udtSetPinDirection(CLCD_CONTROL_PORT, CLCD_RS, DIO_DIR_OUTPUT);
 	udtReturnValue = DIO_udtSetPinDirection(CLCD_CONTROL_PORT, CLCD_RW, DIO_DIR_OUTPUT);
 	udtReturnValue = DIO_udtSetPinDirection(CLCD_CONTROL_PORT, CLCD_EN, DIO_DIR_OUTPUT);
-	_delay_ms(10);	
 	
 	/* !Comment: initialization of some command from data sheet */	
 		//udtReturnValue = LCD_udt4BitSendCommand(0x33);
 		//udtReturnValue = LCD_udt4BitSendCommand(0x32);
 	udtReturnValue = LCD_udt4BitSendCommand(LCD_RETURN_HOME);
-	_delay_us(2000);
+	_delay_us(1000);
 	
 	udtReturnValue = LCD_udt4BitSendCommand(LCD_4BIT_MODE_2_LINE_5_IN_7);
-	_delay_us(500);
+	_delay_us(1000);
 	
 	udtReturnValue = LCD_udt4BitSendCommand(LCD_DISPLAY_ON_UNDERLINE_ON_CURSOR_OFF); 
-	_delay_us(500);
+	_delay_us(1000);
 	
 	udtReturnValue = LCD_udtClearScreen();
 	
 	udtReturnValue = LCD_udt4BitSendCommand(LCD_ENTRY_MODE_INC_SHIFT_OFF);
-	_delay_ms(2);	
+	_delay_ms(1);	
 	
 	return udtReturnValue;	
 }	
@@ -108,7 +107,7 @@ uint8 u8Command
 
 
 /********************************************************************************************/
-/*  @brief				  : send data to lcd												*/
+/*  @brief				  : send data to lcd"Characters"									*/
 /*  @param	 u8Data		  : the required operation we need to implement it	 @ref uint8	    */
 /*  @return	 Std_ReturnType																	*/
 /*           (E_OK)		  : The function done successfully									*/
@@ -144,7 +143,48 @@ uint8 u8Data
 }
 #endif
 
+/********************************************************************************************/
+/*  @brief				  : print a sentence of characters on lcd							*/
+/*  @param				  : name of array of string							 @ref uint8*	*/
+/*  @return	 Std_ReturnType																	*/
+/*           (E_OK)		  : The function done successfully									*/
+/*           (E_NOT_OK)   : The function has issue to perform this action					*/
+/********************************************************************************************/
+extern Std_ReturnType LCD_udtSendNumber
+(
+uint64 Copy_u64Number
+)
+{
+	Std_ReturnType udtReturnValue = E_OK;
+	
+	uint64 LOC_u64Reversed = 1 ;
 
+	if( Copy_u64Number == 0 )
+	{ 
+		udtReturnValue = LCD_udt4BitSendData('0'); 
+	}
+
+	else{
+
+		while( Copy_u64Number != 0 )
+		{
+
+			LOC_u64Reversed = ( LOC_u64Reversed * 10 ) + ( Copy_u64Number % 10 );
+			Copy_u64Number /= 10 ;
+
+		}
+		while( LOC_u64Reversed != 1 )
+		{
+
+			udtReturnValue = LCD_udt4BitSendData( ( LOC_u64Reversed % 10 ) + 48 );
+			LOC_u64Reversed /= 10 ;
+
+		}
+
+	}
+		
+	return udtReturnValue;	
+}
 
 /********************************************************************************************/
 /*  @brief				  : print a sentence of characters on lcd							*/
@@ -276,13 +316,10 @@ void
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 
 	udtReturnValue = LCD_udt4BitSendCommand(LCD_CLEAR_DISPLAY);
-	_delay_ms(3); //wait more than 1.53 ms
+	_delay_ms(7); //wait more than 1.53 ms
+	
 	return udtReturnValue;
-
 }
-
-
-
 
 
 /***************************** Comment!: Static APIs Implementation ********************************/

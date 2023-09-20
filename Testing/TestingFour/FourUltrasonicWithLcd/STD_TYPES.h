@@ -35,6 +35,9 @@ typedef	unsigned long 	uint32;
 typedef	signed   char 	sint8;
 typedef	signed   short 	sint16;
 typedef	signed   long 	sint32;
+
+typedef unsigned long long int  uint64;
+
 typedef float			f32;			
 typedef double			d64;			
 
