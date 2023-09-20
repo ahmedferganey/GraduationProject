@@ -5,18 +5,6 @@
  */ 
  
 /* -------------------------------- Includes --------------------------------------------------------------*/
-/**			LIBRARY Includes			**/																								
-#include "STD_TYPES.h"
-#include "BIT_MATH.h"
-
-/**			MCAL Includes				**/
-#include "DIO_Interface.h"
-#include "TIMER_Interface.h"
-
-/**			HAL Includes				**/
-#include "LCD_interface.h"
-#include "ULTRASONIC_interface.h"
-
 /**			SERVICE Includes				**/
 #include "DISPLAY_interface.h"
 

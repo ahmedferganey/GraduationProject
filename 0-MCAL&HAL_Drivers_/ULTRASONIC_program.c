@@ -55,21 +55,18 @@ const ULTRASONIC_obj_t* ULTRASONIC_pudtobj
 	{
 	udtReturnValue = DIO_udtSetPinDirection(ULTRASONIC_pudtobj->udtTriggerPin.port,
 											ULTRASONIC_pudtobj->udtTriggerPin.pin,
-											ULTRASONIC_pudtobj->udtTriggerPin.direction
-											= ULTRASONIC_TRIG_OUTPUT
+											ULTRASONIC_TRIG_OUTPUT
 											);
 	udtReturnValue = DIO_udtSetPinDirection(ULTRASONIC_pudtobj->udtEchoPin.port,
 											ULTRASONIC_pudtobj->udtEchoPin.pin,
-											ULTRASONIC_pudtobj->udtEchoPin.direction
-											= ULTRASONIC_ECHO_INPUT											
+											ULTRASONIC_ECHO_INPUT											
 											);
 
 
 
 	udtReturnValue = DIO_udtSetPinValue(ULTRASONIC_pudtobj->udtTriggerPin.port,
 										ULTRASONIC_pudtobj->udtTriggerPin.pin,
-										ULTRASONIC_pudtobj->udtTriggerPin.logic
-										= ULTRASONIC_TRIG_LOW
+										ULTRASONIC_TRIG_LOW
 										);										
 	}
 	
@@ -104,14 +101,12 @@ uint16* ULTRASONIC_pu8Distance
         /* Send Trigger Signal to the Ultrasonic Trigger Pin */
 		udtReturnValue = DIO_udtSetPinValue(ULTRASONIC_pudtobj->udtTriggerPin.port,
 											ULTRASONIC_pudtobj->udtTriggerPin.pin,
-											ULTRASONIC_pudtobj->udtTriggerPin.logic
-											= ULTRASONIC_TRIG_HIGH
+											ULTRASONIC_TRIG_HIGH
 											);
         __delay_us(10);
 		udtReturnValue = DIO_udtSetPinValue(ULTRASONIC_pudtobj->udtTriggerPin.port,
 											ULTRASONIC_pudtobj->udtTriggerPin.pin,
-											ULTRASONIC_pudtobj->udtTriggerPin.logic
-											= ULTRASONIC_TRIG_LOW
+											ULTRASONIC_TRIG_LOW
 											);		
 	
         /* Wait the Echo pin to be High */

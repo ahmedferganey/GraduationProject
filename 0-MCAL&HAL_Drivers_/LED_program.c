@@ -90,8 +90,7 @@ const LED_t* LED_pudtCfg
 													(
 													 LED_pudtCfg->LED_pin.port,
 													 LED_pudtCfg->LED_pin.pin,
-													 LED_pudtCfg->LED_pin.logic 
-													 = 	LED_LOGIC_LOW					 
+													 LED_LOGIC_LOW					 
 													);
 									break;
 			
@@ -99,8 +98,7 @@ const LED_t* LED_pudtCfg
 													(
 													 LED_pudtCfg->LED_pin.port,
 													 LED_pudtCfg->LED_pin.pin,
-													 LED_pudtCfg->LED_pin.logic
-													 = 	LED_LOGIC_HIGH												 
+													 LED_LOGIC_HIGH												 
 													);
 									break;
 			
@@ -139,8 +137,7 @@ const LED_t* LED_pudtCfg
 													(
 													 LED_pudtCfg->LED_pin.port,
 													 LED_pudtCfg->LED_pin.pin,
-													 LED_pudtCfg->LED_pin.logic 
-													 = 	LED_LOGIC_HIGH					 
+													 LED_LOGIC_HIGH					 
 													);
 									break;
 			
@@ -148,8 +145,7 @@ const LED_t* LED_pudtCfg
 													(
 													 LED_pudtCfg->LED_pin.port,
 													 LED_pudtCfg->LED_pin.pin,
-													 LED_pudtCfg->LED_pin.logic
-													 = 	LED_LOGIC_LOW												 
+													 LED_LOGIC_LOW												 
 													);
 									break;
 			
