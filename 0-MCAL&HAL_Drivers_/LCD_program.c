@@ -34,24 +34,34 @@ void
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 	/* !Comment: initialization of data pins control pins */
-	LCD_DATA_DIRECTION = 0xFF;
-	udtReturnValue = DIO_udtSetPinDirection(LCD_RW, DIO_DIRECTION_OUTPUT);
-	udtReturnValue = DIO_udtSetPinDirection(LCD_RS, DIO_DIRECTION_OUTPUT);
-	udtReturnValue = DIO_udtSetPinDirection(LCD_E, DIO_DIRECTION_OUTPUT);
+	//LCD_DATA_DIRECTION = 0xFF;
+	_delay_ms(10);	
+	udtReturnValue = DIO_udtSetPinDirection(CLCD_DATA_PORT, CLCD_D4, DIO_DIR_OUTPUT);
+	udtReturnValue = DIO_udtSetPinDirection(CLCD_DATA_PORT, CLCD_D5, DIO_DIR_OUTPUT);
+	udtReturnValue = DIO_udtSetPinDirection(CLCD_DATA_PORT, CLCD_D6, DIO_DIR_OUTPUT);
+	udtReturnValue = DIO_udtSetPinDirection(CLCD_DATA_PORT, CLCD_D7, DIO_DIR_OUTPUT);
+	
+	udtReturnValue = DIO_udtSetPinDirection(CLCD_CONTROL_PORT, CLCD_RS, DIO_DIR_OUTPUT);
+	udtReturnValue = DIO_udtSetPinDirection(CLCD_CONTROL_PORT, CLCD_RW, DIO_DIR_OUTPUT);
+	udtReturnValue = DIO_udtSetPinDirection(CLCD_CONTROL_PORT, CLCD_EN, DIO_DIR_OUTPUT);
+	_delay_ms(10);	
+	
 	/* !Comment: initialization of some command from data sheet */	
-	udtReturnValue = LCD_udt4BitSendCommand(0x33);
-	udtReturnValue = LCD_udt4BitSendCommand(0x32);
-	udtReturnValue = LCD_udt4BitSendCommand(LCD_4BIT_MODE_2_LINE_5_IN_7); 
-	udtReturnValue = LCD_udt4BitSendCommand(LCD_DISPLAY_ON_CURSOR_BLINKING_OFF); 
-	udtReturnValue = LCD_udt4BitSendCommand(LCD_CLEAR_DISPLAY);
-	_delay_us(1000);
+		//udtReturnValue = LCD_udt4BitSendCommand(0x33);
+		//udtReturnValue = LCD_udt4BitSendCommand(0x32);
+	udtReturnValue = LCD_udt4BitSendCommand(LCD_RETURN_HOME);
+	_delay_us(2000);
+	
+	udtReturnValue = LCD_udt4BitSendCommand(LCD_4BIT_MODE_2_LINE_5_IN_7);
+	_delay_us(500);
+	
+	udtReturnValue = LCD_udt4BitSendCommand(LCD_DISPLAY_ON_UNDERLINE_ON_CURSOR_OFF); 
+	_delay_us(500);
+	
+	udtReturnValue = LCD_udtClearScreen();
 	
 	udtReturnValue = LCD_udt4BitSendCommand(LCD_ENTRY_MODE_INC_SHIFT_OFF);
-	_delay_us(50);	
-	
-	/* !Comment: cursor on blink off */
-	udtReturnValue = LCD_udt4BitSendCommand(LCD_DISPLAY_ON_CURSOR_BLINKING_OFF);
-	_delay_us(50);
+	_delay_ms(2);	
 	
 	return udtReturnValue;	
 }	
@@ -91,14 +101,14 @@ uint8 u8Command
 	/* !Comment: Generate pulse on En pin */
 	udtReturnValue = LCD_udt4bit_send_enable_signal();
 
-	_delay_us(60);	
+	_delay_ms(1);	
 	return udtReturnValue;
 }
 #endif
 
 
 /********************************************************************************************/
-/*  @brief				  : send data to lcd												*/
+/*  @brief				  : send data to lcd"Characters"									*/
 /*  @param	 u8Data		  : the required operation we need to implement it	 @ref uint8	    */
 /*  @return	 Std_ReturnType																	*/
 /*           (E_OK)		  : The function done successfully									*/
@@ -112,24 +122,24 @@ uint8 u8Data
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 	/* !Comment: Clearing Rs to send command */
-	DIO_udtSetPinValue(LCD_RS, DIO_HIGH);
+	udtReturnValue = DIO_udtSetPinValue(CLCD_CONTROL_PORT, CLCD_RS, DIO_HIGH);
 	
 	/* !Comment: Clearing Rw to write data */
-	DIO_udtSetPinValue(LCD_RW, DIO_LOW);
+	udtReturnValue = DIO_udtSetPinValue(CLCD_CONTROL_PORT, CLCD_RW, DIO_LOW);
 	
 	/* !Comment: Writing the data on the data pins */
-	LCD_DATA_PORT = u8Data & 0xF0;
+	LCD_DATA_PORT = u8Data & 0xF0;		// send the most 4 bits of data to high nibbles
 	
 	/* !Comment: Generate pulse on En pin */
 	udtReturnValue = LCD_udt4bit_send_enable_signal();
 
 	/* !Comment: Writing the data on the data pins */
-	LCD_DATA_PORT = u8Data << 4;
+	LCD_DATA_PORT = u8Data << 4;		// send the least 4 bits of data to high nibbles
 	
 	/* !Comment: Generate pulse on En pin */
 	udtReturnValue = LCD_udt4bit_send_enable_signal();
 	
-	_delay_us(60);	
+	_delay_ms(1);	
 	return udtReturnValue;	
 }
 #endif
@@ -252,8 +262,24 @@ uint8 u8DDRAMColumn
 #endif
 
 
+/********************************************************************************************/
+/*  @brief				  : generate pulse on LCD_EN pin									*/
+/*  @return	 Std_ReturnType																	*/
+/*           (E_OK)		  : The function done successfully									*/
+/*           (E_NOT_OK)   : The function has issue to perform this action					*/
+/********************************************************************************************/
+Std_ReturnType LCD_udtClearScreen
+(
+void
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
 
-
+	udtReturnValue = LCD_udt4BitSendCommand(LCD_CLEAR_DISPLAY);
+	_delay_ms(3); //wait more than 1.53 ms
+	
+	return udtReturnValue;
+}
 
 
 /***************************** Comment!: Static APIs Implementation ********************************/
@@ -271,9 +297,10 @@ void
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 	udtReturnValue = DIO_udtSetPinValue(LCD_E, DIO_HIGH);
-	_delay_us(1);
+	_delay_ms(1);
 	udtReturnValue = DIO_udtSetPinValue(LCD_E, DIO_LOW);
-	_delay_us(60);
+	_delay_ms(1);
 	return udtReturnValue;
 }
 #endif
+

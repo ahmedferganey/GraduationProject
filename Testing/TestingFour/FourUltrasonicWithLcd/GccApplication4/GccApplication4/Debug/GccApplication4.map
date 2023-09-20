@@ -36,8 +36,6 @@ Discarded input sections
  .text          0x00000000        0x0 APP.o
  .data          0x00000000        0x0 APP.o
  .bss           0x00000000        0x0 APP.o
- .data.udtReturnValue
-                0x00000000        0x1 APP.o
  .data.NumOfUltrasonic
                 0x00000000        0x1 APP.o
  .data.ptr      0x00000000        0x2 APP.o
@@ -69,12 +67,16 @@ Discarded input sections
                 0x00000000       0x28 DISPLAY_program.o
  .debug_ranges  0x00000000       0x30 DISPLAY_program.o
  .debug_line    0x00000000      0x171 DISPLAY_program.o
- .debug_str     0x00000000      0x32c DISPLAY_program.o
+ .debug_str     0x00000000      0x388 DISPLAY_program.o
  .comment       0x00000000       0x31 DISPLAY_program.o
  .debug_frame   0x00000000       0x84 DISPLAY_program.o
  .text          0x00000000        0x0 LCD_program.o
  .data          0x00000000        0x0 LCD_program.o
  .bss           0x00000000        0x0 LCD_program.o
+ .text.LCD_udt4BitPrintString
+                0x00000000       0x32 LCD_program.o
+ .text.LCD_udtGoTo
+                0x00000000       0x20 LCD_program.o
  .text.LCD_udtCreateSpecialChar
                 0x00000000       0x5e LCD_program.o
  .text          0x00000000        0x0 TIMER_program.o
@@ -377,7 +379,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0x6b2
+.text           0x00000000      0x6aa
  *(.vectors)
  .vectors       0x00000000       0x54 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32a/avr5/crtatmega32a.o
                 0x00000000                __vector_default
@@ -451,60 +453,57 @@ END GROUP
                 0x0000008e                __vector_20
                 0x00000092                . = ALIGN (0x2)
  *(.text.*)
- .text.main     0x00000092       0x48 APP.o
+ .text.main     0x00000092       0x26 APP.o
                 0x00000092                main
  .text.DIO_udtSetPinDirection
-                0x000000da       0xfc DIO_program.o
-                0x000000da                DIO_udtSetPinDirection
+                0x000000b8       0xfc DIO_program.o
+                0x000000b8                DIO_udtSetPinDirection
  .text.DIO_udtSetPinValue
-                0x000001d6       0xfc DIO_program.o
-                0x000001d6                DIO_udtSetPinValue
+                0x000001b4       0xfc DIO_program.o
+                0x000001b4                DIO_udtSetPinValue
  .text.LCD_udt4bit_send_enable_signal
-                0x000002d2       0x24 LCD_program.o
+                0x000002b0       0x2e LCD_program.o
  .text.LCD_udt4BitSendCommand
-                0x000002f6       0x36 LCD_program.o
-                0x000002f6                LCD_udt4BitSendCommand
- .text.LCD_udt4BitInitialize
-                0x0000032c       0x6a LCD_program.o
-                0x0000032c                LCD_udt4BitInitialize
+                0x000002de       0x3c LCD_program.o
+                0x000002de                LCD_udt4BitSendCommand
  .text.LCD_udt4BitSendData
-                0x00000396       0x36 LCD_program.o
-                0x00000396                LCD_udt4BitSendData
- .text.LCD_udt4BitPrintString
-                0x000003cc       0x32 LCD_program.o
-                0x000003cc                LCD_udt4BitPrintString
- .text.LCD_udtGoTo
-                0x000003fe       0x20 LCD_program.o
-                0x000003fe                LCD_udtGoTo
+                0x0000031a       0x3c LCD_program.o
+                0x0000031a                LCD_udt4BitSendData
+ .text.LCD_udtClearScreen
+                0x00000356       0x14 LCD_program.o
+                0x00000356                LCD_udtClearScreen
+ .text.LCD_udt4BitInitialize
+                0x0000036a       0xac LCD_program.o
+                0x0000036a                LCD_udt4BitInitialize
  .text.__vector_4
-                0x0000041e       0x52 TIMER_program.o
-                0x0000041e                __vector_4
+                0x00000416       0x52 TIMER_program.o
+                0x00000416                __vector_4
  .text.__vector_5
-                0x00000470       0x52 TIMER_program.o
-                0x00000470                __vector_5
+                0x00000468       0x52 TIMER_program.o
+                0x00000468                __vector_5
  .text.__vector_6
-                0x000004c2       0x52 TIMER_program.o
-                0x000004c2                __vector_6
+                0x000004ba       0x52 TIMER_program.o
+                0x000004ba                __vector_6
  .text.__vector_7
-                0x00000514       0x52 TIMER_program.o
-                0x00000514                __vector_7
+                0x0000050c       0x52 TIMER_program.o
+                0x0000050c                __vector_7
  .text.__vector_8
-                0x00000566       0x52 TIMER_program.o
-                0x00000566                __vector_8
+                0x0000055e       0x52 TIMER_program.o
+                0x0000055e                __vector_8
  .text.__vector_9
-                0x000005b8       0x52 TIMER_program.o
-                0x000005b8                __vector_9
+                0x000005b0       0x52 TIMER_program.o
+                0x000005b0                __vector_9
  .text.__vector_10
-                0x0000060a       0x52 TIMER_program.o
-                0x0000060a                __vector_10
+                0x00000602       0x52 TIMER_program.o
+                0x00000602                __vector_10
  .text.__vector_11
-                0x0000065c       0x52 TIMER_program.o
-                0x0000065c                __vector_11
-                0x000006ae                . = ALIGN (0x2)
+                0x00000654       0x52 TIMER_program.o
+                0x00000654                __vector_11
+                0x000006a6                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000006ae        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x000006ae                _exit
-                0x000006ae                exit
+ .fini9         0x000006a6        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x000006a6                _exit
+                0x000006a6                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -523,40 +522,42 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000006ae        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x000006a6        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x000006b2                _etext = .
+                0x000006aa                _etext = .
 
-.data           0x00800060        0x6 load address 0x000006b2
+.data           0x00800060        0x2 load address 0x000006aa
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
+ .data.udtReturnValue
+                0x00800060        0x1 APP.o
+                0x00800060                udtReturnValue
  *(.gnu.linkonce.d*)
  *(.rodata)
  *(.rodata*)
- .rodata.str1.1
-                0x00800060        0x6 APP.o
  *(.gnu.linkonce.r*)
-                0x00800066                . = ALIGN (0x2)
-                0x00800066                _edata = .
-                0x00800066                PROVIDE (__data_end, .)
+                0x00800062                . = ALIGN (0x2)
+ *fill*         0x00800061        0x1 
+                0x00800062                _edata = .
+                0x00800062                PROVIDE (__data_end, .)
 
-.bss            0x00800066        0xe
-                0x00800066                PROVIDE (__bss_start, .)
+.bss            0x00800062        0xe
+                0x00800062                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
  .bss.TIMERS_pvCallBackFunc
-                0x00800066        0xe TIMER_program.o
+                0x00800062        0xe TIMER_program.o
  *(COMMON)
-                0x00800074                PROVIDE (__bss_end, .)
-                0x000006b2                __data_load_start = LOADADDR (.data)
-                0x000006b8                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00800070                PROVIDE (__bss_end, .)
+                0x000006aa                __data_load_start = LOADADDR (.data)
+                0x000006ac                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800074        0x0
+.noinit         0x00800070        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x00800074                _end = .
+                0x00800070                _end = .
                 [!provide]                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
@@ -624,69 +625,68 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x1d0
+.debug_aranges  0x00000000      0x1d8
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x20 APP.o
  .debug_aranges
                 0x00000020       0x50 DIO_program.o
  .debug_aranges
-                0x00000070       0x50 LCD_program.o
+                0x00000070       0x58 LCD_program.o
  .debug_aranges
-                0x000000c0      0x110 TIMER_program.o
+                0x000000c8      0x110 TIMER_program.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x19e2
+.debug_info     0x00000000     0x1b20
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x4e6 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32a/avr5/crtatmega32a.o
- .debug_info    0x000004e6      0x2e7 APP.o
- .debug_info    0x000007cd      0x469 DIO_program.o
- .debug_info    0x00000c36      0x80a LCD_program.o
- .debug_info    0x00001440      0x5a2 TIMER_program.o
+ .debug_info    0x000004e6      0x29f APP.o
+ .debug_info    0x00000785      0x469 DIO_program.o
+ .debug_info    0x00000bee      0x990 LCD_program.o
+ .debug_info    0x0000157e      0x5a2 TIMER_program.o
 
-.debug_abbrev   0x00000000      0xaac
+.debug_abbrev   0x00000000      0xaca
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x4a3 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32a/avr5/crtatmega32a.o
- .debug_abbrev  0x000004a3      0x1bb APP.o
- .debug_abbrev  0x0000065e      0x104 DIO_program.o
- .debug_abbrev  0x00000762      0x1af LCD_program.o
- .debug_abbrev  0x00000911      0x19b TIMER_program.o
+ .debug_abbrev  0x000004a3      0x19f APP.o
+ .debug_abbrev  0x00000642      0x104 DIO_program.o
+ .debug_abbrev  0x00000746      0x1e9 LCD_program.o
+ .debug_abbrev  0x0000092f      0x19b TIMER_program.o
 
-.debug_line     0x00000000      0xe2e
+.debug_line     0x00000000      0xe73
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x116 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32a/avr5/crtatmega32a.o
- .debug_line    0x00000116      0x193 APP.o
- .debug_line    0x000002a9      0x403 DIO_program.o
- .debug_line    0x000006ac      0x331 LCD_program.o
- .debug_line    0x000009dd      0x451 TIMER_program.o
+ .debug_line    0x00000116      0x183 APP.o
+ .debug_line    0x00000299      0x403 DIO_program.o
+ .debug_line    0x0000069c      0x386 LCD_program.o
+ .debug_line    0x00000a22      0x451 TIMER_program.o
 
 .debug_frame    0x00000000      0x5c0
  *(.debug_frame)
- .debug_frame   0x00000000       0x34 APP.o
- .debug_frame   0x00000034       0x84 DIO_program.o
- .debug_frame   0x000000b8       0xc4 LCD_program.o
+ .debug_frame   0x00000000       0x24 APP.o
+ .debug_frame   0x00000024       0x84 DIO_program.o
+ .debug_frame   0x000000a8       0xd4 LCD_program.o
  .debug_frame   0x0000017c      0x444 TIMER_program.o
 
-.debug_str      0x00000000      0xb1e
+.debug_str      0x00000000      0xb25
  *(.debug_str)
  .debug_str     0x00000000      0x196 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32a/avr5/crtatmega32a.o
- .debug_str     0x00000196      0x2fc APP.o
-                                0x330 (size before relaxing)
- .debug_str     0x00000492      0x251 DIO_program.o
+ .debug_str     0x00000196      0x2e1 APP.o
+                                0x315 (size before relaxing)
+ .debug_str     0x00000477      0x251 DIO_program.o
                                 0x3aa (size before relaxing)
- .debug_str     0x000006e3       0xeb LCD_program.o
-                                0x43c (size before relaxing)
- .debug_str     0x000007ce      0x350 TIMER_program.o
+ .debug_str     0x000006c8      0x10d LCD_program.o
+                                0x491 (size before relaxing)
+ .debug_str     0x000007d5      0x350 TIMER_program.o
                                 0x4df (size before relaxing)
 
-.debug_loc      0x00000000     0x1739
+.debug_loc      0x00000000     0x182e
  *(.debug_loc)
- .debug_loc     0x00000000       0x48 APP.o
- .debug_loc     0x00000048      0x908 DIO_program.o
- .debug_loc     0x00000950      0x676 LCD_program.o
- .debug_loc     0x00000fc6      0x773 TIMER_program.o
+ .debug_loc     0x00000000      0x908 DIO_program.o
+ .debug_loc     0x00000908      0x7b3 LCD_program.o
+ .debug_loc     0x000010bb      0x773 TIMER_program.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -706,12 +706,12 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x190
+.debug_ranges   0x00000000      0x198
  *(.debug_ranges)
  .debug_ranges  0x00000000       0x10 APP.o
  .debug_ranges  0x00000010       0x40 DIO_program.o
- .debug_ranges  0x00000050       0x40 LCD_program.o
- .debug_ranges  0x00000090      0x100 TIMER_program.o
+ .debug_ranges  0x00000050       0x48 LCD_program.o
+ .debug_ranges  0x00000098      0x100 TIMER_program.o
 
 .debug_macro
  *(.debug_macro)

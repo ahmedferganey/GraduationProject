@@ -120,7 +120,7 @@ extern Std_ReturnType LCD_udt4BitSendData(uint8 u8Data);
 extern Std_ReturnType LCD_udt4BitPrintString(uint8* pu8Word);
 extern Std_ReturnType LCD_udtGoTo(uint8 u8Row, uint8 u8Column);
 extern Std_ReturnType LCD_udtCreateSpecialChar (uint8* pu8CharArr, uint8 u8CGRAMLocation, uint8 u8DDRAMRow, uint8 u8DDRAMColumn);
-
+extern Std_ReturnType LCD_udtClearScreen(void);
 
 
 

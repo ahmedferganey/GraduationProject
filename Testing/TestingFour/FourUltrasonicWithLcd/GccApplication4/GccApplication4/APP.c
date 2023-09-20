@@ -88,12 +88,13 @@ int main(void)
 							_delay_ms(100);
 			*/
 
-
+	udtReturnValue = LCD_udt4BitInitialize();
 	
 	while (1)
 	{
 		
-
+		udtReturnValue = LCD_udt4BitSendData(80);
+		_delay_ms(2000);
 		/*
 		udtReturnValue = DISPLAY_udtUltrasonicDispLcd(ptr);
 		*/
