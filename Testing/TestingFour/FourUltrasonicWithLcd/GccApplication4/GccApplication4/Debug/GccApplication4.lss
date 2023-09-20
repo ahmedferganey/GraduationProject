@@ -748,8 +748,8 @@ const ULTRASONIC_obj_t* ULTRASONIC_pudtconfig
      3dc:	90 e0       	ldi	r25, 0x00	; 0
      3de:	0e 94 5c 02 	call	0x4b8	; 0x4b8 <LCD_udtSendNumber>
 			
-		u8Column += COLUMN4;		
-     3e2:	b3 e0       	ldi	r27, 0x03	; 3
+		u8Column += COLUMN5;		
+     3e2:	b4 e0       	ldi	r27, 0x04	; 4
      3e4:	eb 0e       	add	r14, r27
 		++ULTRASONIC_pudtconfig;
      3e6:	e2 e0       	ldi	r30, 0x02	; 2
@@ -2026,7 +2026,7 @@ uint16* ULTRASONIC_pu16Distance
 		*/
 		
 		//*ULTRASONIC_pu8Distance = (uint16)((f32)Timers_u16IcuValue*(4.25f/1000));
-		*ULTRASONIC_pu16Distance = (uint16)(((d64)Timers_u16IcuValue*ULTRASONIC_TIME_TICK)/58);
+		*ULTRASONIC_pu16Distance = (uint16)(((d64)Timers_u16IcuValue*ULTRASONIC_TIME_TICK)/58.3);
      b82:	bc 01       	movw	r22, r24
      b84:	80 e0       	ldi	r24, 0x00	; 0
      b86:	90 e0       	ldi	r25, 0x00	; 0
@@ -2036,9 +2036,9 @@ uint16* ULTRASONIC_pu16Distance
      b90:	40 e0       	ldi	r20, 0x00	; 0
      b92:	5e e3       	ldi	r21, 0x3E	; 62
      b94:	0e 94 13 07 	call	0xe26	; 0xe26 <__mulsf3>
-     b98:	20 e0       	ldi	r18, 0x00	; 0
-     b9a:	30 e0       	ldi	r19, 0x00	; 0
-     b9c:	48 e6       	ldi	r20, 0x68	; 104
+     b98:	23 e3       	ldi	r18, 0x33	; 51
+     b9a:	33 e3       	ldi	r19, 0x33	; 51
+     b9c:	49 e6       	ldi	r20, 0x69	; 105
      b9e:	52 e4       	ldi	r21, 0x42	; 66
      ba0:	0e 94 e4 05 	call	0xbc8	; 0xbc8 <__divsf3>
      ba4:	0e 94 56 06 	call	0xcac	; 0xcac <__fixunssfsi>
@@ -2054,7 +2054,7 @@ uint16* ULTRASONIC_pu16Distance
 		udtReturnValue = E_NOT_OK;
      bb0:	ff 24       	eor	r15, r15
      bb2:	f3 94       	inc	r15
-		*ULTRASONIC_pu16Distance = (uint16)(((d64)Timers_u16IcuValue*ULTRASONIC_TIME_TICK)/58);
+		*ULTRASONIC_pu16Distance = (uint16)(((d64)Timers_u16IcuValue*ULTRASONIC_TIME_TICK)/58.3);
 		
 	}
 	
