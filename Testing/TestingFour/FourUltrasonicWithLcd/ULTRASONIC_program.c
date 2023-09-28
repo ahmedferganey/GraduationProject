@@ -188,7 +188,7 @@ uint16* ULTRASONIC_pu16Distance
 		*/
 		
 		//*ULTRASONIC_pu8Distance = (uint16)((f32)Timers_u16IcuValue*(4.25f/1000));
-		*ULTRASONIC_pu16Distance = (uint16)(((d64)Timers_u16IcuValue*ULTRASONIC_TIME_TICK)/58);
+		*ULTRASONIC_pu16Distance = (uint16)(((d64)Timers_u16IcuValue*ULTRASONIC_TIME_TICK)/58.3);
 		
 	}
 	

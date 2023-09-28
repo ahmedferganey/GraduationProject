@@ -8,7 +8,7 @@
   <PWI>
    <POPUP w="800" x="48" flags="00000002" y="160" h="200" pid="0" iid="-1">
     <PROPERTIES>
-     <ITEM name="Message Column Width">661</ITEM>
+     <ITEM name="Message Column Width">540</ITEM>
      <ITEM name="ShowGrid">No</ITEM>
      <ITEM name="Source Column Width">100</ITEM>
      <ITEM name="Time Column Width">120</ITEM>
@@ -20,6 +20,7 @@
      <ITEM name="Address Column Width">82</ITEM>
      <ITEM name="AutoResize">No</ITEM>
      <ITEM name="Gridlines">Yes</ITEM>
+     <ITEM name="Item 0">"udtEchoPin","0080006B",00000001,0000000E,107,1,-1,E2DF0000,0,00000000,00000000</ITEM>
      <ITEM name="Name Column Width">82</ITEM>
      <ITEM name="ShowAddresses">Yes</ITEM>
      <ITEM name="ShowPreviousValues">No</ITEM>
@@ -29,7 +30,7 @@
      <ITEM name="Value Column Width">82</ITEM>
      <ITEM name="Version">100</ITEM>
      <ITEM name="Watch Expression Column Width">82</ITEM>
-     <ITEM name="nItems">0</ITEM>
+     <ITEM name="nItems">1</ITEM>
     </PROPERTIES>
    </POPUP>
    <POPUP w="258" x="88" flags="00000008" y="200" h="255" pid="3" iid="1">
@@ -95,15 +96,15 @@
      <ITEM name="TopLineAddress">00000020</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="852" x="1068" flags="0000802b" y="479" h="517" pid="1" iid="1">
+   <POPUP w="930" x="0" flags="0000802b" y="106" h="830" pid="1" iid="1">
     <PROPERTIES>
      <ITEM name="Breakpoint 0">"DISPLAY_udtUltrasonicDispLcd",03C0,0054,7951,FA80,1
 </ITEM>
-     <ITEM name="Breakpoint 1">"DISPLAY_udtUltrasonicDispLcd",03C8,005C,59DB,FA80,1
+     <ITEM name="Breakpoint 1">"DISPLAY_udtUltrasonicDispLcd",03C8,005C,0544,FA80,1
 </ITEM>
-     <ITEM name="Breakpoint 2">"LCD_udtGoTo",04FA,0000,2C20,431B,1
+     <ITEM name="Breakpoint 2">"DISPLAY_udtUltrasonicDispLcd",03E2,0076,1401,FA80,1
 </ITEM>
-     <ITEM name="Breakpoint 3">"LCD_udtGoTo",04FE,0004,CE9B,431B,1
+     <ITEM name="Breakpoint 3">"DISPLAY_udtUltrasonicDispLcd",03E6,007A,F31B,FA80,1
 </ITEM>
      <ITEM name="Breakpoint 4">"LCD_udtGoTo",0508,000E,8F2E,431B,1
 </ITEM>
@@ -126,7 +127,7 @@
      <ITEM name="nBreakpoints">0</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="1027" x="893" flags="0000000b" y="32" h="998" pid="2" iid="1">
+   <POPUP w="872" x="1048" flags="0000000b" y="4" h="998" pid="2" iid="1">
     <PROPERTIES>
      <ITEM name="Address Column Width">110</ITEM>
      <ITEM name="AutoResize">No</ITEM>
