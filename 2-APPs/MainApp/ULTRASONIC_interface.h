@@ -23,7 +23,7 @@
 #include "BIT_MATH.h"
 
 /**			MCAL Includes				**/
-#include "DIO_Interface.h"
+#include "DIO_interface.h"
 #include "TIMER_interface.h"
 
 #include "ULTRASONIC_config.h"

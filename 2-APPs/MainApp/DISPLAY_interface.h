@@ -14,8 +14,8 @@
 #include "BIT_MATH.h"
 
 /**			MCAL Includes				**/
-#include "DIO_Interface.h"
-#include "TIMER_Interface.h"
+#include "DIO_interface.h"
+#include "TIMER_interface.h"
 
 /**			HAL Includes				**/
 #include "LCD_interface.h"
