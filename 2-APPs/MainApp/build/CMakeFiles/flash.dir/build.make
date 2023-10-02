@@ -66,8 +66,8 @@ include CMakeFiles/flash.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/flash.dir/progress.make
 
-CMakeFiles/flash: APP.elf
-	avr-objcopy -j .text -j .data -O ihex APP.elf APP.hex
+CMakeFiles/flash: AutonomousVehicle.elf
+	avr-objcopy -j .text -j .data -O ihex AutonomousVehicle.elf AutonomousVehicle.hex
 
 flash: CMakeFiles/flash
 flash: CMakeFiles/flash.dir/build.make

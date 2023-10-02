@@ -1,1 +1,0 @@
-avr-gcc -O3 -DNDEBUG CMakeFiles/APP.elf.dir/APP.c.o CMakeFiles/APP.elf.dir/src/DIO_program.c.o CMakeFiles/APP.elf.dir/src/DISPLAY_program.c.o CMakeFiles/APP.elf.dir/src/LCD_program.c.o CMakeFiles/APP.elf.dir/src/TIMER_program.c.o CMakeFiles/APP.elf.dir/src/ULTRASONIC_program.c.o -o APP.elf 

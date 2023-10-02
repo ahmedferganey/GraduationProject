@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named APP.elf
+# Target rules for targets named AutonomousVehicle.elf
 
 # Build rule for target.
-APP.elf: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 APP.elf
-.PHONY : APP.elf
+AutonomousVehicle.elf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AutonomousVehicle.elf
+.PHONY : AutonomousVehicle.elf
 
 # fast build rule for target.
-APP.elf/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/APP.elf.dir/build.make CMakeFiles/APP.elf.dir/build
-.PHONY : APP.elf/fast
+AutonomousVehicle.elf/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/build
+.PHONY : AutonomousVehicle.elf/fast
 
 #=============================================================================
 # Target rules for targets named flash
@@ -160,7 +160,7 @@ APP.o: APP.c.o
 
 # target to build an object file
 APP.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/APP.elf.dir/build.make CMakeFiles/APP.elf.dir/APP.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/APP.c.o
 .PHONY : APP.c.o
 
 APP.i: APP.c.i
@@ -168,7 +168,7 @@ APP.i: APP.c.i
 
 # target to preprocess a source file
 APP.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/APP.elf.dir/build.make CMakeFiles/APP.elf.dir/APP.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/APP.c.i
 .PHONY : APP.c.i
 
 APP.s: APP.c.s
@@ -176,7 +176,7 @@ APP.s: APP.c.s
 
 # target to generate assembly for a file
 APP.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/APP.elf.dir/build.make CMakeFiles/APP.elf.dir/APP.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/APP.c.s
 .PHONY : APP.c.s
 
 src/DIO_program.o: src/DIO_program.c.o
@@ -184,7 +184,7 @@ src/DIO_program.o: src/DIO_program.c.o
 
 # target to build an object file
 src/DIO_program.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/APP.elf.dir/build.make CMakeFiles/APP.elf.dir/src/DIO_program.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/src/DIO_program.c.o
 .PHONY : src/DIO_program.c.o
 
 src/DIO_program.i: src/DIO_program.c.i
@@ -192,7 +192,7 @@ src/DIO_program.i: src/DIO_program.c.i
 
 # target to preprocess a source file
 src/DIO_program.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/APP.elf.dir/build.make CMakeFiles/APP.elf.dir/src/DIO_program.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/src/DIO_program.c.i
 .PHONY : src/DIO_program.c.i
 
 src/DIO_program.s: src/DIO_program.c.s
@@ -200,7 +200,7 @@ src/DIO_program.s: src/DIO_program.c.s
 
 # target to generate assembly for a file
 src/DIO_program.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/APP.elf.dir/build.make CMakeFiles/APP.elf.dir/src/DIO_program.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/src/DIO_program.c.s
 .PHONY : src/DIO_program.c.s
 
 src/DISPLAY_program.o: src/DISPLAY_program.c.o
@@ -208,7 +208,7 @@ src/DISPLAY_program.o: src/DISPLAY_program.c.o
 
 # target to build an object file
 src/DISPLAY_program.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/APP.elf.dir/build.make CMakeFiles/APP.elf.dir/src/DISPLAY_program.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/src/DISPLAY_program.c.o
 .PHONY : src/DISPLAY_program.c.o
 
 src/DISPLAY_program.i: src/DISPLAY_program.c.i
@@ -216,7 +216,7 @@ src/DISPLAY_program.i: src/DISPLAY_program.c.i
 
 # target to preprocess a source file
 src/DISPLAY_program.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/APP.elf.dir/build.make CMakeFiles/APP.elf.dir/src/DISPLAY_program.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/src/DISPLAY_program.c.i
 .PHONY : src/DISPLAY_program.c.i
 
 src/DISPLAY_program.s: src/DISPLAY_program.c.s
@@ -224,7 +224,7 @@ src/DISPLAY_program.s: src/DISPLAY_program.c.s
 
 # target to generate assembly for a file
 src/DISPLAY_program.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/APP.elf.dir/build.make CMakeFiles/APP.elf.dir/src/DISPLAY_program.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/src/DISPLAY_program.c.s
 .PHONY : src/DISPLAY_program.c.s
 
 src/LCD_program.o: src/LCD_program.c.o
@@ -232,7 +232,7 @@ src/LCD_program.o: src/LCD_program.c.o
 
 # target to build an object file
 src/LCD_program.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/APP.elf.dir/build.make CMakeFiles/APP.elf.dir/src/LCD_program.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/src/LCD_program.c.o
 .PHONY : src/LCD_program.c.o
 
 src/LCD_program.i: src/LCD_program.c.i
@@ -240,7 +240,7 @@ src/LCD_program.i: src/LCD_program.c.i
 
 # target to preprocess a source file
 src/LCD_program.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/APP.elf.dir/build.make CMakeFiles/APP.elf.dir/src/LCD_program.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/src/LCD_program.c.i
 .PHONY : src/LCD_program.c.i
 
 src/LCD_program.s: src/LCD_program.c.s
@@ -248,7 +248,7 @@ src/LCD_program.s: src/LCD_program.c.s
 
 # target to generate assembly for a file
 src/LCD_program.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/APP.elf.dir/build.make CMakeFiles/APP.elf.dir/src/LCD_program.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/src/LCD_program.c.s
 .PHONY : src/LCD_program.c.s
 
 src/TIMER_program.o: src/TIMER_program.c.o
@@ -256,7 +256,7 @@ src/TIMER_program.o: src/TIMER_program.c.o
 
 # target to build an object file
 src/TIMER_program.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/APP.elf.dir/build.make CMakeFiles/APP.elf.dir/src/TIMER_program.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/src/TIMER_program.c.o
 .PHONY : src/TIMER_program.c.o
 
 src/TIMER_program.i: src/TIMER_program.c.i
@@ -264,7 +264,7 @@ src/TIMER_program.i: src/TIMER_program.c.i
 
 # target to preprocess a source file
 src/TIMER_program.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/APP.elf.dir/build.make CMakeFiles/APP.elf.dir/src/TIMER_program.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/src/TIMER_program.c.i
 .PHONY : src/TIMER_program.c.i
 
 src/TIMER_program.s: src/TIMER_program.c.s
@@ -272,7 +272,7 @@ src/TIMER_program.s: src/TIMER_program.c.s
 
 # target to generate assembly for a file
 src/TIMER_program.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/APP.elf.dir/build.make CMakeFiles/APP.elf.dir/src/TIMER_program.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/src/TIMER_program.c.s
 .PHONY : src/TIMER_program.c.s
 
 src/ULTRASONIC_program.o: src/ULTRASONIC_program.c.o
@@ -280,7 +280,7 @@ src/ULTRASONIC_program.o: src/ULTRASONIC_program.c.o
 
 # target to build an object file
 src/ULTRASONIC_program.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/APP.elf.dir/build.make CMakeFiles/APP.elf.dir/src/ULTRASONIC_program.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/src/ULTRASONIC_program.c.o
 .PHONY : src/ULTRASONIC_program.c.o
 
 src/ULTRASONIC_program.i: src/ULTRASONIC_program.c.i
@@ -288,7 +288,7 @@ src/ULTRASONIC_program.i: src/ULTRASONIC_program.c.i
 
 # target to preprocess a source file
 src/ULTRASONIC_program.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/APP.elf.dir/build.make CMakeFiles/APP.elf.dir/src/ULTRASONIC_program.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/src/ULTRASONIC_program.c.i
 .PHONY : src/ULTRASONIC_program.c.i
 
 src/ULTRASONIC_program.s: src/ULTRASONIC_program.c.s
@@ -296,7 +296,7 @@ src/ULTRASONIC_program.s: src/ULTRASONIC_program.c.s
 
 # target to generate assembly for a file
 src/ULTRASONIC_program.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/APP.elf.dir/build.make CMakeFiles/APP.elf.dir/src/ULTRASONIC_program.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/src/ULTRASONIC_program.c.s
 .PHONY : src/ULTRASONIC_program.c.s
 
 # Help Target
@@ -309,7 +309,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... burn"
 	@echo "... flash"
-	@echo "... APP.elf"
+	@echo "... AutonomousVehicle.elf"
 	@echo "... APP.o"
 	@echo "... APP.i"
 	@echo "... APP.s"

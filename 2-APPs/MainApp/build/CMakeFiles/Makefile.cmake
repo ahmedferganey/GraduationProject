@@ -131,7 +131,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/APP.elf.dir/DependInfo.cmake"
+  "CMakeFiles/AutonomousVehicle.elf.dir/DependInfo.cmake"
   "CMakeFiles/flash.dir/DependInfo.cmake"
   "CMakeFiles/burn.dir/DependInfo.cmake"
   )

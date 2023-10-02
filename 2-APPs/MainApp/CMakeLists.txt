@@ -13,7 +13,7 @@ cmake_minimum_required(VERSION 3.20)
 ##################################################################################
 #project(AutonomusVehicle)
 #project(AutonomusVehicle C CXX ASM)
-project(APP C CXX ASM)
+project(AutonomousVehicle C CXX ASM)
     ##https://cmake.org/cmake/help/latest/command/project.html#project
 file(GLOB_RECURSE SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.c *.cpp *.h)
     #https://cmake.org/cmake/help/latest/command/file.html
