@@ -26,7 +26,6 @@ string(REGEX REPLACE "build/[^;]+;?" "" SRCS "${SRCS}")
 #message("${SRCS}")
 
 
-
 ##################################################################################
 #                                      doxygen                                   #
 ##################################################################################
@@ -231,7 +230,8 @@ add_definitions("-std=gnu99")
 ##################################################################################
 add_executable(${PROJECT_NAME}.elf ${SRCS})
 
-
+#target_include_directories(${PROJECT_NAME} PUPLIC include/)
+    ##https://stackoverflow.com/questions/57671273/cmake-cannot-specify-include-directories-when-use-target-target-include-director
 
 ##################################################################################
 #                              add_custom_target                                 #

@@ -83,94 +83,94 @@ CMakeFiles/AutonomousVehicle.elf.dir/APP.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/AutonomousVehicle.elf.dir/APP.c.s"
 	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/APP.c -o CMakeFiles/AutonomousVehicle.elf.dir/APP.c.s
 
-CMakeFiles/AutonomousVehicle.elf.dir/src/DIO_program.c.o: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
-CMakeFiles/AutonomousVehicle.elf.dir/src/DIO_program.c.o: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/src/DIO_program.c
-CMakeFiles/AutonomousVehicle.elf.dir/src/DIO_program.c.o: CMakeFiles/AutonomousVehicle.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/AutonomousVehicle.elf.dir/src/DIO_program.c.o"
-	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/AutonomousVehicle.elf.dir/src/DIO_program.c.o -MF CMakeFiles/AutonomousVehicle.elf.dir/src/DIO_program.c.o.d -o CMakeFiles/AutonomousVehicle.elf.dir/src/DIO_program.c.o -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/src/DIO_program.c
+CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.o: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
+CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.o: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DIO_program.c
+CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.o: CMakeFiles/AutonomousVehicle.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.o"
+	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.o -MF CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.o.d -o CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.o -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DIO_program.c
 
-CMakeFiles/AutonomousVehicle.elf.dir/src/DIO_program.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/AutonomousVehicle.elf.dir/src/DIO_program.c.i"
-	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/src/DIO_program.c > CMakeFiles/AutonomousVehicle.elf.dir/src/DIO_program.c.i
+CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.i"
+	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DIO_program.c > CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.i
 
-CMakeFiles/AutonomousVehicle.elf.dir/src/DIO_program.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/AutonomousVehicle.elf.dir/src/DIO_program.c.s"
-	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/src/DIO_program.c -o CMakeFiles/AutonomousVehicle.elf.dir/src/DIO_program.c.s
+CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.s"
+	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DIO_program.c -o CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.s
 
-CMakeFiles/AutonomousVehicle.elf.dir/src/DISPLAY_program.c.o: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
-CMakeFiles/AutonomousVehicle.elf.dir/src/DISPLAY_program.c.o: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/src/DISPLAY_program.c
-CMakeFiles/AutonomousVehicle.elf.dir/src/DISPLAY_program.c.o: CMakeFiles/AutonomousVehicle.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/AutonomousVehicle.elf.dir/src/DISPLAY_program.c.o"
-	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/AutonomousVehicle.elf.dir/src/DISPLAY_program.c.o -MF CMakeFiles/AutonomousVehicle.elf.dir/src/DISPLAY_program.c.o.d -o CMakeFiles/AutonomousVehicle.elf.dir/src/DISPLAY_program.c.o -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/src/DISPLAY_program.c
+CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_program.c.o: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
+CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_program.c.o: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DISPLAY_program.c
+CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_program.c.o: CMakeFiles/AutonomousVehicle.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_program.c.o"
+	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_program.c.o -MF CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_program.c.o.d -o CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_program.c.o -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DISPLAY_program.c
 
-CMakeFiles/AutonomousVehicle.elf.dir/src/DISPLAY_program.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/AutonomousVehicle.elf.dir/src/DISPLAY_program.c.i"
-	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/src/DISPLAY_program.c > CMakeFiles/AutonomousVehicle.elf.dir/src/DISPLAY_program.c.i
+CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_program.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_program.c.i"
+	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DISPLAY_program.c > CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_program.c.i
 
-CMakeFiles/AutonomousVehicle.elf.dir/src/DISPLAY_program.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/AutonomousVehicle.elf.dir/src/DISPLAY_program.c.s"
-	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/src/DISPLAY_program.c -o CMakeFiles/AutonomousVehicle.elf.dir/src/DISPLAY_program.c.s
+CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_program.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_program.c.s"
+	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DISPLAY_program.c -o CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_program.c.s
 
-CMakeFiles/AutonomousVehicle.elf.dir/src/LCD_program.c.o: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
-CMakeFiles/AutonomousVehicle.elf.dir/src/LCD_program.c.o: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/src/LCD_program.c
-CMakeFiles/AutonomousVehicle.elf.dir/src/LCD_program.c.o: CMakeFiles/AutonomousVehicle.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/AutonomousVehicle.elf.dir/src/LCD_program.c.o"
-	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/AutonomousVehicle.elf.dir/src/LCD_program.c.o -MF CMakeFiles/AutonomousVehicle.elf.dir/src/LCD_program.c.o.d -o CMakeFiles/AutonomousVehicle.elf.dir/src/LCD_program.c.o -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/src/LCD_program.c
+CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.o: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
+CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.o: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/LCD_program.c
+CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.o: CMakeFiles/AutonomousVehicle.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.o"
+	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.o -MF CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.o.d -o CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.o -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/LCD_program.c
 
-CMakeFiles/AutonomousVehicle.elf.dir/src/LCD_program.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/AutonomousVehicle.elf.dir/src/LCD_program.c.i"
-	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/src/LCD_program.c > CMakeFiles/AutonomousVehicle.elf.dir/src/LCD_program.c.i
+CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.i"
+	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/LCD_program.c > CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.i
 
-CMakeFiles/AutonomousVehicle.elf.dir/src/LCD_program.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/AutonomousVehicle.elf.dir/src/LCD_program.c.s"
-	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/src/LCD_program.c -o CMakeFiles/AutonomousVehicle.elf.dir/src/LCD_program.c.s
+CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.s"
+	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/LCD_program.c -o CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.s
 
-CMakeFiles/AutonomousVehicle.elf.dir/src/TIMER_program.c.o: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
-CMakeFiles/AutonomousVehicle.elf.dir/src/TIMER_program.c.o: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/src/TIMER_program.c
-CMakeFiles/AutonomousVehicle.elf.dir/src/TIMER_program.c.o: CMakeFiles/AutonomousVehicle.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/AutonomousVehicle.elf.dir/src/TIMER_program.c.o"
-	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/AutonomousVehicle.elf.dir/src/TIMER_program.c.o -MF CMakeFiles/AutonomousVehicle.elf.dir/src/TIMER_program.c.o.d -o CMakeFiles/AutonomousVehicle.elf.dir/src/TIMER_program.c.o -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/src/TIMER_program.c
+CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.o: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
+CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.o: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/TIMER_program.c
+CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.o: CMakeFiles/AutonomousVehicle.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.o"
+	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.o -MF CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.o.d -o CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.o -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/TIMER_program.c
 
-CMakeFiles/AutonomousVehicle.elf.dir/src/TIMER_program.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/AutonomousVehicle.elf.dir/src/TIMER_program.c.i"
-	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/src/TIMER_program.c > CMakeFiles/AutonomousVehicle.elf.dir/src/TIMER_program.c.i
+CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.i"
+	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/TIMER_program.c > CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.i
 
-CMakeFiles/AutonomousVehicle.elf.dir/src/TIMER_program.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/AutonomousVehicle.elf.dir/src/TIMER_program.c.s"
-	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/src/TIMER_program.c -o CMakeFiles/AutonomousVehicle.elf.dir/src/TIMER_program.c.s
+CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.s"
+	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/TIMER_program.c -o CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.s
 
-CMakeFiles/AutonomousVehicle.elf.dir/src/ULTRASONIC_program.c.o: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
-CMakeFiles/AutonomousVehicle.elf.dir/src/ULTRASONIC_program.c.o: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/src/ULTRASONIC_program.c
-CMakeFiles/AutonomousVehicle.elf.dir/src/ULTRASONIC_program.c.o: CMakeFiles/AutonomousVehicle.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/AutonomousVehicle.elf.dir/src/ULTRASONIC_program.c.o"
-	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/AutonomousVehicle.elf.dir/src/ULTRASONIC_program.c.o -MF CMakeFiles/AutonomousVehicle.elf.dir/src/ULTRASONIC_program.c.o.d -o CMakeFiles/AutonomousVehicle.elf.dir/src/ULTRASONIC_program.c.o -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/src/ULTRASONIC_program.c
+CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.o: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
+CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.o: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/ULTRASONIC_program.c
+CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.o: CMakeFiles/AutonomousVehicle.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.o"
+	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.o -MF CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.o.d -o CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.o -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/ULTRASONIC_program.c
 
-CMakeFiles/AutonomousVehicle.elf.dir/src/ULTRASONIC_program.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/AutonomousVehicle.elf.dir/src/ULTRASONIC_program.c.i"
-	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/src/ULTRASONIC_program.c > CMakeFiles/AutonomousVehicle.elf.dir/src/ULTRASONIC_program.c.i
+CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.i"
+	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/ULTRASONIC_program.c > CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.i
 
-CMakeFiles/AutonomousVehicle.elf.dir/src/ULTRASONIC_program.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/AutonomousVehicle.elf.dir/src/ULTRASONIC_program.c.s"
-	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/src/ULTRASONIC_program.c -o CMakeFiles/AutonomousVehicle.elf.dir/src/ULTRASONIC_program.c.s
+CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.s"
+	avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/ULTRASONIC_program.c -o CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.s
 
 # Object files for target AutonomousVehicle.elf
 AutonomousVehicle_elf_OBJECTS = \
 "CMakeFiles/AutonomousVehicle.elf.dir/APP.c.o" \
-"CMakeFiles/AutonomousVehicle.elf.dir/src/DIO_program.c.o" \
-"CMakeFiles/AutonomousVehicle.elf.dir/src/DISPLAY_program.c.o" \
-"CMakeFiles/AutonomousVehicle.elf.dir/src/LCD_program.c.o" \
-"CMakeFiles/AutonomousVehicle.elf.dir/src/TIMER_program.c.o" \
-"CMakeFiles/AutonomousVehicle.elf.dir/src/ULTRASONIC_program.c.o"
+"CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.o" \
+"CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_program.c.o" \
+"CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.o" \
+"CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.o" \
+"CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.o"
 
 # External object files for target AutonomousVehicle.elf
 AutonomousVehicle_elf_EXTERNAL_OBJECTS =
 
 AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/APP.c.o
-AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/src/DIO_program.c.o
-AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/src/DISPLAY_program.c.o
-AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/src/LCD_program.c.o
-AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/src/TIMER_program.c.o
-AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/src/ULTRASONIC_program.c.o
+AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.o
+AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_program.c.o
+AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.o
+AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.o
+AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.o
 AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/build.make
 AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable AutonomousVehicle.elf"
