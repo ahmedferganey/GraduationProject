@@ -1,21 +1,24 @@
+#https://www.youtube.com/watch?v=SqkV7ifLME4&list=PLQMs5svASiXOraccrnEbkd_kVHbAdC2mp&index=6&t=267s
+#https://www.youtube.com/watch?v=6Ows5uZKqGQ&list=PLQMs5svASiXOraccrnEbkd_kVHbAdC2mp&index=10
+#https://cmake.org/cmake/help/v2.8.0/cpack.html
+#https://github.com/microsoft/vscode-cmake-tools/issues/1215
+#https://github.com/microsoft/vscode-cmake-tools/labels/Feature%3A%20configure
 ##################################################################################
 #            CMakeLists.txt for a AVR project based on the toolchain             #
 ##################################################################################
-cmake_minimum_required(VERSION 3.22.0)
-
+cmake_minimum_required(VERSION 3.20)
+    ##https://manpages.ubuntu.com/manpages/trusty/man1/cmake.1.html
 ##################################################################################
 #                                name your project                               #
 ##################################################################################
 #project(AutonomusVehicle)
 #project(AutonomusVehicle C CXX ASM)
-project(AutonomusVehicle
-        [VERSION 1[.0[.0[.0]]]]
-        [LANGUAGES C CXX ASM])
+project(APP C CXX ASM)
     ##https://cmake.org/cmake/help/latest/command/project.html#project
 file(GLOB_RECURSE SRCS RELATIVE $(CMAKE_CURRENT_SOURCE_DIR) *.c *cpp *.h)
-message("${SRCS}")
+#message("${SRCS}")
 string(REGEX REPLACE "build/[^;]+;?" "" SRCS "${SRCS}")
-message("${SRCS}")
+#message("${SRCS}")
 
 ##################################################################################
 #                   tools to be used for programming the AVR                     #
@@ -35,15 +38,14 @@ add_definitions(-DF_CPU=${F_CPU})
 ##################################################################################
 #                                   program names                                #
 ##################################################################################
-PREFIX=avr-
-set(AVRCPP   ${PREFIX}g++)
-set(AVRC     ${PREFIX}gcc)
-set(AVRSTRIP ${PREFIX}strip)
-set(OBJCOPY  ${PREFIX}objcopy)
-set(OBJDUMP  ${PREFIX}objdump)
-set(LD ${PREFIX}ld)
-set(AS ${PREFIX}as)
-set(AVRSIZE  ${PREFIX}size)
+set(AVRCPP   avr-g++)
+set(AVRC     avr-gcc)
+set(AVRSTRIP avr-strip)
+set(OBJCOPY  avr-objcopy)
+set(OBJDUMP  avr-objdump)
+set(LD avr-ld)
+set(AS avr-as)
+set(AVRSIZE  avr-size)
 set(AVRDUDE  avrdude)
 
     ##Usage: avr-strip <option(s)> in-file(s)Removes symbols and sections from files
@@ -167,4 +169,20 @@ add_definitions("-c")
 add_definitions("-std=gnu99")
 #add_definitions("-std=c++14")
 
+##################################################################################
+#                              add_executable                                    #
+##################################################################################
 add_executable(${PROJECT_NAME}.elf ${SRCS})
+
+##################################################################################
+#                              add_custom_target                                 #
+##################################################################################
+add_custom_target(flash ALL 
+    DEPENDS ${PROJECT_NAME}.elf
+    COMMAND avr-objcopy -j .text -j .data -o ihex ${PROJECT_NAME}.elf ${PROJECT_NAME}.hex
+    )
+
+add_custom_target(burn 
+    DEPENDS flash 
+    COMMAND avrdude.exe -c usbasp -p m32 -B 0.5 -U flash:w:"${PROJECT_NAME}.hex":a
+    )
