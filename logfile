@@ -1,0 +1,4 @@
+
+avrdude: no programmer has been specified on the command line or the config file
+         Specify a programmer using the -c option and try again
+
