@@ -15,10 +15,11 @@ cmake_minimum_required(VERSION 3.20)
 #project(AutonomusVehicle C CXX ASM)
 project(APP C CXX ASM)
     ##https://cmake.org/cmake/help/latest/command/project.html#project
-file(GLOB_RECURSE SRCS RELATIVE $(CMAKE_CURRENT_SOURCE_DIR) *.c *cpp *.h)
-#message("${SRCS}")
+file(GLOB_RECURSE SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.c *.cpp *.h)
+    #https://cmake.org/cmake/help/latest/command/file.html
+message("${SRCS}")
 string(REGEX REPLACE "build/[^;]+;?" "" SRCS "${SRCS}")
-#message("${SRCS}")
+message("${SRCS}")
 
 ##################################################################################
 #                   tools to be used for programming the AVR                     #
@@ -177,12 +178,12 @@ add_executable(${PROJECT_NAME}.elf ${SRCS})
 ##################################################################################
 #                              add_custom_target                                 #
 ##################################################################################
-add_custom_target(flash ALL 
+add_custom_target(flash ALL
     DEPENDS ${PROJECT_NAME}.elf
-    COMMAND avr-objcopy -j .text -j .data -o ihex ${PROJECT_NAME}.elf ${PROJECT_NAME}.hex
-    )
-
+    COMMAND avr-objcopy -j .text -j .data -O ihex ${PROJECT_NAME}.elf ${PROJECT_NAME}.hex
+    ) 
+##################################################################
 add_custom_target(burn 
-    DEPENDS flash 
+    DEPENDS flash
     COMMAND avrdude.exe -c usbasp -p m32 -B 0.5 -U flash:w:"${PROJECT_NAME}.hex":a
-    )
+    ) 

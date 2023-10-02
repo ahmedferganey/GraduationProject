@@ -1,0 +1,5 @@
+/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles/APP.elf.dir
+/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles/flash.dir
+/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles/burn.dir
+/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles/edit_cache.dir
+/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles/rebuild_cache.dir
