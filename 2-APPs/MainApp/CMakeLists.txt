@@ -21,9 +21,9 @@ project(AutonomousVehicle C CXX ASM)
     ##https://cmake.org/cmake/help/latest/command/project.html#project
 file(GLOB_RECURSE SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.c *.h *.cpp)
     #https://cmake.org/cmake/help/latest/command/file.html
-message("${SRCS}")
+#message("${SRCS}")
 string(REGEX REPLACE "build/[^;]+;?" "" SRCS "${SRCS}")
-message("${SRCS}")
+#message("${SRCS}")
 
 
 

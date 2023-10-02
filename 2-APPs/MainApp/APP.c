@@ -55,7 +55,7 @@ DISPLAY_t MY_OBJs =
 
 
 
-ULTRASONIC_obj_t* ptr = &MY_OBJs;
+ULTRASONIC_obj_t* ptr = (ULTRASONIC_obj_t *)&MY_OBJs;
 uint8 NumOfUltrasonic = 4;
 volatile Std_ReturnType  udtReturnValue = E_NOT_OK;
 

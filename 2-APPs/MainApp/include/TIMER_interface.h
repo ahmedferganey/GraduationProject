@@ -18,16 +18,16 @@
 			 indexes for array of global pointer not number of ISR */
 
 /* Vector No. of TIMER0 */
-#define TIMER0_OVF_VECTOR_ID		7	/* Vector number = 12 */
-#define TIMER0_CTC_VECTOR_ID		6   /* Vector number = 11 */
+#define TIMER0_OVF_VECTOR_ID		11	/* Vector number = 12 */
+#define TIMER0_CTC_VECTOR_ID		10   /* Vector number = 11 */
 /* Vector No. of TIMER1 */              
-#define TIMER1_OVF_VECTOR_ID		5   /* Vector number = 10 */
-#define TIMER1_CTCB_VECTOR_ID		4   /* Vector number = 9 */
-#define TIMER1_CTCA_VECTOR_ID		3   /* Vector number = 8 */
-#define TIMER1_ICU_VECTOR_ID		2   /* Vector number = 7 */
+#define TIMER1_OVF_VECTOR_ID		9   /* Vector number = 10 */
+#define TIMER1_CTCB_VECTOR_ID		8   /* Vector number = 9 */
+#define TIMER1_CTCA_VECTOR_ID		7   /* Vector number = 8 */
+#define TIMER1_ICU_VECTOR_ID		6   /* Vector number = 7 */
 /* Vector No. of TIMER2 */                                  
-#define TIMER2_OVF_VECTOR_ID		1   /* Vector number = 6 */
-#define TIMER2_CTC_VECTOR_ID		0   /* Vector number = 5 */
+#define TIMER2_OVF_VECTOR_ID		5   /* Vector number = 6 */
+#define TIMER2_CTC_VECTOR_ID		4   /* Vector number = 5 */
 
 
 /* ICU Macros */
