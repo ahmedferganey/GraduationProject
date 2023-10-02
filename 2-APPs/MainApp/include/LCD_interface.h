@@ -8,7 +8,7 @@
 #define _LCD_INTERFACE_H_
 
 /* Comment!: Includes start */
-#define F_CPU 8000000UL
+//#define F_CPU 8000000UL
 #include "util/delay.h"
 
 #include "STD_TYPES.h"
@@ -43,8 +43,8 @@
 #define LCD_DISPLAY_SHIFT_RIGHT							0x1C	/* Comment!: Shift the entire display to the right */
 #define LCD_FORCE_CURSOR_BEGINNING_FIRST_LINE			0x80	/* Comment!: Force cursor to the beginning ( 1st line) */
 #define LCD_FORCE_CURSOR_BEGINNING_SECOND_LINE			0xC0	/* Comment!: Force cursor to the beginning ( 2nd line) */
-#define LCD_8BIT_MODE_2_LINE_5_IN_7						0x38	/* Comment!: 2 lines and 5×7 matrix, 8BIT MODE */
-#define LCD_4BIT_MODE_2_LINE_5_IN_7						0x28	/* Comment!: 2 lines and 5×7 matrix, 4BIT MODE */
+#define LCD_8BIT_MODE_2_LINE_5_IN_7						0x38	/* Comment!: 2 lines and 5ï¿½7 matrix, 8BIT MODE */
+#define LCD_4BIT_MODE_2_LINE_5_IN_7						0x28	/* Comment!: 2 lines and 5ï¿½7 matrix, 4BIT MODE */
 /* Comment!: DDRAM &CGRAM address Command */			
 #define LCD_BIT7_SET_DDRAM_ADDRESS	128
 #define LCD_START_ADDRESS_COL_TWO	0x40

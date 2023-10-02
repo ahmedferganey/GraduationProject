@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named doc_doxygen
+
+# Build rule for target.
+doc_doxygen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 doc_doxygen
+.PHONY : doc_doxygen
+
+# fast build rule for target.
+doc_doxygen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/build
+.PHONY : doc_doxygen/fast
+
+#=============================================================================
 # Target rules for targets named AutonomousVehicle.elf
 
 # Build rule for target.
@@ -308,6 +321,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... burn"
+	@echo "... doc_doxygen"
 	@echo "... flash"
 	@echo "... AutonomousVehicle.elf"
 	@echo "... APP.o"

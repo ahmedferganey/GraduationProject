@@ -1,3 +1,4 @@
+/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles/doc_doxygen.dir
 /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles/AutonomousVehicle.elf.dir
 /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles/flash.dir
 /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles/burn.dir

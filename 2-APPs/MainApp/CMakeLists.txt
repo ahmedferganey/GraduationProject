@@ -1,13 +1,17 @@
-#https://www.youtube.com/watch?v=SqkV7ifLME4&list=PLQMs5svASiXOraccrnEbkd_kVHbAdC2mp&index=6&t=267s
-#https://www.youtube.com/watch?v=6Ows5uZKqGQ&list=PLQMs5svASiXOraccrnEbkd_kVHbAdC2mp&index=10
-#https://cmake.org/cmake/help/v2.8.0/cpack.html
-#https://github.com/microsoft/vscode-cmake-tools/issues/1215
-#https://github.com/microsoft/vscode-cmake-tools/labels/Feature%3A%20configure
+    #https://www.youtube.com/watch?v=SqkV7ifLME4&list=PLQMs5svASiXOraccrnEbkd_kVHbAdC2mp&index=6&t=267s
+    #https://www.youtube.com/watch?v=6Ows5uZKqGQ&list=PLQMs5svASiXOraccrnEbkd_kVHbAdC2mp&index=10
+    #https://cmake.org/cmake/help/v2.8.0/cpack.html
+    #https://github.com/microsoft/vscode-cmake-tools/issues/1215
+    #https://github.com/microsoft/vscode-cmake-tools/labels/Feature%3A%20configure
+
 ##################################################################################
 #            CMakeLists.txt for a AVR project based on the toolchain             #
 ##################################################################################
 cmake_minimum_required(VERSION 3.20)
     ##https://manpages.ubuntu.com/manpages/trusty/man1/cmake.1.html
+
+
+
 ##################################################################################
 #                                name your project                               #
 ##################################################################################
@@ -15,11 +19,43 @@ cmake_minimum_required(VERSION 3.20)
 #project(AutonomusVehicle C CXX ASM)
 project(AutonomousVehicle C CXX ASM)
     ##https://cmake.org/cmake/help/latest/command/project.html#project
-file(GLOB_RECURSE SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.c *.cpp *.h)
+file(GLOB_RECURSE SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.c *.h *.cpp)
     #https://cmake.org/cmake/help/latest/command/file.html
 message("${SRCS}")
 string(REGEX REPLACE "build/[^;]+;?" "" SRCS "${SRCS}")
 message("${SRCS}")
+
+
+
+##################################################################################
+#                                      doxygen                                   #
+##################################################################################
+   ##https://vicrucann.github.io/tutorials/quick-cmake-doxygen/
+   ##https://www.youtube.com/watch?v=pXCWQdG1qOQ&list=PLkH1REggdbJpG8fHZvivt-5Hlg3UZcJrK&index=18
+# first we can indicate the documentation build as an option and set it to ON by default
+option(BUILD_DOC "Build Documentation" ON)
+
+# check if Doxygen is installed
+find_package(Doxygen)
+if (DOXYGEN_FOUND)
+    # set input and output files
+    set(DOXYGEN_IN ${CMAKE_CURRENT_SOURCE_DIR}/docs/Doxyfile.in)
+    set(DOXYGEN_OUT ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile)
+
+    # request to configure the file
+    configure_file(${DOXYGEN_IN} ${DOXYGEN_OUT} @ONLY)
+    message("Doxygen build started")
+
+    # note the option ALL which allows to build the docs together with the application
+    add_custom_target( doc_doxygen ALL
+        COMMAND ${DOXYGEN_EXECUTABLE} ${DOXYGEN_OUT}
+        WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR})
+else (DOXYGEN_FOUND)
+  message("Doxygen need to be installed to generate the doxygen documentation")
+endif (DOXYGEN_FOUND)
+
+
+
 
 ##################################################################################
 #                   tools to be used for programming the AVR                     #
@@ -28,6 +64,8 @@ set(AVR_UPLOADTOOL avrdude)
 set(AVR_PROGRAMMER usbasp)
 #set(AVR_UPLOADTOOL_PORT usb)
 
+
+
 ##################################################################################
 #                        Variables regarding the AVR chip                        #
 ##################################################################################
@@ -35,6 +73,8 @@ set(MCU   atmega32a)
 set(F_CPU "16000000UL")
 set(BAUD  9600)
 add_definitions(-DF_CPU=${F_CPU})
+
+
 
 ##################################################################################
 #                                   program names                                #
@@ -48,9 +88,11 @@ set(LD avr-ld)
 set(AS avr-as)
 set(AVRSIZE  avr-size)
 set(AVRDUDE  avrdude)
-
     ##Usage: avr-strip <option(s)> in-file(s)Removes symbols and sections from files
     ##https://www.nongnu.org/avrdude/user-manual/avrdude_3.html
+
+
+
 ##################################################################################
 #                                Sets the compiler                               #
 ##################################################################################
@@ -68,6 +110,8 @@ set(CMAKE_LINKER       ${LD} CACHE STRING "linker"  FORCE)
 #set(CMAKE_NM           ${}"${TOOLCHAIN_ROOT}/${TRIPLE}-nm${OS_SUFFIX}"      CACHE PATH "nm"      FORCE)
 ##set(CMAKE_STRIP        ${}"${TOOLCHAIN_ROOT}/${TRIPLE}-strip${OS_SUFFIX}"   CACHE PATH "strip"   FORCE)
 #set(CMAKE_RANLIB       ${}"${TOOLCHAIN_ROOT}/${TRIPLE}-ranlib${OS_SUFFIX}"  CACHE PATH "ranlib"  FORCE)
+
+
 
 ##################################################################################
 #                       set compiler options for build types                     #
@@ -103,6 +147,8 @@ endif(CMAKE_BUILD_TYPE MATCHES Debug)
        ##set(CMAKE_CXX_FLAGS "${CXXFLAGS}")
        ##set(CMAKE_ASM_FLAGS   "${CFLAGS}")
 
+
+
 ##################################################################################
 #                               status messages                                  #
 ##################################################################################
@@ -111,12 +157,16 @@ message(STATUS "Current programmer is: ${AVR_PROGRAMMER}")
 #message(STATUS "Current uploadtool options are: ${AVR_UPLOADTOOL_OPTIONS}")
 message(STATUS "Current MCU is set to: ${MCU}")
 
+
+
 ##################################################################################
 #                               set build type                                   #
 ##################################################################################
 if(NOT CMAKE_BUILD_TYPE)
    set(CMAKE_BUILD_TYPE Release)
 endif(NOT CMAKE_BUILD_TYPE)
+
+
 
 ##################################################################################
 #                      some cmake cross-compile necessities                      #
@@ -143,12 +193,16 @@ set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
 set(CMAKE_SYSTEM_INCLUDE_PATH "${CMAKE_FIND_ROOT_PATH}/include")
 set(CMAKE_SYSTEM_LIBRARY_PATH "${CMAKE_FIND_ROOT_PATH}/lib")
 
+
+
 ##################################################################################
 #                       status messages for generating                           #
 ##################################################################################
 message(STATUS "Set CMAKE_FIND_ROOT_PATH to ${CMAKE_FIND_ROOT_PATH}")
 message(STATUS "Set CMAKE_SYSTEM_INCLUDE_PATH to ${CMAKE_SYSTEM_INCLUDE_PATH}")
 message(STATUS "Set CMAKE_SYSTEM_LIBRARY_PATH to ${CMAKE_SYSTEM_LIBRARY_PATH}")
+
+
 
 ##################################################################################
 #                    compiler options for all build types                        #
@@ -170,10 +224,14 @@ add_definitions("-c")
 add_definitions("-std=gnu99")
 #add_definitions("-std=c++14")
 
+
+
 ##################################################################################
 #                              add_executable                                    #
 ##################################################################################
 add_executable(${PROJECT_NAME}.elf ${SRCS})
+
+
 
 ##################################################################################
 #                              add_custom_target                                 #
@@ -182,7 +240,7 @@ add_custom_target(flash ALL
     DEPENDS ${PROJECT_NAME}.elf
     COMMAND avr-objcopy -j .text -j .data -O ihex ${PROJECT_NAME}.elf ${PROJECT_NAME}.hex
     ) 
-##################################################################
+
 add_custom_target(burn 
     DEPENDS flash
     COMMAND avrdude.exe -c usbasp -p m32 -B 0.5 -U flash:w:"${PROJECT_NAME}.hex":a

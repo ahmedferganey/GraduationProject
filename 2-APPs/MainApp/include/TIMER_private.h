@@ -57,7 +57,7 @@
 #define TCCR2_COM21	5		/* Compare Match Output Mode */	
 #define TCCR2_FOC2	7  		/* Force Output Compare */
 /*	!COMMENT: Setting Prescaler "TIMER<2>_TCCR2_CS2<0,1,2>" */
-#define TIMER2_PRESCALER_MASK			0b11111000 	
+#define TIMER2_PRESCALER_MASK			0XF8 	
 #define TIMER2_NO_CLOCK_SOURCE          0
 #define TIMER2_NO_PRESCALER_FACTOR      1
 #define TIMER2_DIVISION_FACTOR_8        2
@@ -78,7 +78,7 @@
 #define TIMER2_TIMSK_TOIE2	6	/*TIMER2 Overflow Interrupt Enable */
 #define TIMER2_TIMSK_OCIE2	7	/*TIMER2 Output Compare Match Interrupt Enable */
 /*	!COMMENT: Setting Prescaler "TIMER<0,1>_TCCR0_CS0<0,1,2>" */
-#define TIMER01_PRESCALER_MASK					          0b11111000 	
+#define TIMER01_PRESCALER_MASK					          0XF8 	/*https://github.com/RIOT-OS/RIOT/issues/7918*/
 #define TIMER01_NO_CLOCK_SOURCE                           0
 #define TIMER01_NO_PRESCALER_FACTOR                       1
 #define TIMER01_DIVISION_FACTOR_8                         2
@@ -102,7 +102,7 @@
 #define		WDTCR_WDTOE 		4
 
 /*	!COMMENT: WDT Prescaler select  */
-#define		WDT_PS_MASKING			0b11111000
+#define		WDT_PS_MASKING			0XF8
 #define		WDT_PS_16k				0
 #define		WDT_PS_32k      		1
 #define		WDT_PS_64k      		2
@@ -112,7 +112,7 @@
 #define		WDT_PS_1024k			6
 #define		WDT_PS_2048k			7
 
-#define 	WDT_DISABLE_MASKING		0b00011000
+#define 	WDT_DISABLE_MASKING		0X18
 
 
 
