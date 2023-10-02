@@ -1,8 +1,18 @@
+##################################################################################
+#                                     Resources                                  #
+##################################################################################       
     #https://www.youtube.com/watch?v=SqkV7ifLME4&list=PLQMs5svASiXOraccrnEbkd_kVHbAdC2mp&index=6&t=267s
     #https://www.youtube.com/watch?v=6Ows5uZKqGQ&list=PLQMs5svASiXOraccrnEbkd_kVHbAdC2mp&index=10
     #https://cmake.org/cmake/help/v2.8.0/cpack.html
     #https://github.com/microsoft/vscode-cmake-tools/issues/1215
     #https://github.com/microsoft/vscode-cmake-tools/labels/Feature%3A%20configure
+    #https://vicrucann.github.io/tutorials/quick-cmake-doxygen/
+    #https://github.com/moatasemelsayed/CMake_Lab/blob/master/CMakeLists.txt
+    #https://nnarain.github.io/2016/03/29/AVR-CMake-Toolchain.html
+    #https://github.com/Helius/pwm_fan_control/blob/master/CMakeLists.txt
+    #https://github.com/ptrks/CMake-avr-example/blob/master/basic_example/CMakeLists.txt
+    #https://github.com/fhorinek/SkyDrop/blob/master/skydrop/CMakeLists.txt
+    #https://git.ok1kvk.cz/martin.vitek/nixie-clock/-/blob/26f3f9eefaba98d1a4d805093d310c1fab782c77/CMakeLists.txt 
 
 ##################################################################################
 #            CMakeLists.txt for a AVR project based on the toolchain             #
