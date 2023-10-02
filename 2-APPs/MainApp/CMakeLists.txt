@@ -4,12 +4,25 @@
 cmake_minimum_required(VERSION 3.22.0)
 
 ##################################################################################
-#                   tools to beused for programming the AVR                      #
+#                                name your project                               #
+##################################################################################
+#project(AutonomusVehicle)
+#project(AutonomusVehicle C CXX ASM)
+project(AutonomusVehicle
+        [VERSION 1[.0[.0[.0]]]]
+        [LANGUAGES C CXX ASM])
+    ##https://cmake.org/cmake/help/latest/command/project.html#project
+file(GLOB_RECURSE SRCS RELATIVE $(CMAKE_CURRENT_SOURCE_DIR) *.c *cpp *.h)
+message("${SRCS}")
+string(REGEX REPLACE "build/[^;]+;?" "" SRCS "${SRCS}")
+message("${SRCS}")
+
+##################################################################################
+#                   tools to be used for programming the AVR                     #
 ##################################################################################
 set(AVR_UPLOADTOOL avrdude)
 set(AVR_PROGRAMMER usbasp)
 #set(AVR_UPLOADTOOL_PORT usb)
-
 
 ##################################################################################
 #                        Variables regarding the AVR chip                        #
@@ -22,32 +35,37 @@ add_definitions(-DF_CPU=${F_CPU})
 ##################################################################################
 #                                   program names                                #
 ##################################################################################
-set(AVRCPP   avr-g++)
-set(AVRC     avr-gcc)
-set(AVRSTRIP avr-strip)
-set(OBJCOPY  avr-objcopy)
-set(OBJDUMP  avr-objdump)
-set(AVRSIZE  avr-size)
+PREFIX=avr-
+set(AVRCPP   ${PREFIX}g++)
+set(AVRC     ${PREFIX}gcc)
+set(AVRSTRIP ${PREFIX}strip)
+set(OBJCOPY  ${PREFIX}objcopy)
+set(OBJDUMP  ${PREFIX}objdump)
+set(LD ${PREFIX}ld)
+set(AS ${PREFIX}as)
+set(AVRSIZE  ${PREFIX}size)
 set(AVRDUDE  avrdude)
-    ##Usage: avr-strip <option(s)> in-file(s)Removes symbols and sections from files
 
+    ##Usage: avr-strip <option(s)> in-file(s)Removes symbols and sections from files
+    ##https://www.nongnu.org/avrdude/user-manual/avrdude_3.html
 ##################################################################################
 #                                Sets the compiler                               #
 ##################################################################################
 set(CMAKE_SYSTEM_NAME  Generic)
+    ##Generic to make compilier this exe will run on cross platform
 set(CMAKE_CXX_COMPILER ${AVRCPP} CACHE STRING "C++ compilier" FORCE)
 set(CMAKE_C_COMPILER   ${AVRC} CACHE STRING "C compilier" FORCE)
 set(CMAKE_OBJCOPY   ${OBJCOPY} CACHE STRING "avr-objcopy" FORCE)
-set(CMAKE_ASM_COMPILER   ${AVRC})
+set(CMAKE_ASM_COMPILER   ${AVRC} FORCE)
+    ##https://discourse.cmake.org/t/tell-cmake-where-to-find-the-compiler-by-setting-either-the-environment-variable-cc-or-the-cmake-cache-entry-cmake-asm-compiler-to-the-full-path-to-the-compiler-or-to-the-compiler-name-if-it-is-in-the-path/7342/11
 set(CMAKE_OBJDUMP      ${OBJDUMP} CACHE STRING "objdump" FORCE)
 set(AVR_SIZE           ${AVRSIZE} CACHE STRING "size"    FORCE)
+set(CMAKE_LINKER       ${LD} CACHE STRING "linker"  FORCE)
+#set(CMAKE_AR           ${}"${TOOLCHAIN_ROOT}/${TRIPLE}-ar${OS_SUFFIX}"      CACHE PATH "ar"      FORCE)
+#set(CMAKE_NM           ${}"${TOOLCHAIN_ROOT}/${TRIPLE}-nm${OS_SUFFIX}"      CACHE PATH "nm"      FORCE)
+##set(CMAKE_STRIP        ${}"${TOOLCHAIN_ROOT}/${TRIPLE}-strip${OS_SUFFIX}"   CACHE PATH "strip"   FORCE)
+#set(CMAKE_RANLIB       ${}"${TOOLCHAIN_ROOT}/${TRIPLE}-ranlib${OS_SUFFIX}"  CACHE PATH "ranlib"  FORCE)
 
-    ##Generic to make compilier this exe will run on cross platform
-set(CMAKE_AR           ${}"${TOOLCHAIN_ROOT}/${TRIPLE}-ar${OS_SUFFIX}"      CACHE PATH "ar"      FORCE)
-set(CMAKE_LINKER       ${}"${TOOLCHAIN_ROOT}/${TRIPLE}-ld${OS_SUFFIX}"      CACHE PATH "linker"  FORCE)
-set(CMAKE_NM           ${}"${TOOLCHAIN_ROOT}/${TRIPLE}-nm${OS_SUFFIX}"      CACHE PATH "nm"      FORCE)
-set(CMAKE_STRIP        ${}"${TOOLCHAIN_ROOT}/${TRIPLE}-strip${OS_SUFFIX}"   CACHE PATH "strip"   FORCE)
-set(CMAKE_RANLIB       ${}"${TOOLCHAIN_ROOT}/${TRIPLE}-ranlib${OS_SUFFIX}"  CACHE PATH "ranlib"  FORCE)
 ##################################################################################
 #                       set compiler options for build types                     #
 ##################################################################################
@@ -81,10 +99,6 @@ endif(CMAKE_BUILD_TYPE MATCHES Debug)
        ##set(CMAKE_C_FLAGS   "${CFLAGS}")
        ##set(CMAKE_CXX_FLAGS "${CXXFLAGS}")
        ##set(CMAKE_ASM_FLAGS   "${CFLAGS}")
-##################################################################################
-#                                name your project                               #
-##################################################################################
-project(AutonomusVehicle)
 
 ##################################################################################
 #                               status messages                                  #
@@ -153,20 +167,4 @@ add_definitions("-c")
 add_definitions("-std=gnu99")
 #add_definitions("-std=c++14")
 
-##########################################################################
-# include search paths
-##########################################################################
-include_directories(app)
-include_directories(hallib)
-include_directories(DS18S20Library)
-
-##########################################################################
-# building library and application in their subdirectories
-##########################################################################
-add_subdirectory(hallib)
-add_subdirectory(DS18S20Library)
-add_subdirectory(app)
-##########################################################################
-# use default documentation target
-##########################################################################
-include("${PROJECT_SOURCE_DIR}/../Modules/defaultDocuTarget.cmake")
+add_executable(${PROJECT_NAME}.elf ${SRCS})
