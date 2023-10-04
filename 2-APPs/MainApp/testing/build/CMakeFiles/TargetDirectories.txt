@@ -1,0 +1,3 @@
+/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/testing/build/CMakeFiles/mytests.dir
+/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/testing/build/CMakeFiles/edit_cache.dir
+/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/testing/build/CMakeFiles/rebuild_cache.dir
