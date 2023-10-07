@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named doc_doxygen
+
+# Build rule for target.
+doc_doxygen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 doc_doxygen
+.PHONY : doc_doxygen
+
+# fast build rule for target.
+doc_doxygen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/build
+.PHONY : doc_doxygen/fast
+
+#=============================================================================
 # Target rules for targets named AutonomousVehicle.elf
 
 # Build rule for target.
@@ -155,13 +168,13 @@ burn/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/burn.dir/build.make CMakeFiles/burn.dir/build
 .PHONY : burn/fast
 
-APP.o: APP.c.o
-.PHONY : APP.o
+APP.obj: APP.c.obj
+.PHONY : APP.obj
 
 # target to build an object file
-APP.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/APP.c.o
-.PHONY : APP.c.o
+APP.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/APP.c.obj
+.PHONY : APP.c.obj
 
 APP.i: APP.c.i
 .PHONY : APP.i
@@ -179,13 +192,13 @@ APP.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/APP.c.s
 .PHONY : APP.c.s
 
-DIO_program.o: DIO_program.c.o
-.PHONY : DIO_program.o
+DIO_program.obj: DIO_program.c.obj
+.PHONY : DIO_program.obj
 
 # target to build an object file
-DIO_program.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.o
-.PHONY : DIO_program.c.o
+DIO_program.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.obj
+.PHONY : DIO_program.c.obj
 
 DIO_program.i: DIO_program.c.i
 .PHONY : DIO_program.i
@@ -203,13 +216,13 @@ DIO_program.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.s
 .PHONY : DIO_program.c.s
 
-DISPLAY_program.o: DISPLAY_program.c.o
-.PHONY : DISPLAY_program.o
+DISPLAY_program.obj: DISPLAY_program.c.obj
+.PHONY : DISPLAY_program.obj
 
 # target to build an object file
-DISPLAY_program.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_program.c.o
-.PHONY : DISPLAY_program.c.o
+DISPLAY_program.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_program.c.obj
+.PHONY : DISPLAY_program.c.obj
 
 DISPLAY_program.i: DISPLAY_program.c.i
 .PHONY : DISPLAY_program.i
@@ -227,13 +240,13 @@ DISPLAY_program.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_program.c.s
 .PHONY : DISPLAY_program.c.s
 
-LCD_program.o: LCD_program.c.o
-.PHONY : LCD_program.o
+LCD_program.obj: LCD_program.c.obj
+.PHONY : LCD_program.obj
 
 # target to build an object file
-LCD_program.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.o
-.PHONY : LCD_program.c.o
+LCD_program.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.obj
+.PHONY : LCD_program.c.obj
 
 LCD_program.i: LCD_program.c.i
 .PHONY : LCD_program.i
@@ -251,13 +264,13 @@ LCD_program.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.s
 .PHONY : LCD_program.c.s
 
-TIMER_program.o: TIMER_program.c.o
-.PHONY : TIMER_program.o
+TIMER_program.obj: TIMER_program.c.obj
+.PHONY : TIMER_program.obj
 
 # target to build an object file
-TIMER_program.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.o
-.PHONY : TIMER_program.c.o
+TIMER_program.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.obj
+.PHONY : TIMER_program.c.obj
 
 TIMER_program.i: TIMER_program.c.i
 .PHONY : TIMER_program.i
@@ -275,13 +288,13 @@ TIMER_program.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.s
 .PHONY : TIMER_program.c.s
 
-ULTRASONIC_program.o: ULTRASONIC_program.c.o
-.PHONY : ULTRASONIC_program.o
+ULTRASONIC_program.obj: ULTRASONIC_program.c.obj
+.PHONY : ULTRASONIC_program.obj
 
 # target to build an object file
-ULTRASONIC_program.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.o
-.PHONY : ULTRASONIC_program.c.o
+ULTRASONIC_program.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.obj
+.PHONY : ULTRASONIC_program.c.obj
 
 ULTRASONIC_program.i: ULTRASONIC_program.c.i
 .PHONY : ULTRASONIC_program.i
@@ -299,222 +312,6 @@ ULTRASONIC_program.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.s
 .PHONY : ULTRASONIC_program.c.s
 
-avr/share/doc/avr-libc-2.1.0/examples/asmdemo/asmdemo.o: avr/share/doc/avr-libc-2.1.0/examples/asmdemo/asmdemo.c.o
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/asmdemo/asmdemo.o
-
-# target to build an object file
-avr/share/doc/avr-libc-2.1.0/examples/asmdemo/asmdemo.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/avr/share/doc/avr-libc-2.1.0/examples/asmdemo/asmdemo.c.o
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/asmdemo/asmdemo.c.o
-
-avr/share/doc/avr-libc-2.1.0/examples/asmdemo/asmdemo.i: avr/share/doc/avr-libc-2.1.0/examples/asmdemo/asmdemo.c.i
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/asmdemo/asmdemo.i
-
-# target to preprocess a source file
-avr/share/doc/avr-libc-2.1.0/examples/asmdemo/asmdemo.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/avr/share/doc/avr-libc-2.1.0/examples/asmdemo/asmdemo.c.i
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/asmdemo/asmdemo.c.i
-
-avr/share/doc/avr-libc-2.1.0/examples/asmdemo/asmdemo.s: avr/share/doc/avr-libc-2.1.0/examples/asmdemo/asmdemo.c.s
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/asmdemo/asmdemo.s
-
-# target to generate assembly for a file
-avr/share/doc/avr-libc-2.1.0/examples/asmdemo/asmdemo.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/avr/share/doc/avr-libc-2.1.0/examples/asmdemo/asmdemo.c.s
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/asmdemo/asmdemo.c.s
-
-avr/share/doc/avr-libc-2.1.0/examples/demo/demo.o: avr/share/doc/avr-libc-2.1.0/examples/demo/demo.c.o
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/demo/demo.o
-
-# target to build an object file
-avr/share/doc/avr-libc-2.1.0/examples/demo/demo.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/avr/share/doc/avr-libc-2.1.0/examples/demo/demo.c.o
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/demo/demo.c.o
-
-avr/share/doc/avr-libc-2.1.0/examples/demo/demo.i: avr/share/doc/avr-libc-2.1.0/examples/demo/demo.c.i
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/demo/demo.i
-
-# target to preprocess a source file
-avr/share/doc/avr-libc-2.1.0/examples/demo/demo.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/avr/share/doc/avr-libc-2.1.0/examples/demo/demo.c.i
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/demo/demo.c.i
-
-avr/share/doc/avr-libc-2.1.0/examples/demo/demo.s: avr/share/doc/avr-libc-2.1.0/examples/demo/demo.c.s
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/demo/demo.s
-
-# target to generate assembly for a file
-avr/share/doc/avr-libc-2.1.0/examples/demo/demo.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/avr/share/doc/avr-libc-2.1.0/examples/demo/demo.c.s
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/demo/demo.c.s
-
-avr/share/doc/avr-libc-2.1.0/examples/largedemo/largedemo.o: avr/share/doc/avr-libc-2.1.0/examples/largedemo/largedemo.c.o
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/largedemo/largedemo.o
-
-# target to build an object file
-avr/share/doc/avr-libc-2.1.0/examples/largedemo/largedemo.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/avr/share/doc/avr-libc-2.1.0/examples/largedemo/largedemo.c.o
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/largedemo/largedemo.c.o
-
-avr/share/doc/avr-libc-2.1.0/examples/largedemo/largedemo.i: avr/share/doc/avr-libc-2.1.0/examples/largedemo/largedemo.c.i
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/largedemo/largedemo.i
-
-# target to preprocess a source file
-avr/share/doc/avr-libc-2.1.0/examples/largedemo/largedemo.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/avr/share/doc/avr-libc-2.1.0/examples/largedemo/largedemo.c.i
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/largedemo/largedemo.c.i
-
-avr/share/doc/avr-libc-2.1.0/examples/largedemo/largedemo.s: avr/share/doc/avr-libc-2.1.0/examples/largedemo/largedemo.c.s
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/largedemo/largedemo.s
-
-# target to generate assembly for a file
-avr/share/doc/avr-libc-2.1.0/examples/largedemo/largedemo.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/avr/share/doc/avr-libc-2.1.0/examples/largedemo/largedemo.c.s
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/largedemo/largedemo.c.s
-
-avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/hd44780.o: avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/hd44780.c.o
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/hd44780.o
-
-# target to build an object file
-avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/hd44780.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/hd44780.c.o
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/hd44780.c.o
-
-avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/hd44780.i: avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/hd44780.c.i
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/hd44780.i
-
-# target to preprocess a source file
-avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/hd44780.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/hd44780.c.i
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/hd44780.c.i
-
-avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/hd44780.s: avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/hd44780.c.s
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/hd44780.s
-
-# target to generate assembly for a file
-avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/hd44780.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/hd44780.c.s
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/hd44780.c.s
-
-avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/lcd.o: avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/lcd.c.o
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/lcd.o
-
-# target to build an object file
-avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/lcd.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/lcd.c.o
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/lcd.c.o
-
-avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/lcd.i: avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/lcd.c.i
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/lcd.i
-
-# target to preprocess a source file
-avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/lcd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/lcd.c.i
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/lcd.c.i
-
-avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/lcd.s: avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/lcd.c.s
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/lcd.s
-
-# target to generate assembly for a file
-avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/lcd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/lcd.c.s
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/lcd.c.s
-
-avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/stdiodemo.o: avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/stdiodemo.c.o
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/stdiodemo.o
-
-# target to build an object file
-avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/stdiodemo.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/stdiodemo.c.o
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/stdiodemo.c.o
-
-avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/stdiodemo.i: avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/stdiodemo.c.i
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/stdiodemo.i
-
-# target to preprocess a source file
-avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/stdiodemo.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/stdiodemo.c.i
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/stdiodemo.c.i
-
-avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/stdiodemo.s: avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/stdiodemo.c.s
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/stdiodemo.s
-
-# target to generate assembly for a file
-avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/stdiodemo.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/stdiodemo.c.s
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/stdiodemo.c.s
-
-avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/uart.o: avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/uart.c.o
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/uart.o
-
-# target to build an object file
-avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/uart.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/uart.c.o
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/uart.c.o
-
-avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/uart.i: avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/uart.c.i
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/uart.i
-
-# target to preprocess a source file
-avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/uart.c.i
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/uart.c.i
-
-avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/uart.s: avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/uart.c.s
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/uart.s
-
-# target to generate assembly for a file
-avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/uart.c.s
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/uart.c.s
-
-avr/share/doc/avr-libc-2.1.0/examples/twitest/twitest.o: avr/share/doc/avr-libc-2.1.0/examples/twitest/twitest.c.o
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/twitest/twitest.o
-
-# target to build an object file
-avr/share/doc/avr-libc-2.1.0/examples/twitest/twitest.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/avr/share/doc/avr-libc-2.1.0/examples/twitest/twitest.c.o
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/twitest/twitest.c.o
-
-avr/share/doc/avr-libc-2.1.0/examples/twitest/twitest.i: avr/share/doc/avr-libc-2.1.0/examples/twitest/twitest.c.i
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/twitest/twitest.i
-
-# target to preprocess a source file
-avr/share/doc/avr-libc-2.1.0/examples/twitest/twitest.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/avr/share/doc/avr-libc-2.1.0/examples/twitest/twitest.c.i
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/twitest/twitest.c.i
-
-avr/share/doc/avr-libc-2.1.0/examples/twitest/twitest.s: avr/share/doc/avr-libc-2.1.0/examples/twitest/twitest.c.s
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/twitest/twitest.s
-
-# target to generate assembly for a file
-avr/share/doc/avr-libc-2.1.0/examples/twitest/twitest.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/avr/share/doc/avr-libc-2.1.0/examples/twitest/twitest.c.s
-.PHONY : avr/share/doc/avr-libc-2.1.0/examples/twitest/twitest.c.s
-
-testing/mytests.o: testing/mytests.cpp.o
-.PHONY : testing/mytests.o
-
-# target to build an object file
-testing/mytests.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/testing/mytests.cpp.o
-.PHONY : testing/mytests.cpp.o
-
-testing/mytests.i: testing/mytests.cpp.i
-.PHONY : testing/mytests.i
-
-# target to preprocess a source file
-testing/mytests.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/testing/mytests.cpp.i
-.PHONY : testing/mytests.cpp.i
-
-testing/mytests.s: testing/mytests.cpp.s
-.PHONY : testing/mytests.s
-
-# target to generate assembly for a file
-testing/mytests.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/testing/mytests.cpp.s
-.PHONY : testing/mytests.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -524,53 +321,27 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... burn"
+	@echo "... doc_doxygen"
 	@echo "... flash"
 	@echo "... AutonomousVehicle.elf"
-	@echo "... APP.o"
+	@echo "... APP.obj"
 	@echo "... APP.i"
 	@echo "... APP.s"
-	@echo "... DIO_program.o"
+	@echo "... DIO_program.obj"
 	@echo "... DIO_program.i"
 	@echo "... DIO_program.s"
-	@echo "... DISPLAY_program.o"
+	@echo "... DISPLAY_program.obj"
 	@echo "... DISPLAY_program.i"
 	@echo "... DISPLAY_program.s"
-	@echo "... LCD_program.o"
+	@echo "... LCD_program.obj"
 	@echo "... LCD_program.i"
 	@echo "... LCD_program.s"
-	@echo "... TIMER_program.o"
+	@echo "... TIMER_program.obj"
 	@echo "... TIMER_program.i"
 	@echo "... TIMER_program.s"
-	@echo "... ULTRASONIC_program.o"
+	@echo "... ULTRASONIC_program.obj"
 	@echo "... ULTRASONIC_program.i"
 	@echo "... ULTRASONIC_program.s"
-	@echo "... avr/share/doc/avr-libc-2.1.0/examples/asmdemo/asmdemo.o"
-	@echo "... avr/share/doc/avr-libc-2.1.0/examples/asmdemo/asmdemo.i"
-	@echo "... avr/share/doc/avr-libc-2.1.0/examples/asmdemo/asmdemo.s"
-	@echo "... avr/share/doc/avr-libc-2.1.0/examples/demo/demo.o"
-	@echo "... avr/share/doc/avr-libc-2.1.0/examples/demo/demo.i"
-	@echo "... avr/share/doc/avr-libc-2.1.0/examples/demo/demo.s"
-	@echo "... avr/share/doc/avr-libc-2.1.0/examples/largedemo/largedemo.o"
-	@echo "... avr/share/doc/avr-libc-2.1.0/examples/largedemo/largedemo.i"
-	@echo "... avr/share/doc/avr-libc-2.1.0/examples/largedemo/largedemo.s"
-	@echo "... avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/hd44780.o"
-	@echo "... avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/hd44780.i"
-	@echo "... avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/hd44780.s"
-	@echo "... avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/lcd.o"
-	@echo "... avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/lcd.i"
-	@echo "... avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/lcd.s"
-	@echo "... avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/stdiodemo.o"
-	@echo "... avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/stdiodemo.i"
-	@echo "... avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/stdiodemo.s"
-	@echo "... avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/uart.o"
-	@echo "... avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/uart.i"
-	@echo "... avr/share/doc/avr-libc-2.1.0/examples/stdiodemo/uart.s"
-	@echo "... avr/share/doc/avr-libc-2.1.0/examples/twitest/twitest.o"
-	@echo "... avr/share/doc/avr-libc-2.1.0/examples/twitest/twitest.i"
-	@echo "... avr/share/doc/avr-libc-2.1.0/examples/twitest/twitest.s"
-	@echo "... testing/mytests.o"
-	@echo "... testing/mytests.i"
-	@echo "... testing/mytests.s"
 .PHONY : help
 
 

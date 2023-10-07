@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build",
+  "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c99 -o CMakeFiles/AutonomousVehicle.elf.dir/APP.c.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/APP.c",
+  "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/APP.c",
+  "output": "CMakeFiles/AutonomousVehicle.elf.dir/APP.c.obj"
+},
+{
+  "directory": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build",
+  "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c99 -o CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DIO_program.c",
+  "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DIO_program.c",
+  "output": "CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.obj"
+},
+{
+  "directory": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build",
+  "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c99 -o CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_program.c.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DISPLAY_program.c",
+  "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DISPLAY_program.c",
+  "output": "CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_program.c.obj"
+},
+{
+  "directory": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build",
+  "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c99 -o CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/LCD_program.c",
+  "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/LCD_program.c",
+  "output": "CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.obj"
+},
+{
+  "directory": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build",
+  "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c99 -o CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/TIMER_program.c",
+  "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/TIMER_program.c",
+  "output": "CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.obj"
+},
+{
+  "directory": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build",
+  "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c99 -o CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/ULTRASONIC_program.c",
+  "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/ULTRASONIC_program.c",
+  "output": "CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.obj"
+}
+]
