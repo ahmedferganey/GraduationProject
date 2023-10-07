@@ -12,7 +12,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.27.6/CMakeCCompiler.cmake"
   "CMakeFiles/3.27.6/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.27.6/CMakeSystem.cmake"
-  "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/docs/Doxyfile.in"
   "/home/ahmed-ferganey/Desktop/cmake-3.27.6/Modules/CMakeASMCompiler.cmake.in"
   "/home/ahmed-ferganey/Desktop/cmake-3.27.6/Modules/CMakeASMInformation.cmake"
   "/home/ahmed-ferganey/Desktop/cmake-3.27.6/Modules/CMakeCCompiler.cmake.in"
@@ -103,9 +102,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/ahmed-ferganey/Desktop/cmake-3.27.6/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake"
   "/home/ahmed-ferganey/Desktop/cmake-3.27.6/Modules/Compiler/zOS-C-DetermineCompiler.cmake"
   "/home/ahmed-ferganey/Desktop/cmake-3.27.6/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
-  "/home/ahmed-ferganey/Desktop/cmake-3.27.6/Modules/FindDoxygen.cmake"
-  "/home/ahmed-ferganey/Desktop/cmake-3.27.6/Modules/FindPackageHandleStandardArgs.cmake"
-  "/home/ahmed-ferganey/Desktop/cmake-3.27.6/Modules/FindPackageMessage.cmake"
   "/home/ahmed-ferganey/Desktop/cmake-3.27.6/Modules/Internal/FeatureTesting.cmake"
   "/home/ahmed-ferganey/Desktop/cmake-3.27.6/Modules/Platform/Linux-Determine-CXX.cmake"
   "/home/ahmed-ferganey/Desktop/cmake-3.27.6/Modules/Platform/Linux-GNU-C.cmake"
@@ -130,13 +126,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.27.6/CMakeASMCompiler.cmake"
   "CMakeFiles/3.27.6/CMakeCCompiler.cmake"
   "CMakeFiles/3.27.6/CMakeCXXCompiler.cmake"
-  "Doxyfile"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/doc_doxygen.dir/DependInfo.cmake"
   "CMakeFiles/AutonomousVehicle.elf.dir/DependInfo.cmake"
   "CMakeFiles/flash.dir/DependInfo.cmake"
   "CMakeFiles/burn.dir/DependInfo.cmake"

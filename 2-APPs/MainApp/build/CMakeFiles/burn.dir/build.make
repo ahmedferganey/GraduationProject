@@ -67,7 +67,7 @@ include CMakeFiles/burn.dir/compiler_depend.make
 include CMakeFiles/burn.dir/progress.make
 
 CMakeFiles/burn:
-	avrdude.exe -c usbasp -p m32 -B 0.5 -U flash:w:"AutonomousVehicle.hex":a
+	AVRDUDE.exe -c usbasp -p m32 -B 0.5 -U flash:w:"AutonomousVehicle.hex":a
 
 burn: CMakeFiles/burn
 burn: CMakeFiles/burn.dir/build.make

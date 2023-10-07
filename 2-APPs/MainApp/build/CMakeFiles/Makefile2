@@ -63,7 +63,6 @@ CMAKE_BINARY_DIR = /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APP
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/doc_doxygen.dir/all
 all: CMakeFiles/AutonomousVehicle.elf.dir/all
 all: CMakeFiles/flash.dir/all
 .PHONY : all
@@ -73,37 +72,10 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/doc_doxygen.dir/clean
 clean: CMakeFiles/AutonomousVehicle.elf.dir/clean
 clean: CMakeFiles/flash.dir/clean
 clean: CMakeFiles/burn.dir/clean
 .PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/doc_doxygen.dir
-
-# All Build rule for target.
-CMakeFiles/doc_doxygen.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num= "Built target doc_doxygen"
-.PHONY : CMakeFiles/doc_doxygen.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/doc_doxygen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/doc_doxygen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles 0
-.PHONY : CMakeFiles/doc_doxygen.dir/rule
-
-# Convenience name for target.
-doc_doxygen: CMakeFiles/doc_doxygen.dir/rule
-.PHONY : doc_doxygen
-
-# clean rule for target.
-CMakeFiles/doc_doxygen.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/clean
-.PHONY : CMakeFiles/doc_doxygen.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/AutonomousVehicle.elf.dir
@@ -112,12 +84,12 @@ CMakeFiles/doc_doxygen.dir/clean:
 CMakeFiles/AutonomousVehicle.elf.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target AutonomousVehicle.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 "Built target AutonomousVehicle.elf"
 .PHONY : CMakeFiles/AutonomousVehicle.elf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/AutonomousVehicle.elf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/AutonomousVehicle.elf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles 0
 .PHONY : CMakeFiles/AutonomousVehicle.elf.dir/rule
@@ -143,7 +115,7 @@ CMakeFiles/flash.dir/all: CMakeFiles/AutonomousVehicle.elf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/flash.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/flash.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles 0
 .PHONY : CMakeFiles/flash.dir/rule
@@ -169,7 +141,7 @@ CMakeFiles/burn.dir/all: CMakeFiles/flash.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/burn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/burn.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles 0
 .PHONY : CMakeFiles/burn.dir/rule

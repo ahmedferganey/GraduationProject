@@ -39,7 +39,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "avr-objdump")
+  set(CMAKE_OBJDUMP "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/avr/bin/avr-objdump;FORCE")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
