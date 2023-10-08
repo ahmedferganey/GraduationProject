@@ -48,7 +48,7 @@
 #define     DISPLAY_DIO_DIRECTION_OUTPUT    DIO_DIR_OUTPUT
          
 
-#define     DISPLAY_NUM_ULTRSONIC		    4
+#define     DISPLAY_NUM_ULTRSONIC		    1
 
 	
 /* -------------------------------- Macro Functions Declarations --------------------------------*/
@@ -77,6 +77,7 @@ Std_ReturnType DISPLAY_udtUltrasonicDispLcd
 (
 const ULTRASONIC_obj_t* ULTRASONIC_pudtconfig
 );
+
 
 
 

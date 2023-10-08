@@ -1,14 +1,14 @@
 /**
  * @author Ahmed Ferganey
- * @FileName SYS_manager.hpp
+ * @FileName UPD_manager.hpp
  * @email ahmedferganey707@gmail.com
- * @create date 2023-10-08 20:07:51
- * @modify date 2023-10-08 20:07:51
+ * @create date 2023-10-09 02:11:24
+ * @modify date 2023-10-09 02:11:24
  * @desc [description]
  */
 
-#ifndef _SYS_MANAGER_H_
-#define _SYS_MANAGER_H_
+#ifndef _UPD_MANAGER_H_
+#define _UPD_MANAGER_H_
 
 
 /* -------------------------------- Includes ----------------------------------------------------*/
@@ -17,10 +17,10 @@
 #include "BIT_MATH.h"
 
 /**			MCAL Includes				**/
-#include "DIO_interface.h"
 
 
 /**			HAL Includes				**/
+
 
 
 /* -------------------------------- Macro Declarations ------------------------------------------*/
@@ -33,11 +33,29 @@
 /* -------------------------------- Data Type Declarations --------------------------------------*/
 
 
-
 /* -------------------------------- Class Declarations ------------------------------------------*/
+class UPD_SonicDistance {
+    protected:
+     /// @brief this create pointer to my obj of ultrasonic
+     ULTRASONIC_obj_t* UltrasonicOne;
+
+
+
+    public:
+     /// @brief this will be serve DC Motor & LCD 
+     void update();
+     UPD_SonicDistance()
+     {
+
+     }
+     ~UPD_SonicDistance()
+     {
+        
+     }
+}
 
 
 
 
+#endif  /* _UPD_MANAGER_H_ */
 
-#endif  /* _SYS_MANAGER_H_ */

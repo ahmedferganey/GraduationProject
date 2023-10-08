@@ -11,12 +11,16 @@ file(REMOVE_RECURSE
   "CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.obj.d"
   "CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.cpp.obj"
   "CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.cpp.obj.d"
+  "CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.obj"
+  "CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.obj.d"
   "CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.obj"
   "CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.obj.d"
   "CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.obj"
   "CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.obj.d"
   "CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.obj"
   "CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.obj.d"
+  "CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.cpp.obj"
+  "CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.cpp.obj.d"
 )
 
 # Per-language clean rules from dependency scanning.

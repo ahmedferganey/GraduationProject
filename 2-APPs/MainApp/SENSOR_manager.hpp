@@ -1,14 +1,15 @@
 /**
  * @author Ahmed Ferganey
- * @FileName SYS_manager.hpp
+ * @FileName SENSOR_manager.hpp
  * @email ahmedferganey707@gmail.com
- * @create date 2023-10-08 20:07:51
- * @modify date 2023-10-08 20:07:51
+ * @create date 2023-10-09 02:35:21
+ * @modify date 2023-10-09 02:35:21
  * @desc [description]
  */
 
-#ifndef _SYS_MANAGER_H_
-#define _SYS_MANAGER_H_
+
+#ifndef _SENSOR_MANAGER_H_
+#define _SENSOR_MANAGER_H_
 
 
 /* -------------------------------- Includes ----------------------------------------------------*/
@@ -17,10 +18,10 @@
 #include "BIT_MATH.h"
 
 /**			MCAL Includes				**/
-#include "DIO_interface.h"
 
 
 /**			HAL Includes				**/
+
 
 
 /* -------------------------------- Macro Declarations ------------------------------------------*/
@@ -33,11 +34,9 @@
 /* -------------------------------- Data Type Declarations --------------------------------------*/
 
 
-
 /* -------------------------------- Class Declarations ------------------------------------------*/
 
 
 
+#endif  /* _SENSOR_MANAGER_H_ */
 
-
-#endif  /* _SYS_MANAGER_H_ */

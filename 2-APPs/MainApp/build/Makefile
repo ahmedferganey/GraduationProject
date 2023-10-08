@@ -288,6 +288,30 @@ MOV_manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.cpp.s
 .PHONY : MOV_manager.cpp.s
 
+SENSOR_manager.obj: SENSOR_manager.cpp.obj
+.PHONY : SENSOR_manager.obj
+
+# target to build an object file
+SENSOR_manager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.obj
+.PHONY : SENSOR_manager.cpp.obj
+
+SENSOR_manager.i: SENSOR_manager.cpp.i
+.PHONY : SENSOR_manager.i
+
+# target to preprocess a source file
+SENSOR_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.i
+.PHONY : SENSOR_manager.cpp.i
+
+SENSOR_manager.s: SENSOR_manager.cpp.s
+.PHONY : SENSOR_manager.s
+
+# target to generate assembly for a file
+SENSOR_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.s
+.PHONY : SENSOR_manager.cpp.s
+
 SYS_manager.obj: SYS_manager.cpp.obj
 .PHONY : SYS_manager.obj
 
@@ -360,6 +384,30 @@ ULTRASONIC_program.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.s
 .PHONY : ULTRASONIC_program.c.s
 
+UPD_manager.obj: UPD_manager.cpp.obj
+.PHONY : UPD_manager.obj
+
+# target to build an object file
+UPD_manager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.cpp.obj
+.PHONY : UPD_manager.cpp.obj
+
+UPD_manager.i: UPD_manager.cpp.i
+.PHONY : UPD_manager.i
+
+# target to preprocess a source file
+UPD_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.cpp.i
+.PHONY : UPD_manager.cpp.i
+
+UPD_manager.s: UPD_manager.cpp.s
+.PHONY : UPD_manager.s
+
+# target to generate assembly for a file
+UPD_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.cpp.s
+.PHONY : UPD_manager.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -387,6 +435,9 @@ help:
 	@echo "... MOV_manager.obj"
 	@echo "... MOV_manager.i"
 	@echo "... MOV_manager.s"
+	@echo "... SENSOR_manager.obj"
+	@echo "... SENSOR_manager.i"
+	@echo "... SENSOR_manager.s"
 	@echo "... SYS_manager.obj"
 	@echo "... SYS_manager.i"
 	@echo "... SYS_manager.s"
@@ -396,6 +447,9 @@ help:
 	@echo "... ULTRASONIC_program.obj"
 	@echo "... ULTRASONIC_program.i"
 	@echo "... ULTRASONIC_program.s"
+	@echo "... UPD_manager.obj"
+	@echo "... UPD_manager.i"
+	@echo "... UPD_manager.s"
 .PHONY : help
 
 
