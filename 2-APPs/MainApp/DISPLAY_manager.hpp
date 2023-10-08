@@ -7,8 +7,8 @@
  * @desc [description]
  */
 
-#ifndef _DISPLAY_INTERFACE_H_
-#define _DISPLAY_INTERFACE_H_
+#ifndef _DISPLAY_MANAGER_H_
+#define _DISPLAY_MANAGER_H_
 
 
 /* -------------------------------- Includes ----------------------------------------------------*/
@@ -87,4 +87,4 @@ const ULTRASONIC_obj_t* ULTRASONIC_pudtconfig
 
 
 
-#endif  /* _DISPLAY_INTERFACE_H_ */
+#endif  /* _DISPLAY_MANAGER_H_ */

@@ -9,7 +9,8 @@
 #define _APP_H_
 
 /* Comment!: Includes */
-#include "DISPLAY_interface.h"
+#include "DISPLAY_manager.hpp"
+
 
 /* Comment!: Macro Declarations */
 

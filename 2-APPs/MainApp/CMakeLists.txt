@@ -103,7 +103,7 @@ set(CMAKE_C_STANDARD_REQUIRED           ON)
 set(CMAKE_CXX_EXTENSIONS                OFF)
 set(CMAKE_CXX_STANDARD_REQUIRED         ON)
 set(CMAKE_C_STANDARD                    99)
-set(CMAKE_CXX_STANDARD                  20)
+set(CMAKE_CXX_STANDARD                  11)
 
 
 ##################################################################################
@@ -119,10 +119,10 @@ set(CCLASS          "-Wextra")
 set(CCONV           "-Wconversion")
 set(CCA             "-c")                                  #compiles and assembles files but doesn’t link them. 
 set(CUNREACH        "-Wunreachable-code")
-set(CVERSION        "-std=c++20")
+set(CVERSION        "-std=c++11")
 
 
-set(CXXFLAGS        ${CMCU}  ${CDEFS} ${COPT} ${CWARNING} ${CUNREACH} ${CERROR} ${CISO} ${CCLASS} ${CCONV} ${CCA})
+set(CXX_FLAGS        ${CMCU}  ${CDEFS} ${COPT} ${CWARNING} ${CUNREACH} ${CERROR} ${CISO} ${CCLASS} ${CCONV} ${CCA})
 set(CMAKE_CXX_FLAGS ${CXXFLAGS})
 set(CMAKE_ASM_FLAGS ${CXXFLAGS})
 
