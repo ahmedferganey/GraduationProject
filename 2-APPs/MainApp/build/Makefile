@@ -168,29 +168,29 @@ burn/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/burn.dir/build.make CMakeFiles/burn.dir/build
 .PHONY : burn/fast
 
-APP.obj: APP.c.obj
+APP.obj: APP.cpp.obj
 .PHONY : APP.obj
 
 # target to build an object file
-APP.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/APP.c.obj
-.PHONY : APP.c.obj
+APP.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/APP.cpp.obj
+.PHONY : APP.cpp.obj
 
-APP.i: APP.c.i
+APP.i: APP.cpp.i
 .PHONY : APP.i
 
 # target to preprocess a source file
-APP.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/APP.c.i
-.PHONY : APP.c.i
+APP.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/APP.cpp.i
+.PHONY : APP.cpp.i
 
-APP.s: APP.c.s
+APP.s: APP.cpp.s
 .PHONY : APP.s
 
 # target to generate assembly for a file
-APP.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/APP.c.s
-.PHONY : APP.c.s
+APP.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/APP.cpp.s
+.PHONY : APP.cpp.s
 
 DIO_program.obj: DIO_program.c.obj
 .PHONY : DIO_program.obj
@@ -216,29 +216,29 @@ DIO_program.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.s
 .PHONY : DIO_program.c.s
 
-DISPLAY_program.obj: DISPLAY_program.c.obj
-.PHONY : DISPLAY_program.obj
+DISPLAY_manager.obj: DISPLAY_manager.cpp.obj
+.PHONY : DISPLAY_manager.obj
 
 # target to build an object file
-DISPLAY_program.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_program.c.obj
-.PHONY : DISPLAY_program.c.obj
+DISPLAY_manager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.cpp.obj
+.PHONY : DISPLAY_manager.cpp.obj
 
-DISPLAY_program.i: DISPLAY_program.c.i
-.PHONY : DISPLAY_program.i
+DISPLAY_manager.i: DISPLAY_manager.cpp.i
+.PHONY : DISPLAY_manager.i
 
 # target to preprocess a source file
-DISPLAY_program.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_program.c.i
-.PHONY : DISPLAY_program.c.i
+DISPLAY_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.cpp.i
+.PHONY : DISPLAY_manager.cpp.i
 
-DISPLAY_program.s: DISPLAY_program.c.s
-.PHONY : DISPLAY_program.s
+DISPLAY_manager.s: DISPLAY_manager.cpp.s
+.PHONY : DISPLAY_manager.s
 
 # target to generate assembly for a file
-DISPLAY_program.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_program.c.s
-.PHONY : DISPLAY_program.c.s
+DISPLAY_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.cpp.s
+.PHONY : DISPLAY_manager.cpp.s
 
 LCD_program.obj: LCD_program.c.obj
 .PHONY : LCD_program.obj
@@ -263,6 +263,54 @@ LCD_program.s: LCD_program.c.s
 LCD_program.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.s
 .PHONY : LCD_program.c.s
+
+MOV_manager.obj: MOV_manager.cpp.obj
+.PHONY : MOV_manager.obj
+
+# target to build an object file
+MOV_manager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.cpp.obj
+.PHONY : MOV_manager.cpp.obj
+
+MOV_manager.i: MOV_manager.cpp.i
+.PHONY : MOV_manager.i
+
+# target to preprocess a source file
+MOV_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.cpp.i
+.PHONY : MOV_manager.cpp.i
+
+MOV_manager.s: MOV_manager.cpp.s
+.PHONY : MOV_manager.s
+
+# target to generate assembly for a file
+MOV_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.cpp.s
+.PHONY : MOV_manager.cpp.s
+
+SYS_manager.obj: SYS_manager.cpp.obj
+.PHONY : SYS_manager.obj
+
+# target to build an object file
+SYS_manager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.obj
+.PHONY : SYS_manager.cpp.obj
+
+SYS_manager.i: SYS_manager.cpp.i
+.PHONY : SYS_manager.i
+
+# target to preprocess a source file
+SYS_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.i
+.PHONY : SYS_manager.cpp.i
+
+SYS_manager.s: SYS_manager.cpp.s
+.PHONY : SYS_manager.s
+
+# target to generate assembly for a file
+SYS_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.s
+.PHONY : SYS_manager.cpp.s
 
 TIMER_program.obj: TIMER_program.c.obj
 .PHONY : TIMER_program.obj
@@ -330,12 +378,18 @@ help:
 	@echo "... DIO_program.obj"
 	@echo "... DIO_program.i"
 	@echo "... DIO_program.s"
-	@echo "... DISPLAY_program.obj"
-	@echo "... DISPLAY_program.i"
-	@echo "... DISPLAY_program.s"
+	@echo "... DISPLAY_manager.obj"
+	@echo "... DISPLAY_manager.i"
+	@echo "... DISPLAY_manager.s"
 	@echo "... LCD_program.obj"
 	@echo "... LCD_program.i"
 	@echo "... LCD_program.s"
+	@echo "... MOV_manager.obj"
+	@echo "... MOV_manager.i"
+	@echo "... MOV_manager.s"
+	@echo "... SYS_manager.obj"
+	@echo "... SYS_manager.i"
+	@echo "... SYS_manager.s"
 	@echo "... TIMER_program.obj"
 	@echo "... TIMER_program.i"
 	@echo "... TIMER_program.s"

@@ -1,7 +1,7 @@
-CMakeFiles/AutonomousVehicle.elf.dir/APP.c.obj: \
- /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/APP.c \
- /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/APP.h \
- /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DISPLAY_interface.h \
+CMakeFiles/AutonomousVehicle.elf.dir/APP.cpp.obj: \
+ /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/APP.cpp \
+ /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/APP.hpp \
+ /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DISPLAY_manager.hpp \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/STD_TYPES.h \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/BIT_MATH.h \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DIO_interface.h \

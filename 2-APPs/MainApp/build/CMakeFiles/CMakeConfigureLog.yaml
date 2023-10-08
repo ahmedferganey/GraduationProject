@@ -5,7 +5,7 @@ events:
     kind: "message-v1"
     backtrace:
       - "/home/ahmed-ferganey/Desktop/cmake-3.27.6/Modules/CMakeDetermineSystem.cmake:206 (message)"
-      - "CMakeLists.txt:11 (project)"
+      - "CMakeLists.txt:23 (project)"
     message: |
       The target system is: Generic - 1 - avr
       The host system is: Linux - 6.2.0-34-generic - x86_64
@@ -15,7 +15,7 @@ events:
       - "/home/ahmed-ferganey/Desktop/cmake-3.27.6/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "/home/ahmed-ferganey/Desktop/cmake-3.27.6/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/home/ahmed-ferganey/Desktop/cmake-3.27.6/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:11 (project)"
+      - "CMakeLists.txt:23 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
       Compiler: /home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc 
@@ -37,7 +37,7 @@ events:
       - "/home/ahmed-ferganey/Desktop/cmake-3.27.6/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "/home/ahmed-ferganey/Desktop/cmake-3.27.6/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/home/ahmed-ferganey/Desktop/cmake-3.27.6/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:11 (project)"
+      - "CMakeLists.txt:23 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
       Compiler: /home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ 
@@ -58,7 +58,7 @@ events:
     backtrace:
       - "/home/ahmed-ferganey/Desktop/cmake-3.27.6/Modules/CMakeDetermineCompilerId.cmake:1104 (message)"
       - "/home/ahmed-ferganey/Desktop/cmake-3.27.6/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "CMakeLists.txt:11 (project)"
+      - "CMakeLists.txt:23 (project)"
     message: |
       Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
       avr-g++ (crosstool-NG 1.26.0) 13.2.0
