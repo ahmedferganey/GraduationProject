@@ -67,7 +67,7 @@ include CMakeFiles/burn.dir/compiler_depend.make
 include CMakeFiles/burn.dir/progress.make
 
 CMakeFiles/burn:
-	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avrdude -c usbasp -p m32 -B 0.5 -U flash:w:"AutonomousVehicle.hex":a
+	/usr/bin/avrdude -c usbasp -p m32 -B 0.5 -U flash:w:"AutonomousVehicle.hex":a
 
 burn: CMakeFiles/burn
 burn: CMakeFiles/burn.dir/build.make

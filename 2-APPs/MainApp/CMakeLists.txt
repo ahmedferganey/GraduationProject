@@ -80,7 +80,8 @@ set(AVRSTRIP             ${AVR}avr-strip                              )
 set(OBJCOPY              ${AVR}avr-objcopy                            )
 set(OBJDUMP              ${AVR}avr-objdump                            )        
 set(AVRSIZE              ${AVR}avr-size                               )
-set(AVRDUDE              ${AVR}avrdude                                )
+#set(AVRDUDE              ${AVR}avrdude                                )
+set(AVRDUDE              /usr/bin/avrdude                             )
 set(LD                   ${AVR}avr-ld                                 )
     
 #the next steps are optional 
@@ -172,7 +173,20 @@ add_custom_target(burn
      DEPENDS flash
      COMMAND ${AVRDUDE} -c ${AVR_PROGRAMMER} -p m32 -B 0.5 -U flash:w:"${PROJECT_NAME}.hex":a
      ) 
+#https://askubuntu.com/questions/725068/where-is-my-keyboard-mouse-and-other-hci-devices-mounted-in-linux
+#avrdude -c avr910 -p m168 -b 115200 -P /dev/ttyUSB0 -U flash:w:initialload.hex:a
+#        -c usbasp -p m32 -U flash:w:$(ProjectDir)Debug\$(TargetName).hex:i 
 
+
+#https://www.youtube.com/watch?v=jcDS8iaYS_Q
+#https://www.onworks.net/software/windows/app-winavr
+#https://askubuntu.com/questions/1148019/create-a-dev-ttyusb-no-such-file-or-directory
+#https://itecnote.com/tecnote/linux-identify-which-usb-device-is-dev-ttyusb0/
+# $ lsusb
+#https://askubuntu.com/questions/725068/where-is-my-keyboard-mouse-and-other-hci-devices-mounted-in-linux
+#https://installati.one/install-avrdude-ubuntu-22-04/
+#https://medium.com/@ppatil/avr-programing-using-avrdude-in-ubuntu-93734c26ad19
+#https://www.quora.com/How-can-we-burn-a-program-to-an-AVR-microcontroller-on-Linux
 
 
 ##################################################################################
