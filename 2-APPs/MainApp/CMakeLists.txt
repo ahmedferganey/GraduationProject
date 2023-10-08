@@ -75,13 +75,13 @@ set(AVR_FIND_ROOT_PATH   /home/ahmed-ferganey/avr/toolchain_staging/avr)
 set(CROSSTOOL_DIR        /home/ahmed-ferganey/avr/toolchain_staging/avr)
 set(CROSSTOOL_NAME       avr)
 
-set(AVRCPP               ${CROSSTOOL_DIR}/bin/${CROSSTOOL_NAME}-g++   FORCE)
-set(AVRSTRIP             ${AVR}avr-strip                              FORCE)
-set(OBJCOPY              ${AVR}avr-objcopy                            FORCE)
-set(OBJDUMP              ${AVR}avr-objdump                            FORCE)        
-set(AVRSIZE              ${AVR}avr-size                               FORCE)
-set(AVRDUDE              ${AVR}avrdude                                FORCE)
-set(LD                   ${AVR}avr-ld                                 FORCE)
+set(AVRCPP               ${CROSSTOOL_DIR}/bin/${CROSSTOOL_NAME}-g++   )
+set(AVRSTRIP             ${AVR}avr-strip                              )
+set(OBJCOPY              ${AVR}avr-objcopy                            )
+set(OBJDUMP              ${AVR}avr-objdump                            )        
+set(AVRSIZE              ${AVR}avr-size                               )
+set(AVRDUDE              ${AVR}avrdude                                )
+set(LD                   ${AVR}avr-ld                                 )
     
 #the next steps are optional 
 set(CMAKE_EXPORT_COMPILE_COMMANDS       ON)
@@ -165,6 +165,7 @@ add_executable(${PROJECT_NAME}.elf ${SRCS})
 add_custom_target(flash ALL
      DEPENDS ${PROJECT_NAME}.elf
      COMMAND ${OBJCOPY} -j .text -j .data -O ihex ${PROJECT_NAME}.elf ${PROJECT_NAME}.hex
+     COMMAND ${AVRSIZE} -t   ${PROJECT_NAME}.elf
      ) 
 
 add_custom_target(burn 

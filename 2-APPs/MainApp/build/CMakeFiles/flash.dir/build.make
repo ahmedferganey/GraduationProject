@@ -67,7 +67,8 @@ include CMakeFiles/flash.dir/compiler_depend.make
 include CMakeFiles/flash.dir/progress.make
 
 CMakeFiles/flash: AutonomousVehicle.elf
-	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-objcopy FORCE -j .text -j .data -O ihex AutonomousVehicle.elf AutonomousVehicle.hex
+	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-objcopy -j .text -j .data -O ihex AutonomousVehicle.elf AutonomousVehicle.hex
+	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-size -t AutonomousVehicle.elf
 
 flash: CMakeFiles/flash
 flash: CMakeFiles/flash.dir/build.make
