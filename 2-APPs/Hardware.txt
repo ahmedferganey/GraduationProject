@@ -1,0 +1,41 @@
+Analog Joystick interface with AVR ATmega16/ATmega32:
+https://www.electronicwings.com/avr-atmega/analog-joystick-interface-with-atmega-16-32
+
+
+
+HC-05 Bluetooth Module Interfacing with AVR ATmega16/ATmega32:
+https://www.electronicwings.com/avr-atmega/hc-05-bluetooth-module-interfacing-with-atmega1632
+
+
+
+Ultrasonic Module HC-SR04 interfacing with AVR ATmega16/ATmega32:
+https://www.electronicwings.com/avr-atmega/ultrasonic-module-hc-sr04-interfacing-with-atmega1632
+
+
+
+Light intensity Detector:
+https://www.electronicwings.com/users/AnanyaGosavi/projects/1142/light-detection-circuit-using-ldr
+https://www.electronicwings.com/users/OmprakashKumawat/projects/2505/light-intensity-detector
+
+
+IR communication using AVR ATmega16/ATmega32:
+https://www.electronicwings.com/avr-atmega/ir-communication-using-atmega1632
+
+
+
+BUZZER:
+https://www.electronicwings.com/users/ADAIKKAMMAIMECEstudent/projects/971/hurdle-spotter
+https://www.electronicwings.com/users/AnanyaGosavi/projects/1136/a--portable-distance-meausring-system-for-blind
+https://www.electronicwings.com/users/JEEVAKHARSHASR/projects/974/sharp-witted-aqua-flagon
+
+
+
+Servo Motor Interfacing With Arduino Uno:
+https://www.electronicwings.com/arduino/servo-motor-interfacing-with-arduino-uno
+https://www.electronicwings.com/sensors-modules/servo-motor
+
+
+DC motor interfacing with AVR ATmega16/ATmega32:
+https://www.electronicwings.com/avr-atmega/dc-motor-interfacing-with-atmega-1632
+
+

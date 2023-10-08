@@ -1,9 +1,9 @@
 [
 {
   "directory": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build",
-  "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c++11 -o CMakeFiles/AutonomousVehicle.elf.dir/APP.cpp.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/APP.cpp",
-  "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/APP.cpp",
-  "output": "CMakeFiles/AutonomousVehicle.elf.dir/APP.cpp.obj"
+  "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c++11 -o CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/AutonomousVehicle.cpp",
+  "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/AutonomousVehicle.cpp",
+  "output": "CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.obj"
 },
 {
   "directory": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build",

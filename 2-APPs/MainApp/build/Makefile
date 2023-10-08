@@ -168,29 +168,29 @@ burn/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/burn.dir/build.make CMakeFiles/burn.dir/build
 .PHONY : burn/fast
 
-APP.obj: APP.cpp.obj
-.PHONY : APP.obj
+AutonomousVehicle.obj: AutonomousVehicle.cpp.obj
+.PHONY : AutonomousVehicle.obj
 
 # target to build an object file
-APP.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/APP.cpp.obj
-.PHONY : APP.cpp.obj
+AutonomousVehicle.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.obj
+.PHONY : AutonomousVehicle.cpp.obj
 
-APP.i: APP.cpp.i
-.PHONY : APP.i
+AutonomousVehicle.i: AutonomousVehicle.cpp.i
+.PHONY : AutonomousVehicle.i
 
 # target to preprocess a source file
-APP.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/APP.cpp.i
-.PHONY : APP.cpp.i
+AutonomousVehicle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.i
+.PHONY : AutonomousVehicle.cpp.i
 
-APP.s: APP.cpp.s
-.PHONY : APP.s
+AutonomousVehicle.s: AutonomousVehicle.cpp.s
+.PHONY : AutonomousVehicle.s
 
 # target to generate assembly for a file
-APP.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/APP.cpp.s
-.PHONY : APP.cpp.s
+AutonomousVehicle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.s
+.PHONY : AutonomousVehicle.cpp.s
 
 DIO_program.obj: DIO_program.c.obj
 .PHONY : DIO_program.obj
@@ -372,9 +372,9 @@ help:
 	@echo "... doc_doxygen"
 	@echo "... flash"
 	@echo "... AutonomousVehicle.elf"
-	@echo "... APP.obj"
-	@echo "... APP.i"
-	@echo "... APP.s"
+	@echo "... AutonomousVehicle.obj"
+	@echo "... AutonomousVehicle.i"
+	@echo "... AutonomousVehicle.s"
 	@echo "... DIO_program.obj"
 	@echo "... DIO_program.i"
 	@echo "... DIO_program.s"

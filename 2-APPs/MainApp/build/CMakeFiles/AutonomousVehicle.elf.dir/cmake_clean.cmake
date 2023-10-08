@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "AutonomousVehicle.elf"
   "AutonomousVehicle.elf.pdb"
-  "CMakeFiles/AutonomousVehicle.elf.dir/APP.cpp.obj"
-  "CMakeFiles/AutonomousVehicle.elf.dir/APP.cpp.obj.d"
+  "CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.obj"
+  "CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.obj.d"
   "CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.obj"
   "CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.obj.d"
   "CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.cpp.obj"
