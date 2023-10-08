@@ -1,4 +1,16 @@
 ##################################################################################
+#                                       Info                                    #
+##################################################################################
+## hello, if you have a basic knowladge about CMake & ct-ng, you will find 
+## some of articles, websites and a links of some pages for the documentation 
+## of CMake & ct-ng. also you will find other websites will help you to create
+## cmakelists integrated with your custom tool chain. it is sure you will face
+## some obstacles during your journey to learn anything. but, make sure you will
+## get your goal by giving your trust in allah and then continous development.
+## Never Give Up..
+
+
+##################################################################################
 #            CMakeLists.txt for a AVR project based on the toolchain             #
 ##################################################################################
 cmake_minimum_required(VERSION 3.20  FATAL_ERROR)
@@ -192,6 +204,7 @@ add_custom_target(burn
 ##################################################################################
 #                                  Resources                                     #
 ##################################################################################
+#https://www.youtube.com/@moatasemelsayed6226
 #https://github.com/crosstool-ng/crosstool-ng
 #https://blog.feabhas.com/2021/07/cmake-part-1-the-dark-arts/#Cross_Compiling
 #https://stackoverflow.com/questions/77206998/cross-compiling-with-crosstool-ng-and-cmake-missing-3rd-party-libraries
