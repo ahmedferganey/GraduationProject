@@ -1,9 +1,12 @@
-/*
- * FileName		: DISPLAY_interface.h
- * Created		: 9/19/2023 11:19:14 PM
- * Author		: Ahmed Ferganey
- */ 
- 
+ /**
+ * @author Ahmed Ferganey
+ * @FileName DISPLAY_manager.hpp
+ * @email ahmedferganey707@gmail.com
+ * @create date 2023-09-19 11:19:14
+ * @modify date 2023-09-19 11:19:14
+ * @desc [description]
+ */
+
 #ifndef _DISPLAY_INTERFACE_H_
 #define _DISPLAY_INTERFACE_H_
 

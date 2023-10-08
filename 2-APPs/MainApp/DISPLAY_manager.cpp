@@ -1,9 +1,12 @@
-/*
- * FileName		: DISPLAY_program.c
- * Created		: 9/19/2023 11:18:56 PM
- * Author		: Ahmed Ferganey
- */ 
- 
+ /**
+ * @author Ahmed Ferganey
+ * @FileName DISPLAY_manager.cpp
+ * @email ahmedferganey707@gmail.com
+ * @create date 2023-09-19 11:18:56
+ * @modify date 2023-09-19 11:18:56
+ * @desc [description]
+ */
+
 /* -------------------------------- Includes --------------------------------------------------------------*/
 /**			LIBRARY Includes			**/																								
 #include "STD_TYPES.h"
