@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mov_5fmyservo_23',['MOV_MyServo',['../classMOV__MyServo.html',1,'']]]
+  ['pin_5fconfig_5ft_10',['pin_config_t',['../structpin__config__t.html',1,'']]]
 ];

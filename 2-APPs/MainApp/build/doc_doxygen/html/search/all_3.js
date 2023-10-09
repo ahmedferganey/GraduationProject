@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['pin_5fconfig_5ft_7',['pin_config_t',['../structpin__config__t.html',1,'']]],
-  ['pudt_5fultrasonicone_8',['pudt_UltrasonicOne',['../classUPD__SonicDistance.html#abaafc45c0757f2ea5d7eab52a9f65267',1,'UPD_SonicDistance']]]
+  ['timer1_5ft_4',['TIMER1_t',['../structTIMER1__t.html',1,'']]],
+  ['timer2_5ft_5',['TIMER2_t',['../structTIMER2__t.html',1,'']]]
 ];

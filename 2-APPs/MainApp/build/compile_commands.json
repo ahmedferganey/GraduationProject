@@ -1,9 +1,9 @@
 [
 {
   "directory": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build",
-  "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c++11 -o CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/AutonomousVehicle.cpp",
-  "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/AutonomousVehicle.cpp",
-  "output": "CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.obj"
+  "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c99 -o CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/AutonomousVehicle.c",
+  "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/AutonomousVehicle.c",
+  "output": "CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.obj"
 },
 {
   "directory": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build",
@@ -13,9 +13,9 @@
 },
 {
   "directory": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build",
-  "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c++11 -o CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.cpp.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DISPLAY_manager.cpp",
-  "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DISPLAY_manager.cpp",
-  "output": "CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.cpp.obj"
+  "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c99 -o CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.c.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DISPLAY_manager.c",
+  "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DISPLAY_manager.c",
+  "output": "CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.c.obj"
 },
 {
   "directory": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build",
@@ -25,15 +25,15 @@
 },
 {
   "directory": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build",
-  "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c++11 -o CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.cpp.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/MOV_manager.cpp",
-  "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/MOV_manager.cpp",
-  "output": "CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.cpp.obj"
+  "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c99 -o CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.c.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/MOV_manager.c",
+  "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/MOV_manager.c",
+  "output": "CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.c.obj"
 },
 {
   "directory": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build",
-  "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c++11 -o CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SENSOR_manager.cpp",
-  "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SENSOR_manager.cpp",
-  "output": "CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.obj"
+  "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c99 -o CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.c.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SENSOR_manager.c",
+  "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SENSOR_manager.c",
+  "output": "CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.c.obj"
 },
 {
   "directory": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build",
@@ -43,9 +43,9 @@
 },
 {
   "directory": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build",
-  "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c++11 -o CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SYS_manager.cpp",
-  "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SYS_manager.cpp",
-  "output": "CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.obj"
+  "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c99 -o CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.c.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SYS_manager.c",
+  "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SYS_manager.c",
+  "output": "CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.c.obj"
 },
 {
   "directory": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build",
@@ -61,8 +61,8 @@
 },
 {
   "directory": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build",
-  "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c++11 -o CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.cpp.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/UPD_manager.cpp",
-  "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/UPD_manager.cpp",
-  "output": "CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.cpp.obj"
+  "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c99 -o CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.c.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/UPD_manager.c",
+  "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/UPD_manager.c",
+  "output": "CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.c.obj"
 }
 ]

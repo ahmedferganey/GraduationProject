@@ -69,19 +69,19 @@ include CMakeFiles/AutonomousVehicle.elf.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/AutonomousVehicle.elf.dir/flags.make
 
-CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.obj: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
-CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.obj: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/AutonomousVehicle.cpp
-CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.obj: CMakeFiles/AutonomousVehicle.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.obj"
-	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.obj -MF CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.obj.d -o CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/AutonomousVehicle.cpp
+CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.obj: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
+CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.obj: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/AutonomousVehicle.c
+CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.obj: CMakeFiles/AutonomousVehicle.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.obj"
+	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.obj -MF CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.obj.d -o CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/AutonomousVehicle.c
 
-CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.i"
-	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/AutonomousVehicle.cpp > CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.i
+CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.i"
+	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/AutonomousVehicle.c > CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.i
 
-CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.s"
-	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/AutonomousVehicle.cpp -o CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.s
+CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.s"
+	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/AutonomousVehicle.c -o CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.s
 
 CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.obj: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
 CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.obj: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DIO_program.c
@@ -97,19 +97,19 @@ CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.s"
 	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DIO_program.c -o CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.s
 
-CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.cpp.obj: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
-CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.cpp.obj: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DISPLAY_manager.cpp
-CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.cpp.obj: CMakeFiles/AutonomousVehicle.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.cpp.obj"
-	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.cpp.obj -MF CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.cpp.obj.d -o CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.cpp.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DISPLAY_manager.cpp
+CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.c.obj: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
+CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.c.obj: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DISPLAY_manager.c
+CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.c.obj: CMakeFiles/AutonomousVehicle.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.c.obj"
+	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.c.obj -MF CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.c.obj.d -o CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.c.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DISPLAY_manager.c
 
-CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.cpp.i"
-	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DISPLAY_manager.cpp > CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.cpp.i
+CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.c.i"
+	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DISPLAY_manager.c > CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.c.i
 
-CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.cpp.s"
-	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DISPLAY_manager.cpp -o CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.cpp.s
+CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.c.s"
+	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DISPLAY_manager.c -o CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.c.s
 
 CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.obj: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
 CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.obj: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/LCD_program.c
@@ -125,33 +125,33 @@ CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.s"
 	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/LCD_program.c -o CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.s
 
-CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.cpp.obj: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
-CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.cpp.obj: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/MOV_manager.cpp
-CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.cpp.obj: CMakeFiles/AutonomousVehicle.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.cpp.obj"
-	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.cpp.obj -MF CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.cpp.obj.d -o CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.cpp.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/MOV_manager.cpp
+CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.c.obj: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
+CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.c.obj: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/MOV_manager.c
+CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.c.obj: CMakeFiles/AutonomousVehicle.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.c.obj"
+	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.c.obj -MF CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.c.obj.d -o CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.c.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/MOV_manager.c
 
-CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.cpp.i"
-	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/MOV_manager.cpp > CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.cpp.i
+CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.c.i"
+	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/MOV_manager.c > CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.c.i
 
-CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.cpp.s"
-	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/MOV_manager.cpp -o CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.cpp.s
+CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.c.s"
+	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/MOV_manager.c -o CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.c.s
 
-CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.obj: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
-CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.obj: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SENSOR_manager.cpp
-CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.obj: CMakeFiles/AutonomousVehicle.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.obj"
-	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.obj -MF CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.obj.d -o CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SENSOR_manager.cpp
+CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.c.obj: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
+CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.c.obj: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SENSOR_manager.c
+CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.c.obj: CMakeFiles/AutonomousVehicle.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.c.obj"
+	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.c.obj -MF CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.c.obj.d -o CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.c.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SENSOR_manager.c
 
-CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.i"
-	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SENSOR_manager.cpp > CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.i
+CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.c.i"
+	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SENSOR_manager.c > CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.c.i
 
-CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.s"
-	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SENSOR_manager.cpp -o CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.s
+CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.c.s"
+	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SENSOR_manager.c -o CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.c.s
 
 CMakeFiles/AutonomousVehicle.elf.dir/SERVOMOTOR_program.c.obj: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
 CMakeFiles/AutonomousVehicle.elf.dir/SERVOMOTOR_program.c.obj: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SERVOMOTOR_program.c
@@ -167,19 +167,19 @@ CMakeFiles/AutonomousVehicle.elf.dir/SERVOMOTOR_program.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/AutonomousVehicle.elf.dir/SERVOMOTOR_program.c.s"
 	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SERVOMOTOR_program.c -o CMakeFiles/AutonomousVehicle.elf.dir/SERVOMOTOR_program.c.s
 
-CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.obj: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
-CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.obj: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SYS_manager.cpp
-CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.obj: CMakeFiles/AutonomousVehicle.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.obj"
-	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.obj -MF CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.obj.d -o CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SYS_manager.cpp
+CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.c.obj: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
+CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.c.obj: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SYS_manager.c
+CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.c.obj: CMakeFiles/AutonomousVehicle.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.c.obj"
+	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.c.obj -MF CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.c.obj.d -o CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.c.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SYS_manager.c
 
-CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.i"
-	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SYS_manager.cpp > CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.i
+CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.c.i"
+	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SYS_manager.c > CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.c.i
 
-CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.s"
-	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SYS_manager.cpp -o CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.s
+CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.c.s"
+	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SYS_manager.c -o CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.c.s
 
 CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.obj: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
 CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.obj: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/TIMER_program.c
@@ -209,51 +209,51 @@ CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.s"
 	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/ULTRASONIC_program.c -o CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.s
 
-CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.cpp.obj: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
-CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.cpp.obj: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/UPD_manager.cpp
-CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.cpp.obj: CMakeFiles/AutonomousVehicle.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.cpp.obj"
-	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.cpp.obj -MF CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.cpp.obj.d -o CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.cpp.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/UPD_manager.cpp
+CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.c.obj: CMakeFiles/AutonomousVehicle.elf.dir/flags.make
+CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.c.obj: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/UPD_manager.c
+CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.c.obj: CMakeFiles/AutonomousVehicle.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.c.obj"
+	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.c.obj -MF CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.c.obj.d -o CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.c.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/UPD_manager.c
 
-CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.cpp.i"
-	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/UPD_manager.cpp > CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.cpp.i
+CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.c.i"
+	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/UPD_manager.c > CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.c.i
 
-CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.cpp.s"
-	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/UPD_manager.cpp -o CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.cpp.s
+CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.c.s"
+	/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/UPD_manager.c -o CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.c.s
 
 # Object files for target AutonomousVehicle.elf
 AutonomousVehicle_elf_OBJECTS = \
-"CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.obj" \
+"CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.obj" \
 "CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.obj" \
-"CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.cpp.obj" \
+"CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.c.obj" \
 "CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.obj" \
-"CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.cpp.obj" \
-"CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.obj" \
+"CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.c.obj" \
+"CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.c.obj" \
 "CMakeFiles/AutonomousVehicle.elf.dir/SERVOMOTOR_program.c.obj" \
-"CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.obj" \
+"CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.c.obj" \
 "CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.obj" \
 "CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.obj" \
-"CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.cpp.obj"
+"CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.c.obj"
 
 # External object files for target AutonomousVehicle.elf
 AutonomousVehicle_elf_EXTERNAL_OBJECTS =
 
-AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.obj
+AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.obj
 AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.obj
-AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.cpp.obj
+AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.c.obj
 AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.obj
-AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.cpp.obj
-AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.obj
+AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.c.obj
+AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.c.obj
 AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/SERVOMOTOR_program.c.obj
-AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.obj
+AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.c.obj
 AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.obj
 AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.obj
-AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.cpp.obj
+AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.c.obj
 AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/build.make
 AutonomousVehicle.elf: CMakeFiles/AutonomousVehicle.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable AutonomousVehicle.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable AutonomousVehicle.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AutonomousVehicle.elf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

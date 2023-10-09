@@ -1,24 +1,18 @@
 var indexSectionsWithContent =
 {
-  0: "dlmpstu~",
-  1: "dlmpstu",
-  2: "mu~",
-  3: "p"
+  0: "dlptu",
+  1: "dlptu"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "classes",
-  2: "functions",
-  3: "variables"
+  1: "classes"
 };
 
 var indexSectionLabels =
 {
   0: "All",
-  1: "Classes",
-  2: "Functions",
-  3: "Variables"
+  1: "Classes"
 };
 
