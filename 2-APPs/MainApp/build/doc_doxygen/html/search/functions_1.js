@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['_7eupd_5fsonicdistance_25',['~UPD_SonicDistance',['../classUPD__SonicDistance.html#aa3d2e480639df1d0aee1ddfe6a7b4b38',1,'UPD_SonicDistance']]]
+  ['upd_5fsonicdistance_28',['UPD_SonicDistance',['../classUPD__SonicDistance.html#a6b159602894bb726d6378dacdb0313ad',1,'UPD_SonicDistance']]],
+  ['update_29',['update',['../classUPD__SonicDistance.html#ab2d5f8151cd15190784307fe76102edd',1,'UPD_SonicDistance']]]
 ];

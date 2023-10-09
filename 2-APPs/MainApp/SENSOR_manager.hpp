@@ -23,6 +23,9 @@
 /**			HAL Includes				**/
 
 
+/**			SERVICE Includes				**/
+#include "UPD_manager.hpp"
+
 
 /* -------------------------------- Macro Declarations ------------------------------------------*/
 
@@ -35,22 +38,24 @@
 
 
 /* -------------------------------- Class Declarations ------------------------------------------*/
-class SENSOR_manager
+class SENSOR_sonic
 {
 private:
     /* data */
 public:
-    SENSOR_manager(/* args */);
-    ~SENSOR_manager();
+    SENSOR_sonic(/* args */);
+    ~SENSOR_sonic();
 };
 
-//SENSOR_manager::SENSOR_manager(/* args */)
-//{
-//}
-//
-//SENSOR_manager::~SENSOR_manager()
-//{
-//}
+
+class SENSOR_ldr
+{
+private:
+    /* data */
+public:
+    SENSOR_ldr(/* args */);
+    ~SENSOR_ldr();
+};
 
 
 

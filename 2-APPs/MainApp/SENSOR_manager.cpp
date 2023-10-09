@@ -8,5 +8,27 @@
  */
 
 /* Comment!: Includes */
-
+/**			SERVICE Includes				**/
 #include "SENSOR_manager.hpp"
+
+
+
+
+
+/* -------------------------------- Classes Implementation ------------------------------------------*/
+SENSOR_sonic::SENSOR_sonic(/* args */)
+{
+}
+
+SENSOR_sonic::~SENSOR_sonic()
+{
+}
+
+
+SENSOR_ldr::SENSOR_ldr(/* args */)
+{
+}
+
+SENSOR_ldr::~SENSOR_ldr()
+{
+}

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['sensor_5fmanager_18',['SENSOR_manager',['../classSENSOR__manager.html',1,'']]]
+  ['sensor_5fldr_21',['SENSOR_ldr',['../classSENSOR__ldr.html',1,'']]],
+  ['sensor_5fsonic_22',['SENSOR_sonic',['../classSENSOR__sonic.html',1,'']]]
 ];

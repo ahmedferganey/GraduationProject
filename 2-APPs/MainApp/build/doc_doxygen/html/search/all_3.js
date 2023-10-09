@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['sensor_5fmanager_5',['SENSOR_manager',['../classSENSOR__manager.html',1,'']]]
+  ['sensor_5fldr_6',['SENSOR_ldr',['../classSENSOR__ldr.html',1,'']]],
+  ['sensor_5fsonic_7',['SENSOR_sonic',['../classSENSOR__sonic.html',1,'SENSOR_sonic'],['../classSENSOR__sonic.html#adfc61674e6fe9ba2dc649500dca56963',1,'SENSOR_sonic::SENSOR_sonic()']]]
 ];

@@ -130,3 +130,15 @@
 //	return udtReturnValue;	
 //	
 //}
+
+
+
+/* -------------------------------- Classes Implementation ------------------------------------------*/
+DISPLAY_lcd::DISPLAY_lcd(/* args */)
+{
+}
+
+DISPLAY_lcd::~DISPLAY_lcd()
+{
+}
+

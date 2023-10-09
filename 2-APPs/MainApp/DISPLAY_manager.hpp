@@ -80,6 +80,20 @@ const ULTRASONIC_obj_t* ULTRASONIC_pudtconfig
 
 
 
+/* -------------------------------- classes Declarations ---------------------------------------*/
+/// @brief LCD Class
+class DISPLAY_lcd
+{
+private:
+	/// @brief Private constructor
+	/**
+      * The Singleton's constructor should always be private to prevent direct
+      * construction calls with the `new` operator.
+      */
+	DISPLAY_lcd(/* args */);
+	~DISPLAY_lcd();
+};
+
 
 
 
