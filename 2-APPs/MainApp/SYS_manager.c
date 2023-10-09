@@ -6,3 +6,58 @@
  * @modify date 2023-10-08 20:07:47
  * @desc [description]
  */
+
+
+/* Comment!: Includes */
+/**			SERVICE Includes				**/
+#include "SYS_manager.h"
+
+
+/* -------------------------------- GLOBAL Variable ------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/* -------------------------------- APIs Implementation ------------------------------------------*/
+Std_ReturnType SYS_udtClockInit
+(
+void    
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+    /* CLOCK INIT Section */
+    TIMER0_vdInit();
+	    /* Init TIMERS & ICU */
+	    	/*
+	    		The Input Capture unit is easy to use in Normal mode. However, observe 
+	    		that the maximum interval between the
+	    		external events must not exceed the resolution of the counter. If the 
+	    		interval between events are too long, the timer
+	    		overflow interrupt or the prescaler must be used to extend the resolution 
+	    		for the capture unit.	
+	    	*/
+	    	/*
+	    		No Prescaler +  Normal Mode + 8MHZ + ICU + Rising ----->  .125 Sec for 1 Tick		
+	    	*/
+	TIMER1_vdInit();
+    TIMER2_vdInit();
+
+	return udtReturnValue;
+}
+
+Std_ReturnType SYS_udtCommunicationInit
+(
+void    
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+    /* COMMUNICATION INIT Section */
+
+
+	return udtReturnValue;
+}

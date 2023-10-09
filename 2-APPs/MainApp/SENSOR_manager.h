@@ -60,8 +60,13 @@
 /* -------------------------------- Data Type Declarations --------------------------------------*/
 
 
-/* -------------------------------- Class Declarations ------------------------------------------*/
 
+/* -------------------------------- Class Declarations ------------------------------------------*/
+Std_ReturnType SENSOR_udtSensorsInit
+(
+const ULTRASONIC_obj_t* ULTRASONIC_pudtconfig,
+uint8 u8NumOfUltrasonic
+);
 
 
 #endif  /* _SENSOR_MANAGER_H_ */

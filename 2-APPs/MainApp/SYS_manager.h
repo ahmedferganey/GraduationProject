@@ -18,7 +18,7 @@
 
 /**			MCAL Includes				**/
 #include "DIO_interface.h"
-
+#include "TIMER_interface.h"
 
 /**			HAL Includes				**/
 
@@ -34,8 +34,11 @@
 
 
 
-/* -------------------------------- Class Declarations ------------------------------------------*/
-
+/* -------------------------------- APIs Declarations ------------------------------------------*/
+Std_ReturnType SYS_udtClockInit
+(
+void
+);
 
 
 

@@ -12,53 +12,46 @@
 #include "SENSOR_manager.h"
 
 
+/* -------------------------------- GLOBAL Variable ------------------------------------------*/
 
-/*
-SENSOR_sonic::udt_UltrasonicOne =
+static ULTRASONIC_obj_t udt_Ultrasonic =
 {
 	//////////////////////////////////////////////////////////////
-	.udt_UltrasonicOne[0].udtTriggerPin.port 	  	= SENSOR_PORTB_INDEX,
-	.udt_UltrasonicOne[0].udtTriggerPin.pin 		= SENSOR_DIO_PIN0,
-	.udt_UltrasonicOne[0].udtTriggerPin.direction 	= SENSOR_DIO_DIRECTION_OUTPUT,
-	.udt_UltrasonicOne[0].udtTriggerPin.logic 		= SENSOR_DIO_LOW,
-
-	.udt_UltrasonicOne[0].udtEchoPin.port 			= SENSOR_PORTD_INDEX,
-	.udt_UltrasonicOne[0].udtEchoPin.pin 			= SENSOR_DIO_PIN6,
-	.udt_UltrasonicOne[0].udtEchoPin.direction 		= SENSOR_DIO_DIRECTION_INPUT,
-	.udt_UltrasonicOne[0].udtEchoPin.logic 			= SENSOR_DIO_LOW,	
-	//////////////////////////////////////////////////////////////
-	.udt_UltrasonicOne[1].udtTriggerPin.port 		= SENSOR_PORTB_INDEX,
-	.udt_UltrasonicOne[1].udtTriggerPin.pin 		= SENSOR_DIO_PIN1,
-	.udt_UltrasonicOne[1].udtTriggerPin.direction 	= SENSOR_DIO_DIRECTION_OUTPUT,
-	.udt_UltrasonicOne[1].udtTriggerPin.logic	 	= SENSOR_DIO_LOW,
-			   
-	.udt_UltrasonicOne[1].udtEchoPin.port 			= SENSOR_PORTD_INDEX,
-	.udt_UltrasonicOne[1].udtEchoPin.pin 			= SENSOR_DIO_PIN6,
-	.udt_UltrasonicOne[1].udtEchoPin.direction 		= SENSOR_DIO_DIRECTION_INPUT,
-	.udt_UltrasonicOne[1].udtEchoPin.logic 			= SENSOR_DIO_LOW,	
-	//////////////////////////////////////////////////////////////
-	.udt_UltrasonicOne[2].udtTriggerPin.port 		= SENSOR_PORTB_INDEX,
-	.udt_UltrasonicOne[2].udtTriggerPin.pin 		= SENSOR_DIO_PIN2,
-	.udt_UltrasonicOne[2].udtTriggerPin.direction 	= SENSOR_DIO_DIRECTION_OUTPUT,
-	.udt_UltrasonicOne[2].udtTriggerPin.logic 		= SENSOR_DIO_LOW,
-
-	.udt_UltrasonicOne[2].udtEchoPin.port 			= SENSOR_PORTD_INDEX,
-	.udt_UltrasonicOne[2].udtEchoPin.pin 			= SENSOR_DIO_PIN6,
-	.udt_UltrasonicOne[2].udtEchoPin.direction 		= SENSOR_DIO_DIRECTION_INPUT,
-	.udt_UltrasonicOne[2].udtEchoPin.logic 			= SENSOR_DIO_LOW,
-	//////////////////////////////////////////////////////////////
-	.udt_UltrasonicOne[3].udtTriggerPin.port 		= SENSOR_PORTB_INDEX,
-	.udt_UltrasonicOne[3].udtTriggerPin.pin 		= SENSOR_DIO_PIN3,
-	.udt_UltrasonicOne[3].udtTriggerPin.direction 	= SENSOR_DIO_DIRECTION_OUTPUT,
-	.udt_UltrasonicOne[3].udtTriggerPin.logic 		= SENSOR_DIO_LOW,
-	
-	.udt_UltrasonicOne[3].udtEchoPin.port 			= SENSOR_PORTD_INDEX,
-	.udt_UltrasonicOne[3].udtEchoPin.pin 			= SENSOR_DIO_PIN6,
-	.udt_UltrasonicOne[3].udtEchoPin.direction 		= SENSOR_DIO_DIRECTION_INPUT,
-	.udt_UltrasonicOne[3].udtEchoPin.logic 			= SENSOR_DIO_LOW
-	//////////////////////////////////////////////////////////////		
-	
+	.udtTriggerPin.port 	  	= SENSOR_PORTB_INDEX,
+	.udtTriggerPin.pin 			= SENSOR_DIO_PIN0,
+	.udtTriggerPin.direction 	= SENSOR_DIO_DIRECTION_OUTPUT,
+	.udtTriggerPin.logic 		= SENSOR_DIO_LOW,
+	.udtEchoPin.port 			= SENSOR_PORTD_INDEX,
+	.udtEchoPin.pin 			= SENSOR_DIO_PIN6,
+	.udtEchoPin.direction 		= SENSOR_DIO_DIRECTION_INPUT,
+	.udtEchoPin.logic 			= SENSOR_DIO_LOW,	
+	//////////////////////////////////////////////////////////////	
 };
-*/
 
-/* -------------------------------- Classes Implementation ------------------------------------------*/
+
+
+
+
+
+/* -------------------------------- APIs Implementation ------------------------------------------*/
+Std_ReturnType SENSOR_udtSensorsInit
+(
+const ULTRASONIC_obj_t* ULTRASONIC_pudtconfig,
+uint8 u8NumOfUltrasonic
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	
+
+	/* 1- Init ULTRASONIC SENSOR */
+	for (int i = 0 ; i < u8NumOfUltrasonic ; i++)
+	{
+		udtReturnValue = Ultrasonic_udtInit(ULTRASONIC_pudtconfig);	
+		++ULTRASONIC_pudtconfig;
+	}	
+
+
+	/* 2- Init LDR SENSOR */
+	
+	return udtReturnValue;		
+}

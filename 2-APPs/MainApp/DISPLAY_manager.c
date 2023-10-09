@@ -32,5 +32,15 @@
 /* -------------------------------- APIs Implementation ---------------------------------------------------*/
 
 
-/* -------------------------------- Classes Implementation ------------------------------------------*/
+/* -------------------------------- APIs Implementation ------------------------------------------*/
+Std_ReturnType DISPLAY_udtLCDInit
+(
+void
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+    /* DISPLAY Init Section*/
+    udtReturnValue = LCD_udt4BitInitialize();
 
+	return udtReturnValue;		
+}
