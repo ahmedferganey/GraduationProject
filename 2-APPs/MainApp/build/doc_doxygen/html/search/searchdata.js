@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: "dlpstu~",
   1: "dlpstu",
   2: "su~",
-  3: "u"
+  3: "p"
 };
 
 var indexSectionNames =

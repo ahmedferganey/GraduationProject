@@ -42,6 +42,7 @@ class SENSOR_sonic
 {
 private:
     /* data */
+    ULTRASONIC_obj_t udt_UltrasonicOne;
 public:
     SENSOR_sonic(/* args */);
     ~SENSOR_sonic();

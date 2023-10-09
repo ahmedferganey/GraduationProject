@@ -38,7 +38,7 @@
 class UPD_SonicDistance {
     protected:
      /// @brief this create pointer to my obj of ultrasonic
-     ULTRASONIC_obj_t* UltrasonicOne;
+     ULTRASONIC_obj_t* pudt_UltrasonicOne;
 
 
 

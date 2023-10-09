@@ -23,8 +23,8 @@ void \mbox{\hyperlink{classUPD__SonicDistance_ab2d5f8151cd15190784307fe76102edd}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classUPD__SonicDistance_ab4c4ea50d9cc9fcb4b20ba1568d2f4ec}\label{classUPD__SonicDistance_ab4c4ea50d9cc9fcb4b20ba1568d2f4ec}} 
-\mbox{\hyperlink{structULTRASONIC__obj__t}{ULTRASONIC\+\_\+obj\+\_\+t}} $\ast$ \mbox{\hyperlink{classUPD__SonicDistance_ab4c4ea50d9cc9fcb4b20ba1568d2f4ec}{Ultrasonic\+One}}
+\mbox{\Hypertarget{classUPD__SonicDistance_abaafc45c0757f2ea5d7eab52a9f65267}\label{classUPD__SonicDistance_abaafc45c0757f2ea5d7eab52a9f65267}} 
+\mbox{\hyperlink{structULTRASONIC__obj__t}{ULTRASONIC\+\_\+obj\+\_\+t}} $\ast$ \mbox{\hyperlink{classUPD__SonicDistance_abaafc45c0757f2ea5d7eab52a9f65267}{pudt\+\_\+\+Ultrasonic\+One}}
 \begin{DoxyCompactList}\small\item\em this create pointer to my obj of ultrasonic \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 

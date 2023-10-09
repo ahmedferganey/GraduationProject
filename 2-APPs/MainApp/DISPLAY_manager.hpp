@@ -25,6 +25,7 @@
 #include "ULTRASONIC_interface.h"
 
 /* -------------------------------- Macro Declarations ------------------------------------------*/
+/* 						LCD Macros 						*/
 #define 	DISPLAY_PORTA_INDEX				DIO_PORT_NUMA		
 #define 	DISPLAY_PORTB_INDEX				DIO_PORT_NUMB
 #define 	DISPLAY_PORTC_INDEX				DIO_PORT_NUMC
@@ -50,34 +51,15 @@
 
 #define     DISPLAY_NUM_ULTRSONIC		    1
 
+/* 						LED Macros 						*/
+
 	
 /* -------------------------------- Macro Functions Declarations --------------------------------*/
 
 
-/* -------------------------------- Data Type Declarations --------------------------------------*/
-typedef struct 
-{
-	ULTRASONIC_obj_t udtDispObjs[DISPLAY_NUM_ULTRSONIC];
-	/*
-	ULTRASONIC_obj_t  udtDispObj1;
-	ULTRASONIC_obj_t  udtDispObj2;
-	ULTRASONIC_obj_t  udtDispObj3;
-	ULTRASONIC_obj_t  udtDispObj4;
-	*/
-}DISPLAY_t;           
+/* -------------------------------- Data Type Declarations --------------------------------------*/          
 
 /* -------------------------------- Function Declarations ---------------------------------------*/
-Std_ReturnType DISPLAY_udtUltrasonicLcdInit
-(
-const ULTRASONIC_obj_t* ULTRASONIC_pudtconfig,
-uint8 u8NumOfUltrasonic
-);
-
-Std_ReturnType DISPLAY_udtUltrasonicDispLcd
-(
-const ULTRASONIC_obj_t* ULTRASONIC_pudtconfig
-);
-
 
 
 /* -------------------------------- classes Declarations ---------------------------------------*/

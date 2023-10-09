@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ultrasonicone_31',['UltrasonicOne',['../classUPD__SonicDistance.html#ab4c4ea50d9cc9fcb4b20ba1568d2f4ec',1,'UPD_SonicDistance']]]
+  ['pudt_5fultrasonicone_29',['pudt_UltrasonicOne',['../classUPD__SonicDistance.html#abaafc45c0757f2ea5d7eab52a9f65267',1,'UPD_SonicDistance']]]
 ];
