@@ -74,47 +74,84 @@ $(function() {
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;STD_TYPES.h&quot;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;BIT_MATH.h&quot;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;UPD_manager.hpp&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">/* -------------------------------- Macro Declarations ------------------------------------------*/</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">/* -------------------------------- Macro Functions Declarations --------------------------------*/</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">/* -------------------------------- Data Type Declarations --------------------------------------*/</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">/* -------------------------------- Class Declarations ------------------------------------------*/</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classSENSOR__sonic.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSENSOR__sonic.html">SENSOR_sonic</a></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">/* data */</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="structULTRASONIC__obj__t.html">ULTRASONIC_obj_t</a> udt_UltrasonicOne;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classSENSOR__sonic.html#adfc61674e6fe9ba2dc649500dca56963">SENSOR_sonic</a>(<span class="comment">/* args */</span>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    ~<a class="code" href="classSENSOR__sonic.html">SENSOR_sonic</a>();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classSENSOR__ldr.html">   52</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSENSOR__ldr.html">SENSOR_ldr</a></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">/* data */</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classSENSOR__ldr.html">SENSOR_ldr</a>(<span class="comment">/* args */</span>);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    ~<a class="code" href="classSENSOR__ldr.html">SENSOR_ldr</a>();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;ULTRASONIC_interface.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">/* -------------------------------- Macro Declarations ------------------------------------------*/</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">/*                      LCD Macros                      */</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#define     SENSOR_PORTA_INDEX              DIO_PORT_NUMA       </span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#define     SENSOR_PORTB_INDEX              DIO_PORT_NUMB</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#define     SENSOR_PORTC_INDEX              DIO_PORT_NUMC</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define     SENSOR_PORTD_INDEX              DIO_PORT_NUMD</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define     SENSOR_DIO_PIN0                 DIO_PIN_NUM0            </span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#define     SENSOR_DIO_PIN1                 DIO_PIN_NUM1</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#define     SENSOR_DIO_PIN2                 DIO_PIN_NUM2</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#define     SENSOR_DIO_PIN3                 DIO_PIN_NUM3</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#define     SENSOR_DIO_PIN4                 DIO_PIN_NUM4</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#define     SENSOR_DIO_PIN5                 DIO_PIN_NUM5</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#define     SENSOR_DIO_PIN6                 DIO_PIN_NUM6</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#define     SENSOR_DIO_PIN7                 DIO_PIN_NUM7</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#define     SENSOR_DIO_LOW                  DIO_LOW_LOGIC </span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#define     SENSOR_DIO_HIGH                 DIO_HIGH_LOGIC</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;           </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;           </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#define     SENSOR_DIO_DIRECTION_INPUT      DIO_DIR_INPUT </span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#define     SENSOR_DIO_DIRECTION_OUTPUT     DIO_DIR_OUTPUT</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;         </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#define     SENSOR_NUM_ULTRSONIC            1</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">/* -------------------------------- Macro Functions Declarations --------------------------------*/</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">/* -------------------------------- Data Type Declarations --------------------------------------*/</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* _SENSOR_MANAGER_H_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="ttc" id="aclassSENSOR__ldr_html"><div class="ttname"><a href="classSENSOR__ldr.html">SENSOR_ldr</a></div><div class="ttdef"><b>Definition:</b> SENSOR_manager.hpp:53</div></div>
-<div class="ttc" id="aclassSENSOR__sonic_html"><div class="ttname"><a href="classSENSOR__sonic.html">SENSOR_sonic</a></div><div class="ttdef"><b>Definition:</b> SENSOR_manager.hpp:42</div></div>
-<div class="ttc" id="aclassSENSOR__sonic_html_adfc61674e6fe9ba2dc649500dca56963"><div class="ttname"><a href="classSENSOR__sonic.html#adfc61674e6fe9ba2dc649500dca56963">SENSOR_sonic::SENSOR_sonic</a></div><div class="ttdeci">SENSOR_sonic()</div><div class="ttdef"><b>Definition:</b> SENSOR_manager.cpp:19</div></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">/* -------------------------------- Class Declarations ------------------------------------------*/</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classSENSOR__sonic.html">   64</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSENSOR__sonic.html">SENSOR_sonic</a></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">/* data */</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="structULTRASONIC__obj__t.html">ULTRASONIC_obj_t</a> udt_UltrasonicOne;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="classSENSOR__sonic.html">SENSOR_sonic</a>()</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        udt_UltrasonicOne = {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="comment">/* Trigger pin */</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        SENSOR_PORTB_INDEX,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        SENSOR_DIO_PIN0,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        SENSOR_DIO_DIRECTION_OUTPUT,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        SENSOR_DIO_LOW,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="comment">/* Echo Pin */</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        SENSOR_PORTD_INDEX,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        SENSOR_DIO_PIN6,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        SENSOR_DIO_DIRECTION_INPUT,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        SENSOR_DIO_LOW, </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        };     </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    };</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="classSENSOR__sonic.html#aede8f88875966c2020949fe80477e011">~SENSOR_sonic</a>();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classSENSOR__ldr.html">   90</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSENSOR__ldr.html">SENSOR_ldr</a></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">/* data */</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="classSENSOR__ldr.html">SENSOR_ldr</a>(<span class="comment">/* args */</span>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    ~<a class="code" href="classSENSOR__ldr.html">SENSOR_ldr</a>();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* _SENSOR_MANAGER_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="ttc" id="aclassSENSOR__ldr_html"><div class="ttname"><a href="classSENSOR__ldr.html">SENSOR_ldr</a></div><div class="ttdef"><b>Definition:</b> SENSOR_manager.hpp:91</div></div>
+<div class="ttc" id="aclassSENSOR__sonic_html"><div class="ttname"><a href="classSENSOR__sonic.html">SENSOR_sonic</a></div><div class="ttdef"><b>Definition:</b> SENSOR_manager.hpp:65</div></div>
+<div class="ttc" id="aclassSENSOR__sonic_html_aede8f88875966c2020949fe80477e011"><div class="ttname"><a href="classSENSOR__sonic.html#aede8f88875966c2020949fe80477e011">SENSOR_sonic::~SENSOR_sonic</a></div><div class="ttdeci">~SENSOR_sonic()</div><div class="ttdef"><b>Definition:</b> SENSOR_manager.cpp:65</div></div>
 <div class="ttc" id="astructULTRASONIC__obj__t_html"><div class="ttname"><a href="structULTRASONIC__obj__t.html">ULTRASONIC_obj_t</a></div><div class="ttdef"><b>Definition:</b> ULTRASONIC_interface.h:46</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

@@ -26,30 +26,7 @@
 
 /* -------------------------------- Macro Declarations ------------------------------------------*/
 /* 						LCD Macros 						*/
-#define 	DISPLAY_PORTA_INDEX				DIO_PORT_NUMA		
-#define 	DISPLAY_PORTB_INDEX				DIO_PORT_NUMB
-#define 	DISPLAY_PORTC_INDEX				DIO_PORT_NUMC
-#define 	DISPLAY_PORTD_INDEX				DIO_PORT_NUMD
-			
-#define 	DISPLAY_DIO_PIN0				DIO_PIN_NUM0			
-#define 	DISPLAY_DIO_PIN1				DIO_PIN_NUM1
-#define 	DISPLAY_DIO_PIN2				DIO_PIN_NUM2
-#define 	DISPLAY_DIO_PIN3				DIO_PIN_NUM3
-#define 	DISPLAY_DIO_PIN4				DIO_PIN_NUM4
-#define 	DISPLAY_DIO_PIN5				DIO_PIN_NUM5
-#define 	DISPLAY_DIO_PIN6				DIO_PIN_NUM6
-#define 	DISPLAY_DIO_PIN7				DIO_PIN_NUM7
 
-
-#define 	DISPLAY_DIO_LOW 				DIO_LOW_LOGIC 
-#define     DISPLAY_DIO_HIGH                DIO_HIGH_LOGIC
-           
-           
-#define     DISPLAY_DIO_DIRECTION_INPUT     DIO_DIR_INPUT 
-#define     DISPLAY_DIO_DIRECTION_OUTPUT    DIO_DIR_OUTPUT
-         
-
-#define     DISPLAY_NUM_ULTRSONIC		    1
 
 /* 						LED Macros 						*/
 
