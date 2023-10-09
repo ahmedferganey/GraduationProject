@@ -7,6 +7,10 @@
 #ifndef _ULTRASONIC_INTERFACE_H_
 #define _ULTRASONIC_INTERFACE_H_
 
+//#ifdef __cplusplus
+//extern "C" {
+//#endif
+//https://stackoverflow.com/questions/13694605/how-to-use-c-source-files-in-a-c-project
 /*
 	https://www.electronicwings.com/sensors-modules/ultrasonic-module-hc-sr04
 	https://maxbotix.com/blogs/blog/how-ultrasonic-sensors-work#:~:text=An%20ultrasonic%20sensor%20is%20an,information%20about%20an%20object's%20proximity.
@@ -107,5 +111,8 @@ uint16* ULTRASONIC_pu16Distance
 					
 
 */
+//#ifdef __cplusplus
+//}
+//#endif
 
 #endif  /* _ULTRASONIC_INTERFACE_H_ */

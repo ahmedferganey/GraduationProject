@@ -88,6 +88,7 @@ set(CROSSTOOL_DIR        /home/ahmed-ferganey/avr/toolchain_staging/avr)
 set(CROSSTOOL_NAME       avr)
 
 set(AVRCPP               ${CROSSTOOL_DIR}/bin/${CROSSTOOL_NAME}-g++   )
+#set(AVRC                 ${CROSSTOOL_DIR}/bin/${CROSSTOOL_NAME}-gcc   )
 set(AVRSTRIP             ${AVR}avr-strip                              )
 set(OBJCOPY              ${AVR}avr-objcopy                            )
 set(OBJDUMP              ${AVR}avr-objdump                            )        
@@ -169,6 +170,7 @@ message(STATUS "Set CMAKE_SYSTEM_LIBRARY_PATH to ${CMAKE_SYSTEM_LIBRARY_PATH}")
 #                              add_executable                                    #
 ##################################################################################
 add_executable(${PROJECT_NAME}.elf ${SRCS})
+
 
 
 

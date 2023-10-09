@@ -35,6 +35,22 @@
 
 
 /* -------------------------------- Class Declarations ------------------------------------------*/
+class SENSOR_manager
+{
+private:
+    /* data */
+public:
+    SENSOR_manager(/* args */);
+    ~SENSOR_manager();
+};
+
+//SENSOR_manager::SENSOR_manager(/* args */)
+//{
+//}
+//
+//SENSOR_manager::~SENSOR_manager()
+//{
+//}
 
 
 

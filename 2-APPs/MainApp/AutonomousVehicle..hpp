@@ -10,7 +10,10 @@
 
 /* Comment!: Includes */
 #include "DISPLAY_manager.hpp"
-
+#include "SENSOR_manager.hpp"
+#include "UPD_manager.hpp"
+#include "SYS_manager.hpp"
+#include "MOV_manager.hpp"
 
 /* Comment!: Macro Declarations */
 

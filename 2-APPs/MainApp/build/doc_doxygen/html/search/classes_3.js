@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['timer1_5ft_16',['TIMER1_t',['../structTIMER1__t.html',1,'']]],
-  ['timer2_5ft_17',['TIMER2_t',['../structTIMER2__t.html',1,'']]]
+  ['sensor_5fmanager_18',['SENSOR_manager',['../classSENSOR__manager.html',1,'']]]
 ];

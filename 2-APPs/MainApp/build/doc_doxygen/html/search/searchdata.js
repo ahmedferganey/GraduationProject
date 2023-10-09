@@ -1,8 +1,8 @@
 var indexSectionsWithContent =
 {
-  0: "dlptu",
-  1: "dlptu",
-  2: "u",
+  0: "dlpstu~",
+  1: "dlpstu",
+  2: "u~",
   3: "u"
 };
 

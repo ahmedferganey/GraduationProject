@@ -19,4 +19,8 @@ CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.cpp.obj: \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/LCD_private.h \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/ULTRASONIC_interface.h \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/ULTRASONIC_config.h \
- /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/ULTRASONIC_private.h
+ /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/ULTRASONIC_private.h \
+ /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SENSOR_manager.hpp \
+ /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/UPD_manager.hpp \
+ /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SYS_manager.hpp \
+ /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/MOV_manager.hpp

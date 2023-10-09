@@ -74,44 +74,50 @@ $(function() {
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;STD_TYPES.h&quot;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;BIT_MATH.h&quot;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">/* -------------------------------- Macro Declarations ------------------------------------------*/</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;ULTRASONIC_interface.h&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">/* -------------------------------- Macro Declarations ------------------------------------------*/</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">/* -------------------------------- Macro Functions Declarations --------------------------------*/</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">/* -------------------------------- Macro Functions Declarations --------------------------------*/</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">/* -------------------------------- Data Type Declarations --------------------------------------*/</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">/* -------------------------------- Data Type Declarations --------------------------------------*/</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/* -------------------------------- Class Declarations ------------------------------------------*/</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classUPD__SonicDistance.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="classUPD__SonicDistance.html">UPD_SonicDistance</a> {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classUPD__SonicDistance.html#ab4c4ea50d9cc9fcb4b20ba1568d2f4ec">   40</a></span>&#160;     <a class="code" href="structULTRASONIC__obj__t.html">ULTRASONIC_obj_t</a>* <a class="code" href="classUPD__SonicDistance.html#ab4c4ea50d9cc9fcb4b20ba1568d2f4ec">UltrasonicOne</a>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">/* -------------------------------- Class Declarations ------------------------------------------*/</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classUPD__SonicDistance.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="classUPD__SonicDistance.html">UPD_SonicDistance</a> {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classUPD__SonicDistance.html#ab4c4ea50d9cc9fcb4b20ba1568d2f4ec">   41</a></span>&#160;     <a class="code" href="structULTRASONIC__obj__t.html">ULTRASONIC_obj_t</a>* <a class="code" href="classUPD__SonicDistance.html#ab4c4ea50d9cc9fcb4b20ba1568d2f4ec">UltrasonicOne</a>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classUPD__SonicDistance.html#ab2d5f8151cd15190784307fe76102edd">   46</a></span>&#160;     <span class="keywordtype">void</span> <a class="code" href="classUPD__SonicDistance.html#ab2d5f8151cd15190784307fe76102edd">update</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;     <a class="code" href="classUPD__SonicDistance.html">UPD_SonicDistance</a>()</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;     {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;     }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;     ~<a class="code" href="classUPD__SonicDistance.html">UPD_SonicDistance</a>()</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;     {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;     }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classUPD__SonicDistance.html#ab2d5f8151cd15190784307fe76102edd">   47</a></span>&#160;     <span class="keywordtype">void</span> <a class="code" href="classUPD__SonicDistance.html#ab2d5f8151cd15190784307fe76102edd">update</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classUPD__SonicDistance.html#a6b159602894bb726d6378dacdb0313ad">   49</a></span>&#160;     <a class="code" href="classUPD__SonicDistance.html#a6b159602894bb726d6378dacdb0313ad">UPD_SonicDistance</a>()</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;     {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;     }</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classUPD__SonicDistance.html#aa3d2e480639df1d0aee1ddfe6a7b4b38">   54</a></span>&#160;     <a class="code" href="classUPD__SonicDistance.html#aa3d2e480639df1d0aee1ddfe6a7b4b38">~UPD_SonicDistance</a>()</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;     {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;     }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* _UPD_MANAGER_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="ttc" id="aclassUPD__SonicDistance_html"><div class="ttname"><a href="classUPD__SonicDistance.html">UPD_SonicDistance</a></div><div class="ttdef"><b>Definition:</b> UPD_manager.hpp:37</div></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* _UPD_MANAGER_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="ttc" id="aclassUPD__SonicDistance_html"><div class="ttname"><a href="classUPD__SonicDistance.html">UPD_SonicDistance</a></div><div class="ttdef"><b>Definition:</b> UPD_manager.hpp:38</div></div>
+<div class="ttc" id="aclassUPD__SonicDistance_html_a6b159602894bb726d6378dacdb0313ad"><div class="ttname"><a href="classUPD__SonicDistance.html#a6b159602894bb726d6378dacdb0313ad">UPD_SonicDistance::UPD_SonicDistance</a></div><div class="ttdeci">UPD_SonicDistance()</div><div class="ttdoc">consructor</div><div class="ttdef"><b>Definition:</b> UPD_manager.hpp:49</div></div>
+<div class="ttc" id="aclassUPD__SonicDistance_html_aa3d2e480639df1d0aee1ddfe6a7b4b38"><div class="ttname"><a href="classUPD__SonicDistance.html#aa3d2e480639df1d0aee1ddfe6a7b4b38">UPD_SonicDistance::~UPD_SonicDistance</a></div><div class="ttdeci">~UPD_SonicDistance()</div><div class="ttdoc">destructor</div><div class="ttdef"><b>Definition:</b> UPD_manager.hpp:54</div></div>
 <div class="ttc" id="aclassUPD__SonicDistance_html_ab2d5f8151cd15190784307fe76102edd"><div class="ttname"><a href="classUPD__SonicDistance.html#ab2d5f8151cd15190784307fe76102edd">UPD_SonicDistance::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">this will be serve DC Motor &amp; LCD</div></div>
-<div class="ttc" id="aclassUPD__SonicDistance_html_ab4c4ea50d9cc9fcb4b20ba1568d2f4ec"><div class="ttname"><a href="classUPD__SonicDistance.html#ab4c4ea50d9cc9fcb4b20ba1568d2f4ec">UPD_SonicDistance::UltrasonicOne</a></div><div class="ttdeci">ULTRASONIC_obj_t * UltrasonicOne</div><div class="ttdoc">this create pointer to my obj of ultrasonic</div><div class="ttdef"><b>Definition:</b> UPD_manager.hpp:40</div></div>
-<div class="ttc" id="astructULTRASONIC__obj__t_html"><div class="ttname"><a href="structULTRASONIC__obj__t.html">ULTRASONIC_obj_t</a></div><div class="ttdef"><b>Definition:</b> ULTRASONIC_interface.h:42</div></div>
+<div class="ttc" id="aclassUPD__SonicDistance_html_ab4c4ea50d9cc9fcb4b20ba1568d2f4ec"><div class="ttname"><a href="classUPD__SonicDistance.html#ab4c4ea50d9cc9fcb4b20ba1568d2f4ec">UPD_SonicDistance::UltrasonicOne</a></div><div class="ttdeci">ULTRASONIC_obj_t * UltrasonicOne</div><div class="ttdoc">this create pointer to my obj of ultrasonic</div><div class="ttdef"><b>Definition:</b> UPD_manager.hpp:41</div></div>
+<div class="ttc" id="astructULTRASONIC__obj__t_html"><div class="ttname"><a href="structULTRASONIC__obj__t.html">ULTRASONIC_obj_t</a></div><div class="ttdef"><b>Definition:</b> ULTRASONIC_interface.h:46</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
