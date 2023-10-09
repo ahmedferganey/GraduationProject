@@ -153,8 +153,9 @@ endif(DEFINED ENV{AVR_FIND_ROOT_PATH})
 
      ## not added automatically, since CMAKE_SYSTEM_NAME is "generic"
 set(CMAKE_SYSTEM_INCLUDE_PATH "/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include")
+set(CMAKE_SYSTEM_INCLUDE_PATH "/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include/util")
+set(CMAKE_SYSTEM_INCLUDE_PATH "/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include/avr")
 set(CMAKE_SYSTEM_LIBRARY_PATH "/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/lib")
-
 
 
 ##################################################################################

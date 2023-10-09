@@ -8,8 +8,10 @@
 #include "AutonomousVehicle..hpp"
 
 
-
-
+/* if you created obj will return error cause constructor is private, so GetYourServo is static method
+   this enable me to call it directly without existing any other obj unless the obj of class itself 
+*/
+MOV_MyServo *ServoOne = MOV_MyServo::MOVSERVO_pobjGetMyServo();
 
 int main(void)
 {

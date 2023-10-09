@@ -20,12 +20,18 @@
 #include "BIT_MATH.h"
 
 /**			MCAL Includes				**/
-
+#include "DIO_interface.h"
+#include "TIMER_interface.h"
 
 /**			HAL Includes				**/
 #include "SERVOMOTOR_interface.h"
+#include "SERVOMOTOR_config.h"
+#include "SERVOMOTOR_private.h"
 
 /**			SERVICE Includes				**/
+
+
+
 
 
 /* -------------------------------- Macro Declarations ------------------------------------------*/
@@ -38,20 +44,19 @@
 
 
 /* -------------------------------- Class Declarations ------------------------------------------*/
-class MOV_servo
+class MOV_MyServo
 {
 private:
-    /* data */
     /*!Comment: private - members cannot be accessed (or viewed) from outside the class */    
-    SERVOMOTOR_t udt_ServoOne;
+    static MOV_MyServo *MyServo;
     /* note this is special case for our constructor, being this a singleton design pattern */
-    MOV_servo()
-    {
-        udt_ServoOne = (SERVOMOTOR_t)SERVOMOTOR_PIN;     
-    };
-public:
-    ~MOV_servo();
+    MOV_MyServo();
 
+public:
+    SERVOMOTOR_t udt_ServoOne;        
+    static MOV_MyServo* MOVSERVO_pobjGetMyServo(); // static pointer to method to get access to my class in app layer witout creating more than obj
+    SERVOMOTOR_t MOV_udtGetServoOne();
+    ~MOV_MyServo();
 };
 
 

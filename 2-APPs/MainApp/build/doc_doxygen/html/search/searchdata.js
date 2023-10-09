@@ -2,7 +2,7 @@ var indexSectionsWithContent =
 {
   0: "dlmpstu~",
   1: "dlmpstu",
-  2: "u~",
+  2: "mu~",
   3: "p"
 };
 

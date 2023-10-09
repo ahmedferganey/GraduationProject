@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['_7esensor_5fsonic_30',['~SENSOR_sonic',['../classSENSOR__sonic.html#aede8f88875966c2020949fe80477e011',1,'SENSOR_sonic']]],
-  ['_7eupd_5fsonicdistance_31',['~UPD_SonicDistance',['../classUPD__SonicDistance.html#aa3d2e480639df1d0aee1ddfe6a7b4b38',1,'UPD_SonicDistance']]]
+  ['upd_5fsonicdistance_33',['UPD_SonicDistance',['../classUPD__SonicDistance.html#a6b159602894bb726d6378dacdb0313ad',1,'UPD_SonicDistance']]],
+  ['update_34',['update',['../classSENSOR__sonic.html#adeeadc60dcacb8de0b53dad8537fe506',1,'SENSOR_sonic']]]
 ];
