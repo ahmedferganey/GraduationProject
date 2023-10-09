@@ -67,6 +67,8 @@ private:
     /* data */
     /*!Comment: private - members cannot be accessed (or viewed) from outside the class */    
     ULTRASONIC_obj_t udt_UltrasonicOne;
+    /* this is the default constructor, perhaps in some situation you need to param constructor */
+    /* note this is special case for our constructor, being this a singleton design pattern */
     SENSOR_sonic()
     {
         udt_UltrasonicOne = {
@@ -83,7 +85,10 @@ private:
         };     
     };
 public:
+    /// @brief this will be serve DC Motor & LCD 
+    void update();
     ~SENSOR_sonic();
+
 };
 
 

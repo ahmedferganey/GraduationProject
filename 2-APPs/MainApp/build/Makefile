@@ -312,6 +312,30 @@ SENSOR_manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.s
 .PHONY : SENSOR_manager.cpp.s
 
+SERVOMOTOR_program.obj: SERVOMOTOR_program.c.obj
+.PHONY : SERVOMOTOR_program.obj
+
+# target to build an object file
+SERVOMOTOR_program.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/SERVOMOTOR_program.c.obj
+.PHONY : SERVOMOTOR_program.c.obj
+
+SERVOMOTOR_program.i: SERVOMOTOR_program.c.i
+.PHONY : SERVOMOTOR_program.i
+
+# target to preprocess a source file
+SERVOMOTOR_program.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/SERVOMOTOR_program.c.i
+.PHONY : SERVOMOTOR_program.c.i
+
+SERVOMOTOR_program.s: SERVOMOTOR_program.c.s
+.PHONY : SERVOMOTOR_program.s
+
+# target to generate assembly for a file
+SERVOMOTOR_program.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/SERVOMOTOR_program.c.s
+.PHONY : SERVOMOTOR_program.c.s
+
 SYS_manager.obj: SYS_manager.cpp.obj
 .PHONY : SYS_manager.obj
 
@@ -438,6 +462,9 @@ help:
 	@echo "... SENSOR_manager.obj"
 	@echo "... SENSOR_manager.i"
 	@echo "... SENSOR_manager.s"
+	@echo "... SERVOMOTOR_program.obj"
+	@echo "... SERVOMOTOR_program.i"
+	@echo "... SERVOMOTOR_program.s"
 	@echo "... SYS_manager.obj"
 	@echo "... SYS_manager.i"
 	@echo "... SYS_manager.s"

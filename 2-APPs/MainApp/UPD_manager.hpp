@@ -43,8 +43,6 @@ class UPD_SonicDistance {
 
 
     public:
-     /// @brief this will be serve DC Motor & LCD 
-     void update();
      /// @brief consructor
      UPD_SonicDistance()
      {

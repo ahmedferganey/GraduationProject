@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['timer1_5ft_8',['TIMER1_t',['../structTIMER1__t.html',1,'']]],
-  ['timer2_5ft_9',['TIMER2_t',['../structTIMER2__t.html',1,'']]]
+  ['sensor_5fldr_7',['SENSOR_ldr',['../classSENSOR__ldr.html',1,'']]],
+  ['sensor_5fsonic_8',['SENSOR_sonic',['../classSENSOR__sonic.html',1,'']]]
 ];

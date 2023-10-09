@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['sensor_5fldr_20',['SENSOR_ldr',['../classSENSOR__ldr.html',1,'']]],
-  ['sensor_5fsonic_21',['SENSOR_sonic',['../classSENSOR__sonic.html',1,'']]]
+  ['pin_5fconfig_5ft_21',['pin_config_t',['../structpin__config__t.html',1,'']]]
 ];

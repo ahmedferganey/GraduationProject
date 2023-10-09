@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pin_5fconfig_5ft_19',['pin_config_t',['../structpin__config__t.html',1,'']]]
+  ['mov_5fservo_20',['MOV_servo',['../classMOV__servo.html',1,'']]]
 ];

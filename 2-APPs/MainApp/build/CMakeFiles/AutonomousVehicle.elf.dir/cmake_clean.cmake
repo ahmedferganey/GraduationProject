@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.cpp.obj.d"
   "CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.obj"
   "CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.cpp.obj.d"
+  "CMakeFiles/AutonomousVehicle.elf.dir/SERVOMOTOR_program.c.obj"
+  "CMakeFiles/AutonomousVehicle.elf.dir/SERVOMOTOR_program.c.obj.d"
   "CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.obj"
   "CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.obj.d"
   "CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.obj"

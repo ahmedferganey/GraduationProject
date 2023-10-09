@@ -11,9 +11,6 @@ Collaboration diagram for UPD\+\_\+\+Sonic\+Distance\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classUPD__SonicDistance_ab2d5f8151cd15190784307fe76102edd}\label{classUPD__SonicDistance_ab2d5f8151cd15190784307fe76102edd}} 
-void \mbox{\hyperlink{classUPD__SonicDistance_ab2d5f8151cd15190784307fe76102edd}{update}} ()
-\begin{DoxyCompactList}\small\item\em this will be serve DC Motor \& LCD \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classUPD__SonicDistance_a6b159602894bb726d6378dacdb0313ad}\label{classUPD__SonicDistance_a6b159602894bb726d6378dacdb0313ad}} 
 \mbox{\hyperlink{classUPD__SonicDistance_a6b159602894bb726d6378dacdb0313ad}{UPD\+\_\+\+Sonic\+Distance}} ()
 \begin{DoxyCompactList}\small\item\em consructor \end{DoxyCompactList}\item 

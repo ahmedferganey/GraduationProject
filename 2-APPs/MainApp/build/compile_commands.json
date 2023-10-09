@@ -37,6 +37,12 @@
 },
 {
   "directory": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build",
+  "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c99 -o CMakeFiles/AutonomousVehicle.elf.dir/SERVOMOTOR_program.c.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SERVOMOTOR_program.c",
+  "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SERVOMOTOR_program.c",
+  "output": "CMakeFiles/AutonomousVehicle.elf.dir/SERVOMOTOR_program.c.obj"
+},
+{
+  "directory": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build",
   "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-g++ --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c++11 -o CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SYS_manager.cpp",
   "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SYS_manager.cpp",
   "output": "CMakeFiles/AutonomousVehicle.elf.dir/SYS_manager.cpp.obj"

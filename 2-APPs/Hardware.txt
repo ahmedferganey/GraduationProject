@@ -33,7 +33,7 @@ https://www.electronicwings.com/users/JEEVAKHARSHASR/projects/974/sharp-witted-a
 Servo Motor Interfacing With Arduino Uno:
 https://www.electronicwings.com/arduino/servo-motor-interfacing-with-arduino-uno
 https://www.electronicwings.com/sensors-modules/servo-motor
-
+https://electrosome.com/interfacing-servo-motor-with-atmega32-microcontroller/
 
 DC motor interfacing with AVR ATmega16/ATmega32:
 https://www.electronicwings.com/avr-atmega/dc-motor-interfacing-with-atmega-1632

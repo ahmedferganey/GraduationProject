@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['sensor_5fldr_6',['SENSOR_ldr',['../classSENSOR__ldr.html',1,'']]],
-  ['sensor_5fsonic_7',['SENSOR_sonic',['../classSENSOR__sonic.html',1,'']]]
+  ['pin_5fconfig_5ft_5',['pin_config_t',['../structpin__config__t.html',1,'']]],
+  ['pudt_5fultrasonicone_6',['pudt_UltrasonicOne',['../classUPD__SonicDistance.html#abaafc45c0757f2ea5d7eab52a9f65267',1,'UPD_SonicDistance']]]
 ];
