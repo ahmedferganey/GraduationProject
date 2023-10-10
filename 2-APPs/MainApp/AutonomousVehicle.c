@@ -43,10 +43,13 @@ int main(void)
 	{
 	
 	/* !Comment: 1- Input App System */
+		udtReturnValue = AUTONOMOUSVEHICLE_udtAppInput();
 
 	/* !Comment: 2- Update App System */
+		udtReturnValue = AUTONOMOUSVEHICLE_udtAppUpdate();
 
 	/* !Comment: 3- Output App System */
+		udtReturnValue = AUTONOMOUSVEHICLE_udtAppOutput();
 
 	}
 }
@@ -104,7 +107,7 @@ void
 )
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
-	
+
 	udtReturnValue = UPD_udtSystemInput(&udt_VehicleMode);
 
 	return udtReturnValue;
