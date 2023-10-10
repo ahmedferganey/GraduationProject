@@ -15,17 +15,22 @@
 #include "SYS_manager.h"
 #include "MOV_manager.h"
 
-/* Comment!: Macro Declarations */
+/*************************** Comment!: Macro Declarations ******************************/
 
 
-/* Comment!: Macro Functions Declarations */
+/*************************** Comment!: Macro Functions Declarations ********************/
 
 
-/* Comment!: Data Type Declarations */
+/*************************** Comment!: Data Type Declarations **************************/
 
 
-/* Comment!: Function Declarations */
+/*************************** Comment!: Function Declarations ***************************/
 Std_ReturnType AUTONOMOUSVEHICLE_udtAppInit
+(
+void
+);
+
+Std_ReturnType AUTONOMOUSVEHICLE_udtInput
 (
 void
 );
@@ -35,5 +40,9 @@ Std_ReturnType AUTONOMOUSVEHICLE_udtUpdate
 void
 );
 
+Std_ReturnType AUTONOMOUSVEHICLE_udtOutput
+(
+void
+);
 
 #endif	/* _APP_H_ */
