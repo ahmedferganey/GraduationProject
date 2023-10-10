@@ -42,7 +42,7 @@ typedef struct
 /* -------------------------------- APIs Declarations ---------------------------------------*/
 Std_ReturnType DISPLAY_udtDiplayInit
 (
-const LED_t* LED_pudtconfig,
+const DISPLAY_Led_t* LED_pudtconfig,
 uint8 copy_u8NumberOfLeds
 );
 

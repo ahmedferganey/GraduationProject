@@ -82,19 +82,27 @@ volatile DISPLAY_Led_t udt_Leds =
 /* -------------------------------- APIs Implementation ------------------------------------------*/
 Std_ReturnType DISPLAY_udtDiplayInit
 (
-const LED_t* LED_pudtconfig,
+const DISPLAY_Led_t* LED_pudtconfig,
 uint8 copy_u8NumberOfLeds
 )
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
-    /* DISPLAY Init Section*/
-    udtReturnValue = LCD_udt4BitInitialize();
+    LED_t* L_pudtptr = (LED_t*)LED_pudtconfig;
 
-	for (int i = 0 ; i < copy_u8NumberOfLeds ; i++)
+	if (((LED_pudtconfig == NULL) && (NUM_OF_LEDS < copy_u8NumberOfLeds)))
 	{
-		udtReturnValue = LED_udtInit(LED_pudtconfig);	
-		++LED_pudtconfig;
+		udtReturnValue = E_NOT_OK;
 	}
+	else
+	{
+    	/* DISPLAY Init Section*/
+    	udtReturnValue = LCD_udt4BitInitialize();
 
+		for (int i = 0 ; i < copy_u8NumberOfLeds ; i++)
+		{
+			udtReturnValue = LED_udtInit(L_pudtptr);	
+			++L_pudtptr;
+		}
+	}
 	return udtReturnValue;		
 }
