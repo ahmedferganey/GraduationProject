@@ -5,7 +5,11 @@
         "std_types.h": "c",
         "bit_math.h": "c",
         "ultrasonic_interface.h": "c",
-        "usart_interface.h": "c"
+        "usart_interface.h": "c",
+        "autonomousvehicle..h": "c",
+        "upd_manager.h": "c",
+        "led_interface.h": "c",
+        "servomotor_interface.h": "c"
     },
     "author-generator.email": "ahmedferganey707@gmail.com"
 }

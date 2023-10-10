@@ -25,6 +25,9 @@
 
 
 /* Comment!: Function Declarations */
-
+Std_ReturnType AUTONOMOUSVEHICLE_udtAPPInit
+(
+void
+);
 
 #endif	/* _APP_H_ */

@@ -13,11 +13,10 @@
 
 
 /* -------------------------------- GLOBAL Variable ------------------------------------------*/
-
-static ULTRASONIC_obj_t udt_Ultrasonic =
+volatile ULTRASONIC_obj_t udt_Ultrasonic =
 {
 	//////////////////////////////////////////////////////////////
-	.udtTriggerPin.port 	  	= SENSOR_PORTB_INDEX,
+	.udtTriggerPin.port 	  	= SENSOR_PORTA_INDEX,
 	.udtTriggerPin.pin 			= SENSOR_DIO_PIN0,
 	.udtTriggerPin.direction 	= SENSOR_DIO_DIRECTION_OUTPUT,
 	.udtTriggerPin.logic 		= SENSOR_DIO_LOW,
@@ -42,14 +41,19 @@ uint8 u8NumOfUltrasonic
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 	
-
-	/* 1- Init ULTRASONIC SENSOR */
-	for (int i = 0 ; i < u8NumOfUltrasonic ; i++)
+	if (!(SENSOR_NUM_ULTRSONIC == u8NumOfUltrasonic))
 	{
-		udtReturnValue = Ultrasonic_udtInit(ULTRASONIC_pudtconfig);	
-		++ULTRASONIC_pudtconfig;
-	}	
-
+		udtReturnValue = E_NOT_OK;
+	}
+	else
+	{
+		/* 1- Init ULTRASONIC SENSOR"s" */
+		for (int i = 0 ; i < u8NumOfUltrasonic ; i++)
+		{
+			udtReturnValue = Ultrasonic_udtInit(ULTRASONIC_pudtconfig);	
+			++ULTRASONIC_pudtconfig;
+		}	
+	}
 
 	/* 2- Init LDR SENSOR */
 	

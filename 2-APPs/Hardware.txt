@@ -1,3 +1,7 @@
+led:
+https://www.electronicwings.com/avr-atmega/atmega1632-gpio-ports-and-registers
+
+
 Analog Joystick interface with AVR ATmega16/ATmega32:
 https://www.electronicwings.com/avr-atmega/analog-joystick-interface-with-atmega-16-32
 
@@ -34,8 +38,12 @@ Servo Motor Interfacing With Arduino Uno:
 https://www.electronicwings.com/arduino/servo-motor-interfacing-with-arduino-uno
 https://www.electronicwings.com/sensors-modules/servo-motor
 https://electrosome.com/interfacing-servo-motor-with-atmega32-microcontroller/
+https://www.electronicwings.com/avr-atmega/servo-motor-interfacing-with-atmega16
+
 
 DC motor interfacing with AVR ATmega16/ATmega32:
 https://www.electronicwings.com/avr-atmega/dc-motor-interfacing-with-atmega-1632
 
 
+ATMEGA32a:
+https://www.microchip.com/en-us/product/atmega32a

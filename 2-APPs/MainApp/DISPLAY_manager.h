@@ -23,6 +23,7 @@
 /**			HAL Includes				**/
 #include "LCD_interface.h"
 #include "ULTRASONIC_interface.h"
+#include "LED_interface.h"
 
 /* -------------------------------- Macro Declarations ------------------------------------------*/
 
@@ -33,13 +34,11 @@
 
 /* -------------------------------- Data Type Declarations --------------------------------------*/          
 
-/* -------------------------------- Function Declarations ---------------------------------------*/
-
-
 /* -------------------------------- APIs Declarations ---------------------------------------*/
-Std_ReturnType DISPLAY_udtLCDInit
+Std_ReturnType DISPLAY_udtDiplayInit
 (
-void
+const LED_t* LED_pudtconfig,
+uint8 copy_u8NumberOfLeds
 );
 
 

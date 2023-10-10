@@ -25,8 +25,7 @@
 
 /**			HAL Includes				**/
 #include "SERVOMOTOR_interface.h"
-#include "SERVOMOTOR_config.h"
-#include "SERVOMOTOR_private.h"
+
 
 /**			SERVICE Includes				**/
 
@@ -44,8 +43,10 @@
 
 
 /* -------------------------------- Class Declarations ------------------------------------------*/
-
-
+Std_ReturnType MOV_udtMotorInit
+(
+void
+);
 
 
 

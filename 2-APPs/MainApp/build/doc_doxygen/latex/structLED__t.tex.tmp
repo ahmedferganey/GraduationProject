@@ -1,0 +1,23 @@
+\hypertarget{structLED__t}{}\doxysection{LED\+\_\+t Struct Reference}
+\label{structLED__t}\index{LED\_t@{LED\_t}}
+
+
+Collaboration diagram for LED\+\_\+t\+:
+% FIG 0
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structLED__t_a55954a82d4162d3a1e01e13b1f06503b}\label{structLED__t_a55954a82d4162d3a1e01e13b1f06503b}} 
+\mbox{\hyperlink{structpin__config__t}{pin\+\_\+config\+\_\+t}} {\bfseries LED\+\_\+pin}
+\item 
+\mbox{\Hypertarget{structLED__t_a595fa7fdfb230f9a77cb25e4241599f4}\label{structLED__t_a595fa7fdfb230f9a77cb25e4241599f4}} 
+LED\+\_\+active\+\_\+t {\bfseries LED\+\_\+connection}
+\item 
+\mbox{\Hypertarget{structLED__t_a7dc7aa117603e7c021015af479cf509d}\label{structLED__t_a7dc7aa117603e7c021015af479cf509d}} 
+LED\+\_\+status\+\_\+t {\bfseries LED\+\_\+status}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ahmed-\/ferganey/\+Desktop/\+My\+Git\+Hub/\+Graduation\+Project/2-\/\+APPs/\+Main\+App/LED\+\_\+interface.\+h\end{DoxyCompactItemize}
