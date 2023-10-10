@@ -96,7 +96,7 @@ void
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 
-	udtReturnValue = UPD_udtSystemInput(&udt_VehicleMode);
+	udtReturnValue = UPD_udtSystemUpadte(&udt_VehicleMode);
 
 	return udtReturnValue;
 }
@@ -108,7 +108,7 @@ void
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 
-	udtReturnValue = UPD_udtSystemInput(&udt_VehicleMode);
+	udtReturnValue = UPD_udtSystemOutput(&udt_VehicleMode);
 
 	return udtReturnValue;
 }

@@ -46,6 +46,23 @@ const DISPLAY_Led_t* LED_pudtconfig,
 uint8 copy_u8NumberOfLeds
 );
 
+Std_ReturnType DISPLAY_udtDiplayStartup
+(
+const DISPLAY_Led_t* LED_pudtconfig,
+uint8 copy_u8NumberOfLeds
+);
+
+Std_ReturnType DISPLAY_udtDiplayManual
+(
+const DISPLAY_Led_t* LED_pudtconfig,
+uint8 copy_u8NumberOfLeds
+);
+
+Std_ReturnType DISPLAY_udtDiplayAutonomous
+(
+const DISPLAY_Led_t* LED_pudtconfig,
+uint8 copy_u8NumberOfLeds
+);
 
 
 
