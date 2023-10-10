@@ -8,9 +8,9 @@
 /* -------------------------------- Includes -----------------------------------------------*/
 #include "STD_TYPES.h"
 #include "BIT_MATH.h"
-#include "USART_config.h"
 #include "USART_interface.h"
 #include "USART_private.h"
+#include "USART_config.h"
 
 
 
@@ -273,8 +273,8 @@ uint8 Copy_u8Data
 		*/		
 		/* If UDRE is one, the buffer is empty */
 			/* there is implicit declaration here 
-				GETBIT(USART->UCSRA, UCSRA_UDRE) == 0 */
-		while (((GETBIT(USART->UCSRA, UCSRA_UDRE) == 0) 
+				GET_BIT(USART->UCSRA, UCSRA_UDRE) == 0 */
+		while (((GET_BIT(USART->UCSRA, UCSRA_UDRE) == 0) 
 			   && (Local_u32TimeoutCounter != USART_u32TIMEOUT)))
 		{
 			Local_u32TimeoutCounter++;
@@ -326,7 +326,7 @@ uint8 * Copy_u8ReceviedData
 			in the receive buffer and cleared when the receive buffer 
 			is empty
 			*/
-			while (((GETBIT(USART->UCSRA, UCSRA_RXC) == 0) 
+			while (((GET_BIT(USART->UCSRA, UCSRA_RXC) == 0) 
 				&& (Local_u32TimeoutCounter != USART_u32TIMEOUT)))
 			{
 				Local_u32TimeoutCounter++;
@@ -363,7 +363,7 @@ uint8 * Copy_u8ReceviedData
 /*           (E_OK)		  : The function done successfully									*/
 /*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
 /********************************************************************************************/
-uint8 USART_udtSendStringSynch 
+Std_ReturnType USART_udtSendStringSynch 
 (
 const uint8 * Copy_pchString
 )
@@ -399,7 +399,7 @@ const uint8 * Copy_pchString
 /*           (E_OK)		  : The function done successfully									*/
 /*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
 /********************************************************************************************/
-uint8 USART_udtReceiveBufferSynch 
+Std_ReturnType USART_udtReceiveBufferSynch 
 (
 uint8 * Copy_pchString, 
 uint32 Copy_uint32BufferSize
