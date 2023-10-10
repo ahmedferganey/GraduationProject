@@ -42,7 +42,7 @@ AUTONOMOUSMODE,
 /* -------------------------------- Class Declarations ------------------------------------------*/
 Std_ReturnType UPD_udtModeUpadte
 (
-void
+upd_vehiclemode_t* pudt_currentmode
 );
 
 Std_ReturnType UPD_udtServoUpadte
