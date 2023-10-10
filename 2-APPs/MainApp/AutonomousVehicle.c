@@ -23,17 +23,16 @@ LED_t* G_pudtptr = (LED_t*)&udt_Leds;
 int main(void)
 {
 
-	udtReturnValue = AUTONOMOUSVEHICLE_udtAPPInit();
+	udtReturnValue = AUTONOMOUSVEHICLE_udtAppInit();
 
 	while (1)
 	{
-
 		
 	}
 }
 
 
-Std_ReturnType AUTONOMOUSVEHICLE_udtAPPInit
+Std_ReturnType AUTONOMOUSVEHICLE_udtAppInit
 (
 void
 )
@@ -45,6 +44,18 @@ void
 	udtReturnValue = SYS_udtCommunicationInit();
 	udtReturnValue = DISPLAY_udtDiplayInit(&udt_Leds, NUM_OF_LEDS); 
 	udtReturnValue = MOV_udtMotorInit();
+
+	return udtReturnValue;
+}
+
+
+
+Std_ReturnType AUTONOMOUSVEHICLE_udtUpdate
+(
+void
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
 
 	return udtReturnValue;
 }

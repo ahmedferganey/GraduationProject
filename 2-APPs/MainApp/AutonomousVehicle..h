@@ -25,9 +25,15 @@
 
 
 /* Comment!: Function Declarations */
-Std_ReturnType AUTONOMOUSVEHICLE_udtAPPInit
+Std_ReturnType AUTONOMOUSVEHICLE_udtAppInit
 (
 void
 );
+
+Std_ReturnType AUTONOMOUSVEHICLE_udtUpdate
+(
+void
+);
+
 
 #endif	/* _APP_H_ */

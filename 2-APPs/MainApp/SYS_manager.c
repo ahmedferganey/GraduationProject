@@ -49,9 +49,9 @@ void
     TIMER2_vdInit();
 
 
-    /* CLOCK INIT Section */
+    /* INTERRUPT INIT Section */
 	GIE_VoidEnable();
-
+	EXTI_vdInit();
 	
     udtReturnValue= E_OK;
 

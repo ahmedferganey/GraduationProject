@@ -35,6 +35,11 @@
 
 
 /* -------------------------------- Class Declarations ------------------------------------------*/
+Std_ReturnType UPD_udtModeUpadte
+(
+void
+);
+
 Std_ReturnType UPD_udtServoUpadte
 (
 void

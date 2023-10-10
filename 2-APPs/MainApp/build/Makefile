@@ -264,6 +264,30 @@ DISPLAY_manager.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.c.s
 .PHONY : DISPLAY_manager.c.s
 
+EXTI_program.obj: EXTI_program.c.obj
+.PHONY : EXTI_program.obj
+
+# target to build an object file
+EXTI_program.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/EXTI_program.c.obj
+.PHONY : EXTI_program.c.obj
+
+EXTI_program.i: EXTI_program.c.i
+.PHONY : EXTI_program.i
+
+# target to preprocess a source file
+EXTI_program.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/EXTI_program.c.i
+.PHONY : EXTI_program.c.i
+
+EXTI_program.s: EXTI_program.c.s
+.PHONY : EXTI_program.s
+
+# target to generate assembly for a file
+EXTI_program.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/EXTI_program.c.s
+.PHONY : EXTI_program.c.s
+
 GIE_program.obj: GIE_program.c.obj
 .PHONY : GIE_program.obj
 
@@ -576,6 +600,9 @@ help:
 	@echo "... DISPLAY_manager.obj"
 	@echo "... DISPLAY_manager.i"
 	@echo "... DISPLAY_manager.s"
+	@echo "... EXTI_program.obj"
+	@echo "... EXTI_program.i"
+	@echo "... EXTI_program.s"
 	@echo "... GIE_program.obj"
 	@echo "... GIE_program.i"
 	@echo "... GIE_program.s"
