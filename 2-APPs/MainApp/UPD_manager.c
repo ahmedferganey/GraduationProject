@@ -20,14 +20,9 @@
 
 
 /* -------------------------------- APIs Implementation ------------------------------------------*/
-/********************************************************************************************/
-/*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
-/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
-/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
-/*  @return	 Std_ReturnType																	*/
-/*           (E_OK)		  : The function done successfully									*/
-/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
-/********************************************************************************************/
+/// @brief 
+/// @param pudt_currentmode 
+/// @return 
 Std_ReturnType UPD_udtSystemInput
 (
 upd_vehiclemode_t* pudt_currentmode
@@ -68,15 +63,11 @@ upd_vehiclemode_t* pudt_currentmode
 	return udtReturnValue;
 }
 
+/////////////////////////////////////////////////////////////////////////////////////
 
-/********************************************************************************************/
-/*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
-/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
-/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
-/*  @return	 Std_ReturnType																	*/
-/*           (E_OK)		  : The function done successfully									*/
-/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
-/********************************************************************************************/
+/// @brief 
+/// @param pudt_currentmode 
+/// @return 
 Std_ReturnType UPD_udtSystemUpadte
 (
 upd_vehiclemode_t* pudt_currentmode
@@ -127,14 +118,13 @@ upd_vehiclemode_t* pudt_currentmode
 
 }
 
-/********************************************************************************************/
-/*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
-/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
-/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
-/*  @return	 Std_ReturnType																	*/
-/*           (E_OK)		  : The function done successfully									*/
-/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
-/********************************************************************************************/
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+
+/// @brief 
+/// @param pudt_currentmode 
+/// @return 
 Std_ReturnType UPD_udtSystemOutput
 (
 upd_vehiclemode_t* pudt_currentmode
@@ -147,22 +137,21 @@ upd_vehiclemode_t* pudt_currentmode
 		/* startup mode */
 		if ((UPD_STARTUP_MODE == (*pudt_currentmode)))
 		{
-			/* Blink All Leds */
-
+			/* Blink All Leds, Display "select mode" on LCD */
+			udtReturnValue = DISPLAY_udtDiplayStartup();
 			/* turn off All Motors "servo and DC" */
-
-			/* Display "select mode" on LCD */
-
 
 		}
 		/* manual mode */
 		else if((UPD_MANUAL_MODE == (*pudt_currentmode)))
 		{
+			udtReturnValue = DISPLAY_udtDiplayManual();
 
 		}
 		/* autonomous mode */
 		else if((UPD_AUTONOMOUS_MODE == (*pudt_currentmode)))
 		{
+			udtReturnValue = DISPLAY_udtDiplayAutonomous();
 
 		}
 		/* error handling */
@@ -179,14 +168,13 @@ upd_vehiclemode_t* pudt_currentmode
 	return udtReturnValue;
 }
 
-/********************************************************************************************/
-/*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
-/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
-/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
-/*  @return	 Std_ReturnType																	*/
-/*           (E_OK)		  : The function done successfully									*/
-/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
-/********************************************************************************************/
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+
+/// @brief 
+/// @param  
+/// @return 
 Std_ReturnType UPD_udtServoUpadte
 (
 void

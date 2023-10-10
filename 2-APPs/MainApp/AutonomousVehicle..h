@@ -25,21 +25,41 @@
 
 
 /*************************** Comment!: Function Declarations ***************************/
+/// @brief 
+/// @param  
+/// @return 
 Std_ReturnType AUTONOMOUSVEHICLE_udtAppInit
 (
 void
 );
 
+/////////////////////////////////////////////////////////////////////////////////////
+
+/// @brief 
+/// @param  
+/// @return 
 Std_ReturnType AUTONOMOUSVEHICLE_udtAppInput
 (
 void
 );
 
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+/// @brief 
+/// @param  
+/// @return 
 Std_ReturnType AUTONOMOUSVEHICLE_udtAppUpdate
 (
 void
 );
 
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+/// @brief 
+/// @param  
+/// @return 
 Std_ReturnType AUTONOMOUSVEHICLE_udtAppOutput
 (
 void

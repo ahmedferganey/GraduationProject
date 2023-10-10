@@ -52,8 +52,9 @@ else (DOXYGEN_FOUND)
   message("Doxygen need to be installed to generate the doxygen documentation")
 endif (DOXYGEN_FOUND)
 
-
-
+##https://wiki.duke.edu/pages/viewpage.action?pageId=302815982
+##https://medium.com/practical-coding/c-documentation-with-doxygen-cmake-sphinx-breathe-for-those-of-use-who-are-totally-lost-7d555386fe13
+##https://cmake.org/cmake/help/latest/module/FindDoxygen.html
 
 ##################################################################################
 #                   tools to be used for programming the AVR                     #
