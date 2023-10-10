@@ -41,7 +41,17 @@ AUTONOMOUSMODE,
 }upd_vehiclemode_t;
 
 /* -------------------------------- Class Declarations ------------------------------------------*/
-Std_ReturnType UPD_udtModeUpadte
+Std_ReturnType UPD_udtSystemInput
+(
+upd_vehiclemode_t* pudt_currentmode
+);
+
+Std_ReturnType UPD_udtSystemUpadte
+(
+upd_vehiclemode_t* pudt_currentmode
+);
+
+Std_ReturnType UPD_udtSystemOutput
 (
 upd_vehiclemode_t* pudt_currentmode
 );
@@ -50,7 +60,6 @@ Std_ReturnType UPD_udtServoUpadte
 (
 void
 );
-
 
 
 

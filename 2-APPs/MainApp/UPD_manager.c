@@ -30,31 +30,6 @@
 /********************************************************************************************/
 Std_ReturnType UPD_udtSystemInput
 (
-void
-)
-{
-	Std_ReturnType udtReturnValue = E_NOT_OK;
-	
-		/* startup mode */
-
-		/* startup mode */
-	
-		/* startup mode */
-	
-	return udtReturnValue;
-}
-
-
-/********************************************************************************************/
-/*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
-/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
-/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
-/*  @return	 Std_ReturnType																	*/
-/*           (E_OK)		  : The function done successfully									*/
-/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
-/********************************************************************************************/
-Std_ReturnType UPD_udtSystemUpadte
-(
 upd_vehiclemode_t* pudt_currentmode
 )
 {
@@ -65,6 +40,8 @@ upd_vehiclemode_t* pudt_currentmode
 		/* startup mode */
 		if ((UPD_STARTUP_MODE == (*pudt_currentmode)))
 		{
+			/*  */
+
 
 		}
 		/* manual mode */
@@ -92,6 +69,63 @@ upd_vehiclemode_t* pudt_currentmode
 }
 
 
+/********************************************************************************************/
+/*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
+/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
+/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
+/*  @return	 Std_ReturnType																	*/
+/*           (E_OK)		  : The function done successfully									*/
+/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
+/********************************************************************************************/
+Std_ReturnType UPD_udtSystemUpadte
+(
+upd_vehiclemode_t* pudt_currentmode
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+
+	if (pudt_currentmode != NULL)
+	{
+		/* startup mode */
+		if ((UPD_STARTUP_MODE == (*pudt_currentmode)))
+		{
+
+			/* Sleep Mode "Decrease System clock" */
+
+
+
+		}
+		/* manual mode */
+		else if((UPD_MANUAL_MODE == (*pudt_currentmode)))
+		{
+			/* change clock Mode "increase System clock" */
+
+
+
+		}
+		/* autonomous mode */
+		else if((UPD_AUTONOMOUS_MODE == (*pudt_currentmode)))
+		{
+			/* change clock Mode "increase System clock" */
+
+
+
+		}
+		/* error handling */
+		else
+		{
+			udtReturnValue = E_NOT_OK;
+		}
+	}
+	else
+	{
+		udtReturnValue = E_NOT_OK;
+	}
+
+	return udtReturnValue;
+
+
+}
 
 /********************************************************************************************/
 /*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
@@ -107,15 +141,43 @@ upd_vehiclemode_t* pudt_currentmode
 )
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
-	
-	
-	
+
+	if (pudt_currentmode != NULL)
+	{
+		/* startup mode */
+		if ((UPD_STARTUP_MODE == (*pudt_currentmode)))
+		{
+			/* Blink All Leds */
+
+			/* turn off All Motors "servo and DC" */
+
+			/* Display "select mode" on LCD */
+
+
+		}
+		/* manual mode */
+		else if((UPD_MANUAL_MODE == (*pudt_currentmode)))
+		{
+
+		}
+		/* autonomous mode */
+		else if((UPD_AUTONOMOUS_MODE == (*pudt_currentmode)))
+		{
+
+		}
+		/* error handling */
+		else
+		{
+			udtReturnValue = E_NOT_OK;
+		}
+	}
+	else
+	{
+		udtReturnValue = E_NOT_OK;
+	}
+
 	return udtReturnValue;
 }
-
-
-
-
 
 /********************************************************************************************/
 /*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/

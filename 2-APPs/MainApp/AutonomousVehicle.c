@@ -65,7 +65,7 @@ void
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 
-	udtReturnValue = SYS_udtCommunicationInit();					//init USART     & Bluetooth
+	udtReturnValue = SYS_udtCommunicationInit();					//init USART     & Bluetooth  & Buzzer
 	udtReturnValue = MOV_udtMotorInit();							//init SERVO     & JOYSTICK   & DC-CONTROLLER
 	udtReturnValue = DISPLAY_udtDiplayInit(&udt_Leds, NUM_OF_LEDS); //init LCD 	     & LEDS
 	udtReturnValue = SYS_udtClockIntrerruptInit();					//init TIMERS    & GIE & EXTI
@@ -81,6 +81,8 @@ void
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 
+	udtReturnValue = UPD_udtSystemInput(&udt_VehicleMode);
+
 	return udtReturnValue;
 }
 /*******************************  APP Update	********************************/
@@ -91,6 +93,8 @@ void
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 
+	udtReturnValue = UPD_udtSystemInput(&udt_VehicleMode);
+
 	return udtReturnValue;
 }
 /*******************************  APP Output	********************************/
@@ -100,6 +104,8 @@ void
 )
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
+	
+	udtReturnValue = UPD_udtSystemInput(&udt_VehicleMode);
 
 	return udtReturnValue;
 }
