@@ -22,12 +22,18 @@ LED_t* G_pudtptr = (LED_t*)&udt_Leds;
 
 int main(void)
 {
-
+	/* !Comment: Init App System */
 	udtReturnValue = AUTONOMOUSVEHICLE_udtAppInit();
 
 	while (1)
 	{
-		
+	
+	/* !Comment: 1- Input App System */
+
+	/* !Comment: 2- Update App System */
+
+	/* !Comment: 3- Output App System */
+
 	}
 }
 
