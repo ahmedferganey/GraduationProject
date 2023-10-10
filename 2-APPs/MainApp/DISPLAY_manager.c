@@ -29,35 +29,35 @@
     LED_active_t LED_connection;
 	LED_status_t LED_status;    
 */
-volatile LED_t udt_Leds[4] =
+volatile DISPLAY_Led_t udt_Leds =
 {
 	//////////////////////////////////////////////////////////////
         /*          Front-Left          */
-	udt_Leds[0].LED_pin.port 	  	= LED_PORTC,
-	udt_Leds[0].LED_pin.pin 		= LED_PIN2,
-	udt_Leds[0].LED_pin.direction 	= LED_OUTPUT,
-	udt_Leds[0].LED_pin.logic 		= LED_LOW,
+	.udt_Leds[0].LED_pin.port 	  	= LED_PORTC,
+	.udt_Leds[0].LED_pin.pin 		= LED_PIN2,
+	.udt_Leds[0].LED_pin.direction 	= LED_OUTPUT,
+	.udt_Leds[0].LED_pin.logic 		= LED_LOW,
 
-    udt_Leds[0].LED_connection      = LED_ACTIVE_HIGH,
-    udt_Leds[0].LED_status          = LED_OFF,
+    .udt_Leds[0].LED_connection      = LED_ACTIVE_HIGH,
+    .udt_Leds[0].LED_status          = LED_OFF,
 	//////////////////////////////////////////////////////////////
         /*          Back-Left           */
-	udt_Leds[1].LED_pin.port 		= LED_PORTC,
-	udt_Leds[1].LED_pin.pin 		= LED_PIN7,
-	udt_Leds[1].LED_pin.direction 	= LED_OUTPUT,
-	udt_Leds[1].LED_pin.logic	 	= LED_LOW,
+	.udt_Leds[1].LED_pin.port 		= LED_PORTC,
+	.udt_Leds[1].LED_pin.pin 		= LED_PIN7,
+	.udt_Leds[1].LED_pin.direction 	= LED_OUTPUT,
+	.udt_Leds[1].LED_pin.logic	 	= LED_LOW,
 
-    udt_Leds[1].LED_connection      = LED_ACTIVE_HIGH,
-    udt_Leds[1].LED_status          = LED_OFF,			   
+    .udt_Leds[1].LED_connection      = LED_ACTIVE_HIGH,
+    .udt_Leds[1].LED_status          = LED_OFF,			   
 	//////////////////////////////////////////////////////////////
         /*          Front-Right            */
-	udt_Leds[2].LED_pin.port 		= LED_PORTD,
-	udt_Leds[2].LED_pin.pin 		= LED_PIN3,
-	udt_Leds[2].LED_pin.direction 	= LED_OUTPUT,
-	udt_Leds[2].LED_pin.logic	 	= LED_LOW,
+	.udt_Leds[2].LED_pin.port 		= LED_PORTD,
+	.udt_Leds[2].LED_pin.pin 		= LED_PIN3,
+	.udt_Leds[2].LED_pin.direction 	= LED_OUTPUT,
+	.udt_Leds[2].LED_pin.logic	 	= LED_LOW,
 	
-    udt_Leds[2].LED_connection      = LED_ACTIVE_HIGH,
-    udt_Leds[2].LED_status          = LED_OFF
+    .udt_Leds[2].LED_connection      = LED_ACTIVE_HIGH,
+    .udt_Leds[2].LED_status          = LED_OFF
 	//////////////////////////////////////////////////////////////
         /*          Back-Right            */
 	//udt_Leds[2].LED_pin.port 		= LED_PORTD,

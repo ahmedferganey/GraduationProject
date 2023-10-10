@@ -9,6 +9,16 @@
 
 
 /* -------------------------------- Includes ----------------------------------------------------*/
+/**			LIBRARY Includes			**/
+#include "STD_TYPES.h"
+#include "BIT_MATH.h"
+
+/**			MCAL Includes				**/
+#include "DIO_interface.h"
+
+/**			HAL Includes				**/
+#include "LED_config.h"
+#include "LED_private.h"
 
 
 /* -------------------------------- Macro Declarations ------------------------------------------*/

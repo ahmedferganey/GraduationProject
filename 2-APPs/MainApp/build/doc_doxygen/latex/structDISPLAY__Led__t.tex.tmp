@@ -1,0 +1,17 @@
+\hypertarget{structDISPLAY__Led__t}{}\doxysection{DISPLAY\+\_\+\+Led\+\_\+t Struct Reference}
+\label{structDISPLAY__Led__t}\index{DISPLAY\_Led\_t@{DISPLAY\_Led\_t}}
+
+
+Collaboration diagram for DISPLAY\+\_\+\+Led\+\_\+t\+:
+% FIG 0
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDISPLAY__Led__t_a9c243a13243d45704670ffa03222b288}\label{structDISPLAY__Led__t_a9c243a13243d45704670ffa03222b288}} 
+\mbox{\hyperlink{structLED__t}{LED\+\_\+t}} {\bfseries udt\+\_\+\+Leds} \mbox{[}NUM\+\_\+\+OF\+\_\+\+LEDS\mbox{]}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ahmed-\/ferganey/\+Desktop/\+My\+Git\+Hub/\+Graduation\+Project/2-\/\+APPs/\+Main\+App/DISPLAY\+\_\+manager.\+h\end{DoxyCompactItemize}

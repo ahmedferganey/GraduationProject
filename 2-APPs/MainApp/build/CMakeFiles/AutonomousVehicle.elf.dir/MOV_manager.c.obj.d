@@ -8,5 +8,4 @@ CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.c.obj: \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DIO_private.h \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/TIMER_interface.h \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SERVOMOTOR_interface.h \
- /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SERVOMOTOR_config.h \
- /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SERVOMOTOR_private.h
+ /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SERVOMOTOR_config.h

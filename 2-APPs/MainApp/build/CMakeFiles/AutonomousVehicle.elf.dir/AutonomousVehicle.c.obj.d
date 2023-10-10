@@ -21,11 +21,12 @@ CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.obj: \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/ULTRASONIC_config.h \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/ULTRASONIC_private.h \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/LED_interface.h \
+ /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/LED_config.h \
+ /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/LED_private.h \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SENSOR_manager.h \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/UPD_manager.h \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SYS_manager.h \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/USART_interface.h \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/MOV_manager.h \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SERVOMOTOR_interface.h \
- /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SERVOMOTOR_config.h \
- /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SERVOMOTOR_private.h
+ /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/SERVOMOTOR_config.h

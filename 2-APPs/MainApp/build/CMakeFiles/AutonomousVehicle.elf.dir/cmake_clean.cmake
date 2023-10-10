@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.c.obj.d"
   "CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.obj"
   "CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.obj.d"
+  "CMakeFiles/AutonomousVehicle.elf.dir/LED_program.c.obj"
+  "CMakeFiles/AutonomousVehicle.elf.dir/LED_program.c.obj.d"
   "CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.c.obj"
   "CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.c.obj.d"
   "CMakeFiles/AutonomousVehicle.elf.dir/SENSOR_manager.c.obj"

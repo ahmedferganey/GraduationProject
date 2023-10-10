@@ -10,8 +10,7 @@
 
 Std_ReturnType udtReturnValue = E_NOT_OK;
 extern ULTRASONIC_obj_t udt_Ultrasonic;
-extern LED_t udt_Leds[3]; //must be 4 but for lack of leds, will use 3 pins
-
+extern LED_t udt_Leds[NUM_OF_LEDS]; //must be 4 but for lack of leds, will use 3 pins
 
 int main(void)
 {
@@ -38,7 +37,7 @@ void
 	udtReturnValue = SENSOR_udtSensorsInit(&udt_Ultrasonic, 1);
 	udtReturnValue = SYS_udtClockInit();
 	udtReturnValue = SYS_udtCommunicationInit();
-	udtReturnValue = DISPLAY_udtDiplayInit();
+	udtReturnValue = DISPLAY_udtDiplayInit(udt_Leds, NUM_OF_LEDS);
 	udtReturnValue = MOV_udtMotorInit();
 
 	return udtReturnValue;

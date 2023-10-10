@@ -26,13 +26,18 @@
 #include "LED_interface.h"
 
 /* -------------------------------- Macro Declarations ------------------------------------------*/
-
+#define NUM_OF_LEDS     3
 
 
 /* -------------------------------- Macro Functions Declarations --------------------------------*/
 
 
 /* -------------------------------- Data Type Declarations --------------------------------------*/          
+typedef struct 
+{
+	LED_t udt_Leds[NUM_OF_LEDS];
+
+}DISPLAY_Led_t; 
 
 /* -------------------------------- APIs Declarations ---------------------------------------*/
 Std_ReturnType DISPLAY_udtDiplayInit

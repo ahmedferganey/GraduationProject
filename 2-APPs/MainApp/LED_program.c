@@ -5,18 +5,8 @@
  */ 
  
 /* -------------------------------- Includes -----------------------------------------------*/
-/**			LIBRARY Includes			**/
-#include "STD_TYPES.h"
-#include "BIT_MATH.h"
-
-/**			MCAL Includes				**/
-#include "DIO_Interface.h"
-
 /**			HAL Includes				**/
 #include "LED_interface.h"
-#include "LED_config.h"
-#include "LED_private.h"
-
 
 
 /* -------------------------------- Global Variables ---------------------------------------*/

@@ -264,6 +264,30 @@ LCD_program.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.s
 .PHONY : LCD_program.c.s
 
+LED_program.obj: LED_program.c.obj
+.PHONY : LED_program.obj
+
+# target to build an object file
+LED_program.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/LED_program.c.obj
+.PHONY : LED_program.c.obj
+
+LED_program.i: LED_program.c.i
+.PHONY : LED_program.i
+
+# target to preprocess a source file
+LED_program.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/LED_program.c.i
+.PHONY : LED_program.c.i
+
+LED_program.s: LED_program.c.s
+.PHONY : LED_program.s
+
+# target to generate assembly for a file
+LED_program.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/LED_program.c.s
+.PHONY : LED_program.c.s
+
 MOV_manager.obj: MOV_manager.c.obj
 .PHONY : MOV_manager.obj
 
@@ -480,6 +504,9 @@ help:
 	@echo "... LCD_program.obj"
 	@echo "... LCD_program.i"
 	@echo "... LCD_program.s"
+	@echo "... LED_program.obj"
+	@echo "... LED_program.i"
+	@echo "... LED_program.s"
 	@echo "... MOV_manager.obj"
 	@echo "... MOV_manager.i"
 	@echo "... MOV_manager.s"

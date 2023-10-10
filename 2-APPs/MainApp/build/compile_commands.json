@@ -25,6 +25,12 @@
 },
 {
   "directory": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build",
+  "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c99 -o CMakeFiles/AutonomousVehicle.elf.dir/LED_program.c.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/LED_program.c",
+  "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/LED_program.c",
+  "output": "CMakeFiles/AutonomousVehicle.elf.dir/LED_program.c.obj"
+},
+{
+  "directory": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build",
   "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c99 -o CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.c.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/MOV_manager.c",
   "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/MOV_manager.c",
   "output": "CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.c.obj"
