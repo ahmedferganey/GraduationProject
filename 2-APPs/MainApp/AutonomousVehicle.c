@@ -57,7 +57,7 @@ void
 	return udtReturnValue;
 }
 /*******************************  APP Input		********************************/
-Std_ReturnType AUTONOMOUSVEHICLE_udtInput
+Std_ReturnType AUTONOMOUSVEHICLE_udtAppInput
 (
 void
 )
@@ -67,7 +67,7 @@ void
 	return udtReturnValue;
 }
 /*******************************  APP Update	********************************/
-Std_ReturnType AUTONOMOUSVEHICLE_udtUpdate
+Std_ReturnType AUTONOMOUSVEHICLE_udtAppUpdate
 (
 void
 )
@@ -77,7 +77,7 @@ void
 	return udtReturnValue;
 }
 /*******************************  APP Output	********************************/
-Std_ReturnType AUTONOMOUSVEHICLE_udtOutput
+Std_ReturnType AUTONOMOUSVEHICLE_udtAppOutput
 (
 void
 )

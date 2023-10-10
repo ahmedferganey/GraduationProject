@@ -30,17 +30,17 @@ Std_ReturnType AUTONOMOUSVEHICLE_udtAppInit
 void
 );
 
-Std_ReturnType AUTONOMOUSVEHICLE_udtInput
+Std_ReturnType AUTONOMOUSVEHICLE_udtAppInput
 (
 void
 );
 
-Std_ReturnType AUTONOMOUSVEHICLE_udtUpdate
+Std_ReturnType AUTONOMOUSVEHICLE_udtAppUpdate
 (
 void
 );
 
-Std_ReturnType AUTONOMOUSVEHICLE_udtOutput
+Std_ReturnType AUTONOMOUSVEHICLE_udtAppOutput
 (
 void
 );
