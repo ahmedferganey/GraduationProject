@@ -12,7 +12,8 @@
         "servomotor_interface.h": "c",
         "lcd_interface.h": "c",
         "dcmotor_interface.h": "c",
-        "joystick_interface.h": "c"
+        "joystick_interface.h": "c",
+        "display_manager.h": "c"
     },
     "author-generator.email": "ahmedferganey707@gmail.com"
 }

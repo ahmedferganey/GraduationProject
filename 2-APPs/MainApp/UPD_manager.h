@@ -24,6 +24,9 @@
 #include "DISPLAY_manager.h"
 
 
+/* -------------------------------- variable Declarations ------------------------------------------*/
+extern DISPLAY_Led_t 	  udt_Leds; 			    //must be 4 but for lack of leds, will use 3 pins
+
 /* -------------------------------- Macro Declarations ------------------------------------------*/
 #define UPD_STARTUP_MODE            0
 #define UPD_MANUAL_MODE             1

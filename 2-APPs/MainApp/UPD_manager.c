@@ -137,20 +137,20 @@ upd_vehiclemode_t* pudt_currentmode
 		if ((UPD_STARTUP_MODE == (*pudt_currentmode)))
 		{
 			/* Blink All Leds, Display "select mode" on LCD */
-			udtReturnValue = DISPLAY_udtDiplayStartup(pudt_currentmode);
+			udtReturnValue = DISPLAY_udtDiplayStartup(&udt_Leds, NUM_OF_LEDS);
 			/* turn off All Motors "servo and DC" */
 
 		}
 		/* manual mode */
 		else if((UPD_MANUAL_MODE == (*pudt_currentmode)))
 		{
-			udtReturnValue = DISPLAY_udtDiplayManual(pudt_currentmode);
+			udtReturnValue = DISPLAY_udtDiplayManual(&udt_Leds, NUM_OF_LEDS);
 
 		}
 		/* autonomous mode */
 		else if((UPD_AUTONOMOUS_MODE == (*pudt_currentmode)))
 		{
-			udtReturnValue = DISPLAY_udtDiplayAutonomous(pudt_currentmode);
+			udtReturnValue = DISPLAY_udtDiplayAutonomous(&udt_Leds, NUM_OF_LEDS);
 
 		}
 		/* error handling */
