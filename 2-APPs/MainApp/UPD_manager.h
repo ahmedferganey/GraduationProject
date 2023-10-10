@@ -21,7 +21,7 @@
 
 /**			HAL Includes				**/
 #include "SENSOR_manager.h"
-
+#include "DISPLAY_manager.h"
 
 
 /* -------------------------------- Macro Declarations ------------------------------------------*/
@@ -41,21 +41,36 @@ AUTONOMOUSMODE,
 }upd_vehiclemode_t;
 
 /* -------------------------------- Class Declarations ------------------------------------------*/
+/// @brief 
+/// @param pudt_currentmode 
+/// @return 
 Std_ReturnType UPD_udtSystemInput
 (
 upd_vehiclemode_t* pudt_currentmode
 );
+/////////////////////////////////////////////////////////////////////////////////////
 
+/// @brief 
+/// @param pudt_currentmode 
+/// @return 
 Std_ReturnType UPD_udtSystemUpadte
 (
 upd_vehiclemode_t* pudt_currentmode
 );
+/////////////////////////////////////////////////////////////////////////////////////
 
+/// @brief 
+/// @param pudt_currentmode 
+/// @return 
 Std_ReturnType UPD_udtSystemOutput
 (
 upd_vehiclemode_t* pudt_currentmode
 );
+/////////////////////////////////////////////////////////////////////////////////////
 
+/// @brief 
+/// @param  
+/// @return 
 Std_ReturnType UPD_udtServoUpadte
 (
 void

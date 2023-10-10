@@ -121,7 +121,6 @@ upd_vehiclemode_t* pudt_currentmode
 
 /////////////////////////////////////////////////////////////////////////////////////
 
-
 /// @brief 
 /// @param pudt_currentmode 
 /// @return 
@@ -138,20 +137,20 @@ upd_vehiclemode_t* pudt_currentmode
 		if ((UPD_STARTUP_MODE == (*pudt_currentmode)))
 		{
 			/* Blink All Leds, Display "select mode" on LCD */
-			udtReturnValue = DISPLAY_udtDiplayStartup();
+			udtReturnValue = DISPLAY_udtDiplayStartup(pudt_currentmode);
 			/* turn off All Motors "servo and DC" */
 
 		}
 		/* manual mode */
 		else if((UPD_MANUAL_MODE == (*pudt_currentmode)))
 		{
-			udtReturnValue = DISPLAY_udtDiplayManual();
+			udtReturnValue = DISPLAY_udtDiplayManual(pudt_currentmode);
 
 		}
 		/* autonomous mode */
 		else if((UPD_AUTONOMOUS_MODE == (*pudt_currentmode)))
 		{
-			udtReturnValue = DISPLAY_udtDiplayAutonomous();
+			udtReturnValue = DISPLAY_udtDiplayAutonomous(pudt_currentmode);
 
 		}
 		/* error handling */
@@ -170,7 +169,6 @@ upd_vehiclemode_t* pudt_currentmode
 
 
 /////////////////////////////////////////////////////////////////////////////////////
-
 
 /// @brief 
 /// @param  
@@ -208,78 +206,3 @@ void
 	return udtReturnValue;
 }
 
-/********************************************************************************************/
-/*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
-/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
-/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
-/*  @return	 Std_ReturnType																	*/
-/*           (E_OK)		  : The function done successfully									*/
-/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
-/********************************************************************************************/
-
-
-
-
-
-
-/********************************************************************************************/
-/*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
-/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
-/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
-/*  @return	 Std_ReturnType																	*/
-/*           (E_OK)		  : The function done successfully									*/
-/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
-/********************************************************************************************/
-
-
-
-
-
-
-
-/********************************************************************************************/
-/*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
-/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
-/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
-/*  @return	 Std_ReturnType																	*/
-/*           (E_OK)		  : The function done successfully									*/
-/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
-/********************************************************************************************/
-
-
-
-
-
-
-
-
-
-
-
-/********************************************************************************************/
-/*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
-/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
-/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
-/*  @return	 Std_ReturnType																	*/
-/*           (E_OK)		  : The function done successfully									*/
-/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
-/********************************************************************************************/
-
-
-
-
-
-
-
-
-
-
-
-/********************************************************************************************/
-/*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
-/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
-/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
-/*  @return	 Std_ReturnType																	*/
-/*           (E_OK)		  : The function done successfully									*/
-/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
-/********************************************************************************************/

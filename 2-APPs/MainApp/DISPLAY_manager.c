@@ -80,14 +80,10 @@ volatile DISPLAY_Led_t udt_Leds =
 
 
 /* -------------------------------- APIs Implementation ------------------------------------------*/
-/********************************************************************************************/
-/*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
-/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
-/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
-/*  @return	 Std_ReturnType																	*/
-/*           (E_OK)		  : The function done successfully									*/
-/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
-/********************************************************************************************/
+/// @brief 
+/// @param LED_pudtconfig 
+/// @param copy_u8NumberOfLeds 
+/// @return 
 Std_ReturnType DISPLAY_udtDiplayInit
 (
 const DISPLAY_Led_t* LED_pudtconfig,
@@ -116,6 +112,9 @@ uint8 copy_u8NumberOfLeds
 	return udtReturnValue;		
 }
 
+
+/////////////////////////////////////////////////////////////////////////////////////
+
 /// @brief 
 /// @param LED_pudtconfig 
 /// @param copy_u8NumberOfLeds 
@@ -139,6 +138,9 @@ uint8 copy_u8NumberOfLeds
 	}
 	return udtReturnValue;		
 }
+
+
+/////////////////////////////////////////////////////////////////////////////////////
 
 /// @brief 
 /// @param LED_pudtconfig 
@@ -165,8 +167,7 @@ uint8 copy_u8NumberOfLeds
 }
 
 
-
-
+/////////////////////////////////////////////////////////////////////////////////////
 
 /// @brief 
 /// @param LED_pudtconfig 
