@@ -73,3 +73,16 @@ void
 }
 
 
+
+Std_ReturnType SYS_udtCommunicationInput
+(
+void    
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+
+    /* COMMUNICATION Input Section */
+
+
+	return udtReturnValue;
+}

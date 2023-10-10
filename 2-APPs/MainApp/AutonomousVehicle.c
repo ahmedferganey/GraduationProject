@@ -4,10 +4,15 @@
  * Author		: Ahmed Ferganey
  */ 
 
+
+
 /* Comment!: Includes */
 #define F_CPU 8000000ul
 #include "util/delay.h"
 #include "AutonomousVehicle..h"
+
+
+
 
 /************** Std_ReturnType ****************/
 Std_ReturnType udtReturnValue = E_NOT_OK;
@@ -15,11 +20,20 @@ Std_ReturnType udtReturnValue = E_NOT_OK;
 /************** Global Instances **************/
 extern ULTRASONIC_obj_t udt_Ultrasonic;
 extern DISPLAY_Led_t 	udt_Leds; 					//must be 4 but for lack of leds, will use 3 pins
+app_vehiclemode_t  APP_VehicleMode = 0;				//this value can be 0,1,2 "start, manual, autonomous"
 
 /************** Global Pointers ***************/
 LED_t* G_pudtptr = (LED_t*)&udt_Leds;
 
 
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// @brief  separeted into 4 sections "init, input, upate, output"
+/// @param  void
+/// @return no meaning for return cause presence of super loop
 int main(void)
 {
 	/* !Comment: Init App System */
@@ -36,6 +50,9 @@ int main(void)
 
 	}
 }
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
 
 

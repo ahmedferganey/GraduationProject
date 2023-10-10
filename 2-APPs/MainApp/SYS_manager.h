@@ -48,6 +48,9 @@ Std_ReturnType SYS_udtCommunicationInit
 void    
 );
 
-
+Std_ReturnType SYS_udtCommunicationInput
+(
+void    
+);
 
 #endif  /* _SYS_MANAGER_H_ */
