@@ -31,7 +31,7 @@ LED_t* G_pudtptr = (LED_t*)&udt_Leds;
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-/// @brief  separeted into 4 sections "init, input, upate, output"
+/// @brief  separeted into 4 sections "init, input, update, output"
 /// @param  void
 /// @return no meaning for return cause presence of super loop
 int main(void)
