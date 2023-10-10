@@ -1,0 +1,38 @@
+/**
+ * @author Ahmed Ferganey
+ * FileName JOYSTICK_interface.h
+ * @email ahmedferganey707@gmail.com
+ * @create date 2023-10-10 20:59:52
+ * @modify date 2023-10-10 20:59:52
+ * @desc [description]
+ */
+
+
+
+#ifndef _JOYSTICK_INTERFACE_H_
+#define _JOYSTICK_INTERFACE_H_
+
+
+/* -------------------------------- Includes ----------------------------------------------------*/
+
+
+/* -------------------------------- Macro Declarations ------------------------------------------*/
+
+
+/* -------------------------------- Macro Functions Declarations --------------------------------*/
+
+
+/* -------------------------------- Data Type Declarations --------------------------------------*/
+
+
+
+/* -------------------------------- Function Declarations ---------------------------------------*/
+Std_ReturnType JOYSTICK_Init
+(
+void
+);
+
+
+
+
+#endif  /* _JOYSTICK_INTERFACE_H_ */

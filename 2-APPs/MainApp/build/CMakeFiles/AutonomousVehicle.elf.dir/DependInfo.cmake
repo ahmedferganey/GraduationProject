@@ -9,8 +9,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/AutonomousVehicle.c" "CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.obj" "gcc" "CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.obj.d"
+  "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DCMOTOR_program.c" "CMakeFiles/AutonomousVehicle.elf.dir/DCMOTOR_program.c.obj" "gcc" "CMakeFiles/AutonomousVehicle.elf.dir/DCMOTOR_program.c.obj.d"
   "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DIO_program.c" "CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.obj" "gcc" "CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.obj.d"
   "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DISPLAY_manager.c" "CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.c.obj" "gcc" "CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.c.obj.d"
+  "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/JOYSTICK_program.c" "CMakeFiles/AutonomousVehicle.elf.dir/JOYSTICK_program.c.obj" "gcc" "CMakeFiles/AutonomousVehicle.elf.dir/JOYSTICK_program.c.obj.d"
   "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/LCD_program.c" "CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.obj" "gcc" "CMakeFiles/AutonomousVehicle.elf.dir/LCD_program.c.obj.d"
   "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/LED_program.c" "CMakeFiles/AutonomousVehicle.elf.dir/LED_program.c.obj" "gcc" "CMakeFiles/AutonomousVehicle.elf.dir/LED_program.c.obj.d"
   "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/MOV_manager.c" "CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.c.obj" "gcc" "CMakeFiles/AutonomousVehicle.elf.dir/MOV_manager.c.obj.d"

@@ -32,8 +32,8 @@ void
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 
     udtReturnValue = ServoMotor_udtInit();
-    //udtReturnValue = Joystick_Init();
-    //udtReturnValue = DCMotor_Controller_Init();
+    udtReturnValue = JOYSTICK_Init();
+    udtReturnValue = DCMotor_Controller_Init();
 
 	return udtReturnValue;		
 }

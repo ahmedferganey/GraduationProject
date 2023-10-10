@@ -192,6 +192,30 @@ AutonomousVehicle.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.s
 .PHONY : AutonomousVehicle.c.s
 
+DCMOTOR_program.obj: DCMOTOR_program.c.obj
+.PHONY : DCMOTOR_program.obj
+
+# target to build an object file
+DCMOTOR_program.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/DCMOTOR_program.c.obj
+.PHONY : DCMOTOR_program.c.obj
+
+DCMOTOR_program.i: DCMOTOR_program.c.i
+.PHONY : DCMOTOR_program.i
+
+# target to preprocess a source file
+DCMOTOR_program.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/DCMOTOR_program.c.i
+.PHONY : DCMOTOR_program.c.i
+
+DCMOTOR_program.s: DCMOTOR_program.c.s
+.PHONY : DCMOTOR_program.s
+
+# target to generate assembly for a file
+DCMOTOR_program.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/DCMOTOR_program.c.s
+.PHONY : DCMOTOR_program.c.s
+
 DIO_program.obj: DIO_program.c.obj
 .PHONY : DIO_program.obj
 
@@ -239,6 +263,30 @@ DISPLAY_manager.s: DISPLAY_manager.c.s
 DISPLAY_manager.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.c.s
 .PHONY : DISPLAY_manager.c.s
+
+JOYSTICK_program.obj: JOYSTICK_program.c.obj
+.PHONY : JOYSTICK_program.obj
+
+# target to build an object file
+JOYSTICK_program.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/JOYSTICK_program.c.obj
+.PHONY : JOYSTICK_program.c.obj
+
+JOYSTICK_program.i: JOYSTICK_program.c.i
+.PHONY : JOYSTICK_program.i
+
+# target to preprocess a source file
+JOYSTICK_program.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/JOYSTICK_program.c.i
+.PHONY : JOYSTICK_program.c.i
+
+JOYSTICK_program.s: JOYSTICK_program.c.s
+.PHONY : JOYSTICK_program.s
+
+# target to generate assembly for a file
+JOYSTICK_program.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/JOYSTICK_program.c.s
+.PHONY : JOYSTICK_program.c.s
 
 LCD_program.obj: LCD_program.c.obj
 .PHONY : LCD_program.obj
@@ -495,12 +543,18 @@ help:
 	@echo "... AutonomousVehicle.obj"
 	@echo "... AutonomousVehicle.i"
 	@echo "... AutonomousVehicle.s"
+	@echo "... DCMOTOR_program.obj"
+	@echo "... DCMOTOR_program.i"
+	@echo "... DCMOTOR_program.s"
 	@echo "... DIO_program.obj"
 	@echo "... DIO_program.i"
 	@echo "... DIO_program.s"
 	@echo "... DISPLAY_manager.obj"
 	@echo "... DISPLAY_manager.i"
 	@echo "... DISPLAY_manager.s"
+	@echo "... JOYSTICK_program.obj"
+	@echo "... JOYSTICK_program.i"
+	@echo "... JOYSTICK_program.s"
 	@echo "... LCD_program.obj"
 	@echo "... LCD_program.i"
 	@echo "... LCD_program.s"

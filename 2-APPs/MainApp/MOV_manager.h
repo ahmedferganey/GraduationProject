@@ -25,7 +25,9 @@
 
 /**			HAL Includes				**/
 #include "SERVOMOTOR_interface.h"
-
+#include "DCMOTOR_interface.h"
+#include "DCMOTOR_interface.h"
+#include "JOYSTICK_interface.h"
 
 /**			SERVICE Includes				**/
 

@@ -123,7 +123,7 @@ set(CUNREACH        "-Wunreachable-code")
 set(CVERSION        "-std=c++11")
 
 
-set(CXX_FLAGS        ${CMCU}  ${CDEFS} ${COPT} ${CWARNING} ${CUNREACH} ${CERROR} ${CISO} ${CCLASS} ${CCONV} ${CCA})
+set(CXX_FLAGS       ${CMCU}  ${CDEFS} ${COPT} ${CWARNING} ${CUNREACH} ${CERROR} ${CISO} ${CCLASS} ${CCONV} ${CCA})
 set(CMAKE_CXX_FLAGS ${CXXFLAGS})
 set(CMAKE_ASM_FLAGS ${CXXFLAGS})
 
