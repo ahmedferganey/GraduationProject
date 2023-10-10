@@ -20,7 +20,7 @@ Std_ReturnType udtReturnValue = E_NOT_OK;
 /************** Global Instances **************/
 extern ULTRASONIC_obj_t udt_Ultrasonic;
 extern DISPLAY_Led_t 	udt_Leds; 					//must be 4 but for lack of leds, will use 3 pins
-app_vehiclemode_t  APP_VehicleMode = 0;				//this value can be 0,1,2 "start, manual, autonomous"
+extern upd_vehiclemode_t  udt_VehicleMode = 0;				//this value can be 0,1,2 "start, manual, autonomous"
 
 /************** Global Pointers ***************/
 LED_t* G_pudtptr = (LED_t*)&udt_Leds;

@@ -30,11 +30,38 @@
 /********************************************************************************************/
 Std_ReturnType UPD_udtModeUpadte
 (
-void
+upd_vehiclemode_t* pudt_currentmode
 )
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 
+	if (pudt_currentmode != NULL)
+	{
+		/* startup mode */
+		if ((UPD_STARTUP_MODE == (*pudt_currentmode)))
+		{
+
+		}
+		/* manual mode */
+		else if((UPD_MANUAL_MODE == (*pudt_currentmode)))
+		{
+
+		}
+		/* autonomous mode */
+		else if((UPD_AUTONOMOUS_MODE == (*pudt_currentmode)))
+		{
+
+		}
+		/* error handling */
+		else
+		{
+			udtReturnValue = E_NOT_OK;
+		}
+	}
+	else
+	{
+		udtReturnValue = E_NOT_OK;
+	}
 
 	return udtReturnValue;
 }

@@ -22,12 +22,7 @@
 
 
 /*************************** Comment!: Data Type Declarations **************************/
-typedef enum 
-{
-STARTUPMODE=0,
-MANUALMODE,
-AUTONOMOUSMODE,
-}app_vehiclemode_t;
+
 
 /*************************** Comment!: Function Declarations ***************************/
 Std_ReturnType AUTONOMOUSVEHICLE_udtAppInit

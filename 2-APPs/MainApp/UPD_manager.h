@@ -25,14 +25,19 @@
 
 
 /* -------------------------------- Macro Declarations ------------------------------------------*/
-
-
-	
+#define UPD_STARTUP_MODE            0
+#define UPD_MANUAL_MODE             1
+#define UPD_AUTONOMOUS_MODE         2	
 /* -------------------------------- Macro Functions Declarations --------------------------------*/
 
 
 /* -------------------------------- Data Type Declarations --------------------------------------*/
-
+typedef enum 
+{
+STARTUPMODE=0,
+MANUALMODE,
+AUTONOMOUSMODE,
+}upd_vehiclemode_t;
 
 /* -------------------------------- Class Declarations ------------------------------------------*/
 Std_ReturnType UPD_udtModeUpadte
