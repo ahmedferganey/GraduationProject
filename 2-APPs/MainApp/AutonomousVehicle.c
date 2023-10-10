@@ -9,14 +9,14 @@
 #include "util/delay.h"
 #include "AutonomousVehicle..h"
 
-/* Standard Return */
+/************** Std_ReturnType ****************/
 Std_ReturnType udtReturnValue = E_NOT_OK;
 
-/* Global Instances */
+/************** Global Instances **************/
 extern ULTRASONIC_obj_t udt_Ultrasonic;
-extern DISPLAY_Led_t 	udt_Leds; 			//must be 4 but for lack of leds, will use 3 pins
+extern DISPLAY_Led_t 	udt_Leds; 					//must be 4 but for lack of leds, will use 3 pins
 
-/* Global Pointers */
+/************** Global Pointers ***************/
 LED_t* G_pudtptr = (LED_t*)&udt_Leds;
 
 
@@ -38,6 +38,9 @@ int main(void)
 }
 
 
+
+/********************************************** APP APIs	**********************************************/
+/*******************************  APP Init	*******************************/
 Std_ReturnType AUTONOMOUSVEHICLE_udtAppInit
 (
 void
@@ -53,9 +56,7 @@ void
 
 	return udtReturnValue;
 }
-
-
-
+/*******************************  APP Input		********************************/
 Std_ReturnType AUTONOMOUSVEHICLE_udtUpdate
 (
 void
@@ -65,3 +66,24 @@ void
 
 	return udtReturnValue;
 }
+/*******************************  APP Update	********************************/
+Std_ReturnType AUTONOMOUSVEHICLE_udtUpdate
+(
+void
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+
+	return udtReturnValue;
+}
+/*******************************  APP Output	********************************/
+Std_ReturnType AUTONOMOUSVEHICLE_udtUpdate
+(
+void
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+
+	return udtReturnValue;
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
