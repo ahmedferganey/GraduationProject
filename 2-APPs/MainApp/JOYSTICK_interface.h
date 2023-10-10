@@ -32,6 +32,31 @@ Std_ReturnType JOYSTICK_Init
 void
 );
 
+Std_ReturnType Joystick_Left_Pressed
+(
+void
+);
+
+Std_ReturnType Joystick_Down_Pressed
+(
+void
+);
+
+Std_ReturnType Joystick_Up_Pressed
+(
+void
+);
+
+Std_ReturnType Joystick_Center_Pressed
+(
+void
+);
+
+Std_ReturnType Joystick_Right_Pressed
+(
+void
+);
+
 
 
 
