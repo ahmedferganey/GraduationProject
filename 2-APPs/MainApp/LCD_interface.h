@@ -8,7 +8,7 @@
 #define _LCD_INTERFACE_H_
 
 /* Comment!: Includes start */
-//#define F_CPU 8000000UL
+#define F_CPU 8000000UL
 #include "util/delay.h"
 
 #include "STD_TYPES.h"

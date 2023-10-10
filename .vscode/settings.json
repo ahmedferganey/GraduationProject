@@ -9,7 +9,8 @@
         "autonomousvehicle..h": "c",
         "upd_manager.h": "c",
         "led_interface.h": "c",
-        "servomotor_interface.h": "c"
+        "servomotor_interface.h": "c",
+        "lcd_interface.h": "c"
     },
     "author-generator.email": "ahmedferganey707@gmail.com"
 }

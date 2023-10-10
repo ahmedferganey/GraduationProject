@@ -16,9 +16,9 @@
 #define LCD_DATA_PORT        				DIO->PORTA
 #define LCD_DATA_DIRECTION   				DIO->DDRA
 /* !Comment: Control Pins of LCD */
-#define LCD_RS								PORTC_INDEX,DIO_PIN5
-#define LCD_RW								PORTC_INDEX,DIO_PIN6
-#define LCD_E								PORTC_INDEX,DIO_PIN7
+#define LCD_RS								PORTB_INDEX,DIO_PIN1
+#define LCD_RW								PORTB_INDEX,DIO_PIN2
+#define LCD_E								PORTB_INDEX,DIO_PIN3
 
 /* !Comment: configuration of LCD Mode */
 /*
@@ -41,7 +41,7 @@
 /***************************************************************************************/
 #define CLCD_DATA_PORT      DIO_PORT_NUMA
 /* RS,RW,EN */
-#define CLCD_CONTROL_PORT   DIO_PORT_NUMC
+#define CLCD_CONTROL_PORT   DIO_PORT_NUMB
 
 
 
@@ -59,9 +59,9 @@
  	 7-DIO_PIN_NUM6
  	 8-DIO_PIN_NUM7
 */
-#define CLCD_RS             DIO_PIN_NUM5
-#define CLCD_RW             DIO_PIN_NUM6
-#define CLCD_EN             DIO_PIN_NUM7
+#define CLCD_RS             DIO_PIN_NUM1
+#define CLCD_RW             DIO_PIN_NUM2
+#define CLCD_EN             DIO_PIN_NUM3
 
 #define CLCD_D4             DIO_PIN_NUM4
 #define CLCD_D5             DIO_PIN_NUM5

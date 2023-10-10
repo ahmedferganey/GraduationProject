@@ -89,11 +89,7 @@ uint8 copy_u8NumberOfLeds
 	Std_ReturnType udtReturnValue = E_NOT_OK;
     LED_t* L_pudtptr = (LED_t*)LED_pudtconfig;
 
-	if (((LED_pudtconfig == NULL) && (NUM_OF_LEDS < copy_u8NumberOfLeds)))
-	{
-		udtReturnValue = E_NOT_OK;
-	}
-	else
+	if (((NULL != LED_pudtconfig) && (NULL != L_pudtptr)))
 	{
     	/* DISPLAY Init Section*/
     	udtReturnValue = LCD_udt4BitInitialize();
@@ -102,7 +98,12 @@ uint8 copy_u8NumberOfLeds
 		{
 			udtReturnValue = LED_udtInit(L_pudtptr);	
 			++L_pudtptr;
-		}
+		}		
 	}
+	else
+	{
+		udtReturnValue = E_NOT_OK;
+	}
+
 	return udtReturnValue;		
 }
