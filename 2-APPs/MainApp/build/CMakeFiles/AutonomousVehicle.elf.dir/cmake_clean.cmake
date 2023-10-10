@@ -23,6 +23,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.obj.d"
   "CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.c.obj"
   "CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.c.obj.d"
+  "CMakeFiles/AutonomousVehicle.elf.dir/USART_program.c.obj"
+  "CMakeFiles/AutonomousVehicle.elf.dir/USART_program.c.obj.d"
 )
 
 # Per-language clean rules from dependency scanning.

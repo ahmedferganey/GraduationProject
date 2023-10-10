@@ -19,6 +19,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/TIMER_program.c" "CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.obj" "gcc" "CMakeFiles/AutonomousVehicle.elf.dir/TIMER_program.c.obj.d"
   "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/ULTRASONIC_program.c" "CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.obj" "gcc" "CMakeFiles/AutonomousVehicle.elf.dir/ULTRASONIC_program.c.obj.d"
   "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/UPD_manager.c" "CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.c.obj" "gcc" "CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.c.obj.d"
+  "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/USART_program.c" "CMakeFiles/AutonomousVehicle.elf.dir/USART_program.c.obj" "gcc" "CMakeFiles/AutonomousVehicle.elf.dir/USART_program.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

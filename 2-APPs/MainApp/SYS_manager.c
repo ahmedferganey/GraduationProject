@@ -30,6 +30,7 @@ void
 )
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
+
     /* CLOCK INIT Section */
     TIMER0_vdInit();
 	    /* Init TIMERS & ICU */
@@ -46,6 +47,7 @@ void
 	    	*/
 	TIMER1_vdInit();
     TIMER2_vdInit();
+    udtReturnValue= E_OK;
 
 	return udtReturnValue;
 }
@@ -56,8 +58,10 @@ void
 )
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
-    /* COMMUNICATION INIT Section */
 
+    /* COMMUNICATION INIT Section */
+    USART_voidInit();
+    udtReturnValue= E_OK;
 
 	return udtReturnValue;
 }

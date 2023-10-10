@@ -19,6 +19,7 @@
 /**			MCAL Includes				**/
 #include "DIO_interface.h"
 #include "TIMER_interface.h"
+#include "USART_interface.h"
 
 /**			HAL Includes				**/
 
@@ -40,7 +41,10 @@ Std_ReturnType SYS_udtClockInit
 void
 );
 
-
+Std_ReturnType SYS_udtCommunicationInit
+(
+void    
+);
 
 
 #endif  /* _SYS_MANAGER_H_ */

@@ -432,6 +432,30 @@ UPD_manager.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/UPD_manager.c.s
 .PHONY : UPD_manager.c.s
 
+USART_program.obj: USART_program.c.obj
+.PHONY : USART_program.obj
+
+# target to build an object file
+USART_program.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/USART_program.c.obj
+.PHONY : USART_program.c.obj
+
+USART_program.i: USART_program.c.i
+.PHONY : USART_program.i
+
+# target to preprocess a source file
+USART_program.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/USART_program.c.i
+.PHONY : USART_program.c.i
+
+USART_program.s: USART_program.c.s
+.PHONY : USART_program.s
+
+# target to generate assembly for a file
+USART_program.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/USART_program.c.s
+.PHONY : USART_program.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -477,6 +501,9 @@ help:
 	@echo "... UPD_manager.obj"
 	@echo "... UPD_manager.i"
 	@echo "... UPD_manager.s"
+	@echo "... USART_program.obj"
+	@echo "... USART_program.i"
+	@echo "... USART_program.s"
 .PHONY : help
 
 
