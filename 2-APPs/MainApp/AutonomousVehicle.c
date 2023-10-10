@@ -18,9 +18,9 @@
 Std_ReturnType udtReturnValue = E_NOT_OK;
 
 /************** Global Instances **************/
-extern ULTRASONIC_obj_t udt_Ultrasonic;
-extern DISPLAY_Led_t 	udt_Leds; 					//must be 4 but for lack of leds, will use 3 pins
-extern upd_vehiclemode_t  udt_VehicleMode = 0;				//this value can be 0,1,2 "start, manual, autonomous"
+extern ULTRASONIC_obj_t   udt_Ultrasonic;
+extern DISPLAY_Led_t 	  udt_Leds; 			    //must be 4 but for lack of leds, will use 3 pins
+upd_vehiclemode_t  udt_VehicleMode = 0;				//this value can be 0,1,2 "start, manual, autonomous"
 
 /************** Global Pointers ***************/
 LED_t* G_pudtptr = (LED_t*)&udt_Leds;
@@ -65,11 +65,11 @@ void
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 
-	udtReturnValue = SENSOR_udtSensorsInit(&udt_Ultrasonic, 1);
-	udtReturnValue = SYS_udtClockIntrerruptInit();
-	udtReturnValue = SYS_udtCommunicationInit();
-	udtReturnValue = DISPLAY_udtDiplayInit(&udt_Leds, NUM_OF_LEDS); 
-	udtReturnValue = MOV_udtMotorInit();
+	udtReturnValue = SYS_udtCommunicationInit();					//init USART     & Bluetooth
+	udtReturnValue = MOV_udtMotorInit();							//init SERVO     & JOYSTICK   & DC-CONTROLLER
+	udtReturnValue = DISPLAY_udtDiplayInit(&udt_Leds, NUM_OF_LEDS); //init LCD 	     & LEDS
+	udtReturnValue = SYS_udtClockIntrerruptInit();					//init TIMERS    & GIE & EXTI
+	udtReturnValue = SENSOR_udtSensorsInit(&udt_Ultrasonic, 1);		//init ULRASONIC & LDR
 
 	return udtReturnValue;
 }

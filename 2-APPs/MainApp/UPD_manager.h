@@ -17,7 +17,7 @@
 #include "BIT_MATH.h"
 
 /**			MCAL Includes				**/
-
+#include "USART_interface.h"
 
 /**			HAL Includes				**/
 #include "SENSOR_manager.h"
@@ -28,6 +28,7 @@
 #define UPD_STARTUP_MODE            0
 #define UPD_MANUAL_MODE             1
 #define UPD_AUTONOMOUS_MODE         2	
+
 /* -------------------------------- Macro Functions Declarations --------------------------------*/
 
 

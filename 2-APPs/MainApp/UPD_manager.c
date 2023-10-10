@@ -28,7 +28,32 @@
 /*           (E_OK)		  : The function done successfully									*/
 /*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
 /********************************************************************************************/
-Std_ReturnType UPD_udtModeUpadte
+Std_ReturnType UPD_udtSystemInput
+(
+void
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	
+		/* startup mode */
+
+		/* startup mode */
+	
+		/* startup mode */
+	
+	return udtReturnValue;
+}
+
+
+/********************************************************************************************/
+/*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
+/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
+/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
+/*  @return	 Std_ReturnType																	*/
+/*           (E_OK)		  : The function done successfully									*/
+/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
+/********************************************************************************************/
+Std_ReturnType UPD_udtSystemUpadte
 (
 upd_vehiclemode_t* pudt_currentmode
 )
@@ -65,6 +90,30 @@ upd_vehiclemode_t* pudt_currentmode
 
 	return udtReturnValue;
 }
+
+
+
+/********************************************************************************************/
+/*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
+/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
+/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
+/*  @return	 Std_ReturnType																	*/
+/*           (E_OK)		  : The function done successfully									*/
+/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
+/********************************************************************************************/
+Std_ReturnType UPD_udtSystemOutput
+(
+upd_vehiclemode_t* pudt_currentmode
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+	
+	
+	
+	return udtReturnValue;
+}
+
+
 
 
 
