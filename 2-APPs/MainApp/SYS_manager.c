@@ -24,7 +24,7 @@
 
 
 /* -------------------------------- APIs Implementation ------------------------------------------*/
-Std_ReturnType SYS_udtClockInit
+Std_ReturnType SYS_udtClockIntrerruptInit
 (
 void    
 )
@@ -47,6 +47,12 @@ void
 	    	*/
 	TIMER1_vdInit();
     TIMER2_vdInit();
+
+
+    /* CLOCK INIT Section */
+	GIE_VoidEnable();
+
+	
     udtReturnValue= E_OK;
 
 	return udtReturnValue;
@@ -65,3 +71,5 @@ void
 
 	return udtReturnValue;
 }
+
+

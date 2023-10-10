@@ -41,7 +41,7 @@ void
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 
 	udtReturnValue = SENSOR_udtSensorsInit(&udt_Ultrasonic, 1);
-	udtReturnValue = SYS_udtClockInit();
+	udtReturnValue = SYS_udtClockIntrerruptInit();
 	udtReturnValue = SYS_udtCommunicationInit();
 	udtReturnValue = DISPLAY_udtDiplayInit(&udt_Leds, NUM_OF_LEDS); 
 	udtReturnValue = MOV_udtMotorInit();

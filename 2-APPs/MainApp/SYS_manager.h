@@ -20,6 +20,7 @@
 #include "DIO_interface.h"
 #include "TIMER_interface.h"
 #include "USART_interface.h"
+#include "GIE_interface.h"
 
 /**			HAL Includes				**/
 
@@ -36,7 +37,7 @@
 
 
 /* -------------------------------- APIs Declarations ------------------------------------------*/
-Std_ReturnType SYS_udtClockInit
+Std_ReturnType SYS_udtClockIntrerruptInit
 (
 void
 );
@@ -45,6 +46,7 @@ Std_ReturnType SYS_udtCommunicationInit
 (
 void    
 );
+
 
 
 #endif  /* _SYS_MANAGER_H_ */
