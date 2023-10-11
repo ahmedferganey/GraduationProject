@@ -13,14 +13,9 @@
 
 
 /* -------------------------------- APIs Implementation ------------------------------------*/
-/********************************************************************************************/
-/*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
-/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
-/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
-/*  @return	 Std_ReturnType																	*/
-/*           (E_OK)		  : The function done successfully									*/
-/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
-/********************************************************************************************/
+/// @brief 
+/// @param LED_pudtCfg 
+/// @return 
 Std_ReturnType LED_udtInit        
 ( 
 const LED_t* LED_pudtCfg
@@ -53,14 +48,12 @@ const LED_t* LED_pudtCfg
 	
 }
 
-/********************************************************************************************/
-/*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
-/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
-/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
-/*  @return	 Std_ReturnType																	*/
-/*           (E_OK)		  : The function done successfully									*/
-/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
-/********************************************************************************************/
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+/// @brief 
+/// @param LED_pudtCfg 
+/// @return 
 Std_ReturnType LED_udtOn          
 ( 
 const LED_t* LED_pudtCfg
@@ -100,14 +93,13 @@ const LED_t* LED_pudtCfg
 	return udtReturnValue;	
 	
 }
-/********************************************************************************************/
-/*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
-/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
-/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
-/*  @return	 Std_ReturnType																	*/
-/*           (E_OK)		  : The function done successfully									*/
-/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
-/********************************************************************************************/
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+/// @brief 
+/// @param LED_pudtCfg 
+/// @return 
 Std_ReturnType LED_udtOff         
 ( 
 const LED_t* LED_pudtCfg
@@ -147,14 +139,13 @@ const LED_t* LED_pudtCfg
 	return udtReturnValue;	
 	
 } 
-/********************************************************************************************/
-/*  @brief				  : Set Complete Port Direction 				@ref port_index_t	*/
-/*  @param	 udtPortIndex : to determine the required port				@ref port_index_t	*/
-/*  @param	 u8Direction  : to Set the required Direction				@ref uint8			*/
-/*  @return	 Std_ReturnType																	*/
-/*           (E_OK)		  : The function done successfully									*/
-/*           (E_NOT_OK)   : The function has issue to perform this action					*/                                                                   
-/********************************************************************************************/ 
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+/// @brief 
+/// @param LED_pudtCfg 
+/// @return 
 Std_ReturnType LED_udtToggle      
 ( 
 const LED_t* LED_pudtCfg

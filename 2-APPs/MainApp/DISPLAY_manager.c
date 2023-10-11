@@ -12,9 +12,9 @@
 #include "DISPLAY_manager.h"
 
 /* -------------------------------- Global Variables ------------------------------------------------------*/
-uint8 g_StartMode[8]  = "Startup";
-uint8 g_ManualMode[7] = "Manual";
-uint8 g_AutoMode[5]   = "Auto";
+static uint8 g_StartMode[8]  = "Startup";
+static uint8 g_ManualMode[7] = "Manual";
+static uint8 g_AutoMode[5]   = "Auto";
 
 /*
     pin_config_t LED_pin;
@@ -132,9 +132,10 @@ uint8 copy_u8NumberOfLeds
 			/* LED */
 		for (int i = 0 ; i < copy_u8NumberOfLeds ; i++)
 		{
-			udtReturnValue = LED_udtInit(L_pudtptr);	
+			udtReturnValue = LED_udtToggle(L_pudtptr);	
 			++L_pudtptr;
 		}
+		_delay_ms(200);
 
 	}
 	else
@@ -170,11 +171,8 @@ uint8 copy_u8NumberOfLeds
 															//here for ultrasonic
 
 			/* LED */
-		for (int i = 0 ; i < copy_u8NumberOfLeds ; i++)
-		{
-			udtReturnValue = LED_udtInit(L_pudtptr);	
-			++L_pudtptr;
-		}
+
+		
 	}
 	else
 	{
@@ -209,11 +207,7 @@ uint8 copy_u8NumberOfLeds
 															//here for ultrasonic
 		
 			/* LED */
-		for (int i = 0 ; i < copy_u8NumberOfLeds ; i++)
-		{
-			udtReturnValue = LED_udtInit(L_pudtptr);	
-			++L_pudtptr;
-		}
+
 	}
 	else
 	{

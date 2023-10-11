@@ -73,24 +73,42 @@ typedef struct
 
 
 /* -------------------------------- Function Declarations ---------------------------------------*/
+/// @brief 
+/// @param LED_pudtCfg 
+/// @return 
 Std_ReturnType LED_udtInit        
 ( 
 const LED_t* LED_pudtCfg
 );
 
 
+/////////////////////////////////////////////////////////////////////////////////////
+
+/// @brief 
+/// @param LED_pudtCfg 
+/// @return 
 Std_ReturnType LED_udtOn          
 ( 
 const LED_t* LED_pudtCfg
 );
 
 
+/////////////////////////////////////////////////////////////////////////////////////
+
+/// @brief 
+/// @param LED_pudtCfg 
+/// @return 
 Std_ReturnType LED_udtOff         
 ( 
 const LED_t* LED_pudtCfg
 );
- 
- 
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+/// @brief 
+/// @param LED_pudtCfg 
+/// @return 
 Std_ReturnType LED_udtToggle      
 ( 
 const LED_t* LED_pudtCfg
