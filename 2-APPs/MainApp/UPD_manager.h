@@ -49,7 +49,7 @@ AUTONOMOUSMODE,
 /// @return 
 Std_ReturnType UPD_udtSystemInput
 (
-upd_vehiclemode_t* pudt_currentmode
+const upd_vehiclemode_t* pudt_currentmode
 );
 /////////////////////////////////////////////////////////////////////////////////////
 
@@ -58,7 +58,7 @@ upd_vehiclemode_t* pudt_currentmode
 /// @return 
 Std_ReturnType UPD_udtSystemUpadte
 (
-upd_vehiclemode_t* pudt_currentmode
+const upd_vehiclemode_t* pudt_currentmode
 );
 /////////////////////////////////////////////////////////////////////////////////////
 
@@ -67,7 +67,7 @@ upd_vehiclemode_t* pudt_currentmode
 /// @return 
 Std_ReturnType UPD_udtSystemOutput
 (
-upd_vehiclemode_t* pudt_currentmode
+const upd_vehiclemode_t* pudt_currentmode
 );
 /////////////////////////////////////////////////////////////////////////////////////
 

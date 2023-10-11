@@ -1,5 +1,6 @@
 CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.c.obj: \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DISPLAY_manager.c \
+ /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DISPLAY_manager.h \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/STD_TYPES.h \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/BIT_MATH.h \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DIO_interface.h \
@@ -15,10 +16,9 @@ CMakeFiles/AutonomousVehicle.elf.dir/DISPLAY_manager.c.obj: \
  /home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include/math.h \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/LCD_config.h \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/LCD_private.h \
- /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/LED_interface.h \
- /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/LED_config.h \
- /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/LED_private.h \
- /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DISPLAY_manager.h \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/ULTRASONIC_interface.h \
  /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/ULTRASONIC_config.h \
- /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/ULTRASONIC_private.h
+ /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/ULTRASONIC_private.h \
+ /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/LED_interface.h \
+ /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/LED_config.h \
+ /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/LED_private.h

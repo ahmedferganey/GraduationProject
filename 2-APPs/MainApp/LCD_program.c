@@ -35,7 +35,7 @@ void
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 	/* !Comment: initialization of data pins control pins */
 	//LCD_DATA_DIRECTION = 0xFF;
-	_delay_ms(40);	
+	_delay_ms(5);	
 	udtReturnValue = DIO_udtSetPinDirection(CLCD_DATA_PORT, CLCD_D4, DIO_DIR_OUTPUT);
 	udtReturnValue = DIO_udtSetPinDirection(CLCD_DATA_PORT, CLCD_D5, DIO_DIR_OUTPUT);
 	udtReturnValue = DIO_udtSetPinDirection(CLCD_DATA_PORT, CLCD_D6, DIO_DIR_OUTPUT);
@@ -49,18 +49,18 @@ void
 		//udtReturnValue = LCD_udt4BitSendCommand(0x33);
 		//udtReturnValue = LCD_udt4BitSendCommand(0x32);
 	udtReturnValue = LCD_udt4BitSendCommand(LCD_RETURN_HOME);
-	_delay_us(1000);
+	_delay_us(20);
 	
 	udtReturnValue = LCD_udt4BitSendCommand(LCD_4BIT_MODE_2_LINE_5_IN_7);
-	_delay_us(1000);
+	_delay_us(20);
 	
 	udtReturnValue = LCD_udt4BitSendCommand(LCD_DISPLAY_ON_UNDERLINE_ON_CURSOR_OFF); 
-	_delay_us(1000);
+	_delay_us(20);
 	
 	udtReturnValue = LCD_udtClearScreen();
 	
 	udtReturnValue = LCD_udt4BitSendCommand(LCD_ENTRY_MODE_INC_SHIFT_OFF);
-	_delay_ms(1);	
+	_delay_us(20);	
 	
 	return udtReturnValue;	
 }	
@@ -100,7 +100,7 @@ uint8 u8Command
 	/* !Comment: Generate pulse on En pin */
 	udtReturnValue = LCD_udt4bit_send_enable_signal();
 
-	_delay_ms(1);	
+	_delay_us(20);	
 	return udtReturnValue;
 }
 #endif
@@ -138,7 +138,7 @@ uint8 u8Data
 	/* !Comment: Generate pulse on En pin */
 	udtReturnValue = LCD_udt4bit_send_enable_signal();
 	
-	_delay_ms(1);	
+	_delay_us(20);	
 	return udtReturnValue;	
 }
 #endif
@@ -316,7 +316,7 @@ void
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 
 	udtReturnValue = LCD_udt4BitSendCommand(LCD_CLEAR_DISPLAY);
-	_delay_ms(7); //wait more than 1.53 ms
+	_delay_us(50); //wait more than 1.53 ms
 	
 	return udtReturnValue;
 }
@@ -337,9 +337,9 @@ void
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
 	udtReturnValue = DIO_udtSetPinValue(LCD_E, DIO_HIGH);
-	_delay_ms(1);
+	_delay_us(10);
 	udtReturnValue = DIO_udtSetPinValue(LCD_E, DIO_LOW);
-	_delay_ms(1);
+	_delay_us(10);
 	return udtReturnValue;
 }
 #endif

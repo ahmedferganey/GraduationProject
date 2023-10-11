@@ -114,14 +114,64 @@ typedef struct{
 
 
 /* Comment!: Function Declarations End */
+/// @brief 
+/// @param  
+/// @return 
 extern Std_ReturnType LCD_udt4BitInitialize(void);
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+/// @brief 
+/// @param u8Command 
+/// @return 
 extern Std_ReturnType LCD_udt4BitSendCommand(uint8 u8Command);
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+/// @brief 
+/// @param u8Data 
+/// @return 
 extern Std_ReturnType LCD_udt4BitSendData(uint8 u8Data);
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+/// @brief 
+/// @param pu8Word 
+/// @return 
 extern Std_ReturnType LCD_udt4BitPrintString(uint8* pu8Word);
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+/// @brief 
+/// @param u8Row 
+/// @param u8Column 
+/// @return 
 extern Std_ReturnType LCD_udtGoTo(uint8 u8Row, uint8 u8Column);
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+/// @brief 
+/// @param pu8CharArr 
+/// @param u8CGRAMLocation 
+/// @param u8DDRAMRow 
+/// @param u8DDRAMColumn 
+/// @return 
 extern Std_ReturnType LCD_udtCreateSpecialChar (uint8* pu8CharArr, uint8 u8CGRAMLocation, uint8 u8DDRAMRow, uint8 u8DDRAMColumn);
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+/// @brief 
+/// @param  
+/// @return 
 extern Std_ReturnType LCD_udtClearScreen(void);
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+/// @brief 
+/// @param Copy_u64Number 
+/// @return 
 extern Std_ReturnType LCD_udtSendNumber(uint64 Copy_u64Number);
+
 
 
 /* Comment!: Function Declarations End */

@@ -8,22 +8,14 @@
  */
 
 /* -------------------------------- Includes --------------------------------------------------------------*/
-/**			LIBRARY Includes			**/																								
-#include "STD_TYPES.h"
-#include "BIT_MATH.h"
-
-/**			MCAL Includes				**/
-#include "DIO_interface.h"
-#include "TIMER_interface.h"
-
-/**			HAL Includes				**/
-#include "LCD_interface.h"
-#include "LED_interface.h"
-
 /**			SERVICE Includes				**/
 #include "DISPLAY_manager.h"
 
 /* -------------------------------- Global Variables ------------------------------------------------------*/
+uint8 g_StartMode[8]  = "Startup";
+uint8 g_ManualMode[7] = "Manual";
+uint8 g_AutoMode[5]   = "Auto";
+
 /*
     pin_config_t LED_pin;
     LED_active_t LED_connection;
@@ -60,13 +52,13 @@ volatile DISPLAY_Led_t udt_Leds =
     .udt_Leds[2].LED_status          = LED_OFF
 	//////////////////////////////////////////////////////////////
         /*          Back-Right            */
-	//udt_Leds[2].LED_pin.port 		= LED_PORTD,
-	//udt_Leds[2].LED_pin.pin 		= LED_PIN3,
-	//udt_Leds[2].LED_pin.direction = LED_OUTPUT,
-	//udt_Leds[2].LED_pin.logic	 	= LED_LOW,
+	//udt_Leds[3].LED_pin.port 		= LED_PORTD,
+	//udt_Leds[3].LED_pin.pin 		= LED_PIN3,
+	//udt_Leds[3].LED_pin.direction = LED_OUTPUT,
+	//udt_Leds[3].LED_pin.logic	 	= LED_LOW,
 	//
-    //udt_Leds[0].LED_connection    = LED_ACTIVE_HIGH,
-    //udt_Leds[0].LED_status        = LED_OFF,
+    //udt_Leds[3].LED_connection    = LED_ACTIVE_HIGH,
+    //udt_Leds[3].LED_status        = LED_OFF,
 
 	//////////////////////////////////////////////////////////////
 	
@@ -130,6 +122,19 @@ uint8 copy_u8NumberOfLeds
 
 	if (((NULL != LED_pudtconfig) && (NULL != L_pudtptr)))
 	{
+    	/* DISPLAY Startup Section*/
+			/* LCD */
+    	udtReturnValue = LCD_udtClearScreen();
+    	udtReturnValue = LCD_udt4BitPrintString(g_StartMode);
+    	udtReturnValue = LCD_udtGoTo(ROW2, COLUMN1);
+															//here for ultrasonic
+
+			/* LED */
+		for (int i = 0 ; i < copy_u8NumberOfLeds ; i++)
+		{
+			udtReturnValue = LED_udtInit(L_pudtptr);	
+			++L_pudtptr;
+		}
 
 	}
 	else
@@ -157,7 +162,19 @@ uint8 copy_u8NumberOfLeds
 	
 	if (((NULL != LED_pudtconfig) && (NULL != L_pudtptr)))
 	{
+    	/* DISPLAY Manual Section*/
+			/* LCD */
+    	udtReturnValue = LCD_udtClearScreen();
+    	udtReturnValue = LCD_udt4BitPrintString(g_ManualMode);
+    	udtReturnValue = LCD_udtGoTo(ROW2, COLUMN1);
+															//here for ultrasonic
 
+			/* LED */
+		for (int i = 0 ; i < copy_u8NumberOfLeds ; i++)
+		{
+			udtReturnValue = LED_udtInit(L_pudtptr);	
+			++L_pudtptr;
+		}
 	}
 	else
 	{
@@ -184,7 +201,19 @@ uint8 copy_u8NumberOfLeds
 	
 	if (((NULL != LED_pudtconfig) && (NULL != L_pudtptr)))
 	{
-
+    	/* DISPLAY Autonomous Section*/
+			/* LCD */
+    	udtReturnValue = LCD_udtClearScreen();
+    	udtReturnValue = LCD_udt4BitPrintString(g_AutoMode);
+    	udtReturnValue = LCD_udtGoTo(ROW2, COLUMN1);
+															//here for ultrasonic
+		
+			/* LED */
+		for (int i = 0 ; i < copy_u8NumberOfLeds ; i++)
+		{
+			udtReturnValue = LED_udtInit(L_pudtptr);	
+			++L_pudtptr;
+		}
 	}
 	else
 	{

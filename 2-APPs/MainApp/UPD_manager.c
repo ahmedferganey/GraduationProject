@@ -25,7 +25,7 @@
 /// @return 
 Std_ReturnType UPD_udtSystemInput
 (
-upd_vehiclemode_t* pudt_currentmode
+const upd_vehiclemode_t* pudt_currentmode
 )
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
@@ -70,7 +70,7 @@ upd_vehiclemode_t* pudt_currentmode
 /// @return 
 Std_ReturnType UPD_udtSystemUpadte
 (
-upd_vehiclemode_t* pudt_currentmode
+const upd_vehiclemode_t* pudt_currentmode
 )
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
@@ -126,7 +126,7 @@ upd_vehiclemode_t* pudt_currentmode
 /// @return 
 Std_ReturnType UPD_udtSystemOutput
 (
-upd_vehiclemode_t* pudt_currentmode
+const upd_vehiclemode_t* pudt_currentmode
 )
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
@@ -136,20 +136,23 @@ upd_vehiclemode_t* pudt_currentmode
 		/* startup mode */
 		if ((UPD_STARTUP_MODE == (*pudt_currentmode)))
 		{
-			/* Blink All Leds, Display "select mode" on LCD */
+			/* Display Manager call */
 			udtReturnValue = DISPLAY_udtDiplayStartup(&udt_Leds, NUM_OF_LEDS);
+
 			/* turn off All Motors "servo and DC" */
 
 		}
 		/* manual mode */
 		else if((UPD_MANUAL_MODE == (*pudt_currentmode)))
 		{
+			/* Display Manager call */
 			udtReturnValue = DISPLAY_udtDiplayManual(&udt_Leds, NUM_OF_LEDS);
 
 		}
 		/* autonomous mode */
 		else if((UPD_AUTONOMOUS_MODE == (*pudt_currentmode)))
 		{
+			/* Display Manager call */
 			udtReturnValue = DISPLAY_udtDiplayAutonomous(&udt_Leds, NUM_OF_LEDS);
 
 		}

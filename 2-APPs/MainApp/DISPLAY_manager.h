@@ -40,11 +40,18 @@ typedef struct
 }DISPLAY_Led_t; 
 
 /* -------------------------------- APIs Declarations ---------------------------------------*/
+/// @brief 
+/// @param LED_pudtconfig 
+/// @param copy_u8NumberOfLeds 
+/// @return 
 Std_ReturnType DISPLAY_udtDiplayInit
 (
 const DISPLAY_Led_t* LED_pudtconfig,
 uint8 copy_u8NumberOfLeds
 );
+
+
+/////////////////////////////////////////////////////////////////////////////////////
 
 /// @brief 
 /// @param LED_pudtconfig 
@@ -56,6 +63,9 @@ const DISPLAY_Led_t* LED_pudtconfig,
 uint8 copy_u8NumberOfLeds
 );
 
+
+/////////////////////////////////////////////////////////////////////////////////////
+
 /// @brief 
 /// @param LED_pudtconfig 
 /// @param copy_u8NumberOfLeds 
@@ -65,6 +75,9 @@ Std_ReturnType DISPLAY_udtDiplayManual
 const DISPLAY_Led_t* LED_pudtconfig,
 uint8 copy_u8NumberOfLeds
 );
+
+
+/////////////////////////////////////////////////////////////////////////////////////
 
 /// @brief 
 /// @param LED_pudtconfig 
