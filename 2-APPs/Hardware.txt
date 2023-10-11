@@ -4,7 +4,7 @@ https://www.electronicwings.com/avr-atmega/atmega1632-gpio-ports-and-registers
 
 Analog Joystick interface with AVR ATmega16/ATmega32:
 https://www.electronicwings.com/avr-atmega/analog-joystick-interface-with-atmega-16-32
-
+https://www.electronicwings.com/sensors-modules/analog-joystick
 
 
 HC-05 Bluetooth Module Interfacing with AVR ATmega16/ATmega32:

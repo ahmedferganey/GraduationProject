@@ -123,23 +123,6 @@ pin_index_t 	udtPin
 
 
 
-	/* Comment!: PORT APIs */
-extern Std_ReturnType DIO_udtSetPortDirection
-(
-port_index_t udtPortIndex,
-const uint8	 u8Direction
-);
 
-extern Std_ReturnType DIO_udtSetPortValue
-(
-port_index_t udtPortIndex,
-const uint8  u8Value
-);
-
-extern Std_ReturnType DIO_udtGetPortValue
-(
-port_index_t udtPortIndex,
-uint8* 		 u8tValue
-);
 
 #endif /* _DIO_INTERFACE_H_ */

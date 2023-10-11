@@ -113,39 +113,6 @@ uint16  TIMER_u16GetICR
 void
 );
 
-/*------- Timer2 APIs Declerations -------*/
-void TIMER2_vdInit
-(
-void
-);
-void TIMER2_vdSetPreload 
-(
-uint8 Copy_u8Preload
-);
-void TIMER2_vdSetCTC 
-(
-uint8 Copy_u8CTC
-);
-uint8 TIMER2_u8GetTimerCounterValue 
-(
-void
-);
-
-/*------- WDT APIs Declerations ----------*/
-void TIMER_vdWDTSleep
-(
-void
-);
-void TIMER_vdWDTEnable 
-(
-void
-);
-void TIMER_vdWDTDisable
-(
-void
-);
-
-/*------- Common APIs Declerations -------*/
 
 /*------- TIMER ISR Declerations -------*/
 Std_ReturnType TIMER_udtSetCallBack

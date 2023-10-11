@@ -151,16 +151,6 @@ extern Std_ReturnType LCD_udtGoTo(uint8 u8Row, uint8 u8Column);
 /////////////////////////////////////////////////////////////////////////////////////
 
 /// @brief 
-/// @param pu8CharArr 
-/// @param u8CGRAMLocation 
-/// @param u8DDRAMRow 
-/// @param u8DDRAMColumn 
-/// @return 
-extern Std_ReturnType LCD_udtCreateSpecialChar (uint8* pu8CharArr, uint8 u8CGRAMLocation, uint8 u8DDRAMRow, uint8 u8DDRAMColumn);
-
-/////////////////////////////////////////////////////////////////////////////////////
-
-/// @brief 
 /// @param  
 /// @return 
 extern Std_ReturnType LCD_udtClearScreen(void);

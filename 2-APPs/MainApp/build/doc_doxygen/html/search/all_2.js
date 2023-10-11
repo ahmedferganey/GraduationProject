@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['lcd_5f4bit_5ft_4',['lcd_4Bit_t',['../structlcd__4Bit__t.html',1,'']]],
-  ['lcd_5f8bit_5ft_5',['lcd_8Bit_t',['../structlcd__8Bit__t.html',1,'']]],
-  ['led_5ft_6',['LED_t',['../structLED__t.html',1,'']]]
+  ['joystick_5finterface_5ft_4',['JOYSTICK_interface_t',['../structJOYSTICK__interface__t.html',1,'']]]
 ];

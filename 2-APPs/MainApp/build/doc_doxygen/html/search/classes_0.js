@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['adc_5fchain_5ft_12',['ADC_chain_t',['../structADC__chain__t.html',1,'']]]
+  ['adc_5fchain_5ft_13',['ADC_chain_t',['../structADC__chain__t.html',1,'']]]
 ];

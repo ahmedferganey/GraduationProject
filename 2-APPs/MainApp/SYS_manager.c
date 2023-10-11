@@ -49,7 +49,6 @@ void
 	    		No Prescaler +  Normal Mode + 8MHZ + ICU + Rising ----->  .125 Sec for 1 Tick		
 	    	*/
 	TIMER1_vdInit();
-    TIMER2_vdInit();
 
 
     /* INTERRUPT INIT Section */

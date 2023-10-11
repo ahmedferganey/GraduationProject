@@ -32,7 +32,6 @@ const upd_vehiclemode_t* pudt_currentmode
 	/*
 		it is required to read :
 								Joystick
-								pushputton
 								ultrasonic
 								LDR
 	*/

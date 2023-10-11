@@ -258,51 +258,6 @@ uint8 u8Column
 
 
 /********************************************************************************************/
-/*  @brief				  : store new char on CGRAM											*/
-/*							0 0 0 1 AC5 AC4 AC3 AC2 AC1 AC0 Set CGRAM address				*/
-/*  @param pu8CharArr	  : array of 8 bytes for particular shape			    @ref uint8*	*/
-/*  @param u8CGRAMLocation: the location of shape in CGRAM					    @ref uint8	*/
-/*  @param u8DDRAMRow	  : required row to display our char 					@ref uint8	*/
-/*  @param u8DDRAMColumn  : required column to display our char					@ref uint8	*/
-/*  @return	 Std_ReturnType																	*/
-/*           (E_OK)		  : The function done successfully									*/
-/*           (E_NOT_OK)   : The function has issue to perform this action					*/
-/********************************************************************************************/
-#if LCD_4_BIT_MODE_CONFIGURATIONS==CONFIG_ENABLE
-extern Std_ReturnType LCD_udtCreateSpecialChar
-(
-uint8* pu8CharArr, 
-uint8 u8CGRAMLocation, 
-uint8 u8DDRAMRow, 
-uint8 u8DDRAMColumn
-)
-{
-	Std_ReturnType udtReturnValue = E_OK;
-	uint8 u8Counter;
-	if(NULL == pu8CharArr)
-	{
-		udtReturnValue = E_NOT_OK;
-	}
-	else
-	{
-		/* !Comment: Switch to CGRAM */
-		udtReturnValue = LCD_udt4BitSendCommand((u8CGRAMLocation*8) + (LCD_BIT6_SET_CGRAM_ADDRESS));
-		/* !Comment: Write on CGRAM */
-		for (u8Counter = 0; u8Counter < 8; u8Counter++)
-		{
-			udtReturnValue = LCD_udt4BitSendData(pu8CharArr[u8Counter]);
-		}
-		/* !Comment: Go to DDRAM */
-		udtReturnValue = LCD_udtGoTo(u8DDRAMRow, u8DDRAMColumn);
-		/* !Comment: Print CGRAM data */
-		udtReturnValue = LCD_udt4BitSendData(u8CGRAMLocation);
-	}
-	return udtReturnValue;
-}
-#endif
-
-
-/********************************************************************************************/
 /*  @brief				  : generate pulse on LCD_EN pin									*/
 /*  @return	 Std_ReturnType																	*/
 /*           (E_OK)		  : The function done successfully									*/
