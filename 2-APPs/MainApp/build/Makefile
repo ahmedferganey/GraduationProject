@@ -168,6 +168,30 @@ burn/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/burn.dir/build.make CMakeFiles/burn.dir/build
 .PHONY : burn/fast
 
+ADC_program.obj: ADC_program.c.obj
+.PHONY : ADC_program.obj
+
+# target to build an object file
+ADC_program.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/ADC_program.c.obj
+.PHONY : ADC_program.c.obj
+
+ADC_program.i: ADC_program.c.i
+.PHONY : ADC_program.i
+
+# target to preprocess a source file
+ADC_program.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/ADC_program.c.i
+.PHONY : ADC_program.c.i
+
+ADC_program.s: ADC_program.c.s
+.PHONY : ADC_program.s
+
+# target to generate assembly for a file
+ADC_program.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutonomousVehicle.elf.dir/build.make CMakeFiles/AutonomousVehicle.elf.dir/ADC_program.c.s
+.PHONY : ADC_program.c.s
+
 AutonomousVehicle.obj: AutonomousVehicle.c.obj
 .PHONY : AutonomousVehicle.obj
 
@@ -588,6 +612,9 @@ help:
 	@echo "... doc_doxygen"
 	@echo "... flash"
 	@echo "... AutonomousVehicle.elf"
+	@echo "... ADC_program.obj"
+	@echo "... ADC_program.i"
+	@echo "... ADC_program.s"
 	@echo "... AutonomousVehicle.obj"
 	@echo "... AutonomousVehicle.i"
 	@echo "... AutonomousVehicle.s"

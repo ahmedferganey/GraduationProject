@@ -1,7 +1,7 @@
 var indexSectionsWithContent =
 {
-  0: "dlptu",
-  1: "dlptu"
+  0: "adlptu",
+  1: "adlptu"
 };
 
 var indexSectionNames =

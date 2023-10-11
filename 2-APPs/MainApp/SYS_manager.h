@@ -20,6 +20,7 @@
 #include "DIO_interface.h"
 #include "TIMER_interface.h"
 #include "USART_interface.h"
+#include "ADC_interface.h"
 #include "GIE_interface.h"
 #include "EXTI_interface.h"
 
@@ -38,19 +39,45 @@
 
 
 /* -------------------------------- APIs Declarations ------------------------------------------*/
+/// @brief 
+/// @param  
+/// @return 
 Std_ReturnType SYS_udtClockIntrerruptInit
 (
 void
 );
 
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+/// @brief 
+/// @param  
+/// @return 
 Std_ReturnType SYS_udtCommunicationInit
 (
 void    
 );
 
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+/// @brief 
+/// @param  
+/// @return 
 Std_ReturnType SYS_udtCommunicationInput
 (
 void    
+);
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+/// @brief 
+/// @param  
+/// @return 
+Std_ReturnType SYS_udtChangeRequest
+(
+void
 );
 
 #endif  /* _SYS_MANAGER_H_ */

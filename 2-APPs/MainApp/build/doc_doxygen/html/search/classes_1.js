@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['lcd_5f4bit_5ft_14',['lcd_4Bit_t',['../structlcd__4Bit__t.html',1,'']]],
-  ['lcd_5f8bit_5ft_15',['lcd_8Bit_t',['../structlcd__8Bit__t.html',1,'']]],
-  ['led_5ft_16',['LED_t',['../structLED__t.html',1,'']]]
+  ['dcmotor_5fconfig_5ft_13',['DCMOTOR_Config_t',['../structDCMOTOR__Config__t.html',1,'']]],
+  ['dio_5ft_14',['DIO_t',['../structDIO__t.html',1,'']]],
+  ['display_5fled_5ft_15',['DISPLAY_Led_t',['../structDISPLAY__Led__t.html',1,'']]]
 ];

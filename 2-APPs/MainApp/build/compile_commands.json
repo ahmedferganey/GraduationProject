@@ -1,6 +1,12 @@
 [
 {
   "directory": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build",
+  "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c99 -o CMakeFiles/AutonomousVehicle.elf.dir/ADC_program.c.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/ADC_program.c",
+  "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/ADC_program.c",
+  "output": "CMakeFiles/AutonomousVehicle.elf.dir/ADC_program.c.obj"
+},
+{
+  "directory": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build",
   "command": "/home/ahmed-ferganey/avr/toolchain_staging/avr/bin/avr-gcc --sysroot=/home/ahmed-ferganey/avr/toolchain_staging/avr/avr/include   -O3 -DNDEBUG -std=c99 -o CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.obj -c /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/AutonomousVehicle.c",
   "file": "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/AutonomousVehicle.c",
   "output": "CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.obj"

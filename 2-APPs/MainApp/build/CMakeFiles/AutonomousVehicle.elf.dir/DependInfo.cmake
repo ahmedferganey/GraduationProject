@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/ADC_program.c" "CMakeFiles/AutonomousVehicle.elf.dir/ADC_program.c.obj" "gcc" "CMakeFiles/AutonomousVehicle.elf.dir/ADC_program.c.obj.d"
   "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/AutonomousVehicle.c" "CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.obj" "gcc" "CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.obj.d"
   "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DCMOTOR_program.c" "CMakeFiles/AutonomousVehicle.elf.dir/DCMOTOR_program.c.obj" "gcc" "CMakeFiles/AutonomousVehicle.elf.dir/DCMOTOR_program.c.obj.d"
   "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/DIO_program.c" "CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.obj" "gcc" "CMakeFiles/AutonomousVehicle.elf.dir/DIO_program.c.obj.d"

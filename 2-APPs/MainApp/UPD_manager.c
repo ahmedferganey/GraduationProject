@@ -20,7 +20,7 @@
 
 
 /* -------------------------------- APIs Implementation ------------------------------------------*/
-/// @brief 
+/// @brief this API is responsible for reading inputs states of the system
 /// @param pudt_currentmode 
 /// @return 
 Std_ReturnType UPD_udtSystemInput
@@ -29,13 +29,18 @@ const upd_vehiclemode_t* pudt_currentmode
 )
 {
 	Std_ReturnType udtReturnValue = E_NOT_OK;
-
+	/*
+		it is required to read :
+								Joystick
+								pushputton
+								ultrasonic
+								LDR
+	*/
 	if (pudt_currentmode != NULL)
 	{
 		/* startup mode */
 		if ((UPD_STARTUP_MODE == (*pudt_currentmode)))
 		{
-			/*  */
 
 
 		}

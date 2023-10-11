@@ -24,6 +24,9 @@
 
 
 /* -------------------------------- APIs Implementation ------------------------------------------*/
+/// @brief 
+/// @param  
+/// @return 
 Std_ReturnType SYS_udtClockIntrerruptInit
 (
 void    
@@ -58,6 +61,12 @@ void
 	return udtReturnValue;
 }
 
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+/// @brief 
+/// @param  
+/// @return 
 Std_ReturnType SYS_udtCommunicationInit
 (
 void    
@@ -73,7 +82,11 @@ void
 }
 
 
+/////////////////////////////////////////////////////////////////////////////////////
 
+/// @brief 
+/// @param  
+/// @return 
 Std_ReturnType SYS_udtCommunicationInput
 (
 void    
@@ -86,3 +99,22 @@ void
 
 	return udtReturnValue;
 }
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+/// @brief 
+/// @param  
+/// @return 
+Std_ReturnType SYS_udtChangeRequest
+(
+void
+)
+{
+	Std_ReturnType udtReturnValue = E_NOT_OK;
+
+
+
+	return udtReturnValue;
+}
+/////////////////////////////////////////////////////////////////////////////////////

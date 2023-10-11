@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "AutonomousVehicle.elf"
   "AutonomousVehicle.elf.pdb"
+  "CMakeFiles/AutonomousVehicle.elf.dir/ADC_program.c.obj"
+  "CMakeFiles/AutonomousVehicle.elf.dir/ADC_program.c.obj.d"
   "CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.obj"
   "CMakeFiles/AutonomousVehicle.elf.dir/AutonomousVehicle.c.obj.d"
   "CMakeFiles/AutonomousVehicle.elf.dir/DCMOTOR_program.c.obj"
