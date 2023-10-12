@@ -28,7 +28,7 @@ typedef struct {
 #define   SCB_AIRCR             *((volatile uint32 *) 0xE000ED0C )
 
 /* constants */
-#define   VECTKEY               0x05FA0000
+#define   VECTKEY               0x05FA0000		/* 4 bytes so must be 05fa 0000 or casting 05fa to uint32*/
 #define   GROUPING_BIT          8
 
 /* Group priority options */
