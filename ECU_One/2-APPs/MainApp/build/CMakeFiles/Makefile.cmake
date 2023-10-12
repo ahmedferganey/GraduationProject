@@ -7,13 +7,13 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/CMakeLists.txt"
-  "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/Toolchain-avr.cmake"
+  "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/ECU_One/2-APPs/MainApp/CMakeLists.txt"
+  "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/ECU_One/2-APPs/MainApp/Toolchain-avr.cmake"
   "CMakeFiles/3.27.6/CMakeASMCompiler.cmake"
   "CMakeFiles/3.27.6/CMakeCCompiler.cmake"
   "CMakeFiles/3.27.6/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.27.6/CMakeSystem.cmake"
-  "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/docs/Doxyfile.in"
+  "/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/ECU_One/2-APPs/MainApp/docs/Doxyfile.in"
   "/home/ahmed-ferganey/Desktop/cmake-3.27.6/Modules/CMakeASMCompiler.cmake.in"
   "/home/ahmed-ferganey/Desktop/cmake-3.27.6/Modules/CMakeASMInformation.cmake"
   "/home/ahmed-ferganey/Desktop/cmake-3.27.6/Modules/CMakeCCompiler.cmake.in"

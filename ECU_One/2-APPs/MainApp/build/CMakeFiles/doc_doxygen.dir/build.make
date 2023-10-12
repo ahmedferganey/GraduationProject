@@ -53,10 +53,10 @@ RM = /opt/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp
+CMAKE_SOURCE_DIR = /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/ECU_One/2-APPs/MainApp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build
+CMAKE_BINARY_DIR = /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/ECU_One/2-APPs/MainApp/build
 
 # Utility rule file for doc_doxygen.
 
@@ -67,7 +67,7 @@ include CMakeFiles/doc_doxygen.dir/compiler_depend.make
 include CMakeFiles/doc_doxygen.dir/progress.make
 
 CMakeFiles/doc_doxygen:
-	/usr/bin/doxygen /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/Doxyfile
+	/usr/bin/doxygen /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/ECU_One/2-APPs/MainApp/build/Doxyfile
 
 doc_doxygen: CMakeFiles/doc_doxygen
 doc_doxygen: CMakeFiles/doc_doxygen.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/doc_doxygen.dir/clean:
 .PHONY : CMakeFiles/doc_doxygen.dir/clean
 
 CMakeFiles/doc_doxygen.dir/depend:
-	cd /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles/doc_doxygen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/ECU_One/2-APPs/MainApp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/ECU_One/2-APPs/MainApp /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/ECU_One/2-APPs/MainApp /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/ECU_One/2-APPs/MainApp/build /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/ECU_One/2-APPs/MainApp/build /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/ECU_One/2-APPs/MainApp/build/CMakeFiles/doc_doxygen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/doc_doxygen.dir/depend
 

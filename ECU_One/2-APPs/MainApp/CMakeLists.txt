@@ -80,7 +80,7 @@ set(BAUD  9600)
 set(CMAKE_SYSTEM_NAME                   Generic)    #mandatory
 
      #find CMAKE_TOOLCHAIN_FILE "optional"
-set(CMAKE_TOOLCHAIN_FILE                /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/*.cmake)
+set(CMAKE_TOOLCHAIN_FILE                /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/ECU_One/2-APPs/MainApp/*.cmake)
 
 
 set(AVR                  /home/ahmed-ferganey/avr/toolchain_staging/avr/bin/)

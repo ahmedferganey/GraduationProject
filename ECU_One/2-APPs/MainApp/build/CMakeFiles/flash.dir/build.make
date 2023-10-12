@@ -53,10 +53,10 @@ RM = /opt/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp
+CMAKE_SOURCE_DIR = /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/ECU_One/2-APPs/MainApp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build
+CMAKE_BINARY_DIR = /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/ECU_One/2-APPs/MainApp/build
 
 # Utility rule file for flash.
 
@@ -83,6 +83,6 @@ CMakeFiles/flash.dir/clean:
 .PHONY : CMakeFiles/flash.dir/clean
 
 CMakeFiles/flash.dir/depend:
-	cd /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles/flash.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/ECU_One/2-APPs/MainApp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/ECU_One/2-APPs/MainApp /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/ECU_One/2-APPs/MainApp /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/ECU_One/2-APPs/MainApp/build /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/ECU_One/2-APPs/MainApp/build /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/ECU_One/2-APPs/MainApp/build/CMakeFiles/flash.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/flash.dir/depend
 

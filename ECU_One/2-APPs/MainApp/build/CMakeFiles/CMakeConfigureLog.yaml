@@ -29,7 +29,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is GNU, found in:
-        /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles/3.27.6/CompilerIdC/a.out
+        /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/ECU_One/2-APPs/MainApp/build/CMakeFiles/3.27.6/CompilerIdC/a.out
       
   -
     kind: "message-v1"
@@ -51,7 +51,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is GNU, found in:
-        /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/2-APPs/MainApp/build/CMakeFiles/3.27.6/CompilerIdCXX/a.out
+        /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/ECU_One/2-APPs/MainApp/build/CMakeFiles/3.27.6/CompilerIdCXX/a.out
       
   -
     kind: "message-v1"
