@@ -267,7 +267,29 @@ void RCC_VoidInitSysClock(void)
 void RCC_VoidEnableClock(uint8 Copy_u8BusId ,  
                          uint8 Copy_u8PerId   )
 {
+	if (Copy_u8PerId <= 31){             /*PERIPHERAL NUMBER BIT SHOULD BE LESS THAN 32 */
 
+     switch(Copy_u8BusId)          /*CHOOSE ONE OF THE BUSES*/
+		 { 
+			 case   RCC_AHB_EN :  SET_BIT( RCC_AHBENR , Copy_u8PerId);     break;      /*SET PERIPHERAL BIT LOCATED IN AHB BUS*/
+			 
+     	 case   RCC_APB1_EN : SET_BIT( RCC_APB1ENR , Copy_u8PerId);    break;       /*SET PERIPHERAL BIT LOCATED IN APB1 BUS*/
+		 
+		 	 case   RCC_APB2_EN : SET_BIT( RCC_APB2ENR , Copy_u8PerId);    break;       /*SET PERIPHERAL BIT LOCATED IN APB2 BUS*/
+			 
+			 default :                                       /*IF YOU GET HERE THEN YOU CHOOSE WRONG BUS NUMBER*/      
+
+			 
+			 break ;  
+             
+		 }                                /*END OF SWITCH CASE*/
+		 
+	 }                                /*END OF IF STATMENT*/
+
+		 else
+		 {
+                                                 /*IF YOU GET HERE THEN YOU CHOOSE WRONG BUS NUMBER*/      
+	   }
 
 }   
 
@@ -277,6 +299,31 @@ void RCC_VoidEnableClock(uint8 Copy_u8BusId ,
 void RCC_VoidDisableClock(uint8 Copy_u8BusId ,  
                           uint8 Copy_u8PerId   )
 {
+    if (Copy_u8PerId <= 31){                   /*PERIPHERAL NUMBER BIT SHOULD BE LESS THAN 32 */
+                                         
+         switch(Copy_u8BusId)              /*CHOOSE ONE OF THE BUSES*/
+		            {
+			     case    RCC_AHB_EN :  CLR_BIT( RCC_AHBENR , Copy_u8PerId);       break;       /*CLEAR PERIPHERAL BIT LOCATED IN AHB BUS*/
+			                                                                                      
+     	     case    RCC_APB1_EN : CLR_BIT( RCC_APB1ENR , Copy_u8PerId);      break;       /*CLEAR PERIPHERAL BIT LOCATED IN APB1 BUS*/
+		                                                                                        
+	    	 	 case    RCC_APB2_EN : CLR_BIT( RCC_APB2ENR , Copy_u8PerId);      break;       /*CLEAR PERIPHERAL BIT LOCATED IN APB2 BUS*/
+			 
+			     default :                                   
+               						 /*IF YOU GET HERE THEN YOU CHOOSE WRONG BUS NUMBER*/      
+
+			 
+			 break ;  
+             
+		 }                                /*END OF SWITCH CASE*/
+		 
+	 }                                /*END OF IF STATMENT*/
+
+		 else
+		 {
+                               /*IF YOU GET HERE THEN YOU CHOOSE WRONG BUS NUMBER*/ 
+			 
+	   }
 
 }   
 
@@ -286,6 +333,30 @@ void RCC_VoidDisableClock(uint8 Copy_u8BusId ,
 void RCC_VoidResetPeriph(uint8 Copy_u8BusId ,  
                          uint8 Copy_u8PerId   )
 {
+	if (Copy_u8PerId <= 31){            /*PERIPHERAL NUMBER BIT SHOULD BE LESS THAN 32 */
+                                  
+     switch(Copy_u8BusId)          /*CHOOSE ONE OF THE BUSES*/
+		 { 
+			 case   RCC_APB2_RES :  SET_BIT( RCC_APB2RSTR , Copy_u8PerId);     break;        /*SET PERIPHERAL BIT LOCATED IN AHB BUS*/
+			                                                                                
+     	 case   RCC_APB1_RES :  SET_BIT( RCC_APB1RSTR , Copy_u8PerId);      break;        /*SET PERIPHERAL BIT LOCATED IN APB1 BUS*/
+		 			 
+			 default :                                   
+                        				 /*IF YOU GET HERE THEN YOU CHOOSE WRONG BUS NUMBER*/      
+
+			 
+			 break ;  
+             
+		 }                                /*END OF SWITCH CASE*/
+		 
+	 }                                /*END OF IF STATMENT*/
+
+		 else
+		 {
+                                                 /*IF YOU GET HERE THEN YOU CHOOSE WRONG BUS NUMBER*/      
+	   }
+
 
 }                         
 
+/****************************************************************END OF FUNCTION**************************************************************************************************************************************************************************************************************************/					

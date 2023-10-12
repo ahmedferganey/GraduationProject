@@ -94,7 +94,12 @@
 //                                      *******ERROR Macros**********                                     //
 //			EACH VALUE REPRESENT ERROR TYPE WHICH INDICATE REASON AND LOCATION OF ITS ERROR               //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+#define  WRONG_BUS_EN_CLK         1  
+#define  WRONG_PER_EN_CLK         2
+#define  WRONG_BUS_DIS_CLK        3
+#define  WRONG_PER_DIS_CLK        4
+#define  WRONG_BUS_RES_PER        5
+#define  WRONG_PER_RES_PER        6
 
 
 
