@@ -1,7 +1,15 @@
-/**
- * @author Ahmed Ferganey
- * @email ahmedferganey707@gmail.com
- * @create date 2023-10-13 00:38:35
- * @modify date 2023-10-13 00:38:35
- * @desc [description]
- */
+/*****************************************************/
+ /* Author      : mosad                              */
+ /* Version     : v01                                */
+ /* date        : 9/10/2020                          */
+/*****************************************************/
+#ifndef FPEC_CONFIG_H
+#define FPEC_CONFIG_H
+
+
+#define     FPEC_FLASH_START_ADDRESS      0x08000000
+#define     FPEC_FLASH_PAGE_SIZE          1024
+
+
+
+#endif
