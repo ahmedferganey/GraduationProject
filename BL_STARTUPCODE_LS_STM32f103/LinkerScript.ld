@@ -53,6 +53,9 @@ SECTIONS
 		. = ALIGN (4);  
     } >FLASH
 
+    /* Used by the startup to initialize data, this is start of .data or end of rodata */
+    _sidata = LOADADDR(.data);
+
 		/* .data section, Initialized data sections into "RAM" Ram type memory */
     .data :
     {

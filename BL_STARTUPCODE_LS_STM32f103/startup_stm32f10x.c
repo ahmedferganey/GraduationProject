@@ -7,10 +7,15 @@
  * @desc [this is startup code for STM32f10x]
  */
 
-
+/* -------------------------------- macros & data types declerations  --------------------------------------------------------------*/
+#define NULL 0
 typedef unsigned long uint32_t;
-extern uint32_t _estack, _etext, _sdata, _edata, _sbss, _ebss;
+
+/* -------------------------------- Global  decleration --------------------------------------------------------------*/
+extern uint32_t _estack, _etext, _sdata, _edata, _sbss, _ebss,_sidata;
 uint32_t* const MSP_Value = (uint32_t *)&_estack;               //_estack is a symbol this means referance not pointer
+
+/* -------------------------------- functions declerations  --------------------------------------------------------------*/
 
 extern void main(void);
 
@@ -86,9 +91,12 @@ void DMA2_Channel3_IRQHandler       (void) __attribute__ ((alias ("Default_Handl
 void DMA2_Channel4_5_IRQHandler     (void) __attribute__ ((alias ("Default_Handler")));           /*   */    
 
 
-uint32_t* Vector_Table[] __attribute__ ((section (".isr_vector"))) = {
+
+/* -------------------------------- IVT   --------------------------------------------------------------*/
+
+uint32_t* Vector_Table[] __attribute__ ((section (".isr_vector "))) = {
     (uint32_t*)MSP_Value,                            /*   */
-    (uint32_t*)Reset_Handler,                        /*   */
+    (uint32_t*)&Reset_Handler,                        /*   */
     (uint32_t*)NMI_Handler,                          /*   */
     (uint32_t*)HardFault_Handler,                    /*   */
     (uint32_t*)MemManage_Handler,                    /*   */
@@ -165,9 +173,35 @@ uint32_t* Vector_Table[] __attribute__ ((section (".isr_vector"))) = {
 };
 
 
+/* -------------------------------- function implementation   --------------------------------------------------------------*/
 void Reset_Handler(void){
+    uint32_t Section_Size =0;
+    uint32_t *MemSourceAddr = NULL;
+    uint32_t *MemDestAddr = NULL;
 
+    /* 1) Copy the data segment initializers from flash to SRAM */
+    Section_Size  = &_edata - &_sdata;               /* Length of .data segment */
+    MemSourceAddr = (uint32_t *) &_sidata;           /* Start address of .data sengement (LMA) -> Load Memory Address */
+    MemDestAddr   = (uint32_t *) &_sdata;            /* Start address of .data sengement (VMA) -> Virtual Memory Address */
+	
+    /* 2) load .data & Initialize the .bss segment with zero */    
+    for(uint32_t MemCounter= 0; MemCounter < Section_Size; MemCounter++)
+    {
+        *MemDestAddr++ = *MemSourceAddr++;
+    }
 
+    Section_Size = &_ebss - &_sbss;             /* Length of .bss segment */
+    MemDestAddr = (uint32_t *) &_sbss;          /* Start address of .bss sengement */
+    for(uint32_t MemCounter= 0; MemCounter < Section_Size; MemCounter++)
+    {
+        *MemDestAddr++ = 0;
+    }
+
+	/* 3) Call the system intitialization function */
+        // write your API which will be called in your app for init system if you want. 
+
+	/* 4) Call the main function */
+    main();
 
 }
 
