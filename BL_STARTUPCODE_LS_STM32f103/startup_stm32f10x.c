@@ -15,3 +15,15 @@ typedef unsigned long uint32_t;
 
 extern void main(void);
 
+
+uint32_t* Vector_Table[] __attribute__ ((section (".isr_vector"))) = {
+
+
+
+
+
+
+
+
+
+}

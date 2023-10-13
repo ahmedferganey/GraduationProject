@@ -7,9 +7,56 @@
  */
 
 
-/*Memories Definition*/	
+/***************** Memory Definition *******************/
 MEMORY
 {
-    RAM(xrw)  : ORIGIN = 0x,    LENGTH =
-    FLASH(rx) : ORIGIN = 0x,    LENGTH = 64K
+    RAM(xrw)  : ORIGIN = 0x20000000,    LENGTH = 20K
+    FLASH(rx) : ORIGIN = 0x08000000,    LENGTH = 64K
+}
+
+
+/***************** Sections Definition *****************/
+SECTIONS
+{
+	/* Starting of Flash Sections with IVT */
+	.isr_vector :
+	{
+		. = ALIGN (4);          //cause size of the address is 4 byte
+		*(.isr_vector)
+		. = ALIGN (4);
+	}>FLASH
+
+    .text :
+    {
+		. = ALIGN (4); 
+
+
+		. = ALIGN (4);          
+    }
+
+    .rodata :
+    {
+		. = ALIGN (4); 
+        
+                 
+		. = ALIGN (4);  
+    }
+
+    .data :
+    {
+		. = ALIGN (4); 
+        
+                 
+		. = ALIGN (4);  
+    }
+
+    .bss :
+    {
+		. = ALIGN (4); 
+        
+                 
+		. = ALIGN (4);  
+    }
+
+
 }
