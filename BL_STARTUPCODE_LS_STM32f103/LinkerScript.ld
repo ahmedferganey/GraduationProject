@@ -7,6 +7,14 @@
  */
 
 
+
+
+_Min_Heap_Size = 0x100;              /* Required Amount of Heap */
+_Min_Stack_Size = 0x400;             /* Required Amount of Stack */
+
+/* Highest address of the user mode stack */
+_estack = ORIGIN(RAM) + LENGTH(RAM); /* End of "RAM" Ram type memory */
+
 /***************** Memory Definition *******************/
 MEMORY
 {
@@ -24,7 +32,7 @@ SECTIONS
 		. = ALIGN (4);          /* cause size of the address is 4 byte */
 		*(.isr_vector)
 		. = ALIGN (4);
-	}>FLASH
+	} >FLASH
 
 		/* .text section, The program code and other data into "FLASH" Rom type memory */
     .text :
@@ -32,8 +40,9 @@ SECTIONS
 		. = ALIGN (4); 
         *(.text)
         *(.text*)               /*any file .textxxxxxx*/
-		. = ALIGN (4);          
-    }> RAM AT > FLASH
+		. = ALIGN (4);  
+        _etext = .;        /* Define a global symbols at end of code */                
+    } > FLASH
 
 		/* .rodata section, Constant data into "FLASH" Rom type memory */
     .rodata :
@@ -42,24 +51,36 @@ SECTIONS
         *(.rodata)
         *(.rodata*)                     
 		. = ALIGN (4);  
-    }>FLASH
+    } >FLASH
 
 		/* .data section, Initialized data sections into "RAM" Ram type memory */
     .data :
     {
 		. = ALIGN (4); 
+        _sdata = .;        /* Create a global symbol at data start */        
         *(.data)
         *(.data*)                        
-		. = ALIGN (4);  
-    }>RAM
+		. = ALIGN (4); 
+        _edata = .;        /* Define a global symbol at data end */         
+    } > RAM AT > FLASH
 
 		/* .bss section, Uninitialized data section into "RAM" Ram type memory */
     .bss :
     {
 		. = ALIGN (4); 
+        _sbss = .;         /* Define a global symbol at bss start */        
         *(.bss)
         *(.bss*)                      
 		. = ALIGN (4);  
-    }>RAM
+        _ebss = .;         /* Define a global symbol at bss end */        
+    } >RAM
 
+        /* .User_heap_stack section, used to check that there is enough "RAM" Ram  type memory left */
+    ._user_heap_stack :
+    {
+      . = ALIGN(8);
+      . = . + _Min_Heap_Size;
+      . = . + _Min_Stack_Size;
+      . = ALIGN(8);
+    } >RAM
 }
