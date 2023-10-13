@@ -3,7 +3,7 @@
  * @email ahmedferganey707@gmail.com
  * @create date 2023-10-13 10:07:14
  * @modify date 2023-10-13 10:07:14
- * @desc [description]
+ * @desc [Linker-Script File for stm32f103c8t6 Device from STM32F10xxx devices ]
  */
 
 
