@@ -1,14 +1,19 @@
-/**
- * @author Ahmed Ferganey
- * @email ahmedferganey707@gmail.com
- * @create date 2023-10-13 05:18:38
- * @modify date 2023-10-13 05:18:38
- * @desc [description]
- */
-
+/*******************************************************************************
+**  FILENAME     : Can_cfg.h              			                              **
+**                                                                            **
+**  VERSION      : 1.2.0                                                      **
+**                                                                            **
+**  DATE         : 2021-02-2                                                  **
+**                                                                            **                                                                            **
+**  PLATFORM     : stm32f103		                                              **
+**                                                                            **
+**  AUTHOR       : osamahijazi	                                              **
+                                                                              **
+**  DESCRIPTION  : CAN Driver configuration file                              **
+**                                                                            **
+*******************************************************************************/
 #ifndef CAN_CFG_H
 #define CAN_CFG_H
-
 
 #include "Std_Types.h"
 #include "CAN_Interface.h"
@@ -54,14 +59,26 @@ typedef struct
 														
 } CAN_InitTypeDef;
 
+/*
+Description: CAN filter init structure definition
+*/
+typedef struct
+{
+  uint32 CAN_FilterId;         // contain ID of filter bank
+                                                        
+  uint32 CAN_FilterMaskId;     //contain Mask of filter bank
+	
+	uint8 CAN_FilterMode;        // specifiy the mode of filter "ID OR MASK" 
 
-
-
-
-
-
-
-
+  uint8 CAN_FilterBankNumber;  //contain the filter bank numer to specifiy
+	
+	uint8 CAN_FilterBankScale;   // Specify the bank scale type " 16 or 32"                      
+                                                                                
+  uint8 CAN_FilterFIFONumber; //contain the FIFO number to add bank to it
+                             
+  FunctionalState CAN_FilterActivation; // specify the state of the filter "ENABLE OR DISABLE"
+	
+} CAN_FilterInitTypeDef;
 
 
 

@@ -1,13 +1,24 @@
-/**
- * @author Ahmed Ferganey
- * @email ahmedferganey707@gmail.com
- * @create date 2023-10-13 05:18:41
- * @modify date 2023-10-13 05:18:41
- * @desc [description]
- */
+/*******************************************************************************
+**  FILENAME     : Can_Interface.h         			                              **
+**                                                                            **
+**  VERSION      : 1.2.0                                                      **
+**                                                                            **
+**  DATE         : 2021-04-02                                                  **
+**                                                                            **                                                                            **
+**  PLATFORM     : stm32f103		                                              **
+**                                                                            **
+**  AUTHOR       : osamahijazi	                                              **
+                                                                              **
+**  DESCRIPTION  : CAN Driver interface file                                  **
+**                                                                            **
+*******************************************************************************/
+
+/* Define to prevent recursive inclusion */
 
 #ifndef CAN_INTERFACE_H
 #define CAN_INTERFACE_H
+
+
 
 /*****************************************************************************************/
 /*                                   Include headres                                     */
@@ -15,7 +26,6 @@
 #include "Std_Types.h"
 #include "CAN_Private.h"
 #include "CAN_cfg.h"
-
 
 /******************************************************************************************/
 /*                                    Macro Definition                                    */
@@ -140,13 +150,55 @@
 #define  CAN_ERRIE                       ((uint32)0x00008000) /*error interrupt*/
 #define  CAN_WKUIE                       ((uint32)0x00010000) /*Wake up mode interrupt*/
 #define  CAN_SLKIE                       ((uint32)0x00020000) /*Sleep   mode interrupt*/
+/*
+Description: CAN Tx message structure definition
+*/
+typedef struct {
+	
+	uint8 IDE;  //1 -> extended identifier,0 -> standard identifier
+	
+	uint8 RTR;  //1 -> Remote frame, 0 -> Data frame
+	
+	uint32 ID;  // message identifier
+	
+	uint8 DATA_LENGHT;  //number of data bytes "0 - 8"
+	
+	uint8 DATA[8];  // pointer to the data 
+	
+}CanTxMsg ;
+
+/*
+Description: CAN Rx message structure definition
+*/
+typedef struct {
+	
+	uint8 IDE;  //1 -> extended identifier,0 -> standard identifier
+	
+	uint8 RTR;  //1 -> Remote frame, 0 -> Data frame
+	
+	uint32 ID;  // message identifier
+	
+	uint8 DATA_LENGHT;  //number of data bytes "0 - 8"
+	
+	uint8 DATA[8];  // pointer to the data 
+	
+	uint8 FMI;      // contain the index of the filter the message was stored in 
+                       
+}CanRxMsg ;
 
 
-
-
-
-
-
+/*
+This container contains the configuration parameters 
+and sub containers of the  Can HW.
+/*Not used in this version*/
+volatile typedef struct 
+{
+    /*Reference to CAN Controller */
+    CAN_TypeDef*  CanControllerBaseAddress;
+    /*This container contains the configuration  */
+    CAN_InitTypeDef*  CanHwdefRef;
+	
+} Can_ConfigType;
 
 
 /***********************************************************************************/
@@ -175,6 +227,203 @@
 void CAN_VoidInit(CAN_TypeDef* CANx, CAN_InitTypeDef* CANInitStruct) ;
 /************************************************************************************
 
+*Name       :   CAN_VoidFilterSet
+
+*Description: * Initializes specific filtr bank with   
+							  configuration in filter init struct
+								
+*Pre-Cond   :	None				
+							
+*pos-Cond   : None
+
+*Input      : None 
+
+*Output     : void
+
+*Return     : void
+
+*************************************************************************************/
+void CAN_VoidFilterSet(CAN_FilterInitTypeDef* CAN_FilterInitStruct);
+/************************************************************************************
+
+*Name       :   CAN_VoidReceive
+
+*Description: * init receive message struct to receive can frame 
+                in specific fifo 
+								
+*Pre-Cond   :	None				
+							
+*pos-Cond   : None
+
+*Input      : -canx struct "x=1,2,..."  according to how many can in controller
+              CAN InitStruct to specifiy the configuration
+						 - fifo number we want to receive the message located on it
+             - message fram struct address that will contain reveived message						 
+
+*Output     : void
+
+*Return     : void
+
+*************************************************************************************/
+void CAN_VoidReceive(CAN_TypeDef* CANx, uint8 Copy_u8FifoNumber, CanRxMsg* RxMessage);
+/************************************************************************************
+
+*Name       :   CAN_VoidTransmit
+
+*Description: * init transmit can frame to send it throught 
+                specific mail box
+								
+*Pre-Cond   :	None				
+							
+*pos-Cond   : None
+
+*Input      : -canx struct "x=1,2,..."  according to how many can in controller
+              CAN InitStruct to specifiy the configuration
+             - message fram struct address that will contain transmit message						 
+
+*Output     : void
+
+*Return     : void
+
+*************************************************************************************/
+uint8 CAN_VoidTransmit(CAN_TypeDef* CANx, CanTxMsg*  TxMessage);
+/************************************************************************************
+
+*Name       :   CAN_u8GetLastErrorCodeType
+
+*Description: * get the last accured error in "CANx->ESR"register
+                 get the value of t2 bits specific for can error
+								
+*Pre-Cond   :	None				
+							
+*pos-Cond   : None
+
+*Input      : -canx struct "x=1,2,..."  according to how many can in controller
+              CAN InitStruct to specifiy the configuration
+             - 						 
+
+*Output     : error code Type , the Error should be one of the following
+              No Error  
+							Stuff Error
+							Form Error
+							Acknowledgment Error
+							Bit Recessive Error
+							Bit Dominant Error
+							CRC Error
+							Software Set Error  
+
+*Return     : void
+*************************************************************************************/
+uint8 CAN_u8GetLastErrorCodeType(CAN_TypeDef* CANx);
+/************************************************************************************
+
+*Name       :   CAN_VoidInterruptSet
+
+*Description: * Enables or disables the specified CANx interrupts.   
+							
+*Pre-Cond   :	None				
+							
+*pos-Cond   : None
+
+*Input      : -canx struct "x=1,2,..."  according to how many can in controller
+              CAN InitStruct to specifiy the configuration
+							- type of interrupt you want to enable or disable,it should be on of the following :
+							CAN_IER_TMEIE 
+							CAN_FMPIE0
+							CAN_FFIE0 
+							CAN_FOVIE0
+							CAN_FMPIE1
+							CAN_FFIE1 
+							CAN_FOVIE1
+							CAN_EWGIE 
+							CAN_EPVIE 
+							CAN_BOFIE 
+							CAN_LECIE 
+							CAN_ERRIE 
+							CAN_WKUIE 
+							CAN_SLKIE 
+*Output     : void
+
+*Return     : last Error code type
+****************************************************************************************/
+void CAN_VoidInterruptSet(CAN_TypeDef* CANx, uint32 Copy_u32CanInterruptType, FunctionalState Copy_u8InterruptNewState);
+/************************************************************************************
+
+*Name       :   CAN_VoidTransmit
+
+*Description: * activate or deactivate time trigger communication mode of a specific mailbox 
+
+*Notes      :  DLC must be 8 bytes in order these two bytes to be sent over the CAN bus.
+								
+*Pre-Cond   :	None				
+							
+*pos-Cond   : None
+
+*Input      : -canx struct "x=1,2,..."  according to how many can in controller
+              CAN InitStruct to specifiy the configuration
+             -new state of the mode
+             -number of the mail box to activate						 
+
+*Output     : void
+
+*Return     : void
+
+*************************************************************************************/
+void CAN_VoidTimeTriggerCommMode(CAN_TypeDef* CANx, FunctionalState NewState , uint8 Copy_u8MailBoxNumber);
+/************************************************************************************
+
+*Name       :   Can_voidSynRecieveArray
+
+*Description: * Recive Array of Data 
+								
+*Pre-Cond   :	None				
+							
+*pos-Cond   : None
+
+*Input      : beside static configurations , input can unit and fifo number						 
+
+*Output     : void
+
+*Return     : void
+
+*************************************************************************************/
+void Can_voidSynRecieveArray( uint8 *Copy_uint8DataPtr ,  uint8 Copy_uint8DataLenght);
+/************************************************************************************
+
+*Name       :   Can_voidSynRecieveWord
+
+*Description: * Recive only one word in FIFO O
+								
+*Pre-Cond   :	None				
+							
+*pos-Cond   : None
+
+*Input      : beside static configurations , input can unit and fifo number						 
+
+*Output     : void
+
+*Return     : void
+
+*************************************************************************************/
+uint32 Can_uint32SynRecieveWord(CAN_TypeDef* CANx, uint8 Copy_u8FifoNumber  );
+/************************************************************************************
+
+*Name       :   Can_voidSynRecieveByte
+
+*Description: * Recive only one byte in FIFO O
+								
+*Pre-Cond   :	None				
+							
+*pos-Cond   : None
+
+*Input      : beside static configurations , input can unit and fifo number						 
+
+*Output     : void
+
+*Return     : void
+
+*************************************************************************************/
+uint8 Can_uint8SynRecieveByte(CAN_TypeDef* CANx, uint8 Copy_u8FifoNumber  );
 
 
 
