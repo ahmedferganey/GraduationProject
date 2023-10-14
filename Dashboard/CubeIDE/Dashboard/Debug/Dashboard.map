@@ -1974,6 +1974,106 @@ Discarded input sections
  .comment       0x0000000000000000       0x44 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
  .ARM.attributes
                 0x0000000000000000       0x2d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .group         0x0000000000000000        0xc ./HAL_Layer/GLCD_Module/LCD_program.o
+ .text          0x0000000000000000        0x0 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .data          0x0000000000000000        0x0 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .bss           0x0000000000000000        0x0 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .text.HLCD_voidkick
+                0x0000000000000000       0x14 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .text.HLCD_u8Init
+                0x0000000000000000        0xe ./HAL_Layer/GLCD_Module/LCD_program.o
+ .text.HLCD_u8CMD
+                0x0000000000000000       0x16 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .text.HLCD_u8SetCursor
+                0x0000000000000000       0x1c ./HAL_Layer/GLCD_Module/LCD_program.o
+ .text.HLCD_u8ClearSreen
+                0x0000000000000000        0xe ./HAL_Layer/GLCD_Module/LCD_program.o
+ .text.HLCD_u8ClearPiexels
+                0x0000000000000000       0x1e ./HAL_Layer/GLCD_Module/LCD_program.o
+ .text.HLCD_u8TurnOffDisplay
+                0x0000000000000000        0xe ./HAL_Layer/GLCD_Module/LCD_program.o
+ .text.HLCD_u8WriteChar
+                0x0000000000000000       0x16 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .text.HLCD_u8WriteString
+                0x0000000000000000       0x14 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .text.HLCD_u8WriteIntNum
+                0x0000000000000000       0x16 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .text.HLCD_u8WriteFloatNum
+                0x0000000000000000       0x14 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_info    0x0000000000000000      0x24f ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_abbrev  0x0000000000000000       0xa9 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_aranges
+                0x0000000000000000       0x70 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_rnglists
+                0x0000000000000000       0x4f ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000      0x17a ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000      0xa9c ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x24 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x22 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x5b ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x94 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x43 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x34 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x16 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000      0x10e ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x8d ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x16 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x43 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x57 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x34 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x10 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x58 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x8e ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x1c ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000      0x177 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000      0x369 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x16 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x29 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x1c ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x35 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x10 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x1c ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x16 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000      0x147 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x58 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x52 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_macro   0x0000000000000000       0x8e ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_line    0x0000000000000000      0x625 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_str     0x0000000000000000     0x729d ./HAL_Layer/GLCD_Module/LCD_program.o
+ .comment       0x0000000000000000       0x44 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .debug_frame   0x0000000000000000      0x1b0 ./HAL_Layer/GLCD_Module/LCD_program.o
+ .ARM.attributes
+                0x0000000000000000       0x2d ./HAL_Layer/GLCD_Module/LCD_program.o
  .text          0x0000000000000000        0x0 /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.linux64_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-exit.o)
  .data          0x0000000000000000        0x0 /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.linux64_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-exit.o)
  .bss           0x0000000000000000        0x0 /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.linux64_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-exit.o)
@@ -2236,6 +2336,7 @@ LOAD ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
 LOAD ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o
 LOAD ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
 LOAD ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
+LOAD ./HAL_Layer/GLCD_Module/LCD_program.o
 START GROUP
 LOAD /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.linux64_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a
 LOAD /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.linux64_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a

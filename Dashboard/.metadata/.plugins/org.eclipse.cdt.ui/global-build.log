@@ -1,6 +1,50 @@
-11:28:57 **** Incremental Build of configuration Debug for project Dashboard ****
+12:35:04 **** Incremental Build of configuration Debug for project Dashboard ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/DISPLAY_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/GET_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/RTC_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/OBSERVER_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/COMMON_Layer" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../HAL_Layer/GLCD_Module/LCD_program.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/DISPLAY_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/GET_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/RTC_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/OBSERVER_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/COMMON_Layer" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"HAL_Layer/GLCD_Module/LCD_program.d" -MT"HAL_Layer/GLCD_Module/LCD_program.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_Layer/GLCD_Module/LCD_program.o"
+../HAL_Layer/GLCD_Module/LCD_program.c: In function 'HLCD_u8Init':
+../HAL_Layer/GLCD_Module/LCD_program.c:38:1: warning: control reaches end of non-void function [-Wreturn-type]
+   38 | }
+      | ^
+../HAL_Layer/GLCD_Module/LCD_program.c: In function 'HLCD_u8CMD':
+../HAL_Layer/GLCD_Module/LCD_program.c:43:1: warning: control reaches end of non-void function [-Wreturn-type]
+   43 | }
+      | ^
+../HAL_Layer/GLCD_Module/LCD_program.c: In function 'HLCD_u8SetCursor':
+../HAL_Layer/GLCD_Module/LCD_program.c:48:1: warning: control reaches end of non-void function [-Wreturn-type]
+   48 | }
+      | ^
+../HAL_Layer/GLCD_Module/LCD_program.c: In function 'HLCD_u8ClearSreen':
+../HAL_Layer/GLCD_Module/LCD_program.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+   53 | }
+      | ^
+../HAL_Layer/GLCD_Module/LCD_program.c: In function 'HLCD_u8ClearPiexels':
+../HAL_Layer/GLCD_Module/LCD_program.c:58:1: warning: control reaches end of non-void function [-Wreturn-type]
+   58 | }
+      | ^
+../HAL_Layer/GLCD_Module/LCD_program.c: In function 'HLCD_u8TurnOffDisplay':
+../HAL_Layer/GLCD_Module/LCD_program.c:63:1: warning: control reaches end of non-void function [-Wreturn-type]
+   63 | }
+      | ^
+../HAL_Layer/GLCD_Module/LCD_program.c: In function 'HLCD_u8WriteChar':
+../HAL_Layer/GLCD_Module/LCD_program.c:68:1: warning: control reaches end of non-void function [-Wreturn-type]
+   68 | }
+      | ^
+../HAL_Layer/GLCD_Module/LCD_program.c: In function 'HLCD_u8WriteString':
+../HAL_Layer/GLCD_Module/LCD_program.c:73:1: warning: control reaches end of non-void function [-Wreturn-type]
+   73 | }
+      | ^
+../HAL_Layer/GLCD_Module/LCD_program.c: In function 'HLCD_u8WriteIntNum':
+../HAL_Layer/GLCD_Module/LCD_program.c:78:1: warning: control reaches end of non-void function [-Wreturn-type]
+   78 | }
+      | ^
+../HAL_Layer/GLCD_Module/LCD_program.c: In function 'HLCD_u8WriteFloatNum':
+../HAL_Layer/GLCD_Module/LCD_program.c:83:1: warning: control reaches end of non-void function [-Wreturn-type]
+   83 | }
+      | ^
+At top level:
+../HAL_Layer/GLCD_Module/LCD_program.c:30:13: warning: 'HLCD_voidkick' defined but not used [-Wunused-function]
+   30 | static void HLCD_voidkick(uint8 Copy_u8Character)
+      |             ^~~~~~~~~~~~~
 arm-none-eabi-gcc -o "Dashboard.elf" @"objects.list"   -mcpu=cortex-m3 -T"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Dashboard.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: Dashboard.elf
  

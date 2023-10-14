@@ -31,4 +31,5 @@ APPLICATION_Layer/RTC_Module \
 Core/Src \
 Core/Startup \
 Drivers/STM32F1xx_HAL_Driver/Src \
+HAL_Layer/GLCD_Module \
 

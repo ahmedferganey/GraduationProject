@@ -1,0 +1,11 @@
+../HAL_Layer/GLCD_Module/LCD_program.c:30:13:HLCD_voidkick	1
+../HAL_Layer/GLCD_Module/LCD_program.c:35:16:HLCD_u8Init	1
+../HAL_Layer/GLCD_Module/LCD_program.c:40:16:HLCD_u8CMD	1
+../HAL_Layer/GLCD_Module/LCD_program.c:45:16:HLCD_u8SetCursor	1
+../HAL_Layer/GLCD_Module/LCD_program.c:50:16:HLCD_u8ClearSreen	1
+../HAL_Layer/GLCD_Module/LCD_program.c:55:16:HLCD_u8ClearPiexels	1
+../HAL_Layer/GLCD_Module/LCD_program.c:60:16:HLCD_u8TurnOffDisplay	1
+../HAL_Layer/GLCD_Module/LCD_program.c:65:16:HLCD_u8WriteChar	1
+../HAL_Layer/GLCD_Module/LCD_program.c:70:16:HLCD_u8WriteString	1
+../HAL_Layer/GLCD_Module/LCD_program.c:75:16:HLCD_u8WriteIntNum	1
+../HAL_Layer/GLCD_Module/LCD_program.c:80:16:HLCD_u8WriteFloatNum	1
