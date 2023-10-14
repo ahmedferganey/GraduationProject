@@ -1,0 +1,13 @@
+/*
+ * LCD_interface.h
+ *
+ *  Created on: Oct 14, 2023
+ *      Author: ahmed-ferganey
+ */
+
+#ifndef GLCD_MODULE_LCD_INTERFACE_H_
+#define GLCD_MODULE_LCD_INTERFACE_H_
+
+
+
+#endif /* GLCD_MODULE_LCD_INTERFACE_H_ */

@@ -1,0 +1,18 @@
+/*
+ * LCD_private.h
+ *
+ *  Created on: Oct 14, 2023
+ *      Author: ahmed-ferganey
+ */
+
+#ifndef GLCD_MODULE_LCD_PRIVATE_H_
+#define GLCD_MODULE_LCD_PRIVATE_H_
+
+/******************************************************************************
+* Includes
+*******************************************************************************/
+#include "Std_Types.h"
+
+
+
+#endif /* GLCD_MODULE_LCD_PRIVATE_H_ */

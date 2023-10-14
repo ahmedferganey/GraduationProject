@@ -1,0 +1,15 @@
+/*
+ * Std_Types.h
+ *
+ *  Created on: Oct 14, 2023
+ *      Author: ahmed-ferganey
+ */
+
+#ifndef STD_TYPES_H_
+#define STD_TYPES_H_
+
+/* 8.1 Type definitions */
+
+typedef     uint8        Std_ReturnType;
+
+#endif /* STD_TYPES_H_ */
