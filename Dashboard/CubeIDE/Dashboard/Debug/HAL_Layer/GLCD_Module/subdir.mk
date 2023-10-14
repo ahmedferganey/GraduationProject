@@ -5,12 +5,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../HAL_Layer/GLCD_Module/LCD_cfg.c \
 ../HAL_Layer/GLCD_Module/LCD_program.c 
 
 OBJS += \
+./HAL_Layer/GLCD_Module/LCD_cfg.o \
 ./HAL_Layer/GLCD_Module/LCD_program.o 
 
 C_DEPS += \
+./HAL_Layer/GLCD_Module/LCD_cfg.d \
 ./HAL_Layer/GLCD_Module/LCD_program.d 
 
 
@@ -21,7 +24,7 @@ HAL_Layer/GLCD_Module/%.o HAL_Layer/GLCD_Module/%.su HAL_Layer/GLCD_Module/%.cyc
 clean: clean-HAL_Layer-2f-GLCD_Module
 
 clean-HAL_Layer-2f-GLCD_Module:
-	-$(RM) ./HAL_Layer/GLCD_Module/LCD_program.cyclo ./HAL_Layer/GLCD_Module/LCD_program.d ./HAL_Layer/GLCD_Module/LCD_program.o ./HAL_Layer/GLCD_Module/LCD_program.su
+	-$(RM) ./HAL_Layer/GLCD_Module/LCD_cfg.cyclo ./HAL_Layer/GLCD_Module/LCD_cfg.d ./HAL_Layer/GLCD_Module/LCD_cfg.o ./HAL_Layer/GLCD_Module/LCD_cfg.su ./HAL_Layer/GLCD_Module/LCD_program.cyclo ./HAL_Layer/GLCD_Module/LCD_program.d ./HAL_Layer/GLCD_Module/LCD_program.o ./HAL_Layer/GLCD_Module/LCD_program.su
 
 .PHONY: clean-HAL_Layer-2f-GLCD_Module
 

@@ -1,2 +1,0 @@
-APPLICATION_Layer/OBSERVER_Module/OBSERVER_program.o: \
- ../APPLICATION_Layer/OBSERVER_Module/OBSERVER_program.c

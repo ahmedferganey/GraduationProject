@@ -1,64 +1,97 @@
-12:35:04 **** Incremental Build of configuration Debug for project Dashboard ****
+23:34:22 **** Clean-only build of configuration Debug for project Dashboard ****
+make -j8 clean 
+rm -rf ./HAL_Layer/GLCD_Module/LCD_program.cyclo ./HAL_Layer/GLCD_Module/LCD_program.d ./HAL_Layer/GLCD_Module/LCD_program.o ./HAL_Layer/GLCD_Module/LCD_program.su
+rm -rf ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.su ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.cyclo ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.su
+rm -rf ./Core/Startup/startup_stm32f103c8tx.d ./Core/Startup/startup_stm32f103c8tx.o
+rm -rf ./Core/Src/gpio.cyclo ./Core/Src/gpio.d ./Core/Src/gpio.o ./Core/Src/gpio.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32f1xx_hal_msp.cyclo ./Core/Src/stm32f1xx_hal_msp.d ./Core/Src/stm32f1xx_hal_msp.o ./Core/Src/stm32f1xx_hal_msp.su ./Core/Src/stm32f1xx_it.cyclo ./Core/Src/stm32f1xx_it.d ./Core/Src/stm32f1xx_it.o ./Core/Src/stm32f1xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f1xx.cyclo ./Core/Src/system_stm32f1xx.d ./Core/Src/system_stm32f1xx.o ./Core/Src/system_stm32f1xx.su
+rm -rf ./APPLICATION_Layer/RTC_Module/RTC_program.cyclo ./APPLICATION_Layer/RTC_Module/RTC_program.d ./APPLICATION_Layer/RTC_Module/RTC_program.o ./APPLICATION_Layer/RTC_Module/RTC_program.su
+rm -rf ./APPLICATION_Layer/OBSERVER_Module/OBSERVER_program.cyclo ./APPLICATION_Layer/OBSERVER_Module/OBSERVER_program.d ./APPLICATION_Layer/OBSERVER_Module/OBSERVER_program.o ./APPLICATION_Layer/OBSERVER_Module/OBSERVER_program.su
+rm -rf ./APPLICATION_Layer/GET_Module/GET_program.cyclo ./APPLICATION_Layer/GET_Module/GET_program.d ./APPLICATION_Layer/GET_Module/GET_program.o ./APPLICATION_Layer/GET_Module/GET_program.su
+rm -rf ./APPLICATION_Layer/DISPLAY_Module/DISPLAY_program.cyclo ./APPLICATION_Layer/DISPLAY_Module/DISPLAY_program.d ./APPLICATION_Layer/DISPLAY_Module/DISPLAY_program.o ./APPLICATION_Layer/DISPLAY_Module/DISPLAY_program.su
+rm -rf Dashboard.bin Dashboard.elf Dashboard.hex Dashboard.list Dashboard.map default.size.stdout
+ 
+23:34:23 **** Incremental Build of configuration Debug for project Dashboard ****
 make -j8 all 
+arm-none-eabi-gcc "../HAL_Layer/GLCD_Module/LCD_cfg.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/DISPLAY_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/GET_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/RTC_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/OBSERVER_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/COMMON_Layer" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"HAL_Layer/GLCD_Module/LCD_cfg.d" -MT"HAL_Layer/GLCD_Module/LCD_cfg.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_Layer/GLCD_Module/LCD_cfg.o"
 arm-none-eabi-gcc "../HAL_Layer/GLCD_Module/LCD_program.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/DISPLAY_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/GET_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/RTC_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/OBSERVER_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/COMMON_Layer" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"HAL_Layer/GLCD_Module/LCD_program.d" -MT"HAL_Layer/GLCD_Module/LCD_program.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_Layer/GLCD_Module/LCD_program.o"
-../HAL_Layer/GLCD_Module/LCD_program.c: In function 'HLCD_u8Init':
-../HAL_Layer/GLCD_Module/LCD_program.c:38:1: warning: control reaches end of non-void function [-Wreturn-type]
-   38 | }
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/DISPLAY_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/GET_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/RTC_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/OBSERVER_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/COMMON_Layer" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/DISPLAY_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/GET_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/RTC_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/OBSERVER_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/COMMON_Layer" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/DISPLAY_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/GET_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/RTC_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/OBSERVER_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/COMMON_Layer" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/DISPLAY_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/GET_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/RTC_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/OBSERVER_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/COMMON_Layer" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/DISPLAY_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/GET_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/RTC_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/OBSERVER_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/COMMON_Layer" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/DISPLAY_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/GET_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/RTC_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/OBSERVER_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/COMMON_Layer" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+../HAL_Layer/GLCD_Module/LCD_program.c: In function 'HLCD_voidkick':
+../HAL_Layer/GLCD_Module/LCD_program.c:36:57: error: 'LCD_DATA_PINS' undeclared (first use in this function)
+   36 |         for(uint8 Local_u8Counter = 0;Local_u8Counter < LCD_DATA_PINS;Local_u8Counter++)
+      |                                                         ^~~~~~~~~~~~~
+../HAL_Layer/GLCD_Module/LCD_program.c:36:57: note: each undeclared identifier is reported only once for each function it appears in
+../HAL_Layer/GLCD_Module/LCD_program.c:40:10: warning: implicit declaration of function 'MGPIO_u8SetPinValue' [-Wimplicit-function-declaration]
+   40 |          MGPIO_u8SetPinValue(Static_u8DataPins[Local_u8Counter], HIGH);
+      |          ^~~~~~~~~~~~~~~~~~~
+../HAL_Layer/GLCD_Module/LCD_program.c:40:30: error: 'Static_u8DataPins' undeclared (first use in this function)
+   40 |          MGPIO_u8SetPinValue(Static_u8DataPins[Local_u8Counter], HIGH);
+      |                              ^~~~~~~~~~~~~~~~~
+../HAL_Layer/GLCD_Module/LCD_program.c:40:66: error: 'HIGH' undeclared (first use in this function)
+   40 |          MGPIO_u8SetPinValue(Static_u8DataPins[Local_u8Counter], HIGH);
+      |                                                                  ^~~~
+../HAL_Layer/GLCD_Module/LCD_program.c:44:66: error: 'LOW' undeclared (first use in this function)
+   44 |          MGPIO_u8SetPinValue(Static_u8DataPins[Local_u8Counter], LOW);
+      |                                                                  ^~~
+In file included from ../HAL_Layer/GLCD_Module/LCD_program.c:19:
+../HAL_Layer/GLCD_Module/LCD_cfg.h:50:17: error: 'PINB1' undeclared (first use in this function)
+   50 | #define LCD_EN  PINB1
+      |                 ^~~~~
+../HAL_Layer/GLCD_Module/LCD_program.c:47:24: note: in expansion of macro 'LCD_EN'
+   47 |    MGPIO_u8SetPinValue(LCD_EN, HIGH);
+      |                        ^~~~~~
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/DISPLAY_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/GET_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/RTC_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/APPLICATION_Layer/OBSERVER_Module" -I"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/COMMON_Layer" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+../HAL_Layer/GLCD_Module/LCD_program.c:48:4: warning: implicit declaration of function 'TMR_voidSetBusyWait' [-Wimplicit-function-declaration]
+   48 |    TMR_voidSetBusyWait(TIM3, 20);
+      |    ^~~~~~~~~~~~~~~~~~~
+../HAL_Layer/GLCD_Module/LCD_program.c: At top level:
+../HAL_Layer/GLCD_Module/LCD_program.c:67:1: error: expected identifier or '(' before '{' token
+   67 | {
       | ^
-../HAL_Layer/GLCD_Module/LCD_program.c: In function 'HLCD_u8CMD':
-../HAL_Layer/GLCD_Module/LCD_program.c:43:1: warning: control reaches end of non-void function [-Wreturn-type]
-   43 | }
+../HAL_Layer/GLCD_Module/LCD_program.c: In function 'HLCD_u8Init':
+../HAL_Layer/GLCD_Module/LCD_program.c:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+   64 | }
       | ^
 ../HAL_Layer/GLCD_Module/LCD_program.c: In function 'HLCD_u8SetCursor':
-../HAL_Layer/GLCD_Module/LCD_program.c:48:1: warning: control reaches end of non-void function [-Wreturn-type]
-   48 | }
+../HAL_Layer/GLCD_Module/LCD_program.c:79:1: warning: control reaches end of non-void function [-Wreturn-type]
+   79 | }
       | ^
 ../HAL_Layer/GLCD_Module/LCD_program.c: In function 'HLCD_u8ClearSreen':
-../HAL_Layer/GLCD_Module/LCD_program.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
-   53 | }
+../HAL_Layer/GLCD_Module/LCD_program.c:84:1: warning: control reaches end of non-void function [-Wreturn-type]
+   84 | }
       | ^
 ../HAL_Layer/GLCD_Module/LCD_program.c: In function 'HLCD_u8ClearPiexels':
-../HAL_Layer/GLCD_Module/LCD_program.c:58:1: warning: control reaches end of non-void function [-Wreturn-type]
-   58 | }
+../HAL_Layer/GLCD_Module/LCD_program.c:89:1: warning: control reaches end of non-void function [-Wreturn-type]
+   89 | }
       | ^
 ../HAL_Layer/GLCD_Module/LCD_program.c: In function 'HLCD_u8TurnOffDisplay':
-../HAL_Layer/GLCD_Module/LCD_program.c:63:1: warning: control reaches end of non-void function [-Wreturn-type]
-   63 | }
+../HAL_Layer/GLCD_Module/LCD_program.c:94:1: warning: control reaches end of non-void function [-Wreturn-type]
+   94 | }
       | ^
 ../HAL_Layer/GLCD_Module/LCD_program.c: In function 'HLCD_u8WriteChar':
-../HAL_Layer/GLCD_Module/LCD_program.c:68:1: warning: control reaches end of non-void function [-Wreturn-type]
-   68 | }
+../HAL_Layer/GLCD_Module/LCD_program.c:99:1: warning: control reaches end of non-void function [-Wreturn-type]
+   99 | }
       | ^
 ../HAL_Layer/GLCD_Module/LCD_program.c: In function 'HLCD_u8WriteString':
-../HAL_Layer/GLCD_Module/LCD_program.c:73:1: warning: control reaches end of non-void function [-Wreturn-type]
-   73 | }
+../HAL_Layer/GLCD_Module/LCD_program.c:104:1: warning: control reaches end of non-void function [-Wreturn-type]
+  104 | }
       | ^
 ../HAL_Layer/GLCD_Module/LCD_program.c: In function 'HLCD_u8WriteIntNum':
-../HAL_Layer/GLCD_Module/LCD_program.c:78:1: warning: control reaches end of non-void function [-Wreturn-type]
-   78 | }
+../HAL_Layer/GLCD_Module/LCD_program.c:109:1: warning: control reaches end of non-void function [-Wreturn-type]
+  109 | }
       | ^
 ../HAL_Layer/GLCD_Module/LCD_program.c: In function 'HLCD_u8WriteFloatNum':
-../HAL_Layer/GLCD_Module/LCD_program.c:83:1: warning: control reaches end of non-void function [-Wreturn-type]
-   83 | }
+../HAL_Layer/GLCD_Module/LCD_program.c:114:1: warning: control reaches end of non-void function [-Wreturn-type]
+  114 | }
       | ^
 At top level:
 ../HAL_Layer/GLCD_Module/LCD_program.c:30:13: warning: 'HLCD_voidkick' defined but not used [-Wunused-function]
    30 | static void HLCD_voidkick(uint8 Copy_u8Character)
       |             ^~~~~~~~~~~~~
-arm-none-eabi-gcc -o "Dashboard.elf" @"objects.list"   -mcpu=cortex-m3 -T"/home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/Dashboard/STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Dashboard.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Dashboard.elf
- 
-arm-none-eabi-size   Dashboard.elf 
-arm-none-eabi-objdump -h -S  Dashboard.elf  > "Dashboard.list"
-arm-none-eabi-objcopy  -O ihex  Dashboard.elf  "Dashboard.hex"
-arm-none-eabi-objcopy  -O binary  Dashboard.elf  "Dashboard.bin"
-   text	   data	    bss	    dec	    hex	filename
-   3560	     20	   1572	   5152	   1420	Dashboard.elf
-Finished building: default.size.stdout
- 
-Finished building: Dashboard.hex
-Finished building: Dashboard.bin
- 
- 
-Finished building: Dashboard.list
- 
+make: *** [HAL_Layer/GLCD_Module/subdir.mk:22: HAL_Layer/GLCD_Module/LCD_program.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
