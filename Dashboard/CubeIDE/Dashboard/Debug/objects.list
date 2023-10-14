@@ -1,3 +1,7 @@
+"./APPLICATION_Layer/DISPLAY_Module/DISPLAY_program.o"
+"./APPLICATION_Layer/GET_Module/GET_program.o"
+"./APPLICATION_Layer/OBSERVER_Module/OBSERVER_program.o"
+"./APPLICATION_Layer/RTC_Module/RTC_program.o"
 "./Core/Src/gpio.o"
 "./Core/Src/main.o"
 "./Core/Src/stm32f1xx_hal_msp.o"

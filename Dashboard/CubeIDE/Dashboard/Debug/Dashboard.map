@@ -61,6 +61,66 @@ Discarded input sections
  .debug_str     0x0000000000000000       0xde /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.linux64_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
  .ARM.attributes
                 0x0000000000000000       0x1b /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.linux64_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
+ .group         0x0000000000000000        0xc ./APPLICATION_Layer/DISPLAY_Module/DISPLAY_program.o
+ .text          0x0000000000000000        0x0 ./APPLICATION_Layer/DISPLAY_Module/DISPLAY_program.o
+ .data          0x0000000000000000        0x0 ./APPLICATION_Layer/DISPLAY_Module/DISPLAY_program.o
+ .bss           0x0000000000000000        0x0 ./APPLICATION_Layer/DISPLAY_Module/DISPLAY_program.o
+ .debug_info    0x0000000000000000       0x22 ./APPLICATION_Layer/DISPLAY_Module/DISPLAY_program.o
+ .debug_abbrev  0x0000000000000000       0x12 ./APPLICATION_Layer/DISPLAY_Module/DISPLAY_program.o
+ .debug_aranges
+                0x0000000000000000       0x18 ./APPLICATION_Layer/DISPLAY_Module/DISPLAY_program.o
+ .debug_macro   0x0000000000000000       0x11 ./APPLICATION_Layer/DISPLAY_Module/DISPLAY_program.o
+ .debug_macro   0x0000000000000000      0xa9c ./APPLICATION_Layer/DISPLAY_Module/DISPLAY_program.o
+ .debug_line    0x0000000000000000       0x56 ./APPLICATION_Layer/DISPLAY_Module/DISPLAY_program.o
+ .debug_str     0x0000000000000000     0x2dbf ./APPLICATION_Layer/DISPLAY_Module/DISPLAY_program.o
+ .comment       0x0000000000000000       0x44 ./APPLICATION_Layer/DISPLAY_Module/DISPLAY_program.o
+ .ARM.attributes
+                0x0000000000000000       0x2d ./APPLICATION_Layer/DISPLAY_Module/DISPLAY_program.o
+ .group         0x0000000000000000        0xc ./APPLICATION_Layer/GET_Module/GET_program.o
+ .text          0x0000000000000000        0x0 ./APPLICATION_Layer/GET_Module/GET_program.o
+ .data          0x0000000000000000        0x0 ./APPLICATION_Layer/GET_Module/GET_program.o
+ .bss           0x0000000000000000        0x0 ./APPLICATION_Layer/GET_Module/GET_program.o
+ .debug_info    0x0000000000000000       0x22 ./APPLICATION_Layer/GET_Module/GET_program.o
+ .debug_abbrev  0x0000000000000000       0x12 ./APPLICATION_Layer/GET_Module/GET_program.o
+ .debug_aranges
+                0x0000000000000000       0x18 ./APPLICATION_Layer/GET_Module/GET_program.o
+ .debug_macro   0x0000000000000000       0x11 ./APPLICATION_Layer/GET_Module/GET_program.o
+ .debug_macro   0x0000000000000000      0xa9c ./APPLICATION_Layer/GET_Module/GET_program.o
+ .debug_line    0x0000000000000000       0x4e ./APPLICATION_Layer/GET_Module/GET_program.o
+ .debug_str     0x0000000000000000     0x2db7 ./APPLICATION_Layer/GET_Module/GET_program.o
+ .comment       0x0000000000000000       0x44 ./APPLICATION_Layer/GET_Module/GET_program.o
+ .ARM.attributes
+                0x0000000000000000       0x2d ./APPLICATION_Layer/GET_Module/GET_program.o
+ .group         0x0000000000000000        0xc ./APPLICATION_Layer/OBSERVER_Module/OBSERVER_program.o
+ .text          0x0000000000000000        0x0 ./APPLICATION_Layer/OBSERVER_Module/OBSERVER_program.o
+ .data          0x0000000000000000        0x0 ./APPLICATION_Layer/OBSERVER_Module/OBSERVER_program.o
+ .bss           0x0000000000000000        0x0 ./APPLICATION_Layer/OBSERVER_Module/OBSERVER_program.o
+ .debug_info    0x0000000000000000       0x22 ./APPLICATION_Layer/OBSERVER_Module/OBSERVER_program.o
+ .debug_abbrev  0x0000000000000000       0x12 ./APPLICATION_Layer/OBSERVER_Module/OBSERVER_program.o
+ .debug_aranges
+                0x0000000000000000       0x18 ./APPLICATION_Layer/OBSERVER_Module/OBSERVER_program.o
+ .debug_macro   0x0000000000000000       0x11 ./APPLICATION_Layer/OBSERVER_Module/OBSERVER_program.o
+ .debug_macro   0x0000000000000000      0xa9c ./APPLICATION_Layer/OBSERVER_Module/OBSERVER_program.o
+ .debug_line    0x0000000000000000       0x58 ./APPLICATION_Layer/OBSERVER_Module/OBSERVER_program.o
+ .debug_str     0x0000000000000000     0x2dc1 ./APPLICATION_Layer/OBSERVER_Module/OBSERVER_program.o
+ .comment       0x0000000000000000       0x44 ./APPLICATION_Layer/OBSERVER_Module/OBSERVER_program.o
+ .ARM.attributes
+                0x0000000000000000       0x2d ./APPLICATION_Layer/OBSERVER_Module/OBSERVER_program.o
+ .group         0x0000000000000000        0xc ./APPLICATION_Layer/RTC_Module/RTC_program.o
+ .text          0x0000000000000000        0x0 ./APPLICATION_Layer/RTC_Module/RTC_program.o
+ .data          0x0000000000000000        0x0 ./APPLICATION_Layer/RTC_Module/RTC_program.o
+ .bss           0x0000000000000000        0x0 ./APPLICATION_Layer/RTC_Module/RTC_program.o
+ .debug_info    0x0000000000000000       0x22 ./APPLICATION_Layer/RTC_Module/RTC_program.o
+ .debug_abbrev  0x0000000000000000       0x12 ./APPLICATION_Layer/RTC_Module/RTC_program.o
+ .debug_aranges
+                0x0000000000000000       0x18 ./APPLICATION_Layer/RTC_Module/RTC_program.o
+ .debug_macro   0x0000000000000000       0x11 ./APPLICATION_Layer/RTC_Module/RTC_program.o
+ .debug_macro   0x0000000000000000      0xa9c ./APPLICATION_Layer/RTC_Module/RTC_program.o
+ .debug_line    0x0000000000000000       0x4e ./APPLICATION_Layer/RTC_Module/RTC_program.o
+ .debug_str     0x0000000000000000     0x2db7 ./APPLICATION_Layer/RTC_Module/RTC_program.o
+ .comment       0x0000000000000000       0x44 ./APPLICATION_Layer/RTC_Module/RTC_program.o
+ .ARM.attributes
+                0x0000000000000000       0x2d ./APPLICATION_Layer/RTC_Module/RTC_program.o
  .group         0x0000000000000000        0xc ./Core/Src/gpio.o
  .group         0x0000000000000000        0xc ./Core/Src/gpio.o
  .group         0x0000000000000000        0xc ./Core/Src/gpio.o
@@ -98,6 +158,7 @@ Discarded input sections
  .text          0x0000000000000000        0x0 ./Core/Src/gpio.o
  .data          0x0000000000000000        0x0 ./Core/Src/gpio.o
  .bss           0x0000000000000000        0x0 ./Core/Src/gpio.o
+ .debug_macro   0x0000000000000000      0xa9c ./Core/Src/gpio.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
@@ -2150,6 +2211,10 @@ Linker script and memory map
 LOAD /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.linux64_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7-m/nofp/crti.o
 LOAD /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.linux64_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7-m/nofp/crtbegin.o
 LOAD /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.linux64_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
+LOAD ./APPLICATION_Layer/DISPLAY_Module/DISPLAY_program.o
+LOAD ./APPLICATION_Layer/GET_Module/GET_program.o
+LOAD ./APPLICATION_Layer/OBSERVER_Module/OBSERVER_program.o
+LOAD ./APPLICATION_Layer/RTC_Module/RTC_program.o
 LOAD ./Core/Src/gpio.o
 LOAD ./Core/Src/main.o
 LOAD ./Core/Src/stm32f1xx_hal_msp.o
@@ -2598,49 +2663,48 @@ LOAD /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.ide.mcu.externaltools.
  .debug_rnglists
                 0x000000000000021a       0x6c ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
 
-.debug_macro    0x0000000000000000    0x158ae
+.debug_macro    0x0000000000000000    0x14e12
  .debug_macro   0x0000000000000000      0x198 ./Core/Src/gpio.o
- .debug_macro   0x0000000000000198      0xa9c ./Core/Src/gpio.o
- .debug_macro   0x0000000000000c34      0x20f ./Core/Src/gpio.o
- .debug_macro   0x0000000000000e43       0x2e ./Core/Src/gpio.o
- .debug_macro   0x0000000000000e71       0x22 ./Core/Src/gpio.o
- .debug_macro   0x0000000000000e93       0x22 ./Core/Src/gpio.o
- .debug_macro   0x0000000000000eb5       0x8e ./Core/Src/gpio.o
- .debug_macro   0x0000000000000f43       0x51 ./Core/Src/gpio.o
- .debug_macro   0x0000000000000f94      0x103 ./Core/Src/gpio.o
- .debug_macro   0x0000000000001097       0x6a ./Core/Src/gpio.o
- .debug_macro   0x0000000000001101      0x1df ./Core/Src/gpio.o
- .debug_macro   0x00000000000012e0       0x1c ./Core/Src/gpio.o
- .debug_macro   0x00000000000012fc       0x22 ./Core/Src/gpio.o
- .debug_macro   0x000000000000131e       0xbd ./Core/Src/gpio.o
- .debug_macro   0x00000000000013db      0xd23 ./Core/Src/gpio.o
- .debug_macro   0x00000000000020fe     0xe09e ./Core/Src/gpio.o
- .debug_macro   0x000000000001019c       0x6d ./Core/Src/gpio.o
- .debug_macro   0x0000000000010209     0x348d ./Core/Src/gpio.o
- .debug_macro   0x0000000000013696      0x174 ./Core/Src/gpio.o
- .debug_macro   0x000000000001380a       0x5c ./Core/Src/gpio.o
- .debug_macro   0x0000000000013866      0x5bc ./Core/Src/gpio.o
- .debug_macro   0x0000000000013e22      0x289 ./Core/Src/gpio.o
- .debug_macro   0x00000000000140ab      0x1cb ./Core/Src/gpio.o
- .debug_macro   0x0000000000014276      0x114 ./Core/Src/gpio.o
- .debug_macro   0x000000000001438a      0x1b2 ./Core/Src/gpio.o
- .debug_macro   0x000000000001453c       0x27 ./Core/Src/gpio.o
- .debug_macro   0x0000000000014563      0x136 ./Core/Src/gpio.o
- .debug_macro   0x0000000000014699      0x1bc ./Core/Src/gpio.o
- .debug_macro   0x0000000000014855       0x34 ./Core/Src/gpio.o
- .debug_macro   0x0000000000014889       0x3c ./Core/Src/gpio.o
- .debug_macro   0x00000000000148c5       0x57 ./Core/Src/gpio.o
- .debug_macro   0x000000000001491c       0x87 ./Core/Src/gpio.o
- .debug_macro   0x00000000000149a3      0x240 ./Core/Src/gpio.o
- .debug_macro   0x0000000000014be3      0x140 ./Core/Src/gpio.o
- .debug_macro   0x0000000000014d23       0x83 ./Core/Src/gpio.o
- .debug_macro   0x0000000000014da6      0x19c ./Core/Src/main.o
- .debug_macro   0x0000000000014f42      0x18e ./Core/Src/stm32f1xx_hal_msp.o
- .debug_macro   0x00000000000150d0      0x198 ./Core/Src/stm32f1xx_it.o
- .debug_macro   0x0000000000015268      0x184 ./Core/Src/system_stm32f1xx.o
- .debug_macro   0x00000000000153ec      0x1a8 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
- .debug_macro   0x0000000000015594      0x184 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
- .debug_macro   0x0000000000015718      0x196 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+ .debug_macro   0x0000000000000198      0x20f ./Core/Src/gpio.o
+ .debug_macro   0x00000000000003a7       0x2e ./Core/Src/gpio.o
+ .debug_macro   0x00000000000003d5       0x22 ./Core/Src/gpio.o
+ .debug_macro   0x00000000000003f7       0x22 ./Core/Src/gpio.o
+ .debug_macro   0x0000000000000419       0x8e ./Core/Src/gpio.o
+ .debug_macro   0x00000000000004a7       0x51 ./Core/Src/gpio.o
+ .debug_macro   0x00000000000004f8      0x103 ./Core/Src/gpio.o
+ .debug_macro   0x00000000000005fb       0x6a ./Core/Src/gpio.o
+ .debug_macro   0x0000000000000665      0x1df ./Core/Src/gpio.o
+ .debug_macro   0x0000000000000844       0x1c ./Core/Src/gpio.o
+ .debug_macro   0x0000000000000860       0x22 ./Core/Src/gpio.o
+ .debug_macro   0x0000000000000882       0xbd ./Core/Src/gpio.o
+ .debug_macro   0x000000000000093f      0xd23 ./Core/Src/gpio.o
+ .debug_macro   0x0000000000001662     0xe09e ./Core/Src/gpio.o
+ .debug_macro   0x000000000000f700       0x6d ./Core/Src/gpio.o
+ .debug_macro   0x000000000000f76d     0x348d ./Core/Src/gpio.o
+ .debug_macro   0x0000000000012bfa      0x174 ./Core/Src/gpio.o
+ .debug_macro   0x0000000000012d6e       0x5c ./Core/Src/gpio.o
+ .debug_macro   0x0000000000012dca      0x5bc ./Core/Src/gpio.o
+ .debug_macro   0x0000000000013386      0x289 ./Core/Src/gpio.o
+ .debug_macro   0x000000000001360f      0x1cb ./Core/Src/gpio.o
+ .debug_macro   0x00000000000137da      0x114 ./Core/Src/gpio.o
+ .debug_macro   0x00000000000138ee      0x1b2 ./Core/Src/gpio.o
+ .debug_macro   0x0000000000013aa0       0x27 ./Core/Src/gpio.o
+ .debug_macro   0x0000000000013ac7      0x136 ./Core/Src/gpio.o
+ .debug_macro   0x0000000000013bfd      0x1bc ./Core/Src/gpio.o
+ .debug_macro   0x0000000000013db9       0x34 ./Core/Src/gpio.o
+ .debug_macro   0x0000000000013ded       0x3c ./Core/Src/gpio.o
+ .debug_macro   0x0000000000013e29       0x57 ./Core/Src/gpio.o
+ .debug_macro   0x0000000000013e80       0x87 ./Core/Src/gpio.o
+ .debug_macro   0x0000000000013f07      0x240 ./Core/Src/gpio.o
+ .debug_macro   0x0000000000014147      0x140 ./Core/Src/gpio.o
+ .debug_macro   0x0000000000014287       0x83 ./Core/Src/gpio.o
+ .debug_macro   0x000000000001430a      0x19c ./Core/Src/main.o
+ .debug_macro   0x00000000000144a6      0x18e ./Core/Src/stm32f1xx_hal_msp.o
+ .debug_macro   0x0000000000014634      0x198 ./Core/Src/stm32f1xx_it.o
+ .debug_macro   0x00000000000147cc      0x184 ./Core/Src/system_stm32f1xx.o
+ .debug_macro   0x0000000000014950      0x1a8 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+ .debug_macro   0x0000000000014af8      0x184 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
+ .debug_macro   0x0000000000014c7c      0x196 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
 
 .debug_line     0x0000000000000000     0x3fe3
  .debug_line    0x0000000000000000      0x5f4 ./Core/Src/gpio.o
