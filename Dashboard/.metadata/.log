@@ -1,0 +1,30 @@
+!SESSION 2023-10-14 08:35:28.109 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-10-14 08:36:00.086
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-10-14 08:36:00.087
+!MESSAGE Log4j2 initialized with config file /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-10-14 08:36:13.185
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-14 08:40:55.529
+!MESSAGE Indexed 'Dashboard' (20 sources, 106 headers) in 3.83 sec: 7,534 declarations; 24,082 references; 6 unresolved inclusions; 601 syntax errors; 831 unresolved names (2.6%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-14 09:37:51.325
+!MESSAGE Indexed 'Dashboard' (20 sources, 107 headers) in 0.956 sec: 7,533 declarations; 25,361 references; 2 unresolved inclusions; 36 syntax errors; 188 unresolved names (0.57%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-14 09:37:56.005
+!MESSAGE Indexed 'Dashboard' (20 sources, 107 headers) in 1.03 sec: 7,533 declarations; 25,361 references; 2 unresolved inclusions; 36 syntax errors; 188 unresolved names (0.57%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-14 09:38:10.776
+!MESSAGE Indexed 'Dashboard' (20 sources, 107 headers) in 0.842 sec: 7,533 declarations; 25,361 references; 2 unresolved inclusions; 36 syntax errors; 188 unresolved names (0.57%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-14 09:39:23.350
+!MESSAGE Indexed 'Dashboard' (20 sources, 107 headers) in 1.2 sec: 7,533 declarations; 25,361 references; 2 unresolved inclusions; 36 syntax errors; 188 unresolved names (0.57%)

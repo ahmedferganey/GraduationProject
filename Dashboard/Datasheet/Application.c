@@ -1,11 +1,12 @@
 /**
  * @author Ahmed Ferganey
  * @email ahmedferganey707@gmail.com
- * @file Application.c
- * @create date 2023-10-13 09:54:34
- * @modify date 2023-10-13 09:54:34
+ * @file Application.c 
+ * @create date 2023-10-14 08:36:26
+ * @modify date 2023-10-14 08:36:26
  * @desc [description]
  */
+
 
 /* -------------------------------- Includes --------------------------------------------------------------*/
 
@@ -13,11 +14,7 @@
 
 
 /* -------------------------------- Global Variables --------------------------------------------------------------*/
-typedef unsigned long uint32_t;
 
-uint32_t ahmed_ferganey= 10;
-
-uint32_t mariam;
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void main(void){
@@ -26,8 +23,7 @@ void main(void){
     while (1)
     {
 
-        mariam++;
-        ahmed_ferganey++;
+
     }
 
 }
