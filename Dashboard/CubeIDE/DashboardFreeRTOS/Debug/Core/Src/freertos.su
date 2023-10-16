@@ -1,0 +1,6 @@
+../Core/Src/freertos.c:95:6:vApplicationIdleHook	4	static
+../Core/Src/freertos.c:114:6:MX_FREERTOS_Init	8	static
+../Core/Src/freertos.c:165:6:StartDefaultTask	16	static
+../Core/Src/freertos.c:183:6:Task2_u8GetData	16	static
+../Core/Src/freertos.c:201:6:Task3_u8DisplayData	16	static
+../Core/Src/freertos.c:219:6:Rtc_MainFunction	16	static
