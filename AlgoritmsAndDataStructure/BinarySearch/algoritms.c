@@ -35,6 +35,16 @@ int main()
     printf("index : %i \n", Return);
 
 
+
+    Return = BinarySearchEnhanced(Data, 0, 0, DATA_MAX_SIZE-1);
+    printf("index : %i \n", Return);
+
+    Return = BinarySearchEnhanced(Data, 20, 0, DATA_MAX_SIZE-1);
+    printf("index : %i \n", Return);
+
+    Return = BinarySearchEnhanced(Data, -5, 0, DATA_MAX_SIZE-1);
+    printf("index : %i \n", Return);
+
     return 0;
 }
 ///////////////////////////////////////////////////////////////////////////
@@ -67,5 +77,25 @@ sint32 BinarySearch (sint32 Array[], uint32 ReqVal, uint32 StartIndex, uint32 En
 
 sint32 BinarySearchEnhanced (sint32 Array[], uint32 ReqVal, uint32 StartIndex, uint32 EndIndex)
 {
+    uint32 MiddleIndex =0;
+
+    while (EndIndex >= StartIndex)
+    {
+        MiddleIndex = StartIndex + ((EndIndex - StartIndex) / 2);
+        if (ReqVal == Array[MiddleIndex])
+        {
+            return MiddleIndex;
+        }
+        else if (ReqVal >= Array[MiddleIndex])
+        {
+            return BinarySearchEnhanced(Array, ReqVal, MiddleIndex+1, EndIndex);
+        }
+        else
+        {
+            return BinarySearchEnhanced(Array, ReqVal, StartIndex, MiddleIndex-1);
+        }
+    }
+    return -1;
 
 }
+
