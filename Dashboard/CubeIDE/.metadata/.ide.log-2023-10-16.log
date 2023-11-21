@@ -1,0 +1,1268 @@
+2023-10-16 05:47:34,890 [INFO] Activator:176 - 
+
+
+2023-10-16 05:47:34,892 [INFO] Activator:177 - !SESSION log4j initialized
+2023-10-16 05:47:37,072 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2023-10-16 05:47:47,773 [INFO] ApplicationProperties:184 - Using Application install path: /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412
+2023-10-16 05:47:47,787 [INFO] DbMcusXml:78 - Set database path to: /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db//mcu/
+2023-10-16 05:47:47,787 [INFO] ApiDb:274 - Set plugin database path to: /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db//plugins/boardmanager/
+2023-10-16 05:47:47,787 [WARN] ApiDb:259 - Overriding images path with different value:  => /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db//plugins/mcufinder/images/
+2023-10-16 05:47:47,796 [INFO] ApiDb:250 - Set database path to: /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder//mcu/
+2023-10-16 05:47:47,797 [INFO] DbMcusAds:125 - Set database path to: /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder//mcu/
+2023-10-16 05:47:47,800 [INFO] CrossReferenceDbSqlite:203 - Set database path to: /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder//mcu/cs/
+2023-10-16 05:47:47,899 [INFO] RulesReader:64 - Compatibility file has been processed (293 Rules)
+2023-10-16 05:47:47,956 [INFO] DbMcusXml:78 - Set database path to: /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db//mcu/
+2023-10-16 05:47:47,956 [INFO] ApiDb:274 - Set plugin database path to: /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db//plugins/boardmanager/
+2023-10-16 05:47:47,956 [INFO] ApiDb:261 - Set plugin images path to: /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db//plugins/mcufinder/images/
+2023-10-16 05:47:47,956 [WARN] DbFile:41 - Overriding database path with different value: /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder/ => /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder
+2023-10-16 05:47:47,957 [INFO] ApiDb:250 - Set database path to: /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder//mcu/
+2023-10-16 05:47:47,957 [WARN] DbFile:41 - Overriding database path with different value: /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder/ => /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder
+2023-10-16 05:47:47,957 [INFO] DbMcusAds:125 - Set database path to: /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder//mcu/
+2023-10-16 05:47:47,957 [WARN] DbFile:41 - Overriding database path with different value: /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder/ => /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder
+2023-10-16 05:47:47,957 [WARN] DbFile:41 - Overriding database path with different value: /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder/ => /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder
+2023-10-16 05:47:47,957 [INFO] CrossReferenceDbSqlite:203 - Set database path to: /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder//mcu/cs/
+2023-10-16 05:47:48,017 [INFO] MainPanel:262 - HeapMemory: 268435456
+2023-10-16 05:47:48,097 [INFO] DbMcusXml:78 - Set database path to: /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db//mcu/
+2023-10-16 05:47:48,097 [INFO] ApiDb:274 - Set plugin database path to: /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db//plugins/boardmanager/
+2023-10-16 05:47:48,097 [INFO] ApiDb:261 - Set plugin images path to: /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db//plugins/mcufinder/images/
+2023-10-16 05:47:48,098 [WARN] DbFile:41 - Overriding database path with different value: /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder/ => /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder
+2023-10-16 05:47:48,098 [INFO] ApiDb:250 - Set database path to: /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder//mcu/
+2023-10-16 05:47:48,098 [WARN] DbFile:41 - Overriding database path with different value: /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder/ => /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder
+2023-10-16 05:47:48,098 [INFO] DbMcusAds:125 - Set database path to: /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder//mcu/
+2023-10-16 05:47:48,098 [WARN] DbFile:41 - Overriding database path with different value: /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder/ => /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder
+2023-10-16 05:47:48,098 [WARN] DbFile:41 - Overriding database path with different value: /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder/ => /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder
+2023-10-16 05:47:48,098 [INFO] CrossReferenceDbSqlite:203 - Set database path to: /home/ahmed-ferganey/.stmcufinder/plugins/mcufinder//mcu/cs/
+2023-10-16 05:47:48,112 [INFO] ApplicationProperties:184 - Using Application install path: /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412
+2023-10-16 05:47:48,114 [INFO] PluginManage:196 - Search for loadable plugins [exclusion list=, ]
+2023-10-16 05:47:48,114 [INFO] PluginManage:310 - Check plugin analytics
+2023-10-16 05:47:48,243 [INFO] AnalyticsPlugin:253 - Accepted Software Licenses: STM32CubeMX.6.9.2
+2023-10-16 05:47:48,243 [INFO] AnalyticsPlugin:255 - Accepted CMSIS Pack Licenses: 
+2023-10-16 05:47:48,244 [INFO] AnalyticsPlugin:257 - Accepted Firmware Licenses: 
+2023-10-16 05:47:48,246 [INFO] PluginManage:359 - Loaded plugin analytics (category:tool,tabindex:-1)
+2023-10-16 05:47:48,246 [INFO] PluginManage:310 - Check plugin cadmodel
+2023-10-16 05:47:48,273 [INFO] CADModel:105 - Init CAD model plugin
+2023-10-16 05:47:48,273 [INFO] PluginManage:359 - Loaded plugin cadmodel (category:power,tabindex:5)
+2023-10-16 05:47:48,274 [INFO] PluginManage:310 - Check plugin clock
+2023-10-16 05:47:48,294 [INFO] PluginManage:359 - Loaded plugin clock (category:base,tabindex:2)
+2023-10-16 05:47:48,294 [INFO] PluginManage:310 - Check plugin ddr
+2023-10-16 05:47:48,296 [INFO] PluginManage:359 - Loaded plugin ddr (category:tool,tabindex:6)
+2023-10-16 05:47:48,296 [INFO] PluginManage:310 - Check plugin filemanager
+2023-10-16 05:47:48,395 [INFO] PluginManage:359 - Loaded plugin filemanager (category:base,tabindex:10)
+2023-10-16 05:47:48,395 [INFO] PluginManage:310 - Check plugin ipmanager
+2023-10-16 05:47:48,400 [INFO] PluginManage:359 - Loaded plugin ipmanager (category:base,tabindex:5)
+2023-10-16 05:47:48,400 [INFO] PluginManage:310 - Check plugin lpbam
+2023-10-16 05:47:48,408 [INFO] PluginManage:359 - Loaded plugin lpbam (category:base,tabindex:0)
+2023-10-16 05:47:48,408 [INFO] PluginManage:310 - Check plugin memorymap
+2023-10-16 05:47:48,417 [INFO] PluginManage:359 - Loaded plugin memorymap (category:base,tabindex:4)
+2023-10-16 05:47:48,418 [INFO] PluginManage:310 - Check plugin pinoutandconfiguration
+2023-10-16 05:47:48,424 [INFO] PluginManage:359 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2023-10-16 05:47:48,424 [INFO] PluginManage:310 - Check plugin pinoutconfig
+2023-10-16 05:47:48,488 [WARN] SupportedApi:132 - Cannot load RTOS API schema: s4s-elt-must-match.1: The content of 'definitions' must match (annotation?, (simpleType | complexType)?, (unique | key | keyref)*)). A problem was found starting at: attribute.
+2023-10-16 05:47:48,618 [INFO] PluginManage:359 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2023-10-16 05:47:48,618 [INFO] PluginManage:310 - Check plugin power
+2023-10-16 05:47:48,637 [INFO] PluginManage:359 - Loaded plugin power (category:power,tabindex:4)
+2023-10-16 05:47:48,637 [INFO] PluginManage:310 - Check plugin projectmanager
+2023-10-16 05:47:48,653 [INFO] PluginManage:359 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2023-10-16 05:47:48,653 [INFO] PluginManage:310 - Check plugin thirdparty
+2023-10-16 05:47:48,759 [INFO] PluginManage:359 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2023-10-16 05:47:48,759 [WARN] IntegrityCheckThread:84 - waiting for thirdparty lock release [integrity check]
+2023-10-16 05:47:48,760 [INFO] PluginManage:310 - Check plugin tools
+2023-10-16 05:47:48,760 [INFO] IntegrityCheckThread:86 - entering critical section [integrity check]
+2023-10-16 05:47:48,760 [INFO] ThirdPartyUpdaterWithRetryManager:70 - Updater plugin not ready yet. [1/15]
+2023-10-16 05:47:48,762 [INFO] PluginManage:359 - Loaded plugin tools (category:base,tabindex:7)
+2023-10-16 05:47:48,762 [INFO] PluginManage:310 - Check plugin tutovideos
+2023-10-16 05:47:48,911 [INFO] PluginManage:359 - Loaded plugin tutovideos (category:base,tabindex:-1)
+2023-10-16 05:47:48,912 [INFO] PluginManage:310 - Check plugin updater
+2023-10-16 05:47:48,921 [INFO] PluginManage:359 - Loaded plugin updater (category:base,tabindex:12)
+2023-10-16 05:47:48,921 [INFO] PluginManage:310 - Check plugin userauth
+2023-10-16 05:47:48,925 [INFO] UserAuth:113 - Init User Auth plugin
+2023-10-16 05:47:48,926 [INFO] PluginManage:359 - Loaded plugin userauth (category:base,tabindex:14)
+2023-10-16 05:47:48,926 [INFO] PluginManage:283 - PluginManage : Loaded plugins [17]
+2023-10-16 05:47:49,072 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2023-10-16 05:47:49,146 [INFO] CADModel:165 - CPN selected for project level
+2023-10-16 05:47:49,146 [INFO] CADModel:114 - Register for checkConnection events
+2023-10-16 05:47:49,160 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,160 [INFO] PluginManager:220 - loadIPPluginJar : add sai
+2023-10-16 05:47:49,162 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,162 [INFO] PluginManager:220 - loadIPPluginJar : add i2s
+2023-10-16 05:47:49,164 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,164 [INFO] PluginManager:220 - loadIPPluginJar : add i3c
+2023-10-16 05:47:49,169 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,169 [INFO] PluginManager:220 - loadIPPluginJar : add linkedlist
+2023-10-16 05:47:49,174 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,174 [INFO] PluginManager:220 - loadIPPluginJar : add stm32_wpan
+2023-10-16 05:47:49,176 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,176 [INFO] PluginManager:220 - loadIPPluginJar : add gtzc
+2023-10-16 05:47:49,178 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,178 [INFO] PluginManager:220 - loadIPPluginJar : add touchsensing
+2023-10-16 05:47:49,179 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,179 [INFO] PluginManager:220 - loadIPPluginJar : add opamp
+2023-10-16 05:47:49,180 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,180 [INFO] PluginManager:220 - loadIPPluginJar : add ltdc
+2023-10-16 05:47:49,181 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,181 [INFO] PluginManager:220 - loadIPPluginJar : add quadspi
+2023-10-16 05:47:49,183 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,183 [INFO] PluginManager:220 - loadIPPluginJar : add pdm2pcm
+2023-10-16 05:47:49,184 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,184 [INFO] PluginManager:220 - loadIPPluginJar : add aes
+2023-10-16 05:47:49,186 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,186 [INFO] PluginManager:220 - loadIPPluginJar : add ipddr
+2023-10-16 05:47:49,189 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,190 [INFO] PluginManager:220 - loadIPPluginJar : add gpio
+2023-10-16 05:47:49,191 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,192 [INFO] PluginManager:220 - loadIPPluginJar : add openamp
+2023-10-16 05:47:49,196 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,196 [INFO] PluginManager:220 - loadIPPluginJar : add mdma
+2023-10-16 05:47:49,198 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,198 [INFO] PluginManager:220 - loadIPPluginJar : add nvic
+2023-10-16 05:47:49,200 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,200 [INFO] PluginManager:220 - loadIPPluginJar : add hash
+2023-10-16 05:47:49,202 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,202 [INFO] PluginManager:220 - loadIPPluginJar : add usbx
+2023-10-16 05:47:49,203 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,203 [INFO] PluginManager:220 - loadIPPluginJar : add i2c
+2023-10-16 05:47:49,205 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,206 [INFO] PluginManager:220 - loadIPPluginJar : add dfsdm
+2023-10-16 05:47:49,207 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,208 [INFO] PluginManager:220 - loadIPPluginJar : add usart
+2023-10-16 05:47:49,209 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,209 [INFO] PluginManager:220 - loadIPPluginJar : add ucpd
+2023-10-16 05:47:49,210 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,211 [INFO] PluginManager:220 - loadIPPluginJar : add genericplugin
+2023-10-16 05:47:49,212 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,212 [INFO] PluginManager:220 - loadIPPluginJar : add comp
+2023-10-16 05:47:49,214 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,214 [INFO] PluginManager:220 - loadIPPluginJar : add cryp
+2023-10-16 05:47:49,218 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,220 [INFO] PluginManager:220 - loadIPPluginJar : add plateformsettings
+2023-10-16 05:47:49,222 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,222 [INFO] PluginManager:220 - loadIPPluginJar : add dma3
+2023-10-16 05:47:49,224 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,224 [INFO] PluginManager:220 - loadIPPluginJar : add can
+2023-10-16 05:47:49,228 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,228 [INFO] PluginManager:220 - loadIPPluginJar : add gic
+2023-10-16 05:47:49,230 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,230 [INFO] PluginManager:220 - loadIPPluginJar : add tim
+2023-10-16 05:47:49,232 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,232 [INFO] PluginManager:220 - loadIPPluginJar : add spi
+2023-10-16 05:47:49,233 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,233 [INFO] PluginManager:220 - loadIPPluginJar : add fatfs
+2023-10-16 05:47:49,234 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,234 [INFO] PluginManager:220 - loadIPPluginJar : add ts
+2023-10-16 05:47:49,239 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,239 [INFO] PluginManager:220 - loadIPPluginJar : add dma
+2023-10-16 05:47:49,243 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,243 [INFO] PluginManager:220 - loadIPPluginJar : add adc
+2023-10-16 05:47:49,245 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,245 [INFO] PluginManager:220 - loadIPPluginJar : add lorawan
+2023-10-16 05:47:49,246 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,246 [INFO] PluginManager:220 - loadIPPluginJar : add tsc
+2023-10-16 05:47:49,250 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,250 [INFO] PluginManager:220 - loadIPPluginJar : add resmgrutility
+2023-10-16 05:47:49,252 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,252 [INFO] PluginManager:220 - loadIPPluginJar : add gfxmmu
+2023-10-16 05:47:49,256 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,256 [INFO] PluginManager:220 - loadIPPluginJar : add freertos
+2023-10-16 05:47:49,259 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,259 [INFO] PluginManager:220 - loadIPPluginJar : add fmc
+2023-10-16 05:47:49,260 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:47:49,260 [INFO] PluginManager:220 - loadIPPluginJar : add tracer_emb
+2023-10-16 05:47:49,359 [INFO] CADModel:165 - CPN selected for project level
+2023-10-16 05:47:49,359 [INFO] CADModel:114 - Register for checkConnection events
+2023-10-16 05:47:49,359 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-10-16 05:47:49,360 [ERROR] CADModel:125 - Updater not yet initialized, retry later 
+2023-10-16 05:47:49,469 [INFO] CADModel:165 - CPN selected for project level
+2023-10-16 05:47:49,469 [INFO] CADModel:114 - Register for checkConnection events
+2023-10-16 05:47:49,469 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-10-16 05:47:49,469 [ERROR] CADModel:125 - Updater not yet initialized, retry later 
+2023-10-16 05:47:49,471 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-10-16 05:47:49,527 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-10-16 05:47:49,531 [INFO] DbMcusAds:53 - JSON generation date=Tue Mar 07 10:50:55 EET 2023 (1678179055114)
+2023-10-16 05:47:49,531 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-10-16 05:47:49,562 [WARN] DetailPanel:346 - Failed to get advertising image, set to default
+2023-10-16 05:47:49,636 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-10-16 05:47:49,637 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-10-16 05:47:49,637 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-10-16 05:47:49,637 [WARN] DetailPanel:346 - Failed to get advertising image, set to default
+2023-10-16 05:47:49,638 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-10-16 05:47:49,660 [ERROR] Updater:1120 - MainUpdater not yet initialized. External WinMGr cannot be set.
+2023-10-16 05:47:49,662 [INFO] Updater:1056 - Updater Version found : 6.9.2
+2023-10-16 05:47:49,677 [INFO] ApplicationProperties:184 - Using Application install path: /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412
+2023-10-16 05:47:50,182 [INFO] MainUpdater:2868 - connection check result : 10
+2023-10-16 05:47:50,184 [INFO] MainUpdater:285 - Updater Check For Update Now.
+2023-10-16 05:47:50,185 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.92
+2023-10-16 05:47:50,198 [INFO] McuFinderGlobals:63 - Set McuFinder mode to 2 (CubeIDE integrated)
+2023-10-16 05:47:50,358 [INFO] CheckServerUpdateThread:120 - End of CheckServer Thread
+2023-10-16 05:47:50,401 [INFO] MainUpdater:2868 - connection check result : 10
+2023-10-16 05:47:50,823 [INFO] ApiDb:581 - Connected to CubeFinder SQLite database (/home/ahmed-ferganey/.stmcufinder/plugins/mcufinder/mcu/cube-finder-db.db)
+2023-10-16 05:47:50,877 [INFO] ApiDb:668 - CubeFinder database Data Model version=2.1
+2023-10-16 05:47:50,877 [INFO] ApiDb:669 - CubeFinder database Configuration version=3.0.37
+2023-10-16 05:47:50,878 [INFO] ApiDb:670 - CubeFinder database generation date=2023-08-09 (1691586011)
+2023-10-16 05:47:50,878 [INFO] ApiDb:671 - CubeFinder database FW Pack versions=[FP-ATR-ASTRA1_V2.0.0, FP-SNS-FLIGHT1_V5.0.1, FP-SNS-FLIGHT1_V5.0.2, FP-SNS-MOTENV1_V4.3.1, FP-SNS-MOTENV1_V4.3.2, STM32Cube_FW_C0_V1.1.0, STM32Cube_FW_F4_V1.27.1, STM32Cube_FW_F7_V1.17.0, STM32Cube_FW_G0_V1.6.1, STM32Cube_FW_G4_V1.5.1, STM32Cube_FW_H5_V0.5.1, STM32Cube_FW_H5_V1.1.0, STM32Cube_FW_H7_V1.11.0, STM32Cube_FW_L0_V1.12.2, STM32Cube_FW_L5_V1.5.0, STM32Cube_FW_U5_V1.3.0, STM32Cube_FW_U5_V1.3.0RC4, STM32Cube_FW_WBA_V1.0.0RC1, STM32Cube_FW_WBA_V1.1.0, STM32Cube_FW_WBA_V1.1.0RC1, STM32Cube_FW_WB_V1.15.0RC1, STM32Cube_FW_WB_V1.16.0, STM32Cube_FW_WB_V1.16.0RC2, STM32Cube_FW_WB_V1.17.0, STM32Cube_FW_WL_V1.3.0, X-CUBE-ALGOBUILD_V1.3.0, X-CUBE-ALS_V1.0.1, X-CUBE-AZRTOS-F4_V1.1.0, X-CUBE-AZRTOS-F7_V1.1.0, X-CUBE-AZRTOS-G0_V1.1.0, X-CUBE-AZRTOS-G4_V2.0.0, X-CUBE-AZRTOS-H7_V3.1.0, X-CUBE-AZRTOS-L4_V1.0.0, X-CUBE-AZRTOS-L4_V2.0.0, X-CUBE-AZRTOS-L5_V1.1.0, X-CUBE-AZRTOS-WB_V1.1.0, X-CUBE-AZRTOS-WL_V2.0.0, X-CUBE-BLE1_V7.0.0, X-CUBE-BLE2_V3.3.0, X-CUBE-BLEMGR_V2.0.0, X-CUBE-EEPRMA1_V4.1.0, X-CUBE-FREERTOS_V1.1.0, X-CUBE-GNSS1_V6.0.0, X-CUBE-MEMS1_V9.1.0, X-CUBE-MEMS1_V9.4.0, X-CUBE-MEMS1_V9.6.0, X-CUBE-NFC4_V3.0.0, X-CUBE-NFC7_V1.0.0, X-CUBE-SFXS2LP1_V4.0.0, X-CUBE-SUBG2_V5.0.0, X-CUBE-TOF1_V3.3.1]
+2023-10-16 05:47:50,956 [INFO] DbBoardsSqlite:226 - include board P-NUCLEO-WB55-NUCLEO as a kit item of type 'Nucleo-64'
+2023-10-16 05:47:50,957 [INFO] DbBoardsSqlite:226 - include board P-NUCLEO-WB55-USBDONGLE as a kit item of type 'Nucleo USB Dongle'
+2023-10-16 05:47:50,957 [INFO] DbBoardsSqlite:226 - include board STEVAL-IDP005V1 as a kit item of type 'Evaluation Board'
+2023-10-16 05:47:50,957 [INFO] DbBoardsSqlite:226 - include board STEVAL-IDP005V2 as a kit item of type 'Evaluation Board'
+2023-10-16 05:47:51,007 [INFO] ApiDb:240 - Found 323 in-development CPN: [B-G473E-ZEST1S, B-WB1M-WPAN1, B-WL5M-SUBG1, NUCLEO-C031C6, NUCLEO-H503RB, NUCLEO-H563ZI, NUCLEO-U545RE-Q, NUCLEO-U5A5ZJ-Q, NUCLEO-WBA52CG, STEVAL-PROTEUS1, STEVAL-SMARTAG2, STEVAL-STWINBX1, STM320518-EVAL, STM32C0116-DK, STM32C011D6Y3TR, STM32C011D6Y6TR, STM32C011F4P3, STM32C011F4P6, STM32C011F4U3, STM32C011F4U6TR, STM32C011F6P3, STM32C011F6P6, STM32C011F6U3, STM32C011F6U6TR, STM32C011J4M3, STM32C011J4M6, STM32C011J6M3, STM32C011J6M6, STM32C0316-DK, STM32C031C4T3, STM32C031C4T6, STM32C031C4U3, STM32C031C4U6, STM32C031C6T3, STM32C031C6T6, STM32C031C6U3, STM32C031C6U6, STM32C031F4P3, STM32C031F4P6, STM32C031F6P3, STM32C031F6P6, STM32C031G4U3, STM32C031G4U6, STM32C031G6U3, STM32C031G6U6, STM32C031K4T3, STM32C031K4T6, STM32C031K4U3, STM32C031K4U6, STM32C031K6T3, STM32C031K6T6, STM32C031K6U3, STM32C031K6U6, STM32G071K8TXN, STM32G071K8UXN, STM32G081GBU6N, STM32G081KBT6N, STM32G081KBUXN, STM32G0B1CCT6N, STM32G0B1KCT6, STM32G0B1NEY6TR, STM32G0B1RCT6N, STM32G0C1CCT6, STM32G0C1CCT6N, STM32G0C1CCU6N, STM32G0C1CET6N, STM32G0C1CEU6N, STM32G0C1KCT6, STM32G0C1NEY6TR, STM32G0C1RCI6N, STM32G0C1RCT6N, STM32G0C1REI6N, STM32G0C1RET6N, STM32G0C1VCI6, STM32G0C1VEI6, STM32G471CCT6, STM32G471CCU6, STM32G471CET3, STM32G471CET6, STM32G471CEU3, STM32G471CEU6, STM32G471MCT6, STM32G471MET3, STM32G471MET6, STM32G471MEY6TR, STM32G471QCT6, STM32G471QET3, STM32G471RCT6, STM32G471RET3, STM32G471RET6, STM32G471VCH6, STM32G471VCI6, STM32G471VCT6, STM32G471VEH3, STM32G471VEH6, STM32G471VEI3, STM32G471VEI6, STM32G471VET3, STM32G471VET6, STM32G474CCT6, STM32H503CBT6, STM32H503CBU6, STM32H503EBY6TR, STM32H503KBU6, STM32H503RBT6, STM32H562AGI6, STM32H562AII6, STM32H562IGK6, STM32H562IGT6, STM32H562IIK6, STM32H562IIT6, STM32H562RGT6, STM32H562RGV6, STM32H562RIT6, STM32H562RIV6, STM32H562VGT6, STM32H562VIT6, STM32H562ZGT6, STM32H562ZIT6, STM32H563AGI6, STM32H563AII3Q, STM32H563AII6, STM32H563IGK6, STM32H563IGT6, STM32H563IIK3Q, STM32H563IIK6, STM32H563IIT3Q, STM32H563IIT6, STM32H563MIY3QTR, STM32H563RGT6, STM32H563RGV6, STM32H563RIT6, STM32H563RIV6, STM32H563VGT6, STM32H563VIT3Q, STM32H563VIT6, STM32H563ZGT6, STM32H563ZIT3Q, STM32H563ZIT6, STM32H573AII3Q, STM32H573AII6, STM32H573I-DK, STM32H573IIK3Q, STM32H573IIK6, STM32H573IIT3Q, STM32H573IIT6, STM32H573MIY3QTR, STM32H573RIT6, STM32H573RIV6, STM32H573VIT3Q, STM32H573VIT6, STM32H573ZIT3Q, STM32H573ZIT6, STM32L4R5QGI6STR, STM32MP131AAE3, STM32MP131AAF3, STM32MP131AAG3, STM32MP131CAE3, STM32MP131CAF3, STM32MP131CAG3, STM32MP131DAE7, STM32MP131DAF7, STM32MP131DAG7, STM32MP131FAE7, STM32MP131FAF7, STM32MP131FAG7, STM32MP133AAE3, STM32MP133AAF3, STM32MP133AAG3, STM32MP133CAE3, STM32MP133CAF3, STM32MP133CAG3, STM32MP133DAE7, STM32MP133DAF7, STM32MP133DAG7, STM32MP133FAE7, STM32MP133FAF7, STM32MP133FAG7, STM32MP135AAE3, STM32MP135AAF3, STM32MP135AAG3, STM32MP135CAE3, STM32MP135CAF3, STM32MP135CAG3, STM32MP135DAE7, STM32MP135DAF7, STM32MP135DAG7, STM32MP135F-DK, STM32MP135FAE7, STM32MP135FAF7, STM32MP135FAF7T, STM32MP135FAF7U, STM32MP135FAG7, STM32U535CBT6, STM32U535CBT6Q, STM32U535CBU6, STM32U535CBU6Q, STM32U535CCT6, STM32U535CCT6Q, STM32U535CCU6, STM32U535CCU6Q, STM32U535CET6, STM32U535CET6Q, STM32U535CEU6, STM32U535CEU6Q, STM32U535JEY6QTR, STM32U535NCY6QTR, STM32U535NEY6QTR, STM32U535RBI6, STM32U535RBI6Q, STM32U535RBT6, STM32U535RBT6Q, STM32U535RCI6, STM32U535RCI6Q, STM32U535RCT6, STM32U535RCT6Q, STM32U535REI6, STM32U535REI6Q, STM32U535RET6, STM32U535RET6Q, STM32U535VCI6, STM32U535VCI6Q, STM32U535VCT6, STM32U535VCT6Q, STM32U535VEI6, STM32U535VEI6Q, STM32U535VET6, STM32U535VET6Q, STM32U545CET6, STM32U545CET6Q, STM32U545CEU6, STM32U545CEU6Q, STM32U545JEY6QTR, STM32U545NEY6QTR, STM32U545REI6, STM32U545REI6Q, STM32U545RET6, STM32U545RET6Q, STM32U545VEI6, STM32U545VEI6Q, STM32U545VET6, STM32U545VET6Q, STM32U595AIH6, STM32U595AIH6Q, STM32U595AJH6, STM32U595AJH6Q, STM32U595QII6, STM32U595QII6Q, STM32U595QJI6, STM32U595QJI6Q, STM32U595RIT6, STM32U595RIT6Q, STM32U595RJT6, STM32U595RJT6Q, STM32U595VIT6, STM32U595VIT6Q, STM32U595VJT6, STM32U595VJT6Q, STM32U595ZIT6, STM32U595ZIT6Q, STM32U595ZIY6QTR, STM32U595ZJT6, STM32U595ZJT6Q, STM32U595ZJY6QTR, STM32U599BJY6QTR, STM32U599NIH6Q, STM32U599NJH6Q, STM32U599VIT6Q, STM32U599VJT6, STM32U599VJT6Q, STM32U599ZIT6Q, STM32U599ZIY6QTR, STM32U599ZJT6Q, STM32U599ZJY6QTR, STM32U5A5AJH6, STM32U5A5AJH6Q, STM32U5A5QJI6, STM32U5A5QJI6Q, STM32U5A5RJT6, STM32U5A5RJT6Q, STM32U5A5VJT6, STM32U5A5VJT6Q, STM32U5A5ZJT6, STM32U5A5ZJT6Q, STM32U5A5ZJY6QTR, STM32U5A9BJY6QTR, STM32U5A9J-DK, STM32U5A9NJH6Q, STM32U5A9VJT6Q, STM32U5A9ZJT6Q, STM32U5A9ZJY6QTR, STM32U5F7VIT6, STM32U5F7VIT6Q, STM32U5F7VJT6, STM32U5F7VJT6Q, STM32U5F9BJY6QTR, STM32U5F9NJH6Q, STM32U5F9VIT6Q, STM32U5F9VJT6Q, STM32U5F9ZIJ6QTR, STM32U5F9ZIT6Q, STM32U5F9ZJJ6QTR, STM32U5F9ZJT6Q, STM32U5G7VJT6, STM32U5G7VJT6Q, STM32U5G9BJY6QTR, STM32U5G9J-DK1, STM32U5G9J-DK2, STM32U5G9NJH6Q, STM32U5G9VJT6Q, STM32U5G9ZJJ6QTR, STM32U5G9ZJT6Q, STM32WB1MMCH6, STM32WBA52CEU6, STM32WBA52CEU6T, STM32WBA52CGU6, STM32WBA52CGU6T, STM32WBA52KEU6, STM32WBA52KEU6T, STM32WBA52KGU6, STM32WBA52KGU6T, STM32WL5MOCH6, STM32WL5MOCH6TR]
+2023-10-16 05:47:51,131 [INFO] BoardInfo:880 - No configuration file found for board P-NUCLEO-WB55
+2023-10-16 05:47:51,131 [INFO] DbBoards:157 - Kit is not supported: P-NUCLEO-WB55
+2023-10-16 05:47:51,134 [INFO] BoardInfo:880 - No configuration file found for board STEVAL-BFA001V1B
+2023-10-16 05:47:51,134 [INFO] DbBoards:157 - Kit is not supported: STEVAL-BFA001V1B
+2023-10-16 05:47:51,135 [INFO] BoardInfo:880 - No configuration file found for board STEVAL-BFA001V2B
+2023-10-16 05:47:51,135 [INFO] DbBoards:157 - Kit is not supported: STEVAL-BFA001V2B
+2023-10-16 05:47:51,221 [INFO] DbBoards:161 - Found 190 boards, 187 are supported
+2023-10-16 05:47:51,226 [INFO] ApiDb:668 - CubeFinder database Data Model version=2.1
+2023-10-16 05:47:51,226 [INFO] ApiDb:669 - CubeFinder database Configuration version=3.0.37
+2023-10-16 05:47:51,226 [INFO] ApiDb:670 - CubeFinder database generation date=2023-08-09 (1691586011)
+2023-10-16 05:47:51,227 [INFO] ApiDb:671 - CubeFinder database FW Pack versions=[FP-ATR-ASTRA1_V2.0.0, FP-SNS-FLIGHT1_V5.0.1, FP-SNS-FLIGHT1_V5.0.2, FP-SNS-MOTENV1_V4.3.1, FP-SNS-MOTENV1_V4.3.2, STM32Cube_FW_C0_V1.1.0, STM32Cube_FW_F4_V1.27.1, STM32Cube_FW_F7_V1.17.0, STM32Cube_FW_G0_V1.6.1, STM32Cube_FW_G4_V1.5.1, STM32Cube_FW_H5_V0.5.1, STM32Cube_FW_H5_V1.1.0, STM32Cube_FW_H7_V1.11.0, STM32Cube_FW_L0_V1.12.2, STM32Cube_FW_L5_V1.5.0, STM32Cube_FW_U5_V1.3.0, STM32Cube_FW_U5_V1.3.0RC4, STM32Cube_FW_WBA_V1.0.0RC1, STM32Cube_FW_WBA_V1.1.0, STM32Cube_FW_WBA_V1.1.0RC1, STM32Cube_FW_WB_V1.15.0RC1, STM32Cube_FW_WB_V1.16.0, STM32Cube_FW_WB_V1.16.0RC2, STM32Cube_FW_WB_V1.17.0, STM32Cube_FW_WL_V1.3.0, X-CUBE-ALGOBUILD_V1.3.0, X-CUBE-ALS_V1.0.1, X-CUBE-AZRTOS-F4_V1.1.0, X-CUBE-AZRTOS-F7_V1.1.0, X-CUBE-AZRTOS-G0_V1.1.0, X-CUBE-AZRTOS-G4_V2.0.0, X-CUBE-AZRTOS-H7_V3.1.0, X-CUBE-AZRTOS-L4_V1.0.0, X-CUBE-AZRTOS-L4_V2.0.0, X-CUBE-AZRTOS-L5_V1.1.0, X-CUBE-AZRTOS-WB_V1.1.0, X-CUBE-AZRTOS-WL_V2.0.0, X-CUBE-BLE1_V7.0.0, X-CUBE-BLE2_V3.3.0, X-CUBE-BLEMGR_V2.0.0, X-CUBE-EEPRMA1_V4.1.0, X-CUBE-FREERTOS_V1.1.0, X-CUBE-GNSS1_V6.0.0, X-CUBE-MEMS1_V9.1.0, X-CUBE-MEMS1_V9.4.0, X-CUBE-MEMS1_V9.6.0, X-CUBE-NFC4_V3.0.0, X-CUBE-NFC7_V1.0.0, X-CUBE-SFXS2LP1_V4.0.0, X-CUBE-SUBG2_V5.0.0, X-CUBE-TOF1_V3.3.1]
+2023-10-16 05:47:51,843 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SMBUS.2.1.0
+2023-10-16 05:47:51,879 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-F7.1.1.0
+2023-10-16 05:47:51,889 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-SNS-MOTENV1.4.3.2
+2023-10-16 05:47:51,895 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-SNS-FLIGHT1.5.0.2
+2023-10-16 05:47:51,903 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-DISPLAY.3.0.0
+2023-10-16 05:47:51,915 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE1.7.0.0
+2023-10-16 05:47:51,920 [WARN] PackLoader:240 - Cannot read IP mode file for emotas.I-CUBE-CANOPEN.1.3.0
+2023-10-16 05:47:51,924 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.22.1
+2023-10-16 05:47:51,933 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-SNS-SMARTAG2.1.2.0
+2023-10-16 05:47:51,949 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2023-10-16 05:47:51,950 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2023-10-16 05:47:51,950 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2023-10-16 05:47:51,950 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2023-10-16 05:47:51,950 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2023-10-16 05:47:51,958 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-WL.2.0.0
+2023-10-16 05:47:51,970 [WARN] PackLoader:240 - Cannot read IP mode file for WES.I-CUBE-Cesium.1.3.0
+2023-10-16 05:47:51,982 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE2.3.3.0
+2023-10-16 05:47:51,990 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALGOBUILD.1.3.0
+2023-10-16 05:47:52,019 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-G0.1.1.0
+2023-10-16 05:47:52,029 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC4.3.0.0
+2023-10-16 05:47:52,034 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-ATR-SIGFOX1.3.2.0
+2023-10-16 05:47:52,094 [WARN] PackLoader:240 - Cannot read IP mode file for SEGGER.I-CUBE-embOS.1.3.1
+2023-10-16 05:47:52,152 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-GNSS1.6.0.0
+2023-10-16 05:47:52,171 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-F4.1.1.0
+2023-10-16 05:47:52,177 [WARN] PackLoader:240 - Cannot read IP mode file for wolfSSL.I-CUBE-wolfSSL.5.6.3
+2023-10-16 05:47:52,196 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-L5.2.0.0
+2023-10-16 05:47:52,247 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.9.6.0
+2023-10-16 05:47:52,485 [WARN] PackLoader:240 - Cannot read IP mode file for ITTIA_DB.I-CUBE-ITTIADB.8.8.0
+2023-10-16 05:47:52,493 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLEMGR.2.0.0
+2023-10-16 05:47:52,512 [WARN] ConditionMgr:438 - getConditionDescription Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-10-16 05:47:52,513 [WARN] ConditionMgr:438 - getConditionDescription Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-10-16 05:47:52,517 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7.3.1.0
+2023-10-16 05:47:52,518 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-10-16 05:47:52,518 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-10-16 05:47:52,519 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-10-16 05:47:52,520 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-10-16 05:47:52,520 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-10-16 05:47:52,525 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC7.1.0.1
+2023-10-16 05:47:52,532 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC6.3.0.0
+2023-10-16 05:47:52,539 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-EEPRMA1.4.1.0
+2023-10-16 05:47:52,543 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.8.1.0
+2023-10-16 05:47:52,563 [WARN] ConditionMgr:438 - getConditionDescription Invalid condition id : LAN8742 Phy interface Condition cause : null
+2023-10-16 05:47:52,563 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-L4.2.0.0
+2023-10-16 05:47:52,565 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : LAN8742 Phy interface Condition cause : null
+2023-10-16 05:47:52,565 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : LAN8742 Phy interface Condition cause : null
+2023-10-16 05:47:52,565 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : LAN8742 Phy interface Condition cause : null
+2023-10-16 05:47:52,572 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0
+2023-10-16 05:47:52,576 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ISPU.1.1.0
+2023-10-16 05:47:52,589 [WARN] ConditionMgr:438 - getConditionDescription Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-10-16 05:47:52,589 [WARN] ConditionMgr:438 - getConditionDescription Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-10-16 05:47:52,592 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-WB.2.0.0
+2023-10-16 05:47:52,592 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-10-16 05:47:52,593 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-10-16 05:47:52,593 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-10-16 05:47:52,593 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-10-16 05:47:52,593 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2023-10-16 05:47:52,607 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SUBG2.5.0.0
+2023-10-16 05:47:52,621 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOF1.3.3.1
+2023-10-16 05:47:52,643 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-G4.2.0.0
+2023-10-16 05:47:52,656 [WARN] PackLoader:240 - Cannot read IP mode file for Infineon.AIROC-Wi-Fi-Bluetooth-STM32.1.5.1
+2023-10-16 05:47:52,663 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-FREERTOS.1.1.0
+2023-10-16 05:47:52,666 [WARN] PackLoader:240 - Cannot read IP mode file for portGmbH.I-Cube-SoM-uGOAL.1.1.0
+2023-10-16 05:47:52,669 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALS.1.0.1
+2023-10-16 05:47:52,672 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-ATR-ASTRA1.2.0.0
+2023-10-16 05:47:52,673 [INFO] ThirdParty:978 - Integrity check success = true
+2023-10-16 05:47:52,673 [INFO] IntegrityCheckThread:100 - exiting critical section [integrity check]
+2023-10-16 05:47:52,673 [INFO] IntegrityCheckThread:103 - End integrity checks thread
+2023-10-16 05:47:53,400 [INFO] ApiDb:240 - Found 323 in-development CPN: [B-G473E-ZEST1S, B-WB1M-WPAN1, B-WL5M-SUBG1, NUCLEO-C031C6, NUCLEO-H503RB, NUCLEO-H563ZI, NUCLEO-U545RE-Q, NUCLEO-U5A5ZJ-Q, NUCLEO-WBA52CG, STEVAL-PROTEUS1, STEVAL-SMARTAG2, STEVAL-STWINBX1, STM320518-EVAL, STM32C0116-DK, STM32C011D6Y3TR, STM32C011D6Y6TR, STM32C011F4P3, STM32C011F4P6, STM32C011F4U3, STM32C011F4U6TR, STM32C011F6P3, STM32C011F6P6, STM32C011F6U3, STM32C011F6U6TR, STM32C011J4M3, STM32C011J4M6, STM32C011J6M3, STM32C011J6M6, STM32C0316-DK, STM32C031C4T3, STM32C031C4T6, STM32C031C4U3, STM32C031C4U6, STM32C031C6T3, STM32C031C6T6, STM32C031C6U3, STM32C031C6U6, STM32C031F4P3, STM32C031F4P6, STM32C031F6P3, STM32C031F6P6, STM32C031G4U3, STM32C031G4U6, STM32C031G6U3, STM32C031G6U6, STM32C031K4T3, STM32C031K4T6, STM32C031K4U3, STM32C031K4U6, STM32C031K6T3, STM32C031K6T6, STM32C031K6U3, STM32C031K6U6, STM32G071K8TXN, STM32G071K8UXN, STM32G081GBU6N, STM32G081KBT6N, STM32G081KBUXN, STM32G0B1CCT6N, STM32G0B1KCT6, STM32G0B1NEY6TR, STM32G0B1RCT6N, STM32G0C1CCT6, STM32G0C1CCT6N, STM32G0C1CCU6N, STM32G0C1CET6N, STM32G0C1CEU6N, STM32G0C1KCT6, STM32G0C1NEY6TR, STM32G0C1RCI6N, STM32G0C1RCT6N, STM32G0C1REI6N, STM32G0C1RET6N, STM32G0C1VCI6, STM32G0C1VEI6, STM32G471CCT6, STM32G471CCU6, STM32G471CET3, STM32G471CET6, STM32G471CEU3, STM32G471CEU6, STM32G471MCT6, STM32G471MET3, STM32G471MET6, STM32G471MEY6TR, STM32G471QCT6, STM32G471QET3, STM32G471RCT6, STM32G471RET3, STM32G471RET6, STM32G471VCH6, STM32G471VCI6, STM32G471VCT6, STM32G471VEH3, STM32G471VEH6, STM32G471VEI3, STM32G471VEI6, STM32G471VET3, STM32G471VET6, STM32G474CCT6, STM32H503CBT6, STM32H503CBU6, STM32H503EBY6TR, STM32H503KBU6, STM32H503RBT6, STM32H562AGI6, STM32H562AII6, STM32H562IGK6, STM32H562IGT6, STM32H562IIK6, STM32H562IIT6, STM32H562RGT6, STM32H562RGV6, STM32H562RIT6, STM32H562RIV6, STM32H562VGT6, STM32H562VIT6, STM32H562ZGT6, STM32H562ZIT6, STM32H563AGI6, STM32H563AII3Q, STM32H563AII6, STM32H563IGK6, STM32H563IGT6, STM32H563IIK3Q, STM32H563IIK6, STM32H563IIT3Q, STM32H563IIT6, STM32H563MIY3QTR, STM32H563RGT6, STM32H563RGV6, STM32H563RIT6, STM32H563RIV6, STM32H563VGT6, STM32H563VIT3Q, STM32H563VIT6, STM32H563ZGT6, STM32H563ZIT3Q, STM32H563ZIT6, STM32H573AII3Q, STM32H573AII6, STM32H573I-DK, STM32H573IIK3Q, STM32H573IIK6, STM32H573IIT3Q, STM32H573IIT6, STM32H573MIY3QTR, STM32H573RIT6, STM32H573RIV6, STM32H573VIT3Q, STM32H573VIT6, STM32H573ZIT3Q, STM32H573ZIT6, STM32L4R5QGI6STR, STM32MP131AAE3, STM32MP131AAF3, STM32MP131AAG3, STM32MP131CAE3, STM32MP131CAF3, STM32MP131CAG3, STM32MP131DAE7, STM32MP131DAF7, STM32MP131DAG7, STM32MP131FAE7, STM32MP131FAF7, STM32MP131FAG7, STM32MP133AAE3, STM32MP133AAF3, STM32MP133AAG3, STM32MP133CAE3, STM32MP133CAF3, STM32MP133CAG3, STM32MP133DAE7, STM32MP133DAF7, STM32MP133DAG7, STM32MP133FAE7, STM32MP133FAF7, STM32MP133FAG7, STM32MP135AAE3, STM32MP135AAF3, STM32MP135AAG3, STM32MP135CAE3, STM32MP135CAF3, STM32MP135CAG3, STM32MP135DAE7, STM32MP135DAF7, STM32MP135DAG7, STM32MP135F-DK, STM32MP135FAE7, STM32MP135FAF7, STM32MP135FAF7T, STM32MP135FAF7U, STM32MP135FAG7, STM32U535CBT6, STM32U535CBT6Q, STM32U535CBU6, STM32U535CBU6Q, STM32U535CCT6, STM32U535CCT6Q, STM32U535CCU6, STM32U535CCU6Q, STM32U535CET6, STM32U535CET6Q, STM32U535CEU6, STM32U535CEU6Q, STM32U535JEY6QTR, STM32U535NCY6QTR, STM32U535NEY6QTR, STM32U535RBI6, STM32U535RBI6Q, STM32U535RBT6, STM32U535RBT6Q, STM32U535RCI6, STM32U535RCI6Q, STM32U535RCT6, STM32U535RCT6Q, STM32U535REI6, STM32U535REI6Q, STM32U535RET6, STM32U535RET6Q, STM32U535VCI6, STM32U535VCI6Q, STM32U535VCT6, STM32U535VCT6Q, STM32U535VEI6, STM32U535VEI6Q, STM32U535VET6, STM32U535VET6Q, STM32U545CET6, STM32U545CET6Q, STM32U545CEU6, STM32U545CEU6Q, STM32U545JEY6QTR, STM32U545NEY6QTR, STM32U545REI6, STM32U545REI6Q, STM32U545RET6, STM32U545RET6Q, STM32U545VEI6, STM32U545VEI6Q, STM32U545VET6, STM32U545VET6Q, STM32U595AIH6, STM32U595AIH6Q, STM32U595AJH6, STM32U595AJH6Q, STM32U595QII6, STM32U595QII6Q, STM32U595QJI6, STM32U595QJI6Q, STM32U595RIT6, STM32U595RIT6Q, STM32U595RJT6, STM32U595RJT6Q, STM32U595VIT6, STM32U595VIT6Q, STM32U595VJT6, STM32U595VJT6Q, STM32U595ZIT6, STM32U595ZIT6Q, STM32U595ZIY6QTR, STM32U595ZJT6, STM32U595ZJT6Q, STM32U595ZJY6QTR, STM32U599BJY6QTR, STM32U599NIH6Q, STM32U599NJH6Q, STM32U599VIT6Q, STM32U599VJT6, STM32U599VJT6Q, STM32U599ZIT6Q, STM32U599ZIY6QTR, STM32U599ZJT6Q, STM32U599ZJY6QTR, STM32U5A5AJH6, STM32U5A5AJH6Q, STM32U5A5QJI6, STM32U5A5QJI6Q, STM32U5A5RJT6, STM32U5A5RJT6Q, STM32U5A5VJT6, STM32U5A5VJT6Q, STM32U5A5ZJT6, STM32U5A5ZJT6Q, STM32U5A5ZJY6QTR, STM32U5A9BJY6QTR, STM32U5A9J-DK, STM32U5A9NJH6Q, STM32U5A9VJT6Q, STM32U5A9ZJT6Q, STM32U5A9ZJY6QTR, STM32U5F7VIT6, STM32U5F7VIT6Q, STM32U5F7VJT6, STM32U5F7VJT6Q, STM32U5F9BJY6QTR, STM32U5F9NJH6Q, STM32U5F9VIT6Q, STM32U5F9VJT6Q, STM32U5F9ZIJ6QTR, STM32U5F9ZIT6Q, STM32U5F9ZJJ6QTR, STM32U5F9ZJT6Q, STM32U5G7VJT6, STM32U5G7VJT6Q, STM32U5G9BJY6QTR, STM32U5G9J-DK1, STM32U5G9J-DK2, STM32U5G9NJH6Q, STM32U5G9VJT6Q, STM32U5G9ZJJ6QTR, STM32U5G9ZJT6Q, STM32WB1MMCH6, STM32WBA52CEU6, STM32WBA52CEU6T, STM32WBA52CGU6, STM32WBA52CGU6T, STM32WBA52KEU6, STM32WBA52KEU6T, STM32WBA52KGU6, STM32WBA52KGU6T, STM32WL5MOCH6, STM32WL5MOCH6TR]
+2023-10-16 05:47:53,406 [INFO] DbMcus:217 - Found 3848 MCUs, 3848 are supported
+2023-10-16 05:47:53,409 [INFO] ApiDb:423 - Load user favorites file /home/ahmed-ferganey/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2023-10-16 05:47:53,409 [INFO] ApiDb:427 - User favorites MCUs=[]
+2023-10-16 05:47:53,410 [INFO] DbMcus:223 - Set 0 / 0 favorites MCUs
+2023-10-16 05:47:53,572 [INFO] ApiDb:414 - User favorites file not found: /home/ahmed-ferganey/.stm32cubeide/favorites.boards.txt
+2023-10-16 05:47:53,572 [INFO] DbBoards:190 - Set 0 / 0 favorites Boards
+2023-10-16 05:47:53,572 [INFO] McuFinderGlobals:76 - Set McuFinderConnectedMode to true
+2023-10-16 05:47:53,581 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2023-10-16 05:47:53,583 [INFO] FinderPluginLoader:95 - Searching for filters in installed packs
+2023-10-16 05:47:54,806 [INFO] LoadUrlFilesThread:185 - End of LoadServerUrlFiles without Thread
+2023-10-16 05:47:54,821 [INFO] DetailPanel:341 - Set advertising image to /home/ahmed-ferganey/STM32Cube/Repository//en.prom-stm32h5-mcu-finder.jpg
+2023-10-16 05:48:10,550 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2023-10-16 05:48:10,551 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2023-10-16 05:48:10,551 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2023-10-16 05:48:55,725 [INFO] MainUpdater:2868 - connection check result : 10
+2023-10-16 05:48:55,726 [INFO] MainUpdater:2868 - connection check result : 10
+2023-10-16 05:48:55,742 [INFO] MicroXplorer:468 - Change Database Path : 
+2023-10-16 05:48:55,742 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.92
+2023-10-16 05:48:55,745 [WARN] ThirdParty:871 - waiting for thirdparty lock release [close project]
+2023-10-16 05:48:55,745 [INFO] ThirdParty:873 - entering critical section [close project]
+2023-10-16 05:48:55,746 [INFO] ThirdParty:883 - exiting critical section [close project]
+2023-10-16 05:48:55,747 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2023-10-16 05:48:55,753 [INFO] UtilMem:75 - Begin LoadConfig() Used Memory: 547550848 Bytes (719323136)
+2023-10-16 05:48:55,754 [INFO] MicroXplorer:468 - Change Database Path : 
+2023-10-16 05:48:55,754 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.92
+2023-10-16 05:48:55,754 [INFO] OpenFileManager:308 - Change cursor
+2023-10-16 05:48:55,782 [INFO] Mcu:1946 - Initializing MCU STM32F103C8Tx STM32F103C8Tx STM32F103C8T6
+2023-10-16 05:48:56,508 [INFO] Context:659 - Trying to add GPIOservice into a context  which must be forbidden
+2023-10-16 05:48:56,753 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) Unable to find key (Mcu.ThirdPartyNb) in loaded IOC file
+2023-10-16 05:48:56,753 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) Unable to find key (Mcu.PinsNb) in loaded IOC file
+2023-10-16 05:48:56,753 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) Unable to find key (Mcu.IPNb) in loaded IOC file
+2023-10-16 05:48:56,973 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2023-10-16 05:48:56,973 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2023-10-16 05:48:56,974 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2023-10-16 05:48:56,974 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2023-10-16 05:48:56,974 [WARN] ModelIntegratedComponent:184 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2023-10-16 05:48:56,989 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,989 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,989 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,989 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,989 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,989 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,989 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,989 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,989 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,989 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,989 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,990 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,990 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,990 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,990 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,990 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,990 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,990 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,990 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,990 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,990 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,990 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,990 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,990 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,990 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,990 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,990 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,990 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,990 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,991 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,991 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,991 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:56,991 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 05:48:57,008 [INFO] ThirdPartyModel:298 - Start build external matchings
+2023-10-16 05:48:57,385 [INFO] ThirdPartyModel:316 - End build external matchings
+2023-10-16 05:48:57,517 [INFO] UtilMem:75 - End LoadConfig() Used Memory: 492534728 Bytes (825229312)
+2023-10-16 05:48:57,529 [WARN] ThirdParty:833 - waiting for thirdparty lock release [change project]
+2023-10-16 05:48:57,529 [INFO] ThirdParty:835 - entering critical section [change project]
+2023-10-16 05:48:57,529 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 1.1.0
+2023-10-16 05:48:57,529 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USBPD 4.1
+2023-10-16 05:48:57,529 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 6.0.0
+2023-10-16 05:48:57,529 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2023-10-16 05:48:57,529 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.1.0
+2023-10-16 05:48:57,530 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2023-10-16 05:48:57,530 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 5.6.3
+2023-10-16 05:48:57,530 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SMBUS 2.1.0
+2023-10-16 05:48:57,530 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2023-10-16 05:48:57,530 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WB 2.0.0
+2023-10-16 05:48:57,530 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.1.0
+2023-10-16 05:48:57,530 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 2.0.0
+2023-10-16 05:48:57,530 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2023-10-16 05:48:57,530 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.6.0
+2023-10-16 05:48:57,530 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :ITTIA_DB I-CUBE-ITTIADB 8.8.0
+2023-10-16 05:48:57,530 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENV1 4.3.2
+2023-10-16 05:48:57,530 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.3.0
+2023-10-16 05:48:57,530 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2023-10-16 05:48:57,530 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.1.0
+2023-10-16 05:48:57,530 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 2.0.0
+2023-10-16 05:48:57,530 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 3.0.0
+2023-10-16 05:48:57,530 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2023-10-16 05:48:57,530 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2023-10-16 05:48:57,530 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2023-10-16 05:48:57,530 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-FLIGHT1 5.0.2
+2023-10-16 05:48:57,530 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2023-10-16 05:48:57,530 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.3.1
+2023-10-16 05:48:57,530 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 2.0.0
+2023-10-16 05:48:57,530 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2023-10-16 05:48:57,531 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.1.0
+2023-10-16 05:48:57,531 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :Infineon AIROC-Wi-Fi-Bluetooth-STM32 1.5.1
+2023-10-16 05:48:57,531 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2023-10-16 05:48:57,531 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 3.0.0
+2023-10-16 05:48:57,531 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 7.0.0
+2023-10-16 05:48:57,531 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-SIGFOX1 3.2.0
+2023-10-16 05:48:57,531 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2023-10-16 05:48:57,531 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2023-10-16 05:48:57,531 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.3.0
+2023-10-16 05:48:57,531 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.1.0
+2023-10-16 05:48:57,531 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.1
+2023-10-16 05:48:57,531 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2023-10-16 05:48:57,531 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.22.1
+2023-10-16 05:48:57,531 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC6 3.0.0
+2023-10-16 05:48:57,531 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 4.1.0
+2023-10-16 05:48:57,531 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :portGmbH I-Cube-SoM-uGOAL 1.1.0
+2023-10-16 05:48:57,531 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.1
+2023-10-16 05:48:57,531 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2023-10-16 05:48:57,531 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-SMARTAG2 1.2.0
+2023-10-16 05:48:57,531 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 2.0.0
+2023-10-16 05:48:57,531 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.3.1
+2023-10-16 05:48:57,531 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2023-10-16 05:48:57,532 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 8.1.0
+2023-10-16 05:48:57,532 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 2.0.0
+2023-10-16 05:48:57,532 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2023-10-16 05:48:57,532 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :WES I-CUBE-Cesium 1.3.0
+2023-10-16 05:48:57,532 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 2.0.0
+2023-10-16 05:48:57,532 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2023-10-16 05:48:57,532 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 4.0.0
+2023-10-16 05:48:57,532 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2023-10-16 05:48:57,532 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2023-10-16 05:48:57,532 [INFO] ThirdParty:841 - exiting critical section [change project]
+2023-10-16 05:48:57,821 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2023-10-16 05:48:57,822 [INFO] PinOutPanel:1499 - setPackage(STM32F103C8Tx,LQFP48)
+2023-10-16 05:48:58,248 [INFO] UtilMem:75 - Before build in PCC Used Memory: 413615672 Bytes (825229312)
+2023-10-16 05:48:58,831 [INFO] UtilMem:75 - After build in PCC Used Memory: 528064592 Bytes (825229312)
+2023-10-16 05:48:58,862 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,863 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,863 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,863 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,863 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,863 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,863 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,864 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,864 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,864 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,864 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,864 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,864 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,865 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,865 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,865 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,865 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,866 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,866 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,866 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,866 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,866 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,867 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,867 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,867 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,868 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:58,868 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 05:48:59,000 [INFO] CADModel:165 - CPN selected for project levelSTM32F103C8T6
+2023-10-16 05:48:59,000 [INFO] CADModel:114 - Register for checkConnection events
+2023-10-16 05:48:59,039 [INFO] OpenFileManager:328 - Restore cursor
+2023-10-16 05:48:59,436 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 609521592 Bytes (825229312)
+2023-10-16 05:48:59,475 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 620934920 Bytes (825229312)
+2023-10-16 05:49:00,031 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-10-16 05:49:00,032 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-10-16 05:49:00,033 [INFO] CodeGenerator:799 - code generatio: config db path: /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db/
+2023-10-16 05:49:00,445 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/license.tmp_save
+2023-10-16 05:49:00,972 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/license.tmp
+2023-10-16 05:49:00,983 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_it.c_save
+2023-10-16 05:49:01,158 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_it.c
+2023-10-16 05:49:01,160 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_it.h_save
+2023-10-16 05:49:01,295 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_it.h
+2023-10-16 05:49:01,385 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_msp.c_save
+2023-10-16 05:49:01,559 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_msp.c
+2023-10-16 05:49:01,564 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/system.tmp_save
+2023-10-16 05:49:01,665 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/system.tmp
+2023-10-16 05:49:01,669 [INFO] CodeEngine:311 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_hal_conf.h_save
+2023-10-16 05:49:01,779 [INFO] CodeEngine:335 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_hal_conf.h
+2023-10-16 05:49:01,822 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/main.h_save
+2023-10-16 05:49:01,948 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/main.h
+2023-10-16 05:49:01,953 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/main.c_save
+2023-10-16 05:49:02,117 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/main.c
+2023-10-16 05:49:03,142 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 57mS.
+2023-10-16 05:49:03,148 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-10-16 05:49:03,699 [INFO] ConfigFileManager:1457 - The Die is : DIE410
+2023-10-16 05:49:03,752 [INFO] ApiDbMcu:507 - Load IP Config File for FATFS
+2023-10-16 05:49:03,772 [INFO] ApiDbMcu:507 - Load IP Config File for FREERTOS
+2023-10-16 05:49:03,787 [INFO] ApiDbMcu:507 - Load IP Config File for USB_DEVICE
+2023-10-16 05:49:04,847 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2023-10-16 05:49:10,113 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 6964mS.
+2023-10-16 05:49:10,114 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-10-16 05:49:10,115 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-16 05:49:10,544 [INFO] McuFinderGlobals:76 - Set McuFinderConnectedMode to true
+2023-10-16 05:49:10,551 [INFO] ApiDb:448 - Save user favorites file /home/ahmed-ferganey/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2023-10-16 05:49:10,552 [INFO] ApiDb:452 - User favorites MCUs=[]
+2023-10-16 06:33:21,702 [INFO] MainUpdater:2868 - connection check result : 10
+2023-10-16 06:33:21,702 [INFO] MainUpdater:2868 - connection check result : 10
+2023-10-16 06:33:21,710 [INFO] MicroXplorer:468 - Change Database Path : 
+2023-10-16 06:33:21,710 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.92
+2023-10-16 06:33:21,734 [WARN] ThirdParty:871 - waiting for thirdparty lock release [close project]
+2023-10-16 06:33:21,734 [INFO] ThirdParty:873 - entering critical section [close project]
+2023-10-16 06:33:21,734 [INFO] ThirdParty:883 - exiting critical section [close project]
+2023-10-16 06:33:21,735 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2023-10-16 06:33:21,742 [INFO] UtilMem:75 - Begin LoadConfig() Used Memory: 785658312 Bytes (1073741824)
+2023-10-16 06:33:21,742 [INFO] MicroXplorer:468 - Change Database Path : 
+2023-10-16 06:33:21,742 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.92
+2023-10-16 06:33:21,743 [INFO] OpenFileManager:308 - Change cursor
+2023-10-16 06:33:21,752 [INFO] RulesReader:64 - Compatibility file has been processed (293 Rules)
+2023-10-16 06:33:21,755 [INFO] Mcu:1946 - Initializing MCU STM32F103C(8-B)Tx STM32F103C8Tx STM32F103C8T6
+2023-10-16 06:33:22,151 [INFO] Context:659 - Trying to add GPIOservice into a context  which must be forbidden
+2023-10-16 06:33:22,414 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2023-10-16 06:33:22,414 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2023-10-16 06:33:22,414 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2023-10-16 06:33:22,414 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2023-10-16 06:33:22,414 [WARN] ModelIntegratedComponent:184 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2023-10-16 06:33:22,426 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,426 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,426 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,426 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,426 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,426 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,426 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,426 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,426 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,426 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,427 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,427 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,427 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,427 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,427 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,427 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,427 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,427 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,427 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,428 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,428 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,428 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,428 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,428 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,428 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,428 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,428 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,428 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,428 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,428 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,428 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,428 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,428 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-16 06:33:22,437 [INFO] ThirdPartyModel:298 - Start build external matchings
+2023-10-16 06:33:22,738 [INFO] ThirdPartyModel:316 - End build external matchings
+2023-10-16 06:33:22,863 [INFO] UtilMem:75 - End LoadConfig() Used Memory: 310391920 Bytes (1073741824)
+2023-10-16 06:33:22,868 [WARN] ThirdParty:833 - waiting for thirdparty lock release [change project]
+2023-10-16 06:33:22,868 [INFO] ThirdParty:835 - entering critical section [change project]
+2023-10-16 06:33:22,869 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 1.1.0
+2023-10-16 06:33:22,869 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USBPD 4.1
+2023-10-16 06:33:22,869 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 6.0.0
+2023-10-16 06:33:22,869 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2023-10-16 06:33:22,869 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.1.0
+2023-10-16 06:33:22,869 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2023-10-16 06:33:22,869 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 5.6.3
+2023-10-16 06:33:22,869 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SMBUS 2.1.0
+2023-10-16 06:33:22,869 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2023-10-16 06:33:22,869 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WB 2.0.0
+2023-10-16 06:33:22,869 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.1.0
+2023-10-16 06:33:22,869 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 2.0.0
+2023-10-16 06:33:22,869 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2023-10-16 06:33:22,869 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.6.0
+2023-10-16 06:33:22,869 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :ITTIA_DB I-CUBE-ITTIADB 8.8.0
+2023-10-16 06:33:22,869 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENV1 4.3.2
+2023-10-16 06:33:22,869 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.3.0
+2023-10-16 06:33:22,870 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2023-10-16 06:33:22,870 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.1.0
+2023-10-16 06:33:22,870 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 2.0.0
+2023-10-16 06:33:22,870 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 3.0.0
+2023-10-16 06:33:22,870 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2023-10-16 06:33:22,870 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2023-10-16 06:33:22,870 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2023-10-16 06:33:22,870 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-FLIGHT1 5.0.2
+2023-10-16 06:33:22,870 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2023-10-16 06:33:22,870 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.3.1
+2023-10-16 06:33:22,870 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 2.0.0
+2023-10-16 06:33:22,870 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2023-10-16 06:33:22,870 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.1.0
+2023-10-16 06:33:22,870 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :Infineon AIROC-Wi-Fi-Bluetooth-STM32 1.5.1
+2023-10-16 06:33:22,870 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2023-10-16 06:33:22,870 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 3.0.0
+2023-10-16 06:33:22,871 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 7.0.0
+2023-10-16 06:33:22,871 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-SIGFOX1 3.2.0
+2023-10-16 06:33:22,871 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2023-10-16 06:33:22,871 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2023-10-16 06:33:22,871 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.3.0
+2023-10-16 06:33:22,871 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.1.0
+2023-10-16 06:33:22,871 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.1
+2023-10-16 06:33:22,871 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2023-10-16 06:33:22,871 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.22.1
+2023-10-16 06:33:22,871 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC6 3.0.0
+2023-10-16 06:33:22,871 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 4.1.0
+2023-10-16 06:33:22,871 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :portGmbH I-Cube-SoM-uGOAL 1.1.0
+2023-10-16 06:33:22,871 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.1
+2023-10-16 06:33:22,871 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2023-10-16 06:33:22,871 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-SMARTAG2 1.2.0
+2023-10-16 06:33:22,871 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 2.0.0
+2023-10-16 06:33:22,871 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.3.1
+2023-10-16 06:33:22,871 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2023-10-16 06:33:22,872 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 8.1.0
+2023-10-16 06:33:22,872 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 2.0.0
+2023-10-16 06:33:22,872 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2023-10-16 06:33:22,872 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :WES I-CUBE-Cesium 1.3.0
+2023-10-16 06:33:22,872 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 2.0.0
+2023-10-16 06:33:22,872 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2023-10-16 06:33:22,872 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 4.0.0
+2023-10-16 06:33:22,872 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2023-10-16 06:33:22,872 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2023-10-16 06:33:22,872 [INFO] ThirdParty:841 - exiting critical section [change project]
+2023-10-16 06:33:23,098 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2023-10-16 06:33:23,098 [INFO] PinOutPanel:1499 - setPackage(STM32F103C8Tx,LQFP48)
+2023-10-16 06:33:23,364 [INFO] UtilMem:75 - Before build in PCC Used Memory: 262461168 Bytes (870318080)
+2023-10-16 06:33:23,533 [INFO] UtilMem:75 - After build in PCC Used Memory: 304930544 Bytes (870318080)
+2023-10-16 06:33:23,552 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,552 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,552 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,552 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,552 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,552 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,553 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,553 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,553 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,553 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,553 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,553 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,553 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,553 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,554 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,554 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,554 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,554 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,554 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,554 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,554 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,554 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,554 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,555 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,555 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,555 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,555 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-16 06:33:23,571 [INFO] CADModel:165 - CPN selected for project levelSTM32F103C8T6
+2023-10-16 06:33:23,571 [INFO] CADModel:114 - Register for checkConnection events
+2023-10-16 06:33:23,610 [INFO] OpenFileManager:328 - Restore cursor
+2023-10-16 06:33:30,373 [INFO] RtosManager:919 - Current active RTOS is FREERTOS [Cortex-M3NS]
+2023-10-16 06:33:30,437 [INFO] ApiDbMcu:507 - Load IP Config File for FREERTOS
+2023-10-16 06:33:30,643 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2023-10-16 06:33:30,690 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2023-10-16 06:33:32,059 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2023-10-16 06:33:32,101 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2023-10-16 06:33:32,218 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2023-10-16 06:34:00,504 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2023-10-16 06:39:34,329 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2023-10-16 06:39:55,918 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 355136512 Bytes (835715072)
+2023-10-16 06:39:59,118 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 372012184 Bytes (835715072)
+2023-10-16 06:40:09,265 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 655888936 Bytes (835715072)
+2023-10-16 07:15:29,365 [INFO] RtosManager:930 - There is no active RTOS [Cortex-M3NS]
+2023-10-16 07:15:33,383 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 577940248 Bytes (835715072)
+2023-10-16 07:15:34,640 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 594195224 Bytes (835715072)
+2023-10-16 07:15:40,583 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 648721176 Bytes (835715072)
+2023-10-16 07:15:40,781 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-10-16 07:15:40,781 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-10-16 07:15:40,781 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-10-16 07:15:40,781 [INFO] CodeGenerator:799 - code generatio: config db path: /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db/
+2023-10-16 07:15:40,941 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/license.tmp_save
+2023-10-16 07:15:41,042 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/license.tmp
+2023-10-16 07:15:41,063 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/gpio.c_save
+2023-10-16 07:15:41,117 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/gpio.c
+2023-10-16 07:15:41,118 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/gpio.h_save
+2023-10-16 07:15:41,166 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/gpio.h
+2023-10-16 07:15:41,169 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_it.c_save
+2023-10-16 07:15:41,320 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_it.c
+2023-10-16 07:15:41,321 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_it.h_save
+2023-10-16 07:15:41,370 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_it.h
+2023-10-16 07:15:41,375 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_msp.c_save
+2023-10-16 07:15:41,451 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_msp.c
+2023-10-16 07:15:41,452 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/system.tmp_save
+2023-10-16 07:15:41,568 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/system.tmp
+2023-10-16 07:15:41,570 [INFO] CodeEngine:311 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_hal_conf.h_save
+2023-10-16 07:15:41,662 [INFO] CodeEngine:335 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_hal_conf.h
+2023-10-16 07:15:41,674 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/main.h_save
+2023-10-16 07:15:41,747 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/main.h
+2023-10-16 07:15:41,748 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/main.c_save
+2023-10-16 07:15:41,829 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/main.c
+2023-10-16 07:15:42,200 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 13mS.
+2023-10-16 07:15:42,201 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-10-16 07:15:42,356 [INFO] ConfigFileManager:1457 - The Die is : DIE410
+2023-10-16 07:15:42,357 [INFO] ApiDbMcu:507 - Load IP Config File for FATFS
+2023-10-16 07:15:42,361 [INFO] ApiDbMcu:507 - Load IP Config File for USB_DEVICE
+2023-10-16 07:15:43,435 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 1234mS.
+2023-10-16 07:15:43,436 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-16 07:15:43,436 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-16 07:15:54,573 [INFO] RtosManager:919 - Current active RTOS is FREERTOS [Cortex-M3NS]
+2023-10-16 07:15:54,716 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2023-10-16 07:15:54,747 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2023-10-16 07:16:03,654 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2023-10-16 07:16:53,421 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 277463880 Bytes (898629632)
+2023-10-16 07:16:55,202 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 293718856 Bytes (898629632)
+2023-10-16 07:17:01,983 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 347196232 Bytes (898629632)
+2023-10-16 07:17:05,647 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-10-16 07:17:05,647 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FREERTOS
+2023-10-16 07:17:05,647 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-10-16 07:17:05,647 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-10-16 07:17:05,647 [INFO] CodeGenerator:799 - code generatio: config db path: /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db/
+2023-10-16 07:17:05,802 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/license.tmp_save
+2023-10-16 07:17:05,864 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/license.tmp
+2023-10-16 07:17:05,868 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/gpio.c_save
+2023-10-16 07:17:05,915 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/gpio.c
+2023-10-16 07:17:05,916 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/gpio.h_save
+2023-10-16 07:17:05,959 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/gpio.h
+2023-10-16 07:17:05,976 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-10-16 07:17:05,978 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_inc.tmp_save
+2023-10-16 07:17:06,024 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_inc.tmp
+2023-10-16 07:17:06,025 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelInit.tmp_save
+2023-10-16 07:17:06,065 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelInit.tmp
+2023-10-16 07:17:06,066 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelStart.tmp_save
+2023-10-16 07:17:06,107 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelStart.tmp
+2023-10-16 07:17:06,108 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_typedefs.tmp_save
+2023-10-16 07:17:06,148 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_typedefs.tmp
+2023-10-16 07:17:06,149 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_vars.tmp_save
+2023-10-16 07:17:06,193 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_vars.tmp
+2023-10-16 07:17:06,194 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_pfp.tmp_save
+2023-10-16 07:17:06,234 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_pfp.tmp
+2023-10-16 07:17:06,235 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_obj_creat.tmp_save
+2023-10-16 07:17:06,278 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_obj_creat.tmp
+2023-10-16 07:17:06,279 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_default_thread.tmp_save
+2023-10-16 07:17:06,320 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_default_thread.tmp
+2023-10-16 07:17:06,321 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_threads.tmp_save
+2023-10-16 07:17:06,361 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_threads.tmp
+2023-10-16 07:17:06,364 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-10-16 07:17:06,366 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_inc.tmp_save
+2023-10-16 07:17:06,408 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_inc.tmp
+2023-10-16 07:17:06,409 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelInit.tmp_save
+2023-10-16 07:17:06,448 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelInit.tmp
+2023-10-16 07:17:06,449 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelStart.tmp_save
+2023-10-16 07:17:06,490 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelStart.tmp
+2023-10-16 07:17:06,491 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_typedefs.tmp_save
+2023-10-16 07:17:06,534 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_typedefs.tmp
+2023-10-16 07:17:06,535 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_vars.tmp_save
+2023-10-16 07:17:06,643 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_vars.tmp
+2023-10-16 07:17:06,644 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_pfp.tmp_save
+2023-10-16 07:17:06,688 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_pfp.tmp
+2023-10-16 07:17:06,689 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_obj_creat.tmp_save
+2023-10-16 07:17:06,737 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_obj_creat.tmp
+2023-10-16 07:17:06,738 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_default_thread.tmp_save
+2023-10-16 07:17:06,793 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_default_thread.tmp
+2023-10-16 07:17:06,794 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_threads.tmp_save
+2023-10-16 07:17:06,833 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_threads.tmp
+2023-10-16 07:17:06,835 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/FreeRTOSConfig.h_save
+2023-10-16 07:17:06,888 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/FreeRTOSConfig.h
+2023-10-16 07:17:06,890 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/freertos.c_save
+2023-10-16 07:17:06,935 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/freertos.c
+2023-10-16 07:17:06,938 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_it.c_save
+2023-10-16 07:17:06,991 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_it.c
+2023-10-16 07:17:06,992 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_it.h_save
+2023-10-16 07:17:07,035 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_it.h
+2023-10-16 07:17:07,039 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_msp.c_save
+2023-10-16 07:17:07,099 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_msp.c
+2023-10-16 07:17:07,100 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/system.tmp_save
+2023-10-16 07:17:07,142 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/system.tmp
+2023-10-16 07:17:07,144 [INFO] CodeEngine:311 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_hal_conf.h_save
+2023-10-16 07:17:07,192 [INFO] CodeEngine:335 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_hal_conf.h
+2023-10-16 07:17:07,200 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/main.h_save
+2023-10-16 07:17:07,243 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/main.h
+2023-10-16 07:17:07,244 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/main.c_save
+2023-10-16 07:17:07,303 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/main.c
+2023-10-16 07:17:07,659 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 33mS.
+2023-10-16 07:17:07,660 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-10-16 07:17:07,813 [INFO] ConfigFileManager:1457 - The Die is : DIE410
+2023-10-16 07:17:08,819 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 1159mS.
+2023-10-16 07:17:08,819 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-16 07:17:08,820 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-16 07:21:23,386 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 316792696 Bytes (968884224)
+2023-10-16 07:21:24,639 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 332154216 Bytes (968884224)
+2023-10-16 07:21:29,345 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 364133736 Bytes (968884224)
+2023-10-16 07:21:31,198 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-10-16 07:21:31,198 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FREERTOS
+2023-10-16 07:21:31,198 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-10-16 07:21:31,198 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-10-16 07:21:31,198 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-10-16 07:21:31,198 [INFO] CodeGenerator:799 - code generatio: config db path: /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db/
+2023-10-16 07:21:31,310 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/license.tmp_save
+2023-10-16 07:21:31,355 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/license.tmp
+2023-10-16 07:21:31,358 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/gpio.c_save
+2023-10-16 07:21:31,408 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/gpio.c
+2023-10-16 07:21:31,409 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/gpio.h_save
+2023-10-16 07:21:31,451 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/gpio.h
+2023-10-16 07:21:31,462 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-10-16 07:21:31,464 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_inc.tmp_save
+2023-10-16 07:21:31,505 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_inc.tmp
+2023-10-16 07:21:31,506 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelInit.tmp_save
+2023-10-16 07:21:31,546 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelInit.tmp
+2023-10-16 07:21:31,547 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelStart.tmp_save
+2023-10-16 07:21:31,588 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelStart.tmp
+2023-10-16 07:21:31,588 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_typedefs.tmp_save
+2023-10-16 07:21:31,631 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_typedefs.tmp
+2023-10-16 07:21:31,632 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_vars.tmp_save
+2023-10-16 07:21:31,674 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_vars.tmp
+2023-10-16 07:21:31,674 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_pfp.tmp_save
+2023-10-16 07:21:31,717 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_pfp.tmp
+2023-10-16 07:21:31,717 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_obj_creat.tmp_save
+2023-10-16 07:21:31,759 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_obj_creat.tmp
+2023-10-16 07:21:31,759 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_default_thread.tmp_save
+2023-10-16 07:21:31,801 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_default_thread.tmp
+2023-10-16 07:21:31,801 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_threads.tmp_save
+2023-10-16 07:21:31,841 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_threads.tmp
+2023-10-16 07:21:31,844 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-10-16 07:21:31,846 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_inc.tmp_save
+2023-10-16 07:21:31,885 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_inc.tmp
+2023-10-16 07:21:31,885 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelInit.tmp_save
+2023-10-16 07:21:31,923 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelInit.tmp
+2023-10-16 07:21:31,924 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelStart.tmp_save
+2023-10-16 07:21:31,962 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelStart.tmp
+2023-10-16 07:21:31,963 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_typedefs.tmp_save
+2023-10-16 07:21:32,002 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_typedefs.tmp
+2023-10-16 07:21:32,003 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_vars.tmp_save
+2023-10-16 07:21:32,044 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_vars.tmp
+2023-10-16 07:21:32,045 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_pfp.tmp_save
+2023-10-16 07:21:32,084 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_pfp.tmp
+2023-10-16 07:21:32,085 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_obj_creat.tmp_save
+2023-10-16 07:21:32,125 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_obj_creat.tmp
+2023-10-16 07:21:32,126 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_default_thread.tmp_save
+2023-10-16 07:21:32,165 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_default_thread.tmp
+2023-10-16 07:21:32,166 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_threads.tmp_save
+2023-10-16 07:21:32,205 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_threads.tmp
+2023-10-16 07:21:32,205 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/FreeRTOSConfig.h_save
+2023-10-16 07:21:32,258 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/FreeRTOSConfig.h
+2023-10-16 07:21:32,259 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/freertos.c_save
+2023-10-16 07:21:32,303 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/freertos.c
+2023-10-16 07:21:32,306 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_it.c_save
+2023-10-16 07:21:32,358 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_it.c
+2023-10-16 07:21:32,359 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_it.h_save
+2023-10-16 07:21:32,404 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_it.h
+2023-10-16 07:21:32,408 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_msp.c_save
+2023-10-16 07:21:32,482 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_msp.c
+2023-10-16 07:21:32,482 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/system.tmp_save
+2023-10-16 07:21:32,526 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/system.tmp
+2023-10-16 07:21:32,527 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_timebase_tim.c_save
+2023-10-16 07:21:32,572 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_timebase_tim.c
+2023-10-16 07:21:32,574 [INFO] CodeEngine:311 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_hal_conf.h_save
+2023-10-16 07:21:32,622 [INFO] CodeEngine:335 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_hal_conf.h
+2023-10-16 07:21:32,632 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/main.h_save
+2023-10-16 07:21:32,677 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/main.h
+2023-10-16 07:21:32,678 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/main.c_save
+2023-10-16 07:21:32,804 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/main.c
+2023-10-16 07:21:33,138 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 25mS.
+2023-10-16 07:21:33,139 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-10-16 07:21:33,288 [INFO] ConfigFileManager:1457 - The Die is : DIE410
+2023-10-16 07:21:34,412 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 1273mS.
+2023-10-16 07:21:34,413 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-16 07:21:34,414 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-16 07:28:57,889 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 471549592 Bytes (1055916032)
+2023-10-16 07:28:59,245 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 487804568 Bytes (1055916032)
+2023-10-16 07:29:07,574 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 520832664 Bytes (1055916032)
+2023-10-16 07:29:10,497 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-10-16 07:29:10,500 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FREERTOS
+2023-10-16 07:29:10,500 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-10-16 07:29:10,500 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-10-16 07:29:10,500 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-10-16 07:29:10,500 [INFO] CodeGenerator:799 - code generatio: config db path: /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db/
+2023-10-16 07:29:10,608 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/license.tmp_save
+2023-10-16 07:29:10,652 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/license.tmp
+2023-10-16 07:29:10,655 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/gpio.c_save
+2023-10-16 07:29:10,701 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/gpio.c
+2023-10-16 07:29:10,702 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/gpio.h_save
+2023-10-16 07:29:10,742 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/gpio.h
+2023-10-16 07:29:10,753 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-10-16 07:29:10,754 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_inc.tmp_save
+2023-10-16 07:29:10,793 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_inc.tmp
+2023-10-16 07:29:10,794 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelInit.tmp_save
+2023-10-16 07:29:10,834 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelInit.tmp
+2023-10-16 07:29:10,835 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelStart.tmp_save
+2023-10-16 07:29:10,873 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelStart.tmp
+2023-10-16 07:29:10,874 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_typedefs.tmp_save
+2023-10-16 07:29:10,914 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_typedefs.tmp
+2023-10-16 07:29:10,914 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_vars.tmp_save
+2023-10-16 07:29:10,955 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_vars.tmp
+2023-10-16 07:29:10,955 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_pfp.tmp_save
+2023-10-16 07:29:10,995 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_pfp.tmp
+2023-10-16 07:29:10,996 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_obj_creat.tmp_save
+2023-10-16 07:29:11,037 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_obj_creat.tmp
+2023-10-16 07:29:11,038 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_default_thread.tmp_save
+2023-10-16 07:29:11,077 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_default_thread.tmp
+2023-10-16 07:29:11,078 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_threads.tmp_save
+2023-10-16 07:29:11,117 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_threads.tmp
+2023-10-16 07:29:11,119 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-10-16 07:29:11,121 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_inc.tmp_save
+2023-10-16 07:29:11,164 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_inc.tmp
+2023-10-16 07:29:11,164 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelInit.tmp_save
+2023-10-16 07:29:11,203 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelInit.tmp
+2023-10-16 07:29:11,203 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelStart.tmp_save
+2023-10-16 07:29:11,242 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelStart.tmp
+2023-10-16 07:29:11,243 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_typedefs.tmp_save
+2023-10-16 07:29:11,283 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_typedefs.tmp
+2023-10-16 07:29:11,284 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_vars.tmp_save
+2023-10-16 07:29:11,327 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_vars.tmp
+2023-10-16 07:29:11,328 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_pfp.tmp_save
+2023-10-16 07:29:11,369 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_pfp.tmp
+2023-10-16 07:29:11,370 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_obj_creat.tmp_save
+2023-10-16 07:29:11,414 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_obj_creat.tmp
+2023-10-16 07:29:11,414 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_default_thread.tmp_save
+2023-10-16 07:29:11,456 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_default_thread.tmp
+2023-10-16 07:29:11,457 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_threads.tmp_save
+2023-10-16 07:29:11,498 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_threads.tmp
+2023-10-16 07:29:11,499 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/FreeRTOSConfig.h_save
+2023-10-16 07:29:11,557 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/FreeRTOSConfig.h
+2023-10-16 07:29:11,560 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/freertos.c_save
+2023-10-16 07:29:11,618 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/freertos.c
+2023-10-16 07:29:11,620 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_it.c_save
+2023-10-16 07:29:11,673 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_it.c
+2023-10-16 07:29:11,674 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_it.h_save
+2023-10-16 07:29:11,717 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_it.h
+2023-10-16 07:29:11,720 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_msp.c_save
+2023-10-16 07:29:11,778 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_msp.c
+2023-10-16 07:29:11,779 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/system.tmp_save
+2023-10-16 07:29:11,820 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/system.tmp
+2023-10-16 07:29:11,821 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_timebase_tim.c_save
+2023-10-16 07:29:11,868 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_timebase_tim.c
+2023-10-16 07:29:11,870 [INFO] CodeEngine:311 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_hal_conf.h_save
+2023-10-16 07:29:11,918 [INFO] CodeEngine:335 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_hal_conf.h
+2023-10-16 07:29:11,927 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/main.h_save
+2023-10-16 07:29:11,973 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/main.h
+2023-10-16 07:29:11,974 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/main.c_save
+2023-10-16 07:29:12,037 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/main.c
+2023-10-16 07:29:12,465 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 20mS.
+2023-10-16 07:29:12,466 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-10-16 07:29:12,612 [INFO] ConfigFileManager:1457 - The Die is : DIE410
+2023-10-16 07:29:13,633 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 1167mS.
+2023-10-16 07:29:13,633 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-16 07:29:13,634 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-16 07:47:05,142 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2023-10-16 07:48:41,231 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 07:48:41,235 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 07:48:41,236 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 07:48:42,652 [INFO] EditThreadDialog:704 - RAM SIZE (in KB): 20
+2023-10-16 07:48:42,652 [INFO] EditThreadDialog:706 - RAM SIZE (in words): 5120
+2023-10-16 07:50:58,892 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 07:50:58,892 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 07:50:58,892 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 07:50:58,892 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 07:50:58,893 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 07:50:58,893 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 07:51:07,064 [INFO] EditThreadDialog:704 - RAM SIZE (in KB): 20
+2023-10-16 07:51:07,064 [INFO] EditThreadDialog:706 - RAM SIZE (in words): 5120
+2023-10-16 07:52:05,630 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 07:52:05,630 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 07:52:05,630 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 07:52:05,631 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 07:52:05,631 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 07:52:05,631 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 07:52:05,631 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 07:52:05,631 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 07:52:05,632 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 07:52:11,087 [INFO] EditThreadDialog:704 - RAM SIZE (in KB): 20
+2023-10-16 07:52:11,087 [INFO] EditThreadDialog:706 - RAM SIZE (in words): 5120
+2023-10-16 07:52:14,774 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 07:52:14,775 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 07:52:14,775 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 07:52:14,775 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 07:52:14,775 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 07:52:14,775 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 07:52:14,776 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 07:52:14,776 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 07:52:14,776 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 07:52:16,910 [INFO] EditThreadDialog:704 - RAM SIZE (in KB): 20
+2023-10-16 07:52:16,910 [INFO] EditThreadDialog:706 - RAM SIZE (in words): 5120
+2023-10-16 07:52:45,522 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 07:52:45,522 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 07:52:45,522 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 07:52:45,522 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 07:52:45,522 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 07:52:45,523 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 07:52:45,523 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 07:52:45,523 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 07:52:45,524 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 07:52:45,524 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 07:52:45,524 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 07:52:45,524 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 07:52:57,805 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 543155752 Bytes (1008730112)
+2023-10-16 07:52:59,032 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 559410728 Bytes (1008730112)
+2023-10-16 07:53:02,597 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 591390248 Bytes (1008730112)
+2023-10-16 07:53:04,281 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-10-16 07:53:04,281 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FREERTOS
+2023-10-16 07:53:04,281 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-10-16 07:53:04,281 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-10-16 07:53:04,281 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-10-16 07:53:04,281 [INFO] CodeGenerator:799 - code generatio: config db path: /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db/
+2023-10-16 07:53:04,418 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/license.tmp_save
+2023-10-16 07:53:04,504 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/license.tmp
+2023-10-16 07:53:04,508 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/gpio.c_save
+2023-10-16 07:53:04,571 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/gpio.c
+2023-10-16 07:53:04,572 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/gpio.h_save
+2023-10-16 07:53:04,615 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/gpio.h
+2023-10-16 07:53:04,625 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-10-16 07:53:04,627 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_inc.tmp_save
+2023-10-16 07:53:04,667 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_inc.tmp
+2023-10-16 07:53:04,667 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelInit.tmp_save
+2023-10-16 07:53:04,708 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelInit.tmp
+2023-10-16 07:53:04,709 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelStart.tmp_save
+2023-10-16 07:53:04,748 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelStart.tmp
+2023-10-16 07:53:04,749 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_typedefs.tmp_save
+2023-10-16 07:53:04,791 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_typedefs.tmp
+2023-10-16 07:53:04,791 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_vars.tmp_save
+2023-10-16 07:53:04,833 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_vars.tmp
+2023-10-16 07:53:04,834 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_pfp.tmp_save
+2023-10-16 07:53:04,874 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_pfp.tmp
+2023-10-16 07:53:04,875 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_obj_creat.tmp_save
+2023-10-16 07:53:04,917 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_obj_creat.tmp
+2023-10-16 07:53:04,917 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_default_thread.tmp_save
+2023-10-16 07:53:04,959 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_default_thread.tmp
+2023-10-16 07:53:04,960 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_threads.tmp_save
+2023-10-16 07:53:04,999 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_threads.tmp
+2023-10-16 07:53:05,002 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-10-16 07:53:05,003 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_inc.tmp_save
+2023-10-16 07:53:05,050 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_inc.tmp
+2023-10-16 07:53:05,051 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelInit.tmp_save
+2023-10-16 07:53:05,089 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelInit.tmp
+2023-10-16 07:53:05,090 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelStart.tmp_save
+2023-10-16 07:53:05,127 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelStart.tmp
+2023-10-16 07:53:05,128 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_typedefs.tmp_save
+2023-10-16 07:53:05,171 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_typedefs.tmp
+2023-10-16 07:53:05,172 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_vars.tmp_save
+2023-10-16 07:53:05,214 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_vars.tmp
+2023-10-16 07:53:05,215 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_pfp.tmp_save
+2023-10-16 07:53:05,254 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_pfp.tmp
+2023-10-16 07:53:05,255 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_obj_creat.tmp_save
+2023-10-16 07:53:05,296 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_obj_creat.tmp
+2023-10-16 07:53:05,297 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_default_thread.tmp_save
+2023-10-16 07:53:05,336 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_default_thread.tmp
+2023-10-16 07:53:05,336 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_threads.tmp_save
+2023-10-16 07:53:05,376 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_threads.tmp
+2023-10-16 07:53:05,377 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/FreeRTOSConfig.h_save
+2023-10-16 07:53:05,432 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/FreeRTOSConfig.h
+2023-10-16 07:53:05,433 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/freertos.c_save
+2023-10-16 07:53:05,487 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/freertos.c
+2023-10-16 07:53:05,490 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_it.c_save
+2023-10-16 07:53:05,688 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_it.c
+2023-10-16 07:53:05,689 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_it.h_save
+2023-10-16 07:53:05,728 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_it.h
+2023-10-16 07:53:05,730 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_msp.c_save
+2023-10-16 07:53:05,789 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_msp.c
+2023-10-16 07:53:05,790 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/system.tmp_save
+2023-10-16 07:53:05,828 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/system.tmp
+2023-10-16 07:53:05,829 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_timebase_tim.c_save
+2023-10-16 07:53:05,871 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_timebase_tim.c
+2023-10-16 07:53:05,873 [INFO] CodeEngine:311 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_hal_conf.h_save
+2023-10-16 07:53:05,917 [INFO] CodeEngine:335 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_hal_conf.h
+2023-10-16 07:53:05,926 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/main.h_save
+2023-10-16 07:53:05,980 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/main.h
+2023-10-16 07:53:05,981 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/main.c_save
+2023-10-16 07:53:06,053 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/main.c
+2023-10-16 07:53:06,405 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 21mS.
+2023-10-16 07:53:06,407 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-10-16 07:53:06,557 [INFO] ConfigFileManager:1457 - The Die is : DIE410
+2023-10-16 07:53:07,571 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 1165mS.
+2023-10-16 07:53:07,572 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-10-16 07:53:07,573 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-16 08:05:30,264 [INFO] EditThreadDialog:704 - RAM SIZE (in KB): 20
+2023-10-16 08:05:30,265 [INFO] EditThreadDialog:706 - RAM SIZE (in words): 5120
+2023-10-16 08:05:35,829 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 08:05:35,830 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 08:05:35,830 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 08:05:35,830 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 08:05:35,830 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 08:05:35,830 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 08:05:35,831 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 08:05:35,831 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 08:05:35,831 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 08:05:35,831 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 08:05:35,831 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 08:05:35,832 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 08:05:37,023 [INFO] EditThreadDialog:704 - RAM SIZE (in KB): 20
+2023-10-16 08:05:37,024 [INFO] EditThreadDialog:706 - RAM SIZE (in words): 5120
+2023-10-16 08:05:40,532 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 08:05:40,536 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 08:05:40,536 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 08:05:40,536 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 08:05:40,537 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 08:05:40,537 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 08:05:40,537 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 08:05:40,537 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 08:05:40,537 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 08:05:40,538 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 08:05:40,538 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 08:05:40,538 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 08:05:41,783 [INFO] EditThreadDialog:704 - RAM SIZE (in KB): 20
+2023-10-16 08:05:41,783 [INFO] EditThreadDialog:706 - RAM SIZE (in words): 5120
+2023-10-16 08:05:44,587 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 08:05:44,588 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 08:05:44,588 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 08:05:44,588 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 08:05:44,588 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 08:05:44,588 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 08:05:44,589 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 08:05:44,589 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 08:05:44,589 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 08:05:44,589 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 08:05:44,589 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 08:05:44,590 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 08:05:45,997 [INFO] EditThreadDialog:704 - RAM SIZE (in KB): 20
+2023-10-16 08:05:45,997 [INFO] EditThreadDialog:706 - RAM SIZE (in words): 5120
+2023-10-16 08:05:48,906 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 08:05:48,906 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 08:05:48,906 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 08:05:48,906 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 08:05:48,906 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 08:05:48,906 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 08:05:48,906 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 08:05:48,907 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 08:05:48,907 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 08:05:48,907 [INFO] TasksAndQueuesTab:757 - Dynamic
+2023-10-16 08:05:48,907 [WARN] TasksAndQueuesTab:763 - 128 128
+2023-10-16 08:05:48,907 [WARN] TasksAndQueuesTab:775 - max value is: 768.0
+2023-10-16 08:05:52,649 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 612747576 Bytes (1031798784)
+2023-10-16 08:05:53,780 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 628480192 Bytes (1031798784)
+2023-10-16 08:05:57,337 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 659933496 Bytes (1031798784)
+2023-10-16 08:05:58,602 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-10-16 08:05:58,602 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FREERTOS
+2023-10-16 08:05:58,602 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-10-16 08:05:58,602 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-10-16 08:05:58,602 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-10-16 08:05:58,602 [INFO] CodeGenerator:799 - code generatio: config db path: /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db/
+2023-10-16 08:05:58,723 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/license.tmp_save
+2023-10-16 08:05:58,784 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/license.tmp
+2023-10-16 08:05:58,788 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/gpio.c_save
+2023-10-16 08:05:58,840 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/gpio.c
+2023-10-16 08:05:58,841 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/gpio.h_save
+2023-10-16 08:05:58,881 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/gpio.h
+2023-10-16 08:05:58,890 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-10-16 08:05:58,892 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_inc.tmp_save
+2023-10-16 08:05:58,931 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_inc.tmp
+2023-10-16 08:05:58,931 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelInit.tmp_save
+2023-10-16 08:05:58,971 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelInit.tmp
+2023-10-16 08:05:58,971 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelStart.tmp_save
+2023-10-16 08:05:59,010 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelStart.tmp
+2023-10-16 08:05:59,010 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_typedefs.tmp_save
+2023-10-16 08:05:59,052 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_typedefs.tmp
+2023-10-16 08:05:59,053 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_vars.tmp_save
+2023-10-16 08:05:59,095 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_vars.tmp
+2023-10-16 08:05:59,095 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_pfp.tmp_save
+2023-10-16 08:05:59,138 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_pfp.tmp
+2023-10-16 08:05:59,138 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_obj_creat.tmp_save
+2023-10-16 08:05:59,179 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_obj_creat.tmp
+2023-10-16 08:05:59,180 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_default_thread.tmp_save
+2023-10-16 08:05:59,219 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_default_thread.tmp
+2023-10-16 08:05:59,219 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_threads.tmp_save
+2023-10-16 08:05:59,257 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_threads.tmp
+2023-10-16 08:05:59,259 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-10-16 08:05:59,261 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_inc.tmp_save
+2023-10-16 08:05:59,301 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_inc.tmp
+2023-10-16 08:05:59,302 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelInit.tmp_save
+2023-10-16 08:05:59,340 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelInit.tmp
+2023-10-16 08:05:59,341 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelStart.tmp_save
+2023-10-16 08:05:59,378 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelStart.tmp
+2023-10-16 08:05:59,379 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_typedefs.tmp_save
+2023-10-16 08:05:59,418 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_typedefs.tmp
+2023-10-16 08:05:59,419 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_vars.tmp_save
+2023-10-16 08:05:59,461 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_vars.tmp
+2023-10-16 08:05:59,461 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_pfp.tmp_save
+2023-10-16 08:05:59,500 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_pfp.tmp
+2023-10-16 08:05:59,500 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_obj_creat.tmp_save
+2023-10-16 08:05:59,542 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_obj_creat.tmp
+2023-10-16 08:05:59,543 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_default_thread.tmp_save
+2023-10-16 08:05:59,583 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_default_thread.tmp
+2023-10-16 08:05:59,584 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_threads.tmp_save
+2023-10-16 08:05:59,623 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_threads.tmp
+2023-10-16 08:05:59,624 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/FreeRTOSConfig.h_save
+2023-10-16 08:05:59,674 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/FreeRTOSConfig.h
+2023-10-16 08:05:59,675 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/freertos.c_save
+2023-10-16 08:05:59,731 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/freertos.c
+2023-10-16 08:05:59,733 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_it.c_save
+2023-10-16 08:05:59,906 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_it.c
+2023-10-16 08:05:59,907 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_it.h_save
+2023-10-16 08:05:59,950 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_it.h
+2023-10-16 08:05:59,952 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_msp.c_save
+2023-10-16 08:06:00,015 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_msp.c
+2023-10-16 08:06:00,015 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/system.tmp_save
+2023-10-16 08:06:00,054 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/system.tmp
+2023-10-16 08:06:00,055 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_timebase_tim.c_save
+2023-10-16 08:06:00,099 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_timebase_tim.c
+2023-10-16 08:06:00,100 [INFO] CodeEngine:311 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_hal_conf.h_save
+2023-10-16 08:06:00,146 [INFO] CodeEngine:335 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_hal_conf.h
+2023-10-16 08:06:00,155 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/main.h_save
+2023-10-16 08:06:00,210 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/main.h
+2023-10-16 08:06:00,211 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/main.c_save
+2023-10-16 08:06:00,270 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/main.c
+2023-10-16 08:06:00,623 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 23mS.
+2023-10-16 08:06:00,624 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-10-16 08:06:00,792 [INFO] ConfigFileManager:1457 - The Die is : DIE410
+2023-10-16 08:06:01,800 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 1176mS.
+2023-10-16 08:06:01,800 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-16 08:06:01,801 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-16 08:16:38,402 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 680568880 Bytes (981467136)
+2023-10-16 08:16:40,198 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 696344128 Bytes (981467136)
+2023-10-16 08:16:42,958 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 729168688 Bytes (981467136)
+2023-10-16 08:16:44,176 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-10-16 08:16:44,176 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FREERTOS
+2023-10-16 08:16:44,176 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-10-16 08:16:44,177 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-10-16 08:16:44,177 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-10-16 08:16:44,177 [INFO] CodeGenerator:799 - code generatio: config db path: /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db/
+2023-10-16 08:16:44,280 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/license.tmp_save
+2023-10-16 08:16:44,338 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/license.tmp
+2023-10-16 08:16:44,341 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/gpio.c_save
+2023-10-16 08:16:44,390 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/gpio.c
+2023-10-16 08:16:44,391 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/gpio.h_save
+2023-10-16 08:16:44,463 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/gpio.h
+2023-10-16 08:16:44,478 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-10-16 08:16:44,480 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_inc.tmp_save
+2023-10-16 08:16:44,547 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_inc.tmp
+2023-10-16 08:16:44,548 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelInit.tmp_save
+2023-10-16 08:16:44,601 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelInit.tmp
+2023-10-16 08:16:44,601 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelStart.tmp_save
+2023-10-16 08:16:44,666 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelStart.tmp
+2023-10-16 08:16:44,666 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_typedefs.tmp_save
+2023-10-16 08:16:44,723 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_typedefs.tmp
+2023-10-16 08:16:44,723 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_vars.tmp_save
+2023-10-16 08:16:44,765 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_vars.tmp
+2023-10-16 08:16:44,765 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_pfp.tmp_save
+2023-10-16 08:16:44,803 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_pfp.tmp
+2023-10-16 08:16:44,803 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_obj_creat.tmp_save
+2023-10-16 08:16:44,844 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_obj_creat.tmp
+2023-10-16 08:16:44,844 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_default_thread.tmp_save
+2023-10-16 08:16:44,883 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_default_thread.tmp
+2023-10-16 08:16:44,883 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_threads.tmp_save
+2023-10-16 08:16:44,922 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_threads.tmp
+2023-10-16 08:16:44,924 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-10-16 08:16:44,926 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_inc.tmp_save
+2023-10-16 08:16:44,967 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_inc.tmp
+2023-10-16 08:16:44,968 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelInit.tmp_save
+2023-10-16 08:16:45,006 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelInit.tmp
+2023-10-16 08:16:45,007 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelStart.tmp_save
+2023-10-16 08:16:45,046 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_kernelStart.tmp
+2023-10-16 08:16:45,046 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_typedefs.tmp_save
+2023-10-16 08:16:45,085 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_typedefs.tmp
+2023-10-16 08:16:45,085 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_vars.tmp_save
+2023-10-16 08:16:45,128 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_vars.tmp
+2023-10-16 08:16:45,129 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_pfp.tmp_save
+2023-10-16 08:16:45,166 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_pfp.tmp
+2023-10-16 08:16:45,167 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_obj_creat.tmp_save
+2023-10-16 08:16:45,207 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_obj_creat.tmp
+2023-10-16 08:16:45,207 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_default_thread.tmp_save
+2023-10-16 08:16:45,247 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_default_thread.tmp
+2023-10-16 08:16:45,247 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_threads.tmp_save
+2023-10-16 08:16:45,285 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/rtos_threads.tmp
+2023-10-16 08:16:45,286 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/FreeRTOSConfig.h_save
+2023-10-16 08:16:45,338 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/FreeRTOSConfig.h
+2023-10-16 08:16:45,339 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/freertos.c_save
+2023-10-16 08:16:45,402 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/freertos.c
+2023-10-16 08:16:45,404 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_it.c_save
+2023-10-16 08:16:45,520 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_it.c
+2023-10-16 08:16:45,520 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_it.h_save
+2023-10-16 08:16:45,569 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_it.h
+2023-10-16 08:16:45,571 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_msp.c_save
+2023-10-16 08:16:45,643 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_msp.c
+2023-10-16 08:16:45,644 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/system.tmp_save
+2023-10-16 08:16:45,701 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/MXTmpFiles/system.tmp
+2023-10-16 08:16:45,702 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_timebase_tim.c_save
+2023-10-16 08:16:45,753 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/stm32f1xx_hal_timebase_tim.c
+2023-10-16 08:16:45,755 [INFO] CodeEngine:311 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_hal_conf.h_save
+2023-10-16 08:16:45,817 [INFO] CodeEngine:335 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/stm32f1xx_hal_conf.h
+2023-10-16 08:16:45,825 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/main.h_save
+2023-10-16 08:16:45,886 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Inc/main.h
+2023-10-16 08:16:45,887 [INFO] CodeEngine:255 - oldGeneratedFile, /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/main.c_save
+2023-10-16 08:16:45,958 [INFO] CodeEngine:279 - Generated code: /home/ahmed-ferganey/Desktop/MyGitHub/GraduationProject/Dashboard/CubeIDE/DashboardFreeRTOS/Core/Src/main.c
+2023-10-16 08:16:46,262 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 21mS.
+2023-10-16 08:16:46,263 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-10-16 08:16:46,573 [INFO] ConfigFileManager:1457 - The Die is : DIE410
+2023-10-16 08:16:47,553 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 1290mS.
+2023-10-16 08:16:47,553 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-16 08:16:47,554 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.

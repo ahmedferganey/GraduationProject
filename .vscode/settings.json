@@ -17,5 +17,6 @@
         "rcc_cfg.h": "c"
     },
     "author-generator.email": "ahmedferganey707@gmail.com",
-    "cmake.configureOnOpen": false
+    "cmake.configureOnOpen": false,
+    "sonarlint.pathToCompileCommands": "${workspaceFolder}/ECU_One/2-APPs/MainApp/build/compile_commands.json"
 }
