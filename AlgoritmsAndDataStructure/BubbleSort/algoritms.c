@@ -67,6 +67,7 @@ void PrintData(uint32 array[], uint32 ArrayLength)
 void BubbleSort (uint32 Array[], uint32 ArrayLength)
 {
     uint32 l_BubbleSortIteration =  0, l_CoupleIteration = 0;
+    unsigned char l_Flag = 0;
 
     for (l_BubbleSortIteration = 0; l_BubbleSortIteration < ArrayLength-1; l_BubbleSortIteration++)
     {
@@ -75,7 +76,13 @@ void BubbleSort (uint32 Array[], uint32 ArrayLength)
             if (Array[l_CoupleIteration] > Array[l_CoupleIteration+1])
             {
                 SwapToNum(&Array[l_CoupleIteration], &Array[l_CoupleIteration+1]);
+                l_Flag = 1;
             }
+            PrintData(Array, ArrayLength);
+        }
+        if (0 == l_Flag)
+        {
+            return ;
         }
     }
 }
