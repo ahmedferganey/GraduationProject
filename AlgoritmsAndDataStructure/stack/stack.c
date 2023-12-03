@@ -11,8 +11,11 @@
 #include <stdlib.h>
 
 #define SIZE    5
-typedef unsigned int u32;
+typedef unsigned int uint32;
+typedef signed   int sint32;
 
+sint32 top = -1;
+uint32 stack[SIZE];
 
 void push();
 void pop();
@@ -21,7 +24,7 @@ void show();
 ///////////////////////////////////////////////////////////////////////////
 int main()
 {
-    u32 Choice = 5;
+    uint32 Choice = 5;
 
     while (1)
     {
@@ -53,7 +56,19 @@ int main()
 
 void push()
 {
+    uint32 x;
 
+    if(SIZE-1 == top)
+    {
+        printf("\nOverflow!!");
+    }
+    else
+    {
+        printf("/nEnter your element");
+        scanf("%d",&x);
+        top+=1;
+        stack[top] = x;
+    }
 }
 void pop()
 {
