@@ -94,7 +94,7 @@ void show()
         printf("\nelements in stack are: \n");
         for(int i = top; i >= 0; --i)
         {
-            printf("index num %d  is: %d",top, stack[top]);
+            printf("index num %d  is: %d",top, stack[i]);
         }
     }
 }
