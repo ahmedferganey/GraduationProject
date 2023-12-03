@@ -79,13 +79,24 @@ void pop()
     }
     else
     {
-        printf("\nplease enter the required index: %d", stack[top]);
+        printf("\nthe poped data is: %d", stack[top]);
         top-=1;
     }
 }
 void show()
 {
-
+    if ( -1 == top )
+    {
+        printf("\nStack is empty");
+    }
+    else
+    {
+        printf("\nelements in stack are: \n");
+        for(int i = top; i >= 0; --i)
+        {
+            printf("index num %d  is: %d",top, stack[top]);
+        }
+    }
 }
 
 
