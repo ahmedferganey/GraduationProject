@@ -72,9 +72,20 @@ void push()
 }
 void pop()
 {
-
+    sint32 x = -1;
+    if (top == -1)
+    {
+        printf("\nStack is empty");
+    }
+    else
+    {
+        printf("\nplease enter the required index: %d", stack[top]);
+        top-=1;
+    }
 }
 void show()
 {
 
 }
+
+
