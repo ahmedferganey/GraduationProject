@@ -64,7 +64,7 @@ void push()
     }
     else
     {
-        printf("/nEnter your element");
+        printf("\nEnter your element");
         scanf("%d",&x);
         top+=1;
         stack[top] = x;
