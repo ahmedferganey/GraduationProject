@@ -44,40 +44,41 @@ int main()
         printf("\n4.lastdelete");
         printf("\n5.randominsert");
         printf("\n6.display");
-        printf("\n7.exit");       
+        printf("\n7.exit\n");       
         scanf("\n%d",&Choice);
 
         switch (Choice)
         {
         case 1 :
             /* code */
-            void beginsert ();
+            beginsert ();
             break;
         case 2 :
             /* code */
-            void lastinsert ();
+            lastinsert ();
             break;
         case 3 :
             /* code */
-            void begindelete ();
+            begindelete ();
             break;
         case 4 :
             /* code */
-            void lastdelete ();
+            lastdelete ();
             break;
         case 5 :
             /* code */
-            void randominsert ();
+            randominsert ();
             break;
         case 6 :
             /* code */
-            void display ();
+            display ();
             break;
         case 7 :
             /* code */
             exit(0);
             break;
         default:
+            printf("\ninvalid choice");       
             break;
         }
     }
@@ -85,7 +86,25 @@ int main()
 ///////////////////////////////////////////////////////////////////////////
 void beginsert ()
 {
+    struct node *ptr;
+    uint32 item;
+    ptr = (struct node*) malloc(sizeof(struct node*));
 
+    if (ptr == NULL)
+    {
+        printf("\nOverflow!!");
+    }
+    else
+    {
+        printf("\nEnter Your data");
+        scanf("%d", &item);
+        ptr->data = item;
+        ptr->next = head;
+
+        head = ptr;
+        printf("\nNode inserted");
+    }
+    
 }
 void lastinsert ()
 {
