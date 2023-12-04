@@ -124,7 +124,20 @@ void randominsert ()
 }
 void display ()
 {
+    struct node *ptr;
+    ptr = head;
 
+    if (ptr == NULL)
+        printf("\nNothing to print");
+    else
+    {
+        printf("\nValues are: \n");
+        while (ptr != NULL)
+        {
+            printf("%d", ptr->data);
+            ptr = ptr->next;
+        }
+    }
 }
 
 
