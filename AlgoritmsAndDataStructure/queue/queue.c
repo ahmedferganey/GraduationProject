@@ -94,5 +94,15 @@ void dequeue()
 }
 void show()
 {
-
+    if (Front == -1)
+        printf("\nQueue is empty");
+    else
+    {
+        printf("queue is : \n");
+        for (uint32 i = Front; i <= Rear; i++)
+        {
+            printf("%d  ", Array[i]);
+        }
+        printf("\n");
+    }
 }
