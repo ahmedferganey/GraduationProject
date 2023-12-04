@@ -13,6 +13,13 @@
 
 typedef unsigned int uint32;
 typedef signed   int sint32;
+struct node
+{
+    /* data */
+    uint32 data;
+    struct node *next; 
+};
+struct node *head; 
 
 void beginsert ();
 void lastinsert ();
@@ -26,10 +33,11 @@ void display ();
 ///////////////////////////////////////////////////////////////////////////
 int main()
 {
-    uint32 Choice = 10;
+    uint32 Choice = 8;
 
     while(1)
     {
+        printf("\n              enter your choice              ");
         printf("\n1.beginsert");
         printf("\n2.lastinsert");
         printf("\n3.begindelete");
@@ -43,24 +51,31 @@ int main()
         {
         case 1 :
             /* code */
+            void beginsert ();
             break;
         case 2 :
             /* code */
+            void lastinsert ();
             break;
         case 3 :
             /* code */
+            void begindelete ();
             break;
         case 4 :
             /* code */
+            void lastdelete ();
             break;
         case 5 :
             /* code */
+            void randominsert ();
             break;
         case 6 :
             /* code */
+            void display ();
             break;
         case 7 :
             /* code */
+            exit(0);
             break;
         default:
             break;
